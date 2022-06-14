@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:adms="http://www.w3.org/ns/adms#" xmlns:odrs="http://schema.theodi.org/odrs#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:vcard="http://www.w3.org/2006/vcard/ns#" xmlns:store="https://catalog.scb.se/store/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:es="http://entrystore.org/terms/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <dcat:Catalog>
+    <dcterms:title>Statistikdatabasen SCB</dcterms:title>
+    <dcterms:description>Databas för SCB:s offentliga statistik</dcterms:description>
+    <dcterms:publisher rdf:resource="https://www.scb.se" />
+    <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+    <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
+    <dcat:Dataset rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/MotFlyktAldKon" />
+    <dcat:Dataset rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/MotFlyktUtbKon" />
+    <dcat:Dataset rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/MotFlyktLanKon" />
+    <dcat:Dataset rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/MotFlyktJobbKon" />
+    <dcat:Dataset rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr1KomKonUtb" />
+    <dcat:Dataset rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr1LanKonUtb" />
+    <dcat:Dataset rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr1RikKonUtb" />
+    <dcat:Dataset rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr1LUAKon" />
+    <dcat:Dataset rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr1UrbKon" />
+    <dcat:Dataset rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/KomMotForv" />
+  </dcat:Catalog>
+  <foaf:Organization rdf:about="https://www.scb.se">
+    <foaf:name>SCB - Statistiska Centralbyrån</foaf:name>
+  </foaf:Organization>
+  <dcat:Dataset rdf:about="http://www.statistikdatabasen.scb.se/goto/sv/ssd/MotFlyktAldKon">
+    <dcterms:title>Andel förvärvsarbetande kommunmottagna flyktingar, procent PxcMetaTitleBy ålder, kön, mottagningsår, tabellinnehåll PxcMetaTitleAnd sysselsättningsår</dcterms:title>
+    <dcterms:description>I populationen kommunmottagna flyktingar ingår folkbokförda personer 20-64 den 31 december respektive sysselsättningsår/förvärvsår (året då andel förvärvsarbetande mäts) och som någon gång har varit kommunmottagna och som då antingen:
+• har omfattats av förordningen (2010:1122) om statlig ersättning för insatser för vissa utlänningar, som en kommun får ersättning för av Migrationsverket
+• har omfattats av ”Lag om introduktionsersättning för flyktingar och vissa andra utlänningar” (1992:1068).
+Kommunmottagna avser flyktingar och skyddsbehövande eller personer som fått uppehållstillstånd på synnerligen ömmande omständigheter samt anhöriga till någon av dessa kategorier. Den anhörige ska söka uppehållstillstånd inom viss tid från det att anknytningen (referenspersonen) första gången togs emot i en kommun.
+*) Populationen ändras varje förvärvsår på grund av åldersavgränsningen. Exempelvis kommer en person som var 18 år vid kommunmottagningen (=mottagningsåret) först med i tabellen två år efter mottagningsåret då personen är 20 år.
+En person som är 64 år vid mottagningsåret är bara med i tabellen på rader där mottagningsår är detsamma som förvärvsår, åren efter är personen över 64 år och därmed utanför populationen.
+
+Förvärvsarbetande
+Den officiella avgränsningen av förvärvsarbetande i den registerbaserade arbetsmarknadsstatistiken (RAMS) redovisas som variabeln Sysselsättningsstatus i Sysselsättningsregistret. De metoder som tillämpas bygger på att man gör en avgränsning som i så stor utsträckning som möjligt efterliknar ILO:s (Internationella arbetsorganisationen) definition. Den innebär att alla som utfört ett inkomstbringande arbete minst en timme under en mätvecka ska betraktas som förvärvsarbetande.
+I RAMS, som är registerbaserad, finns inte möjlighet att fråga personer om de arbetat en viss tid en viss vecka. Man är här hänvisad till operationella metoder och regler för att genomföra individuella avgränsningar huruvida personen förvärvsarbetat minst en timme per vecka eller inte.
+Riktlinjer för de operationella avgränsningsmetoderna:
+I RAMS är november den månad för vilken man vill ha uppgift om hur många och vilka som varit förvärvsarbetande minst en timme per vecka. Man arbetar med två kategorier förvärvsarbetande, egna företagare och anställda.
+Ytterligare en kategori, ”medhjälpande familjemedlemmar” ingår i ILO:s definition men har uteslutits i RAMS eftersom registerdata helt saknas för dessa.
+
+Tabellerna har utsatts för en röjandekontroll för att undvika risken att identifiera enskilda personer. Celler som blivit sekretessgranskade har markeras med två punkter (..). Celler som inte kan visas pga. att förvärvsåret ligger tidigare än mottagningsåret har också markerats med två punkter (..). 
+</dcterms:description>
+    <dcterms:publisher rdf:resource="https://www.scb.se" />
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-14T16:48:00</dcterms:modified>
+    <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
+    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/MotFlyktAldKon" />
+    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/en/ssd/MotFlyktAldKon" />
+    <dcterms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL" />
+    <dcterms:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="http://www.statistikdatabasen.scb.se/goto/sv/ssd/MotFlyktUtbKon">
+    <dcterms:title>Fotboll PxcMetaTitleBy utbildning, kön, mottagningsår, tabellinnehåll PxcMetaTitleAnd sysselsättningsår</dcterms:title>
+    <dcterms:description>I populationen kommunmottagna flyktingar ingår folkbokförda personer 20-64 den 31 december respektive sysselsättningsår/förvärvsår (året då andel förvärvsarbetande mäts) och som någon gång har varit kommunmottagna och som då antingen:
+• har omfattats av förordningen (2010:1122) om statlig ersättning för insatser för vissa utlänningar, som en kommun får ersättning för av Migrationsverket
+• har omfattats av ”Lag om introduktionsersättning för flyktingar och vissa andra utlänningar” (1992:1068).
+Kommunmottagna avser flyktingar och skyddsbehövande eller personer som fått uppehållstillstånd på synnerligen ömmande omständigheter samt anhöriga till någon av dessa kategorier. Den anhörige ska söka uppehållstillstånd inom viss tid från det att anknytningen (referenspersonen) första gången togs emot i en kommun.
+*) Populationen ändras varje förvärvsår på grund av åldersavgränsningen. Exempelvis kommer en person som var 18 år vid kommunmottagningen (=mottagningsåret) först med i tabellen två år efter mottagningsåret då personen är 20 år.
+En person som är 64 år vid mottagningsåret är bara med i tabellen på rader där mottagningsår är detsamma som förvärvsår, åren efter är personen över 64 år och därmed utanför populationen.
+
+Förvärvsarbetande
+Den officiella avgränsningen av förvärvsarbetande i den registerbaserade arbetsmarknadsstatistiken (RAMS) redovisas som variabeln Sysselsättningsstatus i Sysselsättningsregistret. De metoder som tillämpas bygger på att man gör en avgränsning som i så stor utsträckning som möjligt efterliknar ILO:s (Internationella arbetsorganisationen) definition. Den innebär att alla som utfört ett inkomstbringande arbete minst en timme under en mätvecka ska betraktas som förvärvsarbetande.
+I RAMS, som är registerbaserad, finns inte möjlighet att fråga personer om de arbetat en viss tid en viss vecka. Man är här hänvisad till operationella metoder och regler för att genomföra individuella avgränsningar huruvida personen förvärvsarbetat minst en timme per vecka eller inte.
+Riktlinjer för de operationella avgränsningsmetoderna:
+I RAMS är november den månad för vilken man vill ha uppgift om hur många och vilka som varit förvärvsarbetande minst en timme per vecka. Man arbetar med två kategorier förvärvsarbetande, egna företagare och anställda.
+Ytterligare en kategori, ”medhjälpande familjemedlemmar” ingår i ILO:s definition men har uteslutits i RAMS eftersom registerdata helt saknas för dessa.
+
+Tabellerna har utsatts för en röjandekontroll för att undvika risken att identifiera enskilda personer. Celler som blivit sekretessgranskade har markeras med två punkter (..). Celler som inte kan visas pga. att förvärvsåret ligger tidigare än mottagningsåret har också markerats med två punkter (..). 
+</dcterms:description>
+    <dcterms:publisher rdf:resource="https://www.scb.se" />
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-14T16:48:00</dcterms:modified>
+    <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
+    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/MotFlyktUtbKon" />
+    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/en/ssd/MotFlyktUtbKon" />
+    <dcterms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL" />
+    <dcterms:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="http://www.statistikdatabasen.scb.se/goto/sv/ssd/MotFlyktLanKon">
+    <dcterms:title>Andel förvärvsarbetande kommunmottagna flyktingar, procent PxcMetaTitleBy region, kön, mottagningsår, tabellinnehåll PxcMetaTitleAnd sysselsättningsår</dcterms:title>
+    <dcterms:description>I populationen kommunmottagna flyktingar ingår folkbokförda personer 20-64 den 31 december respektive sysselsättningsår/förvärvsår (året då andel förvärvsarbetande mäts) och som någon gång har varit kommunmottagna och som då antingen:
+• har omfattats av förordningen (2010:1122) om statlig ersättning för insatser för vissa utlänningar, som en kommun får ersättning för av Migrationsverket
+• har omfattats av ”Lag om introduktionsersättning för flyktingar och vissa andra utlänningar” (1992:1068).
+Kommunmottagna avser flyktingar och skyddsbehövande eller personer som fått uppehållstillstånd på synnerligen ömmande omständigheter samt anhöriga till någon av dessa kategorier. Den anhörige ska söka uppehållstillstånd inom viss tid från det att anknytningen (referenspersonen) första gången togs emot i en kommun.
+*) Populationen ändras varje förvärvsår på grund av åldersavgränsningen. Exempelvis kommer en person som var 18 år vid kommunmottagningen (=mottagningsåret) först med i tabellen två år efter mottagningsåret då personen är 20 år.
+En person som är 64 år vid mottagningsåret är bara med i tabellen på rader där mottagningsår är detsamma som förvärvsår, åren efter är personen över 64 år och därmed utanför populationen.
+
+Förvärvsarbetande
+Den officiella avgränsningen av förvärvsarbetande i den registerbaserade arbetsmarknadsstatistiken (RAMS) redovisas som variabeln Sysselsättningsstatus i Sysselsättningsregistret. De metoder som tillämpas bygger på att man gör en avgränsning som i så stor utsträckning som möjligt efterliknar ILO:s (Internationella arbetsorganisationen) definition. Den innebär att alla som utfört ett inkomstbringande arbete minst en timme under en mätvecka ska betraktas som förvärvsarbetande.
+I RAMS, som är registerbaserad, finns inte möjlighet att fråga personer om de arbetat en viss tid en viss vecka. Man är här hänvisad till operationella metoder och regler för att genomföra individuella avgränsningar huruvida personen förvärvsarbetat minst en timme per vecka eller inte.
+Riktlinjer för de operationella avgränsningsmetoderna:
+I RAMS är november den månad för vilken man vill ha uppgift om hur många och vilka som varit förvärvsarbetande minst en timme per vecka. Man arbetar med två kategorier förvärvsarbetande, egna företagare och anställda.
+Ytterligare en kategori, ”medhjälpande familjemedlemmar” ingår i ILO:s definition men har uteslutits i RAMS eftersom registerdata helt saknas för dessa.
+
+Tabellerna har utsatts för en röjandekontroll för att undvika risken att identifiera enskilda personer. Celler som blivit sekretessgranskade har markeras med två punkter (..). Celler som inte kan visas pga. att förvärvsåret ligger tidigare än mottagningsåret har också markerats med två punkter (..). 
+</dcterms:description>
+    <dcterms:publisher rdf:resource="https://www.scb.se" />
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-14T16:48:00</dcterms:modified>
+    <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
+    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/MotFlyktLanKon" />
+    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/en/ssd/MotFlyktLanKon" />
+    <dcterms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL" />
+    <dcterms:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="http://www.statistikdatabasen.scb.se/goto/sv/ssd/MotFlyktJobbKon">
+    <dcterms:title>Andel (i procent) kommunmottagna flyktingar som fått en första inkomst från arbete eller varit registrerade som egenföretagare PxcMetaTitleBy ålder vid mottagning, år efter mottagning, kön, tabellinnehåll PxcMetaTitleAnd mottagningsår</dcterms:title>
+    <dcterms:description>I populationen ingår samtliga personer som kommunmottagits någon gång under perioden 1997 och framåt och var 20–64 år och folkbokförda 31/12 året för kommunmottagningen. De personer som emigrerat eller avlidit tas bort från populationen från och med det år då de inte längre är folkbokförda (dvs. emigrerat eller avlidit). Beräkningarna baseras alltså på de som fortfarande är folkbokförda respektive år.    För varje år efter mottagningsåret beräknas andelen som fram till och med detta år har fått en första inkomst från arbete eller varit registrerade som egenföretagare. Här ingår de som enligt Registerbaserad arbetsmarknadsstatistik (RAMS) har sysselsättningsstatusen 1 (=förvärvsarbetande) eller 5 (=ej förvärvsarbetande, men med kontrolluppgift från arbetsgivare eller att man deklarerat för passiv näringsverksamhet under året). För varje år man följer en kohort kommer populationen åldras ett år. Detta betyder exempelvis att de som kommunmottagits 1997 och då var i åldrarna 20–64 kommer att vara mellan 30 och 74 år tio år senare när beräkningen görs för år 2007.</dcterms:description>
+    <dcterms:publisher rdf:resource="https://www.scb.se" />
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-14T16:48:00</dcterms:modified>
+    <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
+    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/MotFlyktJobbKon" />
+    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/en/ssd/MotFlyktJobbKon" />
+    <dcterms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL" />
+    <dcterms:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr1KomKonUtb">
+    <dcterms:title>Statistik med inriktning mot arbetsmarknaden PxcMetaTitleBy region, kön, utbildningsnivå, bakgrundsvariabel, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
+    <dcterms:description>Vistelsetid beräknas utifrån antal dagar och nytt år blir det först när 364 dagar övergår till 365 dagar. Det innebär att om en person har varit folkbokförd i Sverige i 729 dagar (1 år och 364 dagar) så hamnar personen i gruppen Vistelsetid 0-1 år. Om personen varit folkbokförd i 730 dagar så hamnar personen i gruppen Vistelsetid 2-3 år. På motsvarande sätt fungerar indelningen av övriga grupper vilket gör att man ska ha en vistelsetid på minst 3 650 dagar för att hamna i gruppen Vistelsetid 10- år.  Utbildningsregistret genomgick till årgång 2000 större kvalitetshöjande förändringar, ny nomenklatur och att antal nya källor, vilka ledde till ett tidsseriebrott. Detta gör att jämförelser med tidigare årgångar måste göras med stor försiktighet. För mer information se:  &lt;a  href=https://www.scb.se/hitta-statistik/statistik-efter-amne/utbildning-och-forskning/befolkningens-utbildning/befolkningens-utbildning/produktrelaterat/Fordjupad-information/kvalitetshojningen-i-utbildningsregistret-ar-2000/&gt; Mer om befolkningens utbildning&lt;/a&gt;.  Observera att gruppen EU/EFTA exkl. Norden respektive Övriga världen förändras över tid när länder blivit medlemmar i EU. Till exempel grupperas personer födda i Kroatien till EU/EFTA från 2013 och framåt, innan dess grupperades de till Övriga världen.</dcterms:description>
+    <dcterms:publisher rdf:resource="https://www.scb.se" />
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-14T16:48:00</dcterms:modified>
+    <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
+    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr1KomKonUtb" />
+    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/en/ssd/IntGr1KomKonUtb" />
+    <dcterms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL" />
+    <dcterms:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr1LanKonUtb">
+    <dcterms:title>Statistik med inriktning mot arbetsmarknaden PxcMetaTitleBy region, kön, utbildningsnivå, bakgrundsvariabel, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
+    <dcterms:description>Vistelsetid beräknas utifrån antal dagar och nytt år blir det först när 364 dagar övergår till 365 dagar. Det innebär att om en person har varit folkbokförd i Sverige i 729 dagar (1 år och 364 dagar) så hamnar personen i gruppen Vistelsetid 0-1 år. Om personen varit folkbokförd i 730 dagar så hamnar personen i gruppen Vistelsetid 2-3 år. På motsvarande sätt fungerar indelningen av övriga grupper vilket gör att man ska ha en vistelsetid på minst 3 650 dagar för att hamna i gruppen Vistelsetid 10- år.  Utbildningsregistret genomgick till årgång 2000 större kvalitetshöjande förändringar, ny nomenklatur och att antal nya källor, vilka ledde till ett tidsseriebrott. Detta gör att jämförelser med tidigare årgångar måste göras med stor försiktighet. För mer information se:  &lt;a  href=https://www.scb.se/hitta-statistik/statistik-efter-amne/utbildning-och-forskning/befolkningens-utbildning/befolkningens-utbildning/produktrelaterat/Fordjupad-information/kvalitetshojningen-i-utbildningsregistret-ar-2000/&gt; Mer om befolkningens utbildning&lt;/a&gt;.  Observera att gruppen EU/EFTA exkl. Norden respektive Övriga världen förändras över tid när länder blivit medlemmar i EU. Till exempel grupperas personer födda i Kroatien till EU/EFTA från 2013 och framåt, innan dess grupperades de till Övriga världen.</dcterms:description>
+    <dcterms:publisher rdf:resource="https://www.scb.se" />
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-14T16:48:00</dcterms:modified>
+    <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
+    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr1LanKonUtb" />
+    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/en/ssd/IntGr1LanKonUtb" />
+    <dcterms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL" />
+    <dcterms:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr1RikKonUtb">
+    <dcterms:title>Statistik med inriktning mot arbetsmarknaden PxcMetaTitleBy region, kön, utbildningsnivå, bakgrundsvariabel, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
+    <dcterms:description>Vistelsetid beräknas utifrån antal dagar och nytt år blir det först när 364 dagar övergår till 365 dagar. Det innebär att om en person har varit folkbokförd i Sverige i 729 dagar (1 år och 364 dagar) så hamnar personen i gruppen Vistelsetid 0-1 år. Om personen varit folkbokförd i 730 dagar så hamnar personen i gruppen Vistelsetid 2-3 år. På motsvarande sätt fungerar indelningen av övriga grupper vilket gör att man ska ha en vistelsetid på minst 3 650 dagar för att hamna i gruppen Vistelsetid 10- år.  Utbildningsregistret genomgick till årgång 2000 större kvalitetshöjande förändringar, ny nomenklatur och att antal nya källor, vilka ledde till ett tidsseriebrott. Detta gör att jämförelser med tidigare årgångar måste göras med stor försiktighet. För mer information se:  &lt;a  href=https://www.scb.se/hitta-statistik/statistik-efter-amne/utbildning-och-forskning/befolkningens-utbildning/befolkningens-utbildning/produktrelaterat/Fordjupad-information/kvalitetshojningen-i-utbildningsregistret-ar-2000/&gt; Mer om befolkningens utbildning&lt;/a&gt;.  Observera att gruppen EU/EFTA exkl. Norden respektive Övriga världen förändras över tid när länder blivit medlemmar i EU. Till exempel grupperas personer födda i Kroatien till EU/EFTA från 2013 och framåt, innan dess grupperades de till Övriga världen.</dcterms:description>
+    <dcterms:publisher rdf:resource="https://www.scb.se" />
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-14T16:48:00</dcterms:modified>
+    <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
+    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr1RikKonUtb" />
+    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/en/ssd/IntGr1RikKonUtb" />
+    <dcterms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL" />
+    <dcterms:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr1LUAKon">
+    <dcterms:title>Statistik med inriktning mot arbetsmarknaden PxcMetaTitleBy region, kön, bakgrundsvariabel, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
+    <dcterms:description>Vistelsetid beräknas utifrån antal dagar och nytt år blir det först när 364 dagar övergår till 365 dagar. Det innebär att om en person har varit folkbokförd i Sverige i 729 dagar (1 år och 364 dagar) så hamnar personen i gruppen Vistelsetid 0-1 år. Om personen varit folkbokförd i 730 dagar så hamnar personen i gruppen Vistelsetid 2-3 år. På motsvarande sätt fungerar indelningen av övriga grupper vilket gör att man ska ha en vistelsetid på minst 3 650 dagar för att hamna i gruppen Vistelsetid 10- år.  Utbildningsregistret genomgick till årgång 2000 större kvalitetshöjande förändringar, ny nomenklatur och att antal nya källor, vilka ledde till ett tidsseriebrott. Detta gör att jämförelser med tidigare årgångar måste göras med stor försiktighet. För mer information se:  &lt;a  href=https://www.scb.se/hitta-statistik/statistik-efter-amne/utbildning-och-forskning/befolkningens-utbildning/befolkningens-utbildning/produktrelaterat/Fordjupad-information/kvalitetshojningen-i-utbildningsregistret-ar-2000/&gt; Mer om befolkningens utbildning&lt;/a&gt;.  Observera att gruppen EU/EFTA exkl. Norden respektive Övriga världen förändras över tid när länder blivit medlemmar i EU. Till exempel grupperas personer födda i Kroatien till EU/EFTA från 2013 och framåt, innan dess grupperades de till Övriga världen.</dcterms:description>
+    <dcterms:publisher rdf:resource="https://www.scb.se" />
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-14T16:48:00</dcterms:modified>
+    <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
+    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr1LUAKon" />
+    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/en/ssd/IntGr1LUAKon" />
+    <dcterms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL" />
+    <dcterms:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr1UrbKon">
+    <dcterms:title>Statistik med inriktning mot arbetsmarknaden PxcMetaTitleBy region, kön, bakgrundsvariabel, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
+    <dcterms:description>Vistelsetid beräknas utifrån antal dagar och nytt år blir det först när 364 dagar övergår till 365 dagar. Det innebär att om en person har varit folkbokförd i Sverige i 729 dagar (1 år och 364 dagar) så hamnar personen i gruppen Vistelsetid 0-1 år. Om personen varit folkbokförd i 730 dagar så hamnar personen i gruppen Vistelsetid 2-3 år. På motsvarande sätt fungerar indelningen av övriga grupper vilket gör att man ska ha en vistelsetid på minst 3 650 dagar för att hamna i gruppen Vistelsetid 10- år.  Utbildningsregistret genomgick till årgång 2000 större kvalitetshöjande förändringar, ny nomenklatur och att antal nya källor, vilka ledde till ett tidsseriebrott. Detta gör att jämförelser med tidigare årgångar måste göras med stor försiktighet. För mer information se:  &lt;a  href=https://www.scb.se/hitta-statistik/statistik-efter-amne/utbildning-och-forskning/befolkningens-utbildning/befolkningens-utbildning/produktrelaterat/Fordjupad-information/kvalitetshojningen-i-utbildningsregistret-ar-2000/&gt; Mer om befolkningens utbildning&lt;/a&gt;.  Observera att gruppen EU/EFTA exkl. Norden respektive Övriga världen förändras över tid när länder blivit medlemmar i EU. Till exempel grupperas personer födda i Kroatien till EU/EFTA från 2013 och framåt, innan dess grupperades de till Övriga världen.</dcterms:description>
+    <dcterms:publisher rdf:resource="https://www.scb.se" />
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-14T16:48:00</dcterms:modified>
+    <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
+    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr1UrbKon" />
+    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/en/ssd/IntGr1UrbKon" />
+    <dcterms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL" />
+    <dcterms:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="http://www.statistikdatabasen.scb.se/goto/sv/ssd/KomMotForv">
+    <dcterms:title>Antal förvärvsarbetande  kommunmottagna flyktingar, 20-64 år PxcMetaTitleBy år efter mottagning, kön, tabellinnehåll PxcMetaTitleAnd mottagningsår</dcterms:title>
+    <dcterms:description>I populationen kommunmottagna flyktingar ingår folkbokförda personer, 20-64 år vid år efter mottagningsår (dvs. året då förvärvsarbetande mäts), som någon gång har varit kommunmottagna och som då antingen:
+
+• har omfattats av förordningen (2010:1122) om statlig ersättning för insatser för vissa utlänningar, som en kommun får ersättning för av Migrationsverket
+• har omfattats av ”Lag om introduktionsersättning för flyktingar och vissa andra utlänningar” (1992:1068).
+
+Kommunmottagna flyktingar avser flyktingar, skyddsbehövande eller personer som fått uppehållstillstånd på synnerligen ömmande omständigheter samt anhöriga till någon av dessa kategorier. Den anhörige ska söka uppehållstillstånd inom viss tid från det att anknytningen (referenspersonen) första gången togs emot i en kommun.
+
+Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis kommer en person som var 18 år vid kommunmottagningen först med i tabellen två år efter mottagningsåret då personen är 20 år. En person som är 64 år vid mottagningsåret är bara med i tabellen på rader för 0 år efter mottagningsår, åren efter är personen över 64 år och därmed utanför populationen.
+
+
+Förvärvsarbetande
+
+Förvärvsarbetande är ett begrepp inom den årliga registerbaserade arbetsmarknadsstatistiken (RAMS) som används för att beskriva sysselsättningen i Sverige. I RAMS får samtliga personer som är folkbokförda i Sverige den 31 december en sysselsättningsstatus som antingen förvärvsarbetande eller inte förvärvsarbetande. Eftersom statistiken är totalräknad används den ofta för att redovisa sysselsättning på regional och lokal nivå.
+
+För att klassificeras som förvärvsarbetande krävs att personen har en löneinkomst som överstiger ett skattat gränsvärde, alternativt deklarerat för aktiv näringsverksamhet under det aktuella året. Information om löneinkomst och för vilken period inkomsten avser hämtas från Skatteverkets kontrolluppgifter. Från Skatteverket inhämtas även information om vilka personer som deklarerat för näringsverksamhet.  För mer information se &lt;a href="https://www.scb.se/hitta-statistik/statistik-efter-amne/arbetsmarknad/sysselsattning-forvarvsarbete-och-arbetstider/registerbaserad-arbetsmarknadsstatistik-rams/produktrelaterat/Fordjupad-information/forvarvsarbetande--ett-sysselsattningsbegrepp/"&gt;Förvärvsarbetande – ett sysselsättningsbegrepp.&lt;/a&gt;</dcterms:description>
+    <dcterms:publisher rdf:resource="https://www.scb.se" />
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-14T16:48:00</dcterms:modified>
+    <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
+    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/KomMotForv" />
+    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/en/ssd/KomMotForv" />
+    <dcterms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL" />
+    <dcterms:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+</rdf:RDF>
