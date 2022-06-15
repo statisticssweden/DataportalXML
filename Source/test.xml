@@ -129,7 +129,8 @@ Ytterligare en kategori, ”medhjälpande familjemedlemmar” ingår i ILO:s def
 Tabellerna har utsatts för en röjandekontroll för att undvika risken att identifiera enskilda personer. Celler som blivit sekretessgranskade har markeras med två punkter (..). Celler som inte kan visas pga. att förvärvsåret ligger tidigare än mottagningsåret har också markerats med två punkter (..). 
 </dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:37:00</dcterms:modified>
+    <dcterms:identifier>MotFlyktAldKon</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/1" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/MotFlyktAldKon" />
@@ -156,7 +157,8 @@ Ytterligare en kategori, ”medhjälpande familjemedlemmar” ingår i ILO:s def
 Tabellerna har utsatts för en röjandekontroll för att undvika risken att identifiera enskilda personer. Celler som blivit sekretessgranskade har markeras med två punkter (..). Celler som inte kan visas pga. att förvärvsåret ligger tidigare än mottagningsåret har också markerats med två punkter (..). 
 </dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:37:00</dcterms:modified>
+    <dcterms:identifier>MotFlyktUtbKon</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/2" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/MotFlyktUtbKon" />
@@ -183,7 +185,8 @@ Ytterligare en kategori, ”medhjälpande familjemedlemmar” ingår i ILO:s def
 Tabellerna har utsatts för en röjandekontroll för att undvika risken att identifiera enskilda personer. Celler som blivit sekretessgranskade har markeras med två punkter (..). Celler som inte kan visas pga. att förvärvsåret ligger tidigare än mottagningsåret har också markerats med två punkter (..). 
 </dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:37:00</dcterms:modified>
+    <dcterms:identifier>MotFlyktLanKon</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/3" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/MotFlyktLanKon" />
@@ -195,7 +198,8 @@ Tabellerna har utsatts för en röjandekontroll för att undvika risken att iden
     <dcterms:title>Andel (i procent) kommunmottagna flyktingar som fått en första inkomst från arbete eller varit registrerade som egenföretagare PxcMetaTitleBy ålder vid mottagning, år efter mottagning, kön, tabellinnehåll PxcMetaTitleAnd mottagningsår</dcterms:title>
     <dcterms:description>I populationen ingår samtliga personer som kommunmottagits någon gång under perioden 1997 och framåt och var 20–64 år och folkbokförda 31/12 året för kommunmottagningen. De personer som emigrerat eller avlidit tas bort från populationen från och med det år då de inte längre är folkbokförda (dvs. emigrerat eller avlidit). Beräkningarna baseras alltså på de som fortfarande är folkbokförda respektive år.    För varje år efter mottagningsåret beräknas andelen som fram till och med detta år har fått en första inkomst från arbete eller varit registrerade som egenföretagare. Här ingår de som enligt Registerbaserad arbetsmarknadsstatistik (RAMS) har sysselsättningsstatusen 1 (=förvärvsarbetande) eller 5 (=ej förvärvsarbetande, men med kontrolluppgift från arbetsgivare eller att man deklarerat för passiv näringsverksamhet under året). För varje år man följer en kohort kommer populationen åldras ett år. Detta betyder exempelvis att de som kommunmottagits 1997 och då var i åldrarna 20–64 kommer att vara mellan 30 och 74 år tio år senare när beräkningen görs för år 2007.</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:37:00</dcterms:modified>
+    <dcterms:identifier>MotFlyktJobbKon</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/4" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/MotFlyktJobbKon" />
@@ -207,7 +211,8 @@ Tabellerna har utsatts för en röjandekontroll för att undvika risken att iden
     <dcterms:title>Statistik med inriktning mot arbetsmarknaden PxcMetaTitleBy region, kön, utbildningsnivå, bakgrundsvariabel, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
     <dcterms:description>Vistelsetid beräknas utifrån antal dagar och nytt år blir det först när 364 dagar övergår till 365 dagar. Det innebär att om en person har varit folkbokförd i Sverige i 729 dagar (1 år och 364 dagar) så hamnar personen i gruppen Vistelsetid 0-1 år. Om personen varit folkbokförd i 730 dagar så hamnar personen i gruppen Vistelsetid 2-3 år. På motsvarande sätt fungerar indelningen av övriga grupper vilket gör att man ska ha en vistelsetid på minst 3 650 dagar för att hamna i gruppen Vistelsetid 10- år.  Utbildningsregistret genomgick till årgång 2000 större kvalitetshöjande förändringar, ny nomenklatur och att antal nya källor, vilka ledde till ett tidsseriebrott. Detta gör att jämförelser med tidigare årgångar måste göras med stor försiktighet. För mer information se:  &lt;a  href=https://www.scb.se/hitta-statistik/statistik-efter-amne/utbildning-och-forskning/befolkningens-utbildning/befolkningens-utbildning/produktrelaterat/Fordjupad-information/kvalitetshojningen-i-utbildningsregistret-ar-2000/&gt; Mer om befolkningens utbildning&lt;/a&gt;.  Observera att gruppen EU/EFTA exkl. Norden respektive Övriga världen förändras över tid när länder blivit medlemmar i EU. Till exempel grupperas personer födda i Kroatien till EU/EFTA från 2013 och framåt, innan dess grupperades de till Övriga världen.</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:37:00</dcterms:modified>
+    <dcterms:identifier>IntGr1KomKonUtb</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/5" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr1KomKonUtb" />
@@ -219,7 +224,8 @@ Tabellerna har utsatts för en röjandekontroll för att undvika risken att iden
     <dcterms:title>Statistik med inriktning mot arbetsmarknaden PxcMetaTitleBy region, kön, utbildningsnivå, bakgrundsvariabel, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
     <dcterms:description>Vistelsetid beräknas utifrån antal dagar och nytt år blir det först när 364 dagar övergår till 365 dagar. Det innebär att om en person har varit folkbokförd i Sverige i 729 dagar (1 år och 364 dagar) så hamnar personen i gruppen Vistelsetid 0-1 år. Om personen varit folkbokförd i 730 dagar så hamnar personen i gruppen Vistelsetid 2-3 år. På motsvarande sätt fungerar indelningen av övriga grupper vilket gör att man ska ha en vistelsetid på minst 3 650 dagar för att hamna i gruppen Vistelsetid 10- år.  Utbildningsregistret genomgick till årgång 2000 större kvalitetshöjande förändringar, ny nomenklatur och att antal nya källor, vilka ledde till ett tidsseriebrott. Detta gör att jämförelser med tidigare årgångar måste göras med stor försiktighet. För mer information se:  &lt;a  href=https://www.scb.se/hitta-statistik/statistik-efter-amne/utbildning-och-forskning/befolkningens-utbildning/befolkningens-utbildning/produktrelaterat/Fordjupad-information/kvalitetshojningen-i-utbildningsregistret-ar-2000/&gt; Mer om befolkningens utbildning&lt;/a&gt;.  Observera att gruppen EU/EFTA exkl. Norden respektive Övriga världen förändras över tid när länder blivit medlemmar i EU. Till exempel grupperas personer födda i Kroatien till EU/EFTA från 2013 och framåt, innan dess grupperades de till Övriga världen.</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:37:00</dcterms:modified>
+    <dcterms:identifier>IntGr1LanKonUtb</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/16" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr1LanKonUtb" />
@@ -231,7 +237,8 @@ Tabellerna har utsatts för en röjandekontroll för att undvika risken att iden
     <dcterms:title>Statistik med inriktning mot arbetsmarknaden PxcMetaTitleBy region, kön, utbildningsnivå, bakgrundsvariabel, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
     <dcterms:description>Vistelsetid beräknas utifrån antal dagar och nytt år blir det först när 364 dagar övergår till 365 dagar. Det innebär att om en person har varit folkbokförd i Sverige i 729 dagar (1 år och 364 dagar) så hamnar personen i gruppen Vistelsetid 0-1 år. Om personen varit folkbokförd i 730 dagar så hamnar personen i gruppen Vistelsetid 2-3 år. På motsvarande sätt fungerar indelningen av övriga grupper vilket gör att man ska ha en vistelsetid på minst 3 650 dagar för att hamna i gruppen Vistelsetid 10- år.  Utbildningsregistret genomgick till årgång 2000 större kvalitetshöjande förändringar, ny nomenklatur och att antal nya källor, vilka ledde till ett tidsseriebrott. Detta gör att jämförelser med tidigare årgångar måste göras med stor försiktighet. För mer information se:  &lt;a  href=https://www.scb.se/hitta-statistik/statistik-efter-amne/utbildning-och-forskning/befolkningens-utbildning/befolkningens-utbildning/produktrelaterat/Fordjupad-information/kvalitetshojningen-i-utbildningsregistret-ar-2000/&gt; Mer om befolkningens utbildning&lt;/a&gt;.  Observera att gruppen EU/EFTA exkl. Norden respektive Övriga världen förändras över tid när länder blivit medlemmar i EU. Till exempel grupperas personer födda i Kroatien till EU/EFTA från 2013 och framåt, innan dess grupperades de till Övriga världen.</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:37:00</dcterms:modified>
+    <dcterms:identifier>IntGr1RikKonUtb</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/27" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr1RikKonUtb" />
@@ -243,7 +250,8 @@ Tabellerna har utsatts för en röjandekontroll för att undvika risken att iden
     <dcterms:title>Statistik med inriktning mot arbetsmarknaden PxcMetaTitleBy region, kön, bakgrundsvariabel, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
     <dcterms:description>Vistelsetid beräknas utifrån antal dagar och nytt år blir det först när 364 dagar övergår till 365 dagar. Det innebär att om en person har varit folkbokförd i Sverige i 729 dagar (1 år och 364 dagar) så hamnar personen i gruppen Vistelsetid 0-1 år. Om personen varit folkbokförd i 730 dagar så hamnar personen i gruppen Vistelsetid 2-3 år. På motsvarande sätt fungerar indelningen av övriga grupper vilket gör att man ska ha en vistelsetid på minst 3 650 dagar för att hamna i gruppen Vistelsetid 10- år.  Utbildningsregistret genomgick till årgång 2000 större kvalitetshöjande förändringar, ny nomenklatur och att antal nya källor, vilka ledde till ett tidsseriebrott. Detta gör att jämförelser med tidigare årgångar måste göras med stor försiktighet. För mer information se:  &lt;a  href=https://www.scb.se/hitta-statistik/statistik-efter-amne/utbildning-och-forskning/befolkningens-utbildning/befolkningens-utbildning/produktrelaterat/Fordjupad-information/kvalitetshojningen-i-utbildningsregistret-ar-2000/&gt; Mer om befolkningens utbildning&lt;/a&gt;.  Observera att gruppen EU/EFTA exkl. Norden respektive Övriga världen förändras över tid när länder blivit medlemmar i EU. Till exempel grupperas personer födda i Kroatien till EU/EFTA från 2013 och framåt, innan dess grupperades de till Övriga världen.</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:37:00</dcterms:modified>
+    <dcterms:identifier>IntGr1LUAKon</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/38" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr1LUAKon" />
@@ -255,7 +263,8 @@ Tabellerna har utsatts för en röjandekontroll för att undvika risken att iden
     <dcterms:title>Statistik med inriktning mot arbetsmarknaden PxcMetaTitleBy region, kön, bakgrundsvariabel, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
     <dcterms:description>Vistelsetid beräknas utifrån antal dagar och nytt år blir det först när 364 dagar övergår till 365 dagar. Det innebär att om en person har varit folkbokförd i Sverige i 729 dagar (1 år och 364 dagar) så hamnar personen i gruppen Vistelsetid 0-1 år. Om personen varit folkbokförd i 730 dagar så hamnar personen i gruppen Vistelsetid 2-3 år. På motsvarande sätt fungerar indelningen av övriga grupper vilket gör att man ska ha en vistelsetid på minst 3 650 dagar för att hamna i gruppen Vistelsetid 10- år.  Utbildningsregistret genomgick till årgång 2000 större kvalitetshöjande förändringar, ny nomenklatur och att antal nya källor, vilka ledde till ett tidsseriebrott. Detta gör att jämförelser med tidigare årgångar måste göras med stor försiktighet. För mer information se:  &lt;a  href=https://www.scb.se/hitta-statistik/statistik-efter-amne/utbildning-och-forskning/befolkningens-utbildning/befolkningens-utbildning/produktrelaterat/Fordjupad-information/kvalitetshojningen-i-utbildningsregistret-ar-2000/&gt; Mer om befolkningens utbildning&lt;/a&gt;.  Observera att gruppen EU/EFTA exkl. Norden respektive Övriga världen förändras över tid när länder blivit medlemmar i EU. Till exempel grupperas personer födda i Kroatien till EU/EFTA från 2013 och framåt, innan dess grupperades de till Övriga världen.</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:37:00</dcterms:modified>
+    <dcterms:identifier>IntGr1UrbKon</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/49" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr1UrbKon" />
@@ -281,7 +290,8 @@ Förvärvsarbetande är ett begrepp inom den årliga registerbaserade arbetsmark
 
 För att klassificeras som förvärvsarbetande krävs att personen har en löneinkomst som överstiger ett skattat gränsvärde, alternativt deklarerat för aktiv näringsverksamhet under det aktuella året. Information om löneinkomst och för vilken period inkomsten avser hämtas från Skatteverkets kontrolluppgifter. Från Skatteverket inhämtas även information om vilka personer som deklarerat för näringsverksamhet.  För mer information se &lt;a href="https://www.scb.se/hitta-statistik/statistik-efter-amne/arbetsmarknad/sysselsattning-forvarvsarbete-och-arbetstider/registerbaserad-arbetsmarknadsstatistik-rams/produktrelaterat/Fordjupad-information/forvarvsarbetande--ett-sysselsattningsbegrepp/"&gt;Förvärvsarbetande – ett sysselsättningsbegrepp.&lt;/a&gt;</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:37:00</dcterms:modified>
+    <dcterms:identifier>KomMotForv</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/60" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/KomMotForv" />
@@ -307,7 +317,8 @@ Förvärvsarbetande är ett begrepp inom den årliga registerbaserade arbetsmark
 
 För att klassificeras som förvärvsarbetande krävs att personen har en löneinkomst som överstiger ett skattat gränsvärde, alternativt deklarerat för aktiv näringsverksamhet under det aktuella året. Information om löneinkomst och för vilken period inkomsten avser hämtas från Skatteverkets kontrolluppgifter. Från Skatteverket inhämtas även information om vilka personer som deklarerat för näringsverksamhet.  För mer information se &lt;a href="https://www.scb.se/hitta-statistik/statistik-efter-amne/arbetsmarknad/sysselsattning-forvarvsarbete-och-arbetstider/registerbaserad-arbetsmarknadsstatistik-rams/produktrelaterat/Fordjupad-information/forvarvsarbetande--ett-sysselsattningsbegrepp/"&gt;Förvärvsarbetande – ett sysselsättningsbegrepp.&lt;/a&gt;</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:37:00</dcterms:modified>
+    <dcterms:identifier>KomMotForvAndel</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/61" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/KomMotForvAndel" />
@@ -319,7 +330,8 @@ För att klassificeras som förvärvsarbetande krävs att personen har en lönei
     <dcterms:title>Andel förvärvsarbetande kommunmottagna flyktingar, procent PxcMetaTitleBy region, kön, mottagningsår, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
     <dcterms:description>-</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:37:00</dcterms:modified>
+    <dcterms:identifier>VBMOTFLYKTLanKon</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/62" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/VBMOTFLYKTLanKon" />
@@ -331,7 +343,8 @@ För att klassificeras som förvärvsarbetande krävs att personen har en lönei
     <dcterms:title>Andel förvärvsarbetande kommunmottagna flyktingar, procent PxcMetaTitleBy region, kön, mottagningsår, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
     <dcterms:description>-</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:37:00</dcterms:modified>
+    <dcterms:identifier>VBtst2MotFlyktLanKon</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/63" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/VBtst2MotFlyktLanKon" />
@@ -343,7 +356,8 @@ För att klassificeras som förvärvsarbetande krävs att personen har en lönei
     <dcterms:title>Andel förvärvsarbetande kommunmottagna flyktingar, procent PxcMetaTitleBy region, kön, mottagningsår, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
     <dcterms:description>-</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:37:00</dcterms:modified>
+    <dcterms:identifier>NyTabTestMotFlyktLan</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/64" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/NyTabTestMotFlyktLan" />
@@ -356,7 +370,8 @@ För att klassificeras som förvärvsarbetande krävs att personen har en lönei
     <dcterms:description>Populationen avser folkbokförda i samtliga åldrar för variablerna Könsfördelning, procent och Ålder, procent. För variabeln Utbildningsnivå, procent avses folkbokförda i åldern 20–64 år.  Utbildningsregistret (UREG) har till version 2001-01-01, avseende året 2000, genomgått större kvalitetshöjande förändringar vilket leder till ett tidsseriebrott och gör att jämförelser med tidigare versioner av registret måste göras med stor försiktighet – för information se 
  &lt;a href="http://www.scb.se/hitta-statistik/statistik-efter-amne/utbildning-och-forskning/befolkningens-utbildning/befolkningens-utbildning/produktrelaterat/Fordjupad-information/kvalitetshojningen-i-utbildningsregistret-ar-2000/"&gt;Kvalitetshöjningen i Utbildningsregistret år 2000&lt;/a&gt;</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:37:00</dcterms:modified>
+    <dcterms:identifier>IntGr3KomS</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/65" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr3KomS" />
@@ -369,7 +384,8 @@ För att klassificeras som förvärvsarbetande krävs att personen har en lönei
     <dcterms:description>Populationen avser folkbokförda i samtliga åldrar för variablerna Könsfördelning, procent och Ålder, procent. För variabeln Utbildningsnivå, procent avses folkbokförda i åldern 20–64 år.  Utbildningsregistret (UREG) har till version 2001-01-01, avseende året 2000, genomgått större kvalitetshöjande förändringar vilket leder till ett tidsseriebrott och gör att jämförelser med tidigare versioner av registret måste göras med stor försiktighet – för information se 
  &lt;a href="http://www.scb.se/hitta-statistik/statistik-efter-amne/utbildning-och-forskning/befolkningens-utbildning/befolkningens-utbildning/produktrelaterat/Fordjupad-information/kvalitetshojningen-i-utbildningsregistret-ar-2000/"&gt;Kvalitetshöjningen i Utbildningsregistret år 2000&lt;/a&gt;</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:37:00</dcterms:modified>
+    <dcterms:identifier>IntGr3LanKONS</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/71" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr3LanKONS" />
@@ -382,7 +398,8 @@ För att klassificeras som förvärvsarbetande krävs att personen har en lönei
     <dcterms:description>Populationen avser folkbokförda i samtliga åldrar för variablerna Könsfördelning, procent och Ålder, procent. För variabeln Utbildningsnivå, procent avses folkbokförda i åldern 20–64 år.  Utbildningsregistret (UREG) har till version 2001-01-01, avseende året 2000, genomgått större kvalitetshöjande förändringar vilket leder till ett tidsseriebrott och gör att jämförelser med tidigare versioner av registret måste göras med stor försiktighet – för information se 
  &lt;a href="http://www.scb.se/hitta-statistik/statistik-efter-amne/utbildning-och-forskning/befolkningens-utbildning/befolkningens-utbildning/produktrelaterat/Fordjupad-information/kvalitetshojningen-i-utbildningsregistret-ar-2000/"&gt;Kvalitetshöjningen i Utbildningsregistret år 2000&lt;/a&gt;</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:37:00</dcterms:modified>
+    <dcterms:identifier>IntGr3RikKONS</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/77" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr3RikKONS" />
@@ -395,7 +412,8 @@ För att klassificeras som förvärvsarbetande krävs att personen har en lönei
     <dcterms:description>Populationen avser folkbokförda i samtliga åldrar för variablerna Könsfördelning, procent och Ålder, procent. För variabeln Utbildningsnivå, procent avses folkbokförda i åldern 20–64 år.  Utbildningsregistret (UREG) har till version 2001-01-01, avseende året 2000, genomgått större kvalitetshöjande förändringar vilket leder till ett tidsseriebrott och gör att jämförelser med tidigare versioner av registret måste göras med stor försiktighet – för information se 
  &lt;a href="http://www.scb.se/hitta-statistik/statistik-efter-amne/utbildning-och-forskning/befolkningens-utbildning/befolkningens-utbildning/produktrelaterat/Fordjupad-information/kvalitetshojningen-i-utbildningsregistret-ar-2000/"&gt;Kvalitetshöjningen i Utbildningsregistret år 2000&lt;/a&gt;</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:37:00</dcterms:modified>
+    <dcterms:identifier>IntGr3LUAS</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/83" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr3LUAS" />
@@ -408,7 +426,8 @@ För att klassificeras som förvärvsarbetande krävs att personen har en lönei
     <dcterms:description>Populationen avser folkbokförda i samtliga åldrar för variablerna Könsfördelning, procent och Ålder, procent. För variabeln Utbildningsnivå, procent avses folkbokförda i åldern 20–64 år.  Utbildningsregistret (UREG) har till version 2001-01-01, avseende året 2000, genomgått större kvalitetshöjande förändringar vilket leder till ett tidsseriebrott och gör att jämförelser med tidigare versioner av registret måste göras med stor försiktighet – för information se 
  &lt;a href="http://www.scb.se/hitta-statistik/statistik-efter-amne/utbildning-och-forskning/befolkningens-utbildning/befolkningens-utbildning/produktrelaterat/Fordjupad-information/kvalitetshojningen-i-utbildningsregistret-ar-2000/"&gt;Kvalitetshöjningen i Utbildningsregistret år 2000&lt;/a&gt;</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:37:00</dcterms:modified>
+    <dcterms:identifier>IntGr3URBS</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/89" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr3URBS" />
@@ -420,7 +439,8 @@ För att klassificeras som förvärvsarbetande krävs att personen har en lönei
     <dcterms:title>Statistik med inriktning mot demografi för utrikes födda PxcMetaTitleBy region, kön, variabel, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
     <dcterms:description>Populationen avser folkbokförda utrikes födda personer i samtliga åldrar.</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>IntGr3RikKONU</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/95" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr3RikKONU" />
@@ -432,7 +452,8 @@ För att klassificeras som förvärvsarbetande krävs att personen har en lönei
     <dcterms:title>Statistik med inriktning mot demografi för utrikes födda PxcMetaTitleBy region, variabel, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
     <dcterms:description>Populationen avser folkbokförda utrikes födda personer i samtliga åldrar.</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>IntGr3URBU</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/99" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr3URBU" />
@@ -444,7 +465,8 @@ För att klassificeras som förvärvsarbetande krävs att personen har en lönei
     <dcterms:title>Statistik med inriktning mot demografi för utrikes födda PxcMetaTitleBy region, variabel, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
     <dcterms:description>Populationen avser folkbokförda utrikes födda personer i samtliga åldrar.</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>IntGr3KomU</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/103" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr3KomU" />
@@ -456,7 +478,8 @@ För att klassificeras som förvärvsarbetande krävs att personen har en lönei
     <dcterms:title>Statistik med inriktning mot demografi för utrikes födda PxcMetaTitleBy region, variabel, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
     <dcterms:description>Populationen avser folkbokförda utrikes födda personer i samtliga åldrar.</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>IntGr3LUAU</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/107" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr3LUAU" />
@@ -468,7 +491,8 @@ För att klassificeras som förvärvsarbetande krävs att personen har en lönei
     <dcterms:title>Statistik med inriktning mot demografi för utrikes födda PxcMetaTitleBy region, kön, variabel, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
     <dcterms:description>Populationen avser folkbokförda utrikes födda personer i samtliga åldrar.</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>IntGr3LanKONU</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/111" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr3LanKONU" />
@@ -488,7 +512,8 @@ Den anhörige ska söka uppehållstillstånd inom viss tid från det att anknytn
 
 Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis kommer en person som var 18 år vid kommunmottagningen först med i tabellen två år efter mottagningsåret då personen är 20 år. En person som är 64 år vid mottagningsåret är bara med i tabellen på rader för 0 år efter mottagningsår, åren efter är personen över 64 år och därmed utanför populationen.</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>KomMotAntal</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/115" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/KomMotAntal" />
@@ -500,7 +525,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcterms:title>Statistik med inriktning mot transfereringar PxcMetaTitleBy region, variabel, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
     <dcterms:description>Vistelsetid beräknas utifrån antal dagar och nytt år blir det först när 364 dagar övergår till 365 dagar. Det innebär att om en person har varit folkbokförd i Sverige i 729 dagar (1 år och 364 dagar) så hamnar personen i gruppen Vistelsetid 0-1 år. Om personen varit folkbokförd i 730 dagar så hamnar personen i gruppen Vistelsetid 2-3 år. På motsvarande sätt fungerar indelningen av övriga grupper vilket gör att man ska ha en vistelsetid på minst 3 650 dagar för att hamna i gruppen Vistelsetid 10- år.  Utbildningsregistret genomgick till årgång 2000 större kvalitetshöjande förändringar, ny nomenklatur och att antal nya källor, vilka ledde till ett tidsseriebrott. Detta gör att jämförelser med tidigare årgångar måste göras med stor försiktighet. För mer information se:  &lt;a  href=https://www.scb.se/hitta-statistik/statistik-efter-amne/utbildning-och-forskning/befolkningens-utbildning/befolkningens-utbildning/produktrelaterat/Fordjupad-information/kvalitetshojningen-i-utbildningsregistret-ar-2000/&gt; Mer om befolkningens utbildning&lt;/a&gt;.  Observera att gruppen EU/EFTA exkl. Norden respektive Övriga världen förändras över tid när länder blivit medlemmar i EU. Till exempel grupperas personer födda i Kroatien till EU/EFTA från 2013 och framåt, innan dess grupperades de till Övriga världen.</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>IntGr4URB</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/116" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr4URB" />
@@ -512,7 +538,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcterms:title>Statistik med inriktning mot transfereringar PxcMetaTitleBy region, variabel, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
     <dcterms:description>Vistelsetid beräknas utifrån antal dagar och nytt år blir det först när 364 dagar övergår till 365 dagar. Det innebär att om en person har varit folkbokförd i Sverige i 729 dagar (1 år och 364 dagar) så hamnar personen i gruppen Vistelsetid 0-1 år. Om personen varit folkbokförd i 730 dagar så hamnar personen i gruppen Vistelsetid 2-3 år. På motsvarande sätt fungerar indelningen av övriga grupper vilket gör att man ska ha en vistelsetid på minst 3 650 dagar för att hamna i gruppen Vistelsetid 10- år.  Utbildningsregistret genomgick till årgång 2000 större kvalitetshöjande förändringar, ny nomenklatur och att antal nya källor, vilka ledde till ett tidsseriebrott. Detta gör att jämförelser med tidigare årgångar måste göras med stor försiktighet. För mer information se:  &lt;a  href=https://www.scb.se/hitta-statistik/statistik-efter-amne/utbildning-och-forskning/befolkningens-utbildning/befolkningens-utbildning/produktrelaterat/Fordjupad-information/kvalitetshojningen-i-utbildningsregistret-ar-2000/&gt; Mer om befolkningens utbildning&lt;/a&gt;.  Observera att gruppen EU/EFTA exkl. Norden respektive Övriga världen förändras över tid när länder blivit medlemmar i EU. Till exempel grupperas personer födda i Kroatien till EU/EFTA från 2013 och framåt, innan dess grupperades de till Övriga världen.</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>IntGr4LUA</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/123" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr4LUA" />
@@ -524,7 +551,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcterms:title>Statistik med inriktning mot transfereringar PxcMetaTitleBy region, variabel, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
     <dcterms:description>Vistelsetid beräknas utifrån antal dagar och nytt år blir det först när 364 dagar övergår till 365 dagar. Det innebär att om en person har varit folkbokförd i Sverige i 729 dagar (1 år och 364 dagar) så hamnar personen i gruppen Vistelsetid 0-1 år. Om personen varit folkbokförd i 730 dagar så hamnar personen i gruppen Vistelsetid 2-3 år. På motsvarande sätt fungerar indelningen av övriga grupper vilket gör att man ska ha en vistelsetid på minst 3 650 dagar för att hamna i gruppen Vistelsetid 10- år.  Utbildningsregistret genomgick till årgång 2000 större kvalitetshöjande förändringar, ny nomenklatur och att antal nya källor, vilka ledde till ett tidsseriebrott. Detta gör att jämförelser med tidigare årgångar måste göras med stor försiktighet. För mer information se:  &lt;a  href=https://www.scb.se/hitta-statistik/statistik-efter-amne/utbildning-och-forskning/befolkningens-utbildning/befolkningens-utbildning/produktrelaterat/Fordjupad-information/kvalitetshojningen-i-utbildningsregistret-ar-2000/&gt; Mer om befolkningens utbildning&lt;/a&gt;.  Observera att gruppen EU/EFTA exkl. Norden respektive Övriga världen förändras över tid när länder blivit medlemmar i EU. Till exempel grupperas personer födda i Kroatien till EU/EFTA från 2013 och framåt, innan dess grupperades de till Övriga världen.</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>IntGr4Kom</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/130" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr4Kom" />
@@ -536,7 +564,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcterms:title>Statistik med inriktning mot transfereringar PxcMetaTitleBy region, kön, variabel, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
     <dcterms:description>Vistelsetid beräknas utifrån antal dagar och nytt år blir det först när 364 dagar övergår till 365 dagar. Det innebär att om en person har varit folkbokförd i Sverige i 729 dagar (1 år och 364 dagar) så hamnar personen i gruppen Vistelsetid 0-1 år. Om personen varit folkbokförd i 730 dagar så hamnar personen i gruppen Vistelsetid 2-3 år. På motsvarande sätt fungerar indelningen av övriga grupper vilket gör att man ska ha en vistelsetid på minst 3 650 dagar för att hamna i gruppen Vistelsetid 10- år.  Utbildningsregistret genomgick till årgång 2000 större kvalitetshöjande förändringar, ny nomenklatur och att antal nya källor, vilka ledde till ett tidsseriebrott. Detta gör att jämförelser med tidigare årgångar måste göras med stor försiktighet. För mer information se:  &lt;a  href=https://www.scb.se/hitta-statistik/statistik-efter-amne/utbildning-och-forskning/befolkningens-utbildning/befolkningens-utbildning/produktrelaterat/Fordjupad-information/kvalitetshojningen-i-utbildningsregistret-ar-2000/&gt; Mer om befolkningens utbildning&lt;/a&gt;.  Observera att gruppen EU/EFTA exkl. Norden respektive Övriga världen förändras över tid när länder blivit medlemmar i EU. Till exempel grupperas personer födda i Kroatien till EU/EFTA från 2013 och framåt, innan dess grupperades de till Övriga världen.</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>IntGr4LanKON</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/137" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr4LanKON" />
@@ -548,7 +577,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcterms:title>Statistik med inriktning mot transfereringar PxcMetaTitleBy region, kön, variabel, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
     <dcterms:description>Vistelsetid beräknas utifrån antal dagar och nytt år blir det först när 364 dagar övergår till 365 dagar. Det innebär att om en person har varit folkbokförd i Sverige i 729 dagar (1 år och 364 dagar) så hamnar personen i gruppen Vistelsetid 0-1 år. Om personen varit folkbokförd i 730 dagar så hamnar personen i gruppen Vistelsetid 2-3 år. På motsvarande sätt fungerar indelningen av övriga grupper vilket gör att man ska ha en vistelsetid på minst 3 650 dagar för att hamna i gruppen Vistelsetid 10- år.  Utbildningsregistret genomgick till årgång 2000 större kvalitetshöjande förändringar, ny nomenklatur och att antal nya källor, vilka ledde till ett tidsseriebrott. Detta gör att jämförelser med tidigare årgångar måste göras med stor försiktighet. För mer information se:  &lt;a  href=https://www.scb.se/hitta-statistik/statistik-efter-amne/utbildning-och-forskning/befolkningens-utbildning/befolkningens-utbildning/produktrelaterat/Fordjupad-information/kvalitetshojningen-i-utbildningsregistret-ar-2000/&gt; Mer om befolkningens utbildning&lt;/a&gt;.  Observera att gruppen EU/EFTA exkl. Norden respektive Övriga världen förändras över tid när länder blivit medlemmar i EU. Till exempel grupperas personer födda i Kroatien till EU/EFTA från 2013 och framåt, innan dess grupperades de till Övriga världen.</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>IntGr4RikKON</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/144" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr4RikKON" />
@@ -560,7 +590,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcterms:title>Statistik med inriktning mot inkomster PxcMetaTitleBy region, variabel, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
     <dcterms:description>Vistelsetid beräknas utifrån antal dagar och nytt år blir det först när 364 dagar övergår till 365 dagar. Det innebär att om en person har varit folkbokförd i Sverige i 729 dagar (1 år och 364 dagar) så hamnar personen i gruppen Vistelsetid 0-1 år. Om personen varit folkbokförd i 730 dagar så hamnar personen i gruppen Vistelsetid 2-3 år. På motsvarande sätt fungerar indelningen av övriga grupper vilket gör att man ska ha en vistelsetid på minst 3 650 dagar för att hamna i gruppen Vistelsetid 10- år.  Utbildningsregistret genomgick till årgång 2000 större kvalitetshöjande förändringar, ny nomenklatur och att antal nya källor, vilka ledde till ett tidsseriebrott. Detta gör att jämförelser med tidigare årgångar måste göras med stor försiktighet. För mer information se:  &lt;a  href=https://www.scb.se/hitta-statistik/statistik-efter-amne/utbildning-och-forskning/befolkningens-utbildning/befolkningens-utbildning/produktrelaterat/Fordjupad-information/kvalitetshojningen-i-utbildningsregistret-ar-2000/&gt; Mer om befolkningens utbildning&lt;/a&gt;.  Observera att gruppen EU/EFTA exkl. Norden respektive Övriga världen förändras över tid när länder blivit medlemmar i EU. Till exempel grupperas personer födda i Kroatien till EU/EFTA från 2013 och framåt, innan dess grupperades de till Övriga världen.</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>IntGr5URB</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/151" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr5URB" />
@@ -572,7 +603,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcterms:title>Statistik med inriktning mot inkomster PxcMetaTitleBy region, variabel, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
     <dcterms:description>Vistelsetid beräknas utifrån antal dagar och nytt år blir det först när 364 dagar övergår till 365 dagar. Det innebär att om en person har varit folkbokförd i Sverige i 729 dagar (1 år och 364 dagar) så hamnar personen i gruppen Vistelsetid 0-1 år. Om personen varit folkbokförd i 730 dagar så hamnar personen i gruppen Vistelsetid 2-3 år. På motsvarande sätt fungerar indelningen av övriga grupper vilket gör att man ska ha en vistelsetid på minst 3 650 dagar för att hamna i gruppen Vistelsetid 10- år.  Utbildningsregistret genomgick till årgång 2000 större kvalitetshöjande förändringar, ny nomenklatur och att antal nya källor, vilka ledde till ett tidsseriebrott. Detta gör att jämförelser med tidigare årgångar måste göras med stor försiktighet. För mer information se:  &lt;a  href=https://www.scb.se/hitta-statistik/statistik-efter-amne/utbildning-och-forskning/befolkningens-utbildning/befolkningens-utbildning/produktrelaterat/Fordjupad-information/kvalitetshojningen-i-utbildningsregistret-ar-2000/&gt; Mer om befolkningens utbildning&lt;/a&gt;.  Observera att gruppen EU/EFTA exkl. Norden respektive Övriga världen förändras över tid när länder blivit medlemmar i EU. Till exempel grupperas personer födda i Kroatien till EU/EFTA från 2013 och framåt, innan dess grupperades de till Övriga världen.</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>IntGr5LUA</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/157" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr5LUA" />
@@ -584,7 +616,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcterms:title>Statistik med inriktning mot inkomster PxcMetaTitleBy region, variabel, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
     <dcterms:description>Vistelsetid beräknas utifrån antal dagar och nytt år blir det först när 364 dagar övergår till 365 dagar. Det innebär att om en person har varit folkbokförd i Sverige i 729 dagar (1 år och 364 dagar) så hamnar personen i gruppen Vistelsetid 0-1 år. Om personen varit folkbokförd i 730 dagar så hamnar personen i gruppen Vistelsetid 2-3 år. På motsvarande sätt fungerar indelningen av övriga grupper vilket gör att man ska ha en vistelsetid på minst 3 650 dagar för att hamna i gruppen Vistelsetid 10- år.  Utbildningsregistret genomgick till årgång 2000 större kvalitetshöjande förändringar, ny nomenklatur och att antal nya källor, vilka ledde till ett tidsseriebrott. Detta gör att jämförelser med tidigare årgångar måste göras med stor försiktighet. För mer information se:  &lt;a  href=https://www.scb.se/hitta-statistik/statistik-efter-amne/utbildning-och-forskning/befolkningens-utbildning/befolkningens-utbildning/produktrelaterat/Fordjupad-information/kvalitetshojningen-i-utbildningsregistret-ar-2000/&gt; Mer om befolkningens utbildning&lt;/a&gt;.  Observera att gruppen EU/EFTA exkl. Norden respektive Övriga världen förändras över tid när länder blivit medlemmar i EU. Till exempel grupperas personer födda i Kroatien till EU/EFTA från 2013 och framåt, innan dess grupperades de till Övriga världen.</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>IntGr5Kom</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/163" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr5Kom" />
@@ -596,7 +629,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcterms:title>Statistik med inriktning mot inkomster PxcMetaTitleBy region, kön, variabel, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
     <dcterms:description>Vistelsetid beräknas utifrån antal dagar och nytt år blir det först när 364 dagar övergår till 365 dagar. Det innebär att om en person har varit folkbokförd i Sverige i 729 dagar (1 år och 364 dagar) så hamnar personen i gruppen Vistelsetid 0-1 år. Om personen varit folkbokförd i 730 dagar så hamnar personen i gruppen Vistelsetid 2-3 år. På motsvarande sätt fungerar indelningen av övriga grupper vilket gör att man ska ha en vistelsetid på minst 3 650 dagar för att hamna i gruppen Vistelsetid 10- år.  Utbildningsregistret genomgick till årgång 2000 större kvalitetshöjande förändringar, ny nomenklatur och att antal nya källor, vilka ledde till ett tidsseriebrott. Detta gör att jämförelser med tidigare årgångar måste göras med stor försiktighet. För mer information se:  &lt;a  href=https://www.scb.se/hitta-statistik/statistik-efter-amne/utbildning-och-forskning/befolkningens-utbildning/befolkningens-utbildning/produktrelaterat/Fordjupad-information/kvalitetshojningen-i-utbildningsregistret-ar-2000/&gt; Mer om befolkningens utbildning&lt;/a&gt;.  Observera att gruppen EU/EFTA exkl. Norden respektive Övriga världen förändras över tid när länder blivit medlemmar i EU. Till exempel grupperas personer födda i Kroatien till EU/EFTA från 2013 och framåt, innan dess grupperades de till Övriga världen.</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>IntGr5LanKON</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/169" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr5LanKON" />
@@ -608,7 +642,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcterms:title>Statistik med inriktning mot inkomster PxcMetaTitleBy region, kön, variabel, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
     <dcterms:description>Vistelsetid beräknas utifrån antal dagar och nytt år blir det först när 364 dagar övergår till 365 dagar. Det innebär att om en person har varit folkbokförd i Sverige i 729 dagar (1 år och 364 dagar) så hamnar personen i gruppen Vistelsetid 0-1 år. Om personen varit folkbokförd i 730 dagar så hamnar personen i gruppen Vistelsetid 2-3 år. På motsvarande sätt fungerar indelningen av övriga grupper vilket gör att man ska ha en vistelsetid på minst 3 650 dagar för att hamna i gruppen Vistelsetid 10- år.  Utbildningsregistret genomgick till årgång 2000 större kvalitetshöjande förändringar, ny nomenklatur och att antal nya källor, vilka ledde till ett tidsseriebrott. Detta gör att jämförelser med tidigare årgångar måste göras med stor försiktighet. För mer information se:  &lt;a  href=https://www.scb.se/hitta-statistik/statistik-efter-amne/utbildning-och-forskning/befolkningens-utbildning/befolkningens-utbildning/produktrelaterat/Fordjupad-information/kvalitetshojningen-i-utbildningsregistret-ar-2000/&gt; Mer om befolkningens utbildning&lt;/a&gt;.  Observera att gruppen EU/EFTA exkl. Norden respektive Övriga världen förändras över tid när länder blivit medlemmar i EU. Till exempel grupperas personer födda i Kroatien till EU/EFTA från 2013 och framåt, innan dess grupperades de till Övriga världen.</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>IntGr5RikKON</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/175" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr5RikKON" />
@@ -620,7 +655,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcterms:title>Boendesegregationsindex, procent PxcMetaTitleBy region, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
     <dcterms:description>Segregationsindex är ett mått på skillnaden i bosättningsmönster mellan olika befolkningskategorier. Beräkningen görs här för de utrikes födda. För att skapa indexet delas kommunen upp i mindre geografiska områden, i detta fall används SAMS-koderna. Med hjälp av information om fördelningen av inrikes födda och utrikes födda beräknas avvikelsen område för område i förhållande till kommunens genomsnitt.  Dessa avvikelser summeras sedan till ett index som skalas från 0 till 100, där 0 betyder jämn fördelning över området och 100 betyder total segregering. För information om formeln för beräkningen se &lt;a href="https://www.scb.se/sv_/Hitta-statistik/Temaomraden/Integration/Statistik/Registerdata-for-integration/Integrationsstatistik-pa-stadsdelsniva/Om-statistiken---Integration-och-boende/"&gt;Om statistiken – Integration och boende&lt;/a&gt;.   Segregationsindex lämpar sig inte för att göra jämförelser mellan kommuner, men däremot för att beskriva utvecklingen över tid i kommunen.  Källa: &lt;a href="https://www.scb.se/stativ"&gt;Databasen STATIV&lt;/a&gt;</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>IntGr7Kom</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/181" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr7Kom" />
@@ -632,7 +668,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcterms:title>Statistik med inriktning mot boende PxcMetaTitleBy region, variabel, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
     <dcterms:description>Vistelsetid beräknas utifrån antal dagar och nytt år blir det först när 364 dagar övergår till 365 dagar. Det innebär att om en person har varit folkbokförd i Sverige i 729 dagar (1 år och 364 dagar) så hamnar personen i gruppen Vistelsetid 0-1 år. Om personen varit folkbokförd i 730 dagar så hamnar personen i gruppen Vistelsetid 2-3 år. På motsvarande sätt fungerar indelningen av övriga grupper vilket gör att man ska ha en vistelsetid på minst 3 650 dagar för att hamna i gruppen Vistelsetid 10- år.  Utbildningsregistret genomgick till årgång 2000 större kvalitetshöjande förändringar, ny nomenklatur och att antal nya källor, vilka ledde till ett tidsseriebrott. Detta gör att jämförelser med tidigare årgångar måste göras med stor försiktighet. För mer information se:  &lt;a  href=https://www.scb.se/hitta-statistik/statistik-efter-amne/utbildning-och-forskning/befolkningens-utbildning/befolkningens-utbildning/produktrelaterat/Fordjupad-information/kvalitetshojningen-i-utbildningsregistret-ar-2000/&gt; Mer om befolkningens utbildning&lt;/a&gt;.  Observera att gruppen EU/EFTA exkl. Norden respektive Övriga världen förändras över tid när länder blivit medlemmar i EU. Till exempel grupperas personer födda i Kroatien till EU/EFTA från 2013 och framåt, innan dess grupperades de till Övriga världen.</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>IntGr6Kom</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/182" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr6Kom" />
@@ -644,7 +681,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcterms:title>Statistik med inriktning mot boende PxcMetaTitleBy region, variabel, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
     <dcterms:description>Vistelsetid beräknas utifrån antal dagar och nytt år blir det först när 364 dagar övergår till 365 dagar. Det innebär att om en person har varit folkbokförd i Sverige i 729 dagar (1 år och 364 dagar) så hamnar personen i gruppen Vistelsetid 0-1 år. Om personen varit folkbokförd i 730 dagar så hamnar personen i gruppen Vistelsetid 2-3 år. På motsvarande sätt fungerar indelningen av övriga grupper vilket gör att man ska ha en vistelsetid på minst 3 650 dagar för att hamna i gruppen Vistelsetid 10- år.  Utbildningsregistret genomgick till årgång 2000 större kvalitetshöjande förändringar, ny nomenklatur och att antal nya källor, vilka ledde till ett tidsseriebrott. Detta gör att jämförelser med tidigare årgångar måste göras med stor försiktighet. För mer information se:  &lt;a  href=https://www.scb.se/hitta-statistik/statistik-efter-amne/utbildning-och-forskning/befolkningens-utbildning/befolkningens-utbildning/produktrelaterat/Fordjupad-information/kvalitetshojningen-i-utbildningsregistret-ar-2000/&gt; Mer om befolkningens utbildning&lt;/a&gt;.  Observera att gruppen EU/EFTA exkl. Norden respektive Övriga världen förändras över tid när länder blivit medlemmar i EU. Till exempel grupperas personer födda i Kroatien till EU/EFTA från 2013 och framåt, innan dess grupperades de till Övriga världen.</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>IntGr6LUA</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/187" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr6LUA" />
@@ -656,7 +694,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcterms:title>Statistik med inriktning mot boende PxcMetaTitleBy region, kön, variabel, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
     <dcterms:description>Vistelsetid beräknas utifrån antal dagar och nytt år blir det först när 364 dagar övergår till 365 dagar. Det innebär att om en person har varit folkbokförd i Sverige i 729 dagar (1 år och 364 dagar) så hamnar personen i gruppen Vistelsetid 0-1 år. Om personen varit folkbokförd i 730 dagar så hamnar personen i gruppen Vistelsetid 2-3 år. På motsvarande sätt fungerar indelningen av övriga grupper vilket gör att man ska ha en vistelsetid på minst 3 650 dagar för att hamna i gruppen Vistelsetid 10- år.  Utbildningsregistret genomgick till årgång 2000 större kvalitetshöjande förändringar, ny nomenklatur och att antal nya källor, vilka ledde till ett tidsseriebrott. Detta gör att jämförelser med tidigare årgångar måste göras med stor försiktighet. För mer information se:  &lt;a  href=https://www.scb.se/hitta-statistik/statistik-efter-amne/utbildning-och-forskning/befolkningens-utbildning/befolkningens-utbildning/produktrelaterat/Fordjupad-information/kvalitetshojningen-i-utbildningsregistret-ar-2000/&gt; Mer om befolkningens utbildning&lt;/a&gt;.  Observera att gruppen EU/EFTA exkl. Norden respektive Övriga världen förändras över tid när länder blivit medlemmar i EU. Till exempel grupperas personer födda i Kroatien till EU/EFTA från 2013 och framåt, innan dess grupperades de till Övriga världen.</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>IntGr6LanKon</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/192" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr6LanKon" />
@@ -668,7 +707,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcterms:title>Statistik med inriktning mot boende PxcMetaTitleBy region, variabel, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
     <dcterms:description>Vistelsetid beräknas utifrån antal dagar och nytt år blir det först när 364 dagar övergår till 365 dagar. Det innebär att om en person har varit folkbokförd i Sverige i 729 dagar (1 år och 364 dagar) så hamnar personen i gruppen Vistelsetid 0-1 år. Om personen varit folkbokförd i 730 dagar så hamnar personen i gruppen Vistelsetid 2-3 år. På motsvarande sätt fungerar indelningen av övriga grupper vilket gör att man ska ha en vistelsetid på minst 3 650 dagar för att hamna i gruppen Vistelsetid 10- år.  Utbildningsregistret genomgick till årgång 2000 större kvalitetshöjande förändringar, ny nomenklatur och att antal nya källor, vilka ledde till ett tidsseriebrott. Detta gör att jämförelser med tidigare årgångar måste göras med stor försiktighet. För mer information se:  &lt;a  href=https://www.scb.se/hitta-statistik/statistik-efter-amne/utbildning-och-forskning/befolkningens-utbildning/befolkningens-utbildning/produktrelaterat/Fordjupad-information/kvalitetshojningen-i-utbildningsregistret-ar-2000/&gt; Mer om befolkningens utbildning&lt;/a&gt;.  Observera att gruppen EU/EFTA exkl. Norden respektive Övriga världen förändras över tid när länder blivit medlemmar i EU. Till exempel grupperas personer födda i Kroatien till EU/EFTA från 2013 och framåt, innan dess grupperades de till Övriga världen.</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>IntGr6URB</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/197" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr6URB" />
@@ -680,7 +720,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcterms:title>Statistik med inriktning mot boende PxcMetaTitleBy region, kön, variabel, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
     <dcterms:description>Vistelsetid beräknas utifrån antal dagar och nytt år blir det först när 364 dagar övergår till 365 dagar. Det innebär att om en person har varit folkbokförd i Sverige i 729 dagar (1 år och 364 dagar) så hamnar personen i gruppen Vistelsetid 0-1 år. Om personen varit folkbokförd i 730 dagar så hamnar personen i gruppen Vistelsetid 2-3 år. På motsvarande sätt fungerar indelningen av övriga grupper vilket gör att man ska ha en vistelsetid på minst 3 650 dagar för att hamna i gruppen Vistelsetid 10- år.  Utbildningsregistret genomgick till årgång 2000 större kvalitetshöjande förändringar, ny nomenklatur och att antal nya källor, vilka ledde till ett tidsseriebrott. Detta gör att jämförelser med tidigare årgångar måste göras med stor försiktighet. För mer information se:  &lt;a  href=https://www.scb.se/hitta-statistik/statistik-efter-amne/utbildning-och-forskning/befolkningens-utbildning/befolkningens-utbildning/produktrelaterat/Fordjupad-information/kvalitetshojningen-i-utbildningsregistret-ar-2000/&gt; Mer om befolkningens utbildning&lt;/a&gt;.  Observera att gruppen EU/EFTA exkl. Norden respektive Övriga världen förändras över tid när länder blivit medlemmar i EU. Till exempel grupperas personer födda i Kroatien till EU/EFTA från 2013 och framåt, innan dess grupperades de till Övriga världen.</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>IntGr6RikKon</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/202" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr6RikKon" />
@@ -692,7 +733,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcterms:title>Statistik med inriktning mot flyttmönster PxcMetaTitleBy region, variabel, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
     <dcterms:description>-</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>IntGr2Kom</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/207" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/208" />
@@ -705,7 +747,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcterms:title>Statistik med inriktning mot flyttmönster PxcMetaTitleBy region, variabel, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
     <dcterms:description>-</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>IntGr2LUA</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/215" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr2LUA" />
@@ -717,7 +760,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcterms:title>Statistik med inriktning mot flyttmönster PxcMetaTitleBy region, variabel, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
     <dcterms:description>-</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>IntGr2Lan</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/219" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr2Lan" />
@@ -729,7 +773,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcterms:title>Statistik med inriktning mot flyttmönster PxcMetaTitleBy region, variabel, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
     <dcterms:description>-</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>IntGr2URB</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/223" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr2URB" />
@@ -741,7 +786,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcterms:title>Andel personer behöriga till gymnasium och högskola PxcMetaTitleBy region, variabel, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
     <dcterms:description>-</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>IntGr8Kom2</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/227" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr8Kom2" />
@@ -753,7 +799,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcterms:title>Andel personer behöriga till gymnasium och högskola PxcMetaTitleBy region, variabel, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
     <dcterms:description>-</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>IntGr8LuaKon2</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/229" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr8LuaKon2" />
@@ -765,7 +812,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcterms:title>Andel personer behöriga till gymnasium och högskola PxcMetaTitleBy region, kön, variabel, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
     <dcterms:description>Vistelsetid beräknas utifrån antal dagar och nytt år blir det först när 364 dagar övergår till 365 dagar. Det innebär att om en person har varit folkbokförd i Sverige i 729 dagar (1 år och 364 dagar) så hamnar personen i gruppen Vistelsetid 0-1 år. Om personen varit folkbokförd i 730 dagar så hamnar personen i gruppen Vistelsetid 2-3 år. På motsvarande sätt fungerar indelningen av övriga grupper vilket gör att man ska ha en vistelsetid på minst 3 650 dagar för att hamna i gruppen Vistelsetid 10- år.  Utbildningsregistret genomgick till årgång 2000 större kvalitetshöjande förändringar, ny nomenklatur och att antal nya källor, vilka ledde till ett tidsseriebrott. Detta gör att jämförelser med tidigare årgångar måste göras med stor försiktighet. För mer information se:  &lt;a  href=https://www.scb.se/hitta-statistik/statistik-efter-amne/utbildning-och-forskning/befolkningens-utbildning/befolkningens-utbildning/produktrelaterat/Fordjupad-information/kvalitetshojningen-i-utbildningsregistret-ar-2000/&gt; Mer om befolkningens utbildning&lt;/a&gt;.  Observera att gruppen EU/EFTA exkl. Norden respektive Övriga världen förändras över tid när länder blivit medlemmar i EU. Till exempel grupperas personer födda i Kroatien till EU/EFTA från 2013 och framåt, innan dess grupperades de till Övriga världen.</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>IntGr8LanKON2</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/231" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr8LanKON2" />
@@ -777,7 +825,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcterms:title>Andel personer behöriga till gymnasium och högskola PxcMetaTitleBy region, variabel, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
     <dcterms:description>-</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>IntGr8URBKon2</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/233" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr8URBKon2" />
@@ -789,7 +838,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcterms:title>Andel behöriga till gymnasium och högskola PxcMetaTitleBy region, kön, variabel, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
     <dcterms:description>Vistelsetid beräknas utifrån antal dagar och nytt år blir det först när 364 dagar övergår till 365 dagar. Det innebär att om en person har varit folkbokförd i Sverige i 729 dagar (1 år och 364 dagar) så hamnar personen i gruppen Vistelsetid 0-1 år. Om personen varit folkbokförd i 730 dagar så hamnar personen i gruppen Vistelsetid 2-3 år. På motsvarande sätt fungerar indelningen av övriga grupper vilket gör att man ska ha en vistelsetid på minst 3 650 dagar för att hamna i gruppen Vistelsetid 10- år.  Utbildningsregistret genomgick till årgång 2000 större kvalitetshöjande förändringar, ny nomenklatur och att antal nya källor, vilka ledde till ett tidsseriebrott. Detta gör att jämförelser med tidigare årgångar måste göras med stor försiktighet. För mer information se:  &lt;a  href=https://www.scb.se/hitta-statistik/statistik-efter-amne/utbildning-och-forskning/befolkningens-utbildning/befolkningens-utbildning/produktrelaterat/Fordjupad-information/kvalitetshojningen-i-utbildningsregistret-ar-2000/&gt; Mer om befolkningens utbildning&lt;/a&gt;.  Observera att gruppen EU/EFTA exkl. Norden respektive Övriga världen förändras över tid när länder blivit medlemmar i EU. Till exempel grupperas personer födda i Kroatien till EU/EFTA från 2013 och framåt, innan dess grupperades de till Övriga världen.</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>IntGr8RikKON2</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/235" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr8RikKON2" />
@@ -801,7 +851,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcterms:title>Andel personer godkända i svenska för invandrare (sfi) PxcMetaTitleBy region, kön, variabel, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
     <dcterms:description>-</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>IntGr8LanKON3</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/237" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr8LanKON3" />
@@ -813,7 +864,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcterms:title>Andel personer godkända i svenska för invandrare (sfi) PxcMetaTitleBy region, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
     <dcterms:description>-</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>IntGr8Kom3</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/239" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr8Kom3" />
@@ -825,7 +877,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcterms:title>Andel personer godkända i svenska för invandrare (sfi)  PxcMetaTitleBy region, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
     <dcterms:description>-</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>IntGr8LUA3</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/241" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr8LUA3" />
@@ -837,7 +890,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcterms:title>Andel personer godkända i svenska för invandrare (sfi) PxcMetaTitleBy region, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
     <dcterms:description>-</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>IntGr8URB3</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/243" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr8URB3" />
@@ -849,7 +903,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcterms:title>Andel personer godkända i svenska för invandrare (sfi) PxcMetaTitleBy region, kön, variabel, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
     <dcterms:description>-</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>IntGr8RikKON3</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/245" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr8RikKON3" />
@@ -861,7 +916,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcterms:title>Andel personer behöriga till gymnasium och högskola PxcMetaTitleBy variabel, kön, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
     <dcterms:description>-</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>TESTMOLIN99</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/247" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/TESTMOLIN99" />
@@ -873,7 +929,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcterms:title>Andel behöriga till gymnasium i befolkningen, procent PxcMetaTitleBy kön, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
     <dcterms:description>-</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>TEST9999</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/249" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/250" />
@@ -886,7 +943,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcterms:title>Antal behöriga till gymnasium i befolkningen, procent PxcMetaTitleBy kön, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
     <dcterms:description>-</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>TESTSCBSIUL</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/251" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/TESTSCBSIUL" />
@@ -898,7 +956,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcterms:title>Antal behöriga till gymnasium i befolkningen, procent PxcMetaTitleBy kön, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
     <dcterms:description>-</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>TESTSCBSIUL2</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/252" />
@@ -911,7 +970,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcterms:title>Antal behöriga till gymnasium i befolkningen, procent PxcMetaTitleBy kön, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
     <dcterms:description>-</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>TESTSCBSIUL3</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/253" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/TESTSCBSIUL3" />
@@ -923,7 +983,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcterms:title>Antal behöriga till gymnasium i befolkningen, procent PxcMetaTitleBy kön, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
     <dcterms:description>-</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>TESTSCBSIUL4</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/254" />
@@ -936,7 +997,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcterms:title>Antal behöriga till gymnasium i befolkningen, procent PxcMetaTitleBy kön, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
     <dcterms:description>-</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>TESTSCBSIUL5</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/255" />
@@ -949,7 +1011,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcterms:title>Antal behöriga till gymnasium i befolkningen, procent PxcMetaTitleBy kön, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
     <dcterms:description>-</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>TESTSCBSIUL6</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/256" />
@@ -962,7 +1025,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcterms:title>Antal behöriga till gymnasium i befolkningen, procent PxcMetaTitleBy kön, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
     <dcterms:description>-</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>TESTSCBSIUL7</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/257" />
@@ -975,7 +1039,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcterms:title>Statistik med inriktning mot ohälsotalet PxcMetaTitleBy region, variabel, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
     <dcterms:description>Vistelsetid beräknas utifrån antal dagar och nytt år blir det först när 364 dagar övergår till 365 dagar. Det innebär att om en person har varit folkbokförd i Sverige i 729 dagar (1 år och 364 dagar) så hamnar personen i gruppen Vistelsetid 0-1 år. Om personen varit folkbokförd i 730 dagar så hamnar personen i gruppen Vistelsetid 2-3 år. På motsvarande sätt fungerar indelningen av övriga grupper vilket gör att man ska ha en vistelsetid på minst 3 650 dagar för att hamna i gruppen Vistelsetid 10- år.  Utbildningsregistret genomgick till årgång 2000 större kvalitetshöjande förändringar, ny nomenklatur och att antal nya källor, vilka ledde till ett tidsseriebrott. Detta gör att jämförelser med tidigare årgångar måste göras med stor försiktighet. För mer information se:  &lt;a  href=https://www.scb.se/hitta-statistik/statistik-efter-amne/utbildning-och-forskning/befolkningens-utbildning/befolkningens-utbildning/produktrelaterat/Fordjupad-information/kvalitetshojningen-i-utbildningsregistret-ar-2000/&gt; Mer om befolkningens utbildning&lt;/a&gt;.  Observera att gruppen EU/EFTA exkl. Norden respektive Övriga världen förändras över tid när länder blivit medlemmar i EU. Till exempel grupperas personer födda i Kroatien till EU/EFTA från 2013 och framåt, innan dess grupperades de till Övriga världen.</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>IntGr10Kom</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/258" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr10Kom" />
@@ -987,7 +1052,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcterms:title>Statistik med inriktning mot ohälsotalet PxcMetaTitleBy region, variabel, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
     <dcterms:description>Vistelsetid beräknas utifrån antal dagar och nytt år blir det först när 364 dagar övergår till 365 dagar. Det innebär att om en person har varit folkbokförd i Sverige i 729 dagar (1 år och 364 dagar) så hamnar personen i gruppen Vistelsetid 0-1 år. Om personen varit folkbokförd i 730 dagar så hamnar personen i gruppen Vistelsetid 2-3 år. På motsvarande sätt fungerar indelningen av övriga grupper vilket gör att man ska ha en vistelsetid på minst 3 650 dagar för att hamna i gruppen Vistelsetid 10- år.  Utbildningsregistret genomgick till årgång 2000 större kvalitetshöjande förändringar, ny nomenklatur och att antal nya källor, vilka ledde till ett tidsseriebrott. Detta gör att jämförelser med tidigare årgångar måste göras med stor försiktighet. För mer information se:  &lt;a  href=https://www.scb.se/hitta-statistik/statistik-efter-amne/utbildning-och-forskning/befolkningens-utbildning/befolkningens-utbildning/produktrelaterat/Fordjupad-information/kvalitetshojningen-i-utbildningsregistret-ar-2000/&gt; Mer om befolkningens utbildning&lt;/a&gt;.  Observera att gruppen EU/EFTA exkl. Norden respektive Övriga världen förändras över tid när länder blivit medlemmar i EU. Till exempel grupperas personer födda i Kroatien till EU/EFTA från 2013 och framåt, innan dess grupperades de till Övriga världen.</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>IntGr10LUA</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/260" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/261" />
@@ -1000,7 +1066,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcterms:title>Statistik med inriktning mot ohälsotalet PxcMetaTitleBy region, kön, variabel, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
     <dcterms:description>Vistelsetid beräknas utifrån antal dagar och nytt år blir det först när 364 dagar övergår till 365 dagar. Det innebär att om en person har varit folkbokförd i Sverige i 729 dagar (1 år och 364 dagar) så hamnar personen i gruppen Vistelsetid 0-1 år. Om personen varit folkbokförd i 730 dagar så hamnar personen i gruppen Vistelsetid 2-3 år. På motsvarande sätt fungerar indelningen av övriga grupper vilket gör att man ska ha en vistelsetid på minst 3 650 dagar för att hamna i gruppen Vistelsetid 10- år.  Utbildningsregistret genomgick till årgång 2000 större kvalitetshöjande förändringar, ny nomenklatur och att antal nya källor, vilka ledde till ett tidsseriebrott. Detta gör att jämförelser med tidigare årgångar måste göras med stor försiktighet. För mer information se:  &lt;a  href=https://www.scb.se/hitta-statistik/statistik-efter-amne/utbildning-och-forskning/befolkningens-utbildning/befolkningens-utbildning/produktrelaterat/Fordjupad-information/kvalitetshojningen-i-utbildningsregistret-ar-2000/&gt; Mer om befolkningens utbildning&lt;/a&gt;.  Observera att gruppen EU/EFTA exkl. Norden respektive Övriga världen förändras över tid när länder blivit medlemmar i EU. Till exempel grupperas personer födda i Kroatien till EU/EFTA från 2013 och framåt, innan dess grupperades de till Övriga världen.</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>IntGr10LanKon</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/264" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr10LanKon" />
@@ -1012,7 +1079,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcterms:title>Statistik med inriktning mot ohälsotalet PxcMetaTitleBy region, variabel, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
     <dcterms:description>Vistelsetid beräknas utifrån antal dagar och nytt år blir det först när 364 dagar övergår till 365 dagar. Det innebär att om en person har varit folkbokförd i Sverige i 729 dagar (1 år och 364 dagar) så hamnar personen i gruppen Vistelsetid 0-1 år. Om personen varit folkbokförd i 730 dagar så hamnar personen i gruppen Vistelsetid 2-3 år. På motsvarande sätt fungerar indelningen av övriga grupper vilket gör att man ska ha en vistelsetid på minst 3 650 dagar för att hamna i gruppen Vistelsetid 10- år.  Utbildningsregistret genomgick till årgång 2000 större kvalitetshöjande förändringar, ny nomenklatur och att antal nya källor, vilka ledde till ett tidsseriebrott. Detta gör att jämförelser med tidigare årgångar måste göras med stor försiktighet. För mer information se:  &lt;a  href=https://www.scb.se/hitta-statistik/statistik-efter-amne/utbildning-och-forskning/befolkningens-utbildning/befolkningens-utbildning/produktrelaterat/Fordjupad-information/kvalitetshojningen-i-utbildningsregistret-ar-2000/&gt; Mer om befolkningens utbildning&lt;/a&gt;.  Observera att gruppen EU/EFTA exkl. Norden respektive Övriga världen förändras över tid när länder blivit medlemmar i EU. Till exempel grupperas personer födda i Kroatien till EU/EFTA från 2013 och framåt, innan dess grupperades de till Övriga världen.</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>IntGr10URB</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/266" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr10URB" />
@@ -1024,7 +1092,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcterms:title>Statistik med inriktning mot ohälsotalet PxcMetaTitleBy region, kön, variabel, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
     <dcterms:description>Vistelsetid beräknas utifrån antal dagar och nytt år blir det först när 364 dagar övergår till 365 dagar. Det innebär att om en person har varit folkbokförd i Sverige i 729 dagar (1 år och 364 dagar) så hamnar personen i gruppen Vistelsetid 0-1 år. Om personen varit folkbokförd i 730 dagar så hamnar personen i gruppen Vistelsetid 2-3 år. På motsvarande sätt fungerar indelningen av övriga grupper vilket gör att man ska ha en vistelsetid på minst 3 650 dagar för att hamna i gruppen Vistelsetid 10- år.  Utbildningsregistret genomgick till årgång 2000 större kvalitetshöjande förändringar, ny nomenklatur och att antal nya källor, vilka ledde till ett tidsseriebrott. Detta gör att jämförelser med tidigare årgångar måste göras med stor försiktighet. För mer information se:  &lt;a  href=https://www.scb.se/hitta-statistik/statistik-efter-amne/utbildning-och-forskning/befolkningens-utbildning/befolkningens-utbildning/produktrelaterat/Fordjupad-information/kvalitetshojningen-i-utbildningsregistret-ar-2000/&gt; Mer om befolkningens utbildning&lt;/a&gt;.  Observera att gruppen EU/EFTA exkl. Norden respektive Övriga världen förändras över tid när länder blivit medlemmar i EU. Till exempel grupperas personer födda i Kroatien till EU/EFTA från 2013 och framåt, innan dess grupperades de till Övriga världen.</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>IntGr10RikKon</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/268" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr10RikKon" />
@@ -1036,7 +1105,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcterms:title>Andel valda och nominerade PxcMetaTitleBy region, variabel, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
     <dcterms:description>-</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>IntGr9Kom2</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/270" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr9Kom2" />
@@ -1048,7 +1118,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcterms:title>Andel valda och nominerade PxcMetaTitleBy region, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
     <dcterms:description>-</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>IntGr9LUA2</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/272" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr9LUA2" />
@@ -1060,7 +1131,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcterms:title>Andel valda och nominerade PxcMetaTitleBy region, kön, variabel, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
     <dcterms:description>-</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>IntGr9LanKON2</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/274" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr9LanKON2" />
@@ -1072,7 +1144,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcterms:title>Andel valda och nominerade PxcMetaTitleBy region, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
     <dcterms:description>-</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>IntGr9URB2</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/276" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr9URB2" />
@@ -1084,7 +1157,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcterms:title>Andel valda och nominerade PxcMetaTitleBy region, kön, variabel, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
     <dcterms:description>-</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>IntGr9RikKON2</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/278" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr9RikKON2" />
@@ -1096,7 +1170,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcterms:title>Valdeltagande i val till riksdag, kommun och landsting, procent PxcMetaTitleBy region, variabel, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
     <dcterms:description>Antalet röstande dividerat med antalet röstberättigade. I val till riksdagen är endast svenska medborgare röstberättigade. Källa: &lt;a href="http://www.scb.se/ME0104"&gt;Allmänna val, valresultat&lt;/a&gt; </dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>IntGr9Kom1</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/280" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr9Kom1" />
@@ -1108,7 +1183,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcterms:title>Valdeltagande i val till riksdag, kommun och landsting, procent PxcMetaTitleBy region, variabel, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
     <dcterms:description>Antalet röstande dividerat med antalet röstberättigade. I val till riksdagen är endast svenska medborgare röstberättigade. Källa: &lt;a href="http://www.scb.se/ME0104"&gt;Allmänna val, valresultat&lt;/a&gt; </dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>IntGr9LUA1</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/281" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr9LUA1" />
@@ -1120,7 +1196,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcterms:title>Valdeltagande i val till riksdag, kommun och landsting, procent PxcMetaTitleBy region, variabel, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
     <dcterms:description>Antalet röstande dividerat med antalet röstberättigade. I val till riksdagen är endast svenska medborgare röstberättigade. Källa: &lt;a href="http://www.scb.se/ME0104"&gt;Allmänna val, valresultat&lt;/a&gt; </dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>IntGr9Lan1</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/282" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr9Lan1" />
@@ -1132,7 +1209,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcterms:title>Valdeltagande i val till riksdag, kommun och landsting, procent PxcMetaTitleBy region, variabel, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
     <dcterms:description>Antalet röstande dividerat med antalet röstberättigade. I val till riksdagen är endast svenska medborgare röstberättigade. Källa: &lt;a href="http://www.scb.se/ME0104"&gt;Allmänna val, valresultat&lt;/a&gt; </dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>IntGr9URB1</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/283" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr9URB1" />
@@ -1144,7 +1222,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcterms:title>Valdeltagande i val till riksdag, kommun och landsting, procent PxcMetaTitleBy region, variabel, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
     <dcterms:description>Antalet röstande dividerat med antalet röstberättigade. I val till riksdagen är endast svenska medborgare röstberättigade. Källa: &lt;a href="http://www.scb.se/ME0104"&gt;Allmänna val, valresultat&lt;/a&gt; </dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>IntGr9Rik1</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/284" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr9Rik1" />
@@ -1159,7 +1238,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
  &lt;a href="http://www.reglab.se/wp-content/uploads/2017/10/Regionala-Matchningsindikatorer-%E2%88%92-dec-2014.pdf" target="_blank"&gt;Regionala matchningsindikatorer - december 2014 (pdf)&lt;/a&gt; 
  &lt;a href="http://www.reglab.se/wp-content/uploads/2017/05/REG-Matchningsind_webb-Kl-1715-21-juni-2018.pdf" target="_blank"&gt;Regionala matchningsindikatorer - fördjupad analys (pdf)&lt;/a&gt; </dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>RegionIndE1K</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/285" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/286" />
@@ -1175,7 +1255,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
  &lt;a href="http://www.reglab.se/wp-content/uploads/2017/10/Regionala-Matchningsindikatorer-%E2%88%92-dec-2014.pdf" target="_blank"&gt;Regionala matchningsindikatorer - december 2014 (pdf)&lt;/a&gt; 
  &lt;a href="http://www.reglab.se/wp-content/uploads/2017/05/REG-Matchningsind_webb-Kl-1715-21-juni-2018.pdf" target="_blank"&gt;Regionala matchningsindikatorer - fördjupad analys (pdf)&lt;/a&gt; </dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>RegionIndE1Ar</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/289" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/290" />
@@ -1194,7 +1275,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
  &lt;a href="http://www.reglab.se/wp-content/uploads/2017/10/Regionala-Matchningsindikatorer-%E2%88%92-dec-2014.pdf" target="_blank"&gt;Regionala matchningsindikatorer - december 2014 (pdf)&lt;/a&gt; 
  &lt;a href="http://www.reglab.se/wp-content/uploads/2017/05/REG-Matchningsind_webb-Kl-1715-21-juni-2018.pdf" target="_blank"&gt;Regionala matchningsindikatorer - fördjupad analys (pdf)&lt;/a&gt;</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>RegionIndE2A</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/293" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/294" />
@@ -1213,7 +1295,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
  &lt;a href="http://www.reglab.se/wp-content/uploads/2017/05/REG-Matchningsind_webb-Kl-1715-21-juni-2018.pdf" target="_blank"&gt;Regionala matchningsindikatorer - fördjupad analys (pdf)&lt;/a&gt;  
  </dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>RegionIndE2B</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/305" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/306" />
@@ -1235,7 +1318,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
  &lt;a href="http://www.reglab.se/wp-content/uploads/2017/10/Regionala-Matchningsindikatorer-%E2%88%92-dec-2014.pdf" target="_blank"&gt;Regionala matchningsindikatorer - december 2014 (pdf)&lt;/a&gt; 
  &lt;a href="http://www.reglab.se/wp-content/uploads/2017/05/REG-Matchningsind_webb-Kl-1715-21-juni-2018.pdf" target="_blank"&gt;Regionala matchningsindikatorer - fördjupad analys (pdf)&lt;/a&gt;</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>RegionIndE3</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/317" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/318" />
@@ -1259,7 +1343,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
  &lt;a href="http://www.reglab.se/wp-content/uploads/2017/05/REG-Matchningsind_webb-Kl-1715-21-juni-2018.pdf" target="_blank"&gt;Regionala matchningsindikatorer - fördjupad analys (pdf)&lt;/a&gt;  
   Tidsseriebrott fr.o.m. 2014 på grund av ny yrkesklassificering (SSYK 2012) och nya matchningsbedömningar. Matchad förvärvsgrad 2008-2013 kan därför inte jämföras med matchad förvärvsgrad från 2015 och framåt. </dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>RegionIndE3N</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/331" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/332" />
@@ -1274,7 +1359,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
  &lt;a href="http://www.reglab.se/wp-content/uploads/2017/10/Regionala-Matchningsindikatorer-%E2%88%92-dec-2014.pdf" target="_blank"&gt;Regionala matchningsindikatorer - december 2014 (pdf)&lt;/a&gt; 
  &lt;a href="http://www.reglab.se/wp-content/uploads/2017/05/REG-Matchningsind_webb-Kl-1715-21-juni-2018.pdf" target="_blank"&gt;Regionala matchningsindikatorer - fördjupad analys (pdf)&lt;/a&gt;</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>RegionIndE4N</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/347" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/348" />
@@ -1290,7 +1376,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
  &lt;a href="http://www.reglab.se/wp-content/uploads/2017/10/Regionala-Matchningsindikatorer-%E2%88%92-dec-2014.pdf" target="_blank"&gt;Regionala matchningsindikatorer - december 2014 (pdf)&lt;/a&gt; 
  &lt;a href="http://www.reglab.se/wp-content/uploads/2017/05/REG-Matchningsind_webb-Kl-1715-21-juni-2018.pdf" target="_blank"&gt;Regionala matchningsindikatorer - fördjupad analys (pdf)&lt;/a&gt;</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>RegionIndU1a</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/349" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/350" />
@@ -1306,7 +1393,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
  &lt;a href="http://www.reglab.se/wp-content/uploads/2017/10/Regionala-Matchningsindikatorer-%E2%88%92-dec-2014.pdf" target="_blank"&gt;Regionala matchningsindikatorer - december 2014 (pdf)&lt;/a&gt; 
  &lt;a href="http://www.reglab.se/wp-content/uploads/2017/05/REG-Matchningsind_webb-Kl-1715-21-juni-2018.pdf" target="_blank"&gt;Regionala matchningsindikatorer - fördjupad analys (pdf)&lt;/a&gt;</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>RegionIndU1b</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/367" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/368" />
@@ -1323,7 +1411,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
  &lt;a href="http://www.reglab.se/wp-content/uploads/2017/10/Regionala-Matchningsindikatorer-%E2%88%92-dec-2014.pdf" target="_blank"&gt;Regionala matchningsindikatorer - december 2014 (pdf)&lt;/a&gt; 
  &lt;a href="http://www.reglab.se/wp-content/uploads/2017/05/REG-Matchningsind_webb-Kl-1715-21-juni-2018.pdf" target="_blank"&gt;Regionala matchningsindikatorer - fördjupad analys (pdf)&lt;/a&gt;</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>RegionIndU2</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/373" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/374" />
@@ -1336,7 +1425,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcterms:title>Utbildningsflöden (U3) PxcMetaTitleBy region, utbildning, kön, tabellinnehåll PxcMetaTitleAnd årsintervall</dcterms:title>
     <dcterms:description>Källa: SCB, Registerbaserad arbetsmarknadsstatistik (RAMS) och Registret över befolkningens utbildning (UREG).</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>RegionIndU3</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/383" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/384" />
@@ -1349,7 +1439,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcterms:title>Förväntade åldersavgångar (U4) PxcMetaTitleBy region, utbildning, kön, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
     <dcterms:description>Källa: SCB, Registerbaserad arbetsmarknadsstatistik (RAMS) och Registret över befolkningens utbildning (UREG).</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>RegionIndU4</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/401" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/402" />
@@ -1365,7 +1456,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
  &lt;a href="http://www.reglab.se/wp-content/uploads/2017/10/Regionala-Matchningsindikatorer-%E2%88%92-dec-2014.pdf" target="_blank"&gt;Regionala matchningsindikatorer - december 2014 (pdf)&lt;/a&gt; 
  &lt;a href="http://www.reglab.se/wp-content/uploads/2017/05/REG-Matchningsind_webb-Kl-1715-21-juni-2018.pdf" target="_blank"&gt;Regionala matchningsindikatorer - fördjupad analys (pdf)&lt;/a&gt;</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>RegionIndU5aNY</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/407" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/408" />
@@ -1378,7 +1470,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcterms:title>Nybörjare (U5b) PxcMetaTitleBy region, utbildning, kön, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
     <dcterms:description>Källa: SCB, Universitets- och högskoleregistret.</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>RegionIndU5b</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/409" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/410" />
@@ -1394,7 +1487,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
  &lt;a href="http://www.reglab.se/wp-content/uploads/2017/10/Regionala-Matchningsindikatorer-%E2%88%92-dec-2014.pdf" target="_blank"&gt;Regionala matchningsindikatorer - december 2014 (pdf)&lt;/a&gt; 
  &lt;a href="http://www.reglab.se/wp-content/uploads/2017/05/REG-Matchningsind_webb-Kl-1715-21-juni-2018.pdf" target="_blank"&gt;Regionala matchningsindikatorer - fördjupad analys (pdf)&lt;/a&gt;</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>RegionIndM1Ar</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/411" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/412" />
@@ -1410,7 +1504,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
  &lt;a href="http://www.reglab.se/wp-content/uploads/2017/10/Regionala-Matchningsindikatorer-%E2%88%92-dec-2014.pdf" target="_blank"&gt;Regionala matchningsindikatorer - december 2014 (pdf)&lt;/a&gt; 
  &lt;a href="http://www.reglab.se/wp-content/uploads/2017/05/REG-Matchningsind_webb-Kl-1715-21-juni-2018.pdf" target="_blank"&gt;Regionala matchningsindikatorer - fördjupad analys (pdf)&lt;/a&gt;</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>RegionIndM1K</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/417" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/418" />
@@ -1428,7 +1523,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
  &lt;a href="http://www.reglab.se/wp-content/uploads/2017/05/REG-Matchningsind_webb-Kl-1715-21-juni-2018.pdf" target="_blank"&gt;Regionala matchningsindikatorer - fördjupad analys (pdf)&lt;/a&gt;  
   Statistiken visar nattbefolkningen, dvs. antalet folkbokförda i regionen.</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>RegionIndM2</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/421" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/422" />
@@ -1446,7 +1542,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
  &lt;a href="http://www.reglab.se/wp-content/uploads/2017/05/REG-Matchningsind_webb-Kl-1715-21-juni-2018.pdf" target="_blank"&gt;Regionala matchningsindikatorer - fördjupad analys (pdf)&lt;/a&gt;  
   Statistiken visar nattbefolkningen, dvs. antalet folkbokförda i regionen.</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>RegionIndM2N</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/423" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/424" />
@@ -1462,7 +1559,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
  &lt;a href="http://www.reglab.se/wp-content/uploads/2017/10/Regionala-Matchningsindikatorer-%E2%88%92-dec-2014.pdf" target="_blank"&gt;Regionala matchningsindikatorer - december 2014 (pdf)&lt;/a&gt; 
  &lt;a href="http://www.reglab.se/wp-content/uploads/2017/05/REG-Matchningsind_webb-Kl-1715-21-juni-2018.pdf" target="_blank"&gt;Regionala matchningsindikatorer - fördjupad analys (pdf)&lt;/a&gt;</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>RegionIndR1a</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/425" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/426" />
@@ -1478,7 +1576,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
  &lt;a href="http://www.reglab.se/wp-content/uploads/2017/10/Regionala-Matchningsindikatorer-%E2%88%92-dec-2014.pdf" target="_blank"&gt;Regionala matchningsindikatorer - december 2014 (pdf)&lt;/a&gt; 
  &lt;a href="http://www.reglab.se/wp-content/uploads/2017/05/REG-Matchningsind_webb-Kl-1715-21-juni-2018.pdf" target="_blank"&gt;Regionala matchningsindikatorer - fördjupad analys (pdf)&lt;/a&gt;</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>RegionIndR1b</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/427" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/428" />
@@ -1494,7 +1593,8 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
  &lt;a href="http://www.reglab.se/wp-content/uploads/2017/10/Regionala-Matchningsindikatorer-%E2%88%92-dec-2014.pdf" target="_blank"&gt;Regionala matchningsindikatorer - december 2014 (pdf)&lt;/a&gt; 
  &lt;a href="http://www.reglab.se/wp-content/uploads/2017/05/REG-Matchningsind_webb-Kl-1715-21-juni-2018.pdf" target="_blank"&gt;Regionala matchningsindikatorer - fördjupad analys (pdf)&lt;/a&gt;</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T14:56:00</dcterms:modified>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-15T15:38:00</dcterms:modified>
+    <dcterms:identifier>RegionIndR2</dcterms:identifier>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/429" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/430" />
