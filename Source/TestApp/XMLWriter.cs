@@ -165,6 +165,12 @@ namespace XMLWriter
             mod.InnerText = d.modified;
             dElem.AppendChild(mod);
 
+            // Identifier
+
+            XmlElement identifier = doc.CreateElement("dcterms", "identifier", nsm.LookupNamespace("dcterms"));
+            identifier.InnerText = d.identifier;
+            dElem.AppendChild(identifier);
+
             // languages
             
             foreach(string language in d.languages)
