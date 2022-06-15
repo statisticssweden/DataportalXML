@@ -25,6 +25,13 @@ namespace Px.Rdf
             { TimeScaleType.Weekly, "ANNUAL"},
         };
 
+        private static Dictionary<string, string> languageToDcatLang
+            = new Dictionary<string, string>
+        {
+            {"sv", "SWE"},
+            {"en", "ENG"},
+        };
+
         private static int nextNum() {
             return ++hashNum;
         }
@@ -60,12 +67,7 @@ namespace Px.Rdf
 
         private static string checkLang(string str)
         {
-            string lang;
-            if (str == "sv")
-                lang = "SWE";
-            else
-                lang = "ENG";
-
+            string lang = languageToDcatLang[str];
             return "http://publications.europa.eu/resource/authority/language/" + lang;
         }
 
