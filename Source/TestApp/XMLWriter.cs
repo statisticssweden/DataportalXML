@@ -59,6 +59,16 @@ namespace XMLWriter
                 rdf.AppendChild(dElem);
             }
 
+            List<ContactPerson> uniqueContacts = new List<ContactPerson>();
+            foreach(Dataset d in c.datasets){
+                uniqueContacts = uniqueContacts.Union(d.contactPersons).ToList();
+            }
+
+            foreach (ContactPerson cp in uniqueContacts) {
+                XmlElement cElem = generateContact(doc, cp, nsm);
+                rdf.AppendChild(cElem);
+            }
+
             doc.WriteTo(w);
             w.Close();
         }
@@ -114,7 +124,6 @@ namespace XMLWriter
 
                 catElem.AppendChild(dElem);
             }
-
             return catElem;
         }
 
@@ -169,6 +178,17 @@ namespace XMLWriter
                 dElem.AppendChild(langElem);
             }
 
+            // Contacts
+            foreach(ContactPerson cp in d.contactPersons){
+                XmlElement contactPoint = doc.CreateElement("dcat", "contactPoint", nsm.LookupNamespace("dcat"));
+                XmlAttribute contactData = doc.CreateAttribute("rdf", "resource", nsm.LookupNamespace("rdf"));
+                contactData.InnerText = cp.url;
+
+                contactPoint.SetAttributeNode(contactData);
+                dElem.AppendChild(contactPoint);
+            }
+
+            
             // Landing page
             //sv
             XmlElement landingSV = doc.CreateElement("dcat", "landingPage", nsm.LookupNamespace("dcat"));
@@ -220,6 +240,41 @@ namespace XMLWriter
             orgElem.AppendChild(nameElem);
 
             return orgElem;
+        }
+        
+        public static XmlElement generateContact(XmlDocument doc, ContactPerson cp, XmlNamespaceManager nsm){
+            XmlElement individual = doc.CreateElement("vcard", "Individual", nsm.LookupNamespace("vcard"));
+
+            XmlAttribute about = doc.CreateAttribute("rdf", "about", nsm.LookupNamespace("rdf"));
+            about.InnerText = cp.url;
+            individual.SetAttributeNode(about);
+
+            // Name
+            XmlElement nameElem = doc.CreateElement("vcard", "fn", nsm.LookupNamespace("vcard"));
+            nameElem.InnerText = cp.name;
+            individual.AppendChild(nameElem);
+
+            // Email
+            XmlElement emailElem = doc.CreateElement("vcard", "hasEmail", nsm.LookupNamespace("vcard"));
+            XmlAttribute emailAbout = doc.CreateAttribute("rdf", "resource", nsm.LookupNamespace("rdf"));
+
+            emailAbout.InnerText = "mailto:" + cp.email;
+            emailElem.SetAttributeNode(emailAbout);
+            individual.AppendChild(emailElem);
+            
+            // Phone
+            XmlElement phoneElem = doc.CreateElement("vcard", "hasTelephone", nsm.LookupNamespace("vcard"));
+            XmlElement descElem = doc.CreateElement("dcterms", "description", nsm.LookupNamespace("dcterms"));
+            XmlElement phoneVal = doc.CreateElement("vcard", "hasValue", nsm.LookupNamespace("vcard"));
+            XmlAttribute phoneAbout = doc.CreateAttribute("rdf", "resource", nsm.LookupNamespace("rdf"));
+
+            phoneAbout.InnerText = "tel:"+cp.telephone.Replace(" ", "");
+            phoneVal.SetAttributeNode(phoneAbout);
+            phoneElem.AppendChild(descElem);
+            descElem.AppendChild(phoneVal);
+            individual.AppendChild(phoneElem);
+            
+            return individual;
         }
     }
 }

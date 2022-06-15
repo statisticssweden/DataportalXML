@@ -8,6 +8,7 @@ namespace Data
     {
         public static Organization SCB = new Organization() { name = "SCB - Statistiska Centralbyrån", reference = "https://www.scb.se"};
     }
+
     public struct Catalog
     {
         public string title;
@@ -23,9 +24,9 @@ namespace Data
         public string title;
         public string description;
         public string[] languages;
+        public ContactPerson[] contactPersons;
         public Organization publisher;
         public string identifier;
-        public string contact;
         public string modified;
         public string updateFrequency;
         public string url()
@@ -45,4 +46,24 @@ namespace Data
         public string reference;
     }
 
+    public struct ContactPerson
+    { 
+        public string url;
+        public string name;
+        public string email;
+        public string telephone;
+
+        public override bool Equals(object obj)
+        {
+            if (obj is null || obj.GetType() != this.GetType())
+                return false;
+            ContactPerson cp = (ContactPerson) obj;
+            return this.email == cp.email;
+        }
+
+        public override int GetHashCode()
+        {
+            return email.GetHashCode();
+        }
+    }
 }
