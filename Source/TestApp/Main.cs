@@ -14,11 +14,9 @@ namespace TestApp
     {
         public static void Main(string[] args)
         {
-
-            int numberOfTables = 10;
+            int numberOfTables = 100;
             Catalog c = Fetch.GetCatalog(numberOfTables);
-
-            XML.writeToFile(c, "C:/Temp/PxGit/DataportalXML/Source/test.xml");
+            XML.writeToFile(c, "../../../test.xml");
         }
     }
 }

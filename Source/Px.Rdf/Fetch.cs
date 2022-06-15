@@ -3,13 +3,17 @@ using PCAxis.Menu;
 using PCAxis.Menu.Implementations;
 using PCAxis.Paxiom;
 using PCAxis.PlugIn.Sql;
-using System.Collections.Generic;
-using Data;
 
+using System.Collections.Generic;
+using System.Linq;
+
+
+using Data;
 namespace Px.Rdf
 {
     public class Fetch
     {
+        private static int hashNum;
         private static Dictionary<TimeScaleType, string> timeScaleToUpdateFreq
             = new Dictionary<TimeScaleType, string>
         {
@@ -20,6 +24,14 @@ namespace Px.Rdf
             { TimeScaleType.Quartely, "QUARTERLY"},
             { TimeScaleType.Weekly, "ANNUAL"},
         };
+
+        private static int nextNum() {
+            return ++hashNum;
+        }
+
+        private static string nextString() {
+            return (++hashNum).ToString();
+        }
         private static string reformatString(string s)
         {
             DateTime date = DateTime.ParseExact(s, "yyyyMMdd HH:mm", null);
@@ -30,7 +42,7 @@ namespace Px.Rdf
         private static string getDescription(Notes notes)
         {
             string desc = "-";
-            if (notes[0].Mandantory)
+            if (notes.Count > 0 && notes[0].Mandantory)
             {
                 desc = notes[0].Text;
             }
@@ -71,13 +83,32 @@ namespace Px.Rdf
             return langs;
         }
 
+        private static ContactPerson[] getContacts(PXMeta meta)
+        {
+            List<ContactPerson> contactPersons = new List<ContactPerson>();
+            foreach (Value v in meta.ContentVariable.Values) {
+                List<ContactPerson> cps = new List<ContactPerson>();
+                foreach (Contact c in v.ContentInfo.ContactInfo) {
+                    ContactPerson cp = new ContactPerson 
+                    {
+                        name = c.Forname + " " + c.Surname + ", " + c.OrganizationName, 
+                        email = c.Email,
+                        telephone = c.PhonePrefix + c.PhoneNo,
+                        url = "https://www.scb.se/contactperson/" + nextString()
+                    };
+                    cps.Add(cp);
+                }
+                contactPersons = contactPersons.Union(cps).ToList();
+            }
+            return contactPersons.ToArray();
+        }
+
         private static void addRecursive(Item item, List<Dataset> d, int max)
         {
 
             if (item is PxMenuItem)
             {
                 var menu = item as PxMenuItem;
-                //Console.WriteLine(menu.ToString());
                 if (menu.HasSubItems)
                 {
                     foreach (var subItem in menu.SubItems)
@@ -111,6 +142,8 @@ namespace Px.Rdf
                     dataset.modified = reformatString(builder.Model.Meta.CreationDate);
                     dataset.updateFrequency = getUpdateFrequency(builder.Model.Meta);
                     dataset.languages = getLanguages(builder.Model.Meta);
+                    dataset.contactPersons = getContacts(builder.Model.Meta);
+                   
                     d.Add(dataset);
                     //dataset.contact = builder.Model.Meta.ContentInfo;
                 }
