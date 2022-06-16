@@ -24,6 +24,7 @@ namespace Data
         public string title;
         public string description;
         public string[] languages;
+        public string category;
         public ContactPerson[] contactPersons;
         public Organization publisher;
         public string identifier;
