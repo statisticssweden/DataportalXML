@@ -89,7 +89,7 @@ namespace Px.Rdf
             return baseURI + timeScaleToUpdateFreq[timeScale];
         }
 
-        private static string checkLang(string str)
+        private static string convertLanguage(string str)
         {
             string lang = languageToDcatLang[str];
             return "http://publications.europa.eu/resource/authority/language/" + lang;
@@ -109,7 +109,7 @@ namespace Px.Rdf
             string[] lang = new string[languages.Count()];
             for (int i = 0; i < lang.Length; i++)
             {
-                lang[i] = checkLang(languages[i]);
+                lang[i] = convertLanguage(languages[i]);
             }
             return lang;
         }
@@ -187,7 +187,36 @@ namespace Px.Rdf
             }
             return keywords.ToArray();
         }
-        
+
+        private static string getDistributionUrl(List<PxMenuItem> path, string title, string lang)
+        {
+            string url = "http://api.scb.se/OV0104/v1/doris/" + lang + "/ssd/";
+            foreach (PxMenuItem menu in path.Skip(1))
+            {
+                url += menu.ID.Selection + "/";
+            }
+            url += title;
+            return url;
+        }
+        private static Distribution[] getDistributions(List<PxMenuItem> path, string title)
+        {
+            Distribution sweDistr = new Distribution();
+            sweDistr.title = "Datatjänst med information på svenska";
+            sweDistr.format = "application/json";
+            sweDistr.accessUrl = getDistributionUrl(path, title, "sv");
+            sweDistr.language = convertLanguage("sv");
+            sweDistr.license = "http://creativecommons.org/publicdomain/zero/1.0/";
+
+            Distribution engDistr = new Distribution();
+            engDistr.title = "Datatjänst med information på svenska";
+            engDistr.format = "application/json";
+            engDistr.accessUrl = getDistributionUrl(path, title, "en");
+            engDistr.language = convertLanguage("sv");
+            engDistr.license = "http://creativecommons.org/publicdomain/zero/1.0/";
+
+            return new Distribution[] { sweDistr, engDistr };
+        }
+
         private static void addRecursive(Item item, List<PxMenuItem> path, List<Dataset> d, int max)
         {
 
@@ -235,8 +264,8 @@ namespace Px.Rdf
                     dataset.category = getCategory(path);
                     dataset.producer = getProducer(builder.Model.Meta);
 
-
                     dataset.keywords = getKeywords(path, "sv");
+                    dataset.distributions = getDistributions(path, dataset.identifier);
 
                     d.Add(dataset);
                 }
