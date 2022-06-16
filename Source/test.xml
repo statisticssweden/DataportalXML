@@ -133,6 +133,9 @@ Tabellerna har utsatts för en röjandekontroll för att undvika risken att iden
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-03T10:59:00</dcterms:modified>
     <dcterms:identifier>MotFlyktAldKon</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot arbetsmarknaden</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/1" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/MotFlyktAldKon" />
@@ -163,6 +166,9 @@ Tabellerna har utsatts för en röjandekontroll för att undvika risken att iden
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-12-19T09:30:00</dcterms:modified>
     <dcterms:identifier>MotFlyktUtbKon</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot arbetsmarknaden</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/3" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/MotFlyktUtbKon" />
@@ -193,6 +199,9 @@ Tabellerna har utsatts för en röjandekontroll för att undvika risken att iden
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-12-19T09:30:00</dcterms:modified>
     <dcterms:identifier>MotFlyktLanKon</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot arbetsmarknaden</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/5" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/MotFlyktLanKon" />
@@ -208,6 +217,9 @@ Tabellerna har utsatts för en röjandekontroll för att undvika risken att iden
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-02-18T09:30:00</dcterms:modified>
     <dcterms:identifier>MotFlyktJobbKon</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot arbetsmarknaden</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/7" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/MotFlyktJobbKon" />
@@ -223,6 +235,9 @@ Tabellerna har utsatts för en röjandekontroll för att undvika risken att iden
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-04-10T09:30:00</dcterms:modified>
     <dcterms:identifier>IntGr1KomKonUtb</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot arbetsmarknaden</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/9" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr1KomKonUtb" />
@@ -238,6 +253,9 @@ Tabellerna har utsatts för en röjandekontroll för att undvika risken att iden
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-04-10T09:30:00</dcterms:modified>
     <dcterms:identifier>IntGr1LanKonUtb</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot arbetsmarknaden</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/21" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr1LanKonUtb" />
@@ -253,6 +271,9 @@ Tabellerna har utsatts för en röjandekontroll för att undvika risken att iden
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-04-10T09:30:00</dcterms:modified>
     <dcterms:identifier>IntGr1RikKonUtb</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot arbetsmarknaden</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/33" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr1RikKonUtb" />
@@ -268,6 +289,9 @@ Tabellerna har utsatts för en röjandekontroll för att undvika risken att iden
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-04-10T09:30:00</dcterms:modified>
     <dcterms:identifier>IntGr1LUAKon</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot arbetsmarknaden</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/45" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr1LUAKon" />
@@ -283,6 +307,9 @@ Tabellerna har utsatts för en röjandekontroll för att undvika risken att iden
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-04-10T09:30:00</dcterms:modified>
     <dcterms:identifier>IntGr1UrbKon</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot arbetsmarknaden</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/57" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr1UrbKon" />
@@ -312,6 +339,9 @@ För att klassificeras som förvärvsarbetande krävs att personen har en lönei
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-24T10:59:00</dcterms:modified>
     <dcterms:identifier>KomMotForv</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot arbetsmarknaden</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/69" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/KomMotForv" />
@@ -341,6 +371,9 @@ För att klassificeras som förvärvsarbetande krävs att personen har en lönei
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-12-19T09:30:00</dcterms:modified>
     <dcterms:identifier>KomMotForvAndel</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot arbetsmarknaden</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/71" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/KomMotForvAndel" />
@@ -356,6 +389,9 @@ För att klassificeras som förvärvsarbetande krävs att personen har en lönei
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-03-26T10:59:00</dcterms:modified>
     <dcterms:identifier>VBMOTFLYKTLanKon</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot arbetsmarknaden</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/73" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/VBMOTFLYKTLanKon" />
@@ -371,6 +407,9 @@ För att klassificeras som förvärvsarbetande krävs att personen har en lönei
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-03-24T10:59:00</dcterms:modified>
     <dcterms:identifier>VBtst2MotFlyktLanKon</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot arbetsmarknaden</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/75" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/VBtst2MotFlyktLanKon" />
@@ -386,6 +425,9 @@ För att klassificeras som förvärvsarbetande krävs att personen har en lönei
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-03-30T16:46:00</dcterms:modified>
     <dcterms:identifier>NyTabTestMotFlyktLan</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot arbetsmarknaden</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/77" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/NyTabTestMotFlyktLan" />
@@ -402,6 +444,9 @@ För att klassificeras som förvärvsarbetande krävs att personen har en lönei
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-12-19T09:30:00</dcterms:modified>
     <dcterms:identifier>IntGr3KomS</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot demografi</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/79" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr3KomS" />
@@ -418,6 +463,9 @@ För att klassificeras som förvärvsarbetande krävs att personen har en lönei
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-12-19T09:30:00</dcterms:modified>
     <dcterms:identifier>IntGr3LanKONS</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot demografi</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/86" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr3LanKONS" />
@@ -434,6 +482,9 @@ För att klassificeras som förvärvsarbetande krävs att personen har en lönei
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-12-19T09:30:00</dcterms:modified>
     <dcterms:identifier>IntGr3RikKONS</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot demografi</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/93" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr3RikKONS" />
@@ -450,6 +501,9 @@ För att klassificeras som förvärvsarbetande krävs att personen har en lönei
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-12-19T09:30:00</dcterms:modified>
     <dcterms:identifier>IntGr3LUAS</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot demografi</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/100" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr3LUAS" />
@@ -466,6 +520,9 @@ För att klassificeras som förvärvsarbetande krävs att personen har en lönei
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-12-19T09:30:00</dcterms:modified>
     <dcterms:identifier>IntGr3URBS</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot demografi</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/107" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr3URBS" />
@@ -481,6 +538,9 @@ För att klassificeras som förvärvsarbetande krävs att personen har en lönei
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-12-19T09:30:00</dcterms:modified>
     <dcterms:identifier>IntGr3RikKONU</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot demografi</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/114" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr3RikKONU" />
@@ -496,6 +556,9 @@ För att klassificeras som förvärvsarbetande krävs att personen har en lönei
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-12-19T09:30:00</dcterms:modified>
     <dcterms:identifier>IntGr3URBU</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot demografi</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/119" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr3URBU" />
@@ -511,6 +574,9 @@ För att klassificeras som förvärvsarbetande krävs att personen har en lönei
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-12-19T09:30:00</dcterms:modified>
     <dcterms:identifier>IntGr3KomU</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot demografi</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/124" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr3KomU" />
@@ -526,6 +592,9 @@ För att klassificeras som förvärvsarbetande krävs att personen har en lönei
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-12-19T09:30:00</dcterms:modified>
     <dcterms:identifier>IntGr3LUAU</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot demografi</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/129" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr3LUAU" />
@@ -541,6 +610,9 @@ För att klassificeras som förvärvsarbetande krävs att personen har en lönei
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-12-19T09:30:00</dcterms:modified>
     <dcterms:identifier>IntGr3LanKONU</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot demografi</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/134" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr3LanKONU" />
@@ -564,6 +636,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-25T10:59:00</dcterms:modified>
     <dcterms:identifier>KomMotAntal</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot demografi</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/139" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/KomMotAntal" />
@@ -579,6 +654,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-18T09:30:00</dcterms:modified>
     <dcterms:identifier>IntGr4URB</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot transfereringar</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/141" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr4URB" />
@@ -594,6 +672,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-18T09:30:00</dcterms:modified>
     <dcterms:identifier>IntGr4LUA</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot transfereringar</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/149" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr4LUA" />
@@ -609,6 +690,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-18T09:30:00</dcterms:modified>
     <dcterms:identifier>IntGr4Kom</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot transfereringar</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/157" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr4Kom" />
@@ -624,6 +708,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-18T09:30:00</dcterms:modified>
     <dcterms:identifier>IntGr4LanKON</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot transfereringar</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/165" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr4LanKON" />
@@ -639,6 +726,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-18T09:30:00</dcterms:modified>
     <dcterms:identifier>IntGr4RikKON</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot transfereringar</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/173" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr4RikKON" />
@@ -654,6 +744,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-18T09:30:00</dcterms:modified>
     <dcterms:identifier>IntGr5URB</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot inkomster</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/181" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr5URB" />
@@ -669,6 +762,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-18T09:30:00</dcterms:modified>
     <dcterms:identifier>IntGr5LUA</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot inkomster</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/188" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr5LUA" />
@@ -684,6 +780,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-18T09:30:00</dcterms:modified>
     <dcterms:identifier>IntGr5Kom</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot inkomster</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/195" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr5Kom" />
@@ -699,6 +798,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-18T09:30:00</dcterms:modified>
     <dcterms:identifier>IntGr5LanKON</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot inkomster</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/202" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr5LanKON" />
@@ -714,6 +816,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-18T09:30:00</dcterms:modified>
     <dcterms:identifier>IntGr5RikKON</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot inkomster</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/209" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr5RikKON" />
@@ -729,6 +834,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-11-21T09:30:00</dcterms:modified>
     <dcterms:identifier>IntGr7Kom</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot boende</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/216" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr7Kom" />
@@ -744,6 +852,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-12-19T09:30:00</dcterms:modified>
     <dcterms:identifier>IntGr6Kom</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot boende</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/218" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr6Kom" />
@@ -759,6 +870,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-12-19T09:30:00</dcterms:modified>
     <dcterms:identifier>IntGr6LUA</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot boende</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/224" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr6LUA" />
@@ -774,6 +888,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-12-19T09:30:00</dcterms:modified>
     <dcterms:identifier>IntGr6LanKon</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot boende</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/230" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr6LanKon" />
@@ -789,6 +906,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-12-19T09:30:00</dcterms:modified>
     <dcterms:identifier>IntGr6URB</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot boende</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/236" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr6URB" />
@@ -804,6 +924,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-12-19T09:30:00</dcterms:modified>
     <dcterms:identifier>IntGr6RikKon</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot boende</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/242" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr6RikKon" />
@@ -819,6 +942,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-02-18T09:30:00</dcterms:modified>
     <dcterms:identifier>IntGr2Kom</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot flyttmönster</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/248" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/249" />
@@ -835,6 +961,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-02-18T09:30:00</dcterms:modified>
     <dcterms:identifier>IntGr2LUA</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot flyttmönster</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/257" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr2LUA" />
@@ -850,6 +979,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-02-18T09:30:00</dcterms:modified>
     <dcterms:identifier>IntGr2Lan</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot flyttmönster</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/262" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr2Lan" />
@@ -865,6 +997,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-02-18T09:30:00</dcterms:modified>
     <dcterms:identifier>IntGr2URB</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot flyttmönster</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/267" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr2URB" />
@@ -880,6 +1015,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-19T10:59:00</dcterms:modified>
     <dcterms:identifier>IntGr8Kom2</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot utbildning</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/272" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr8Kom2" />
@@ -895,6 +1033,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-04-22T10:59:00</dcterms:modified>
     <dcterms:identifier>IntGr8LuaKon2</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot utbildning</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/275" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr8LuaKon2" />
@@ -910,6 +1051,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-19T10:59:00</dcterms:modified>
     <dcterms:identifier>IntGr8LanKON2</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot utbildning</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/278" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr8LanKON2" />
@@ -925,6 +1069,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-11T10:59:00</dcterms:modified>
     <dcterms:identifier>IntGr8URBKon2</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot utbildning</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/281" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr8URBKon2" />
@@ -940,6 +1087,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-01T10:59:00</dcterms:modified>
     <dcterms:identifier>IntGr8RikKON2</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot utbildning</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/284" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr8RikKON2" />
@@ -955,6 +1105,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-12-19T09:30:00</dcterms:modified>
     <dcterms:identifier>IntGr8LanKON3</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot utbildning</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/287" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr8LanKON3" />
@@ -970,6 +1123,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-12-19T09:30:00</dcterms:modified>
     <dcterms:identifier>IntGr8Kom3</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot utbildning</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/290" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr8Kom3" />
@@ -985,6 +1141,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-12-19T09:30:00</dcterms:modified>
     <dcterms:identifier>IntGr8LUA3</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot utbildning</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/293" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr8LUA3" />
@@ -1000,6 +1159,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-12-19T09:30:00</dcterms:modified>
     <dcterms:identifier>IntGr8URB3</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot utbildning</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/296" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr8URB3" />
@@ -1015,6 +1177,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-12-19T09:30:00</dcterms:modified>
     <dcterms:identifier>IntGr8RikKON3</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot utbildning</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/299" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr8RikKON3" />
@@ -1030,6 +1195,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-03-26T10:59:00</dcterms:modified>
     <dcterms:identifier>TESTMOLIN99</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot utbildning</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/302" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/TESTMOLIN99" />
@@ -1045,6 +1213,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-05T10:59:00</dcterms:modified>
     <dcterms:identifier>TEST9999</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot utbildning</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/305" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/306" />
@@ -1061,6 +1232,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-04-22T10:59:00</dcterms:modified>
     <dcterms:identifier>TESTSCBSIUL</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot utbildning</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/308" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/TESTSCBSIUL" />
@@ -1076,6 +1250,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-19T10:59:00</dcterms:modified>
     <dcterms:identifier>TESTSCBSIUL2</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot utbildning</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/310" />
@@ -1092,6 +1269,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-12T10:59:00</dcterms:modified>
     <dcterms:identifier>TESTSCBSIUL3</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot utbildning</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/312" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/TESTSCBSIUL3" />
@@ -1107,6 +1287,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-09T10:59:00</dcterms:modified>
     <dcterms:identifier>TESTSCBSIUL4</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot utbildning</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/314" />
@@ -1123,6 +1306,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-26T10:59:00</dcterms:modified>
     <dcterms:identifier>TESTSCBSIUL5</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot utbildning</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/316" />
@@ -1139,6 +1325,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-24T10:59:00</dcterms:modified>
     <dcterms:identifier>TESTSCBSIUL6</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot utbildning</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/318" />
@@ -1155,6 +1344,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-26T10:59:00</dcterms:modified>
     <dcterms:identifier>TESTSCBSIUL7</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot utbildning</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/320" />
@@ -1171,6 +1363,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-03-26T10:59:00</dcterms:modified>
     <dcterms:identifier>IntGr10Kom</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot hälsa</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/322" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr10Kom" />
@@ -1186,6 +1381,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-10T10:59:00</dcterms:modified>
     <dcterms:identifier>IntGr10LUA</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot hälsa</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/325" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/326" />
@@ -1202,6 +1400,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-05-07T09:30:00</dcterms:modified>
     <dcterms:identifier>IntGr10LanKon</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot hälsa</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/330" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr10LanKon" />
@@ -1217,6 +1418,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-05-07T09:30:00</dcterms:modified>
     <dcterms:identifier>IntGr10URB</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot hälsa</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/333" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr10URB" />
@@ -1232,6 +1436,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-05-07T09:30:00</dcterms:modified>
     <dcterms:identifier>IntGr10RikKon</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot hälsa</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/336" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr10RikKon" />
@@ -1247,6 +1454,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-09-16T11:30:00</dcterms:modified>
     <dcterms:identifier>IntGr9Kom2</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot val och valda</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/339" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr9Kom2" />
@@ -1262,6 +1472,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-09-16T11:30:00</dcterms:modified>
     <dcterms:identifier>IntGr9LUA2</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot val och valda</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/342" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr9LUA2" />
@@ -1277,6 +1490,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-09-16T11:30:00</dcterms:modified>
     <dcterms:identifier>IntGr9LanKON2</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot val och valda</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/345" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr9LanKON2" />
@@ -1292,6 +1508,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-09-16T11:30:00</dcterms:modified>
     <dcterms:identifier>IntGr9URB2</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot val och valda</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/348" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr9URB2" />
@@ -1307,6 +1526,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-09-16T11:30:00</dcterms:modified>
     <dcterms:identifier>IntGr9RikKON2</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot val och valda</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/351" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr9RikKON2" />
@@ -1322,6 +1544,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-09-16T11:29:00</dcterms:modified>
     <dcterms:identifier>IntGr9Kom1</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot val och valda</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/354" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr9Kom1" />
@@ -1337,6 +1562,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-09-16T11:30:00</dcterms:modified>
     <dcterms:identifier>IntGr9LUA1</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot val och valda</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/356" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr9LUA1" />
@@ -1352,6 +1580,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-09-16T11:30:00</dcterms:modified>
     <dcterms:identifier>IntGr9Lan1</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot val och valda</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/358" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr9Lan1" />
@@ -1367,6 +1598,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-09-16T11:30:00</dcterms:modified>
     <dcterms:identifier>IntGr9URB1</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot val och valda</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/360" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr9URB1" />
@@ -1382,6 +1616,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-09-16T11:30:00</dcterms:modified>
     <dcterms:identifier>IntGr9Rik1</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot val och valda</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/362" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr9Rik1" />
@@ -1400,6 +1637,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-08T09:30:00</dcterms:modified>
     <dcterms:identifier>RegionIndE1K</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Regionala matchningsindikatorer</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Efterfrågan</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/364" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/365" />
@@ -1419,6 +1659,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-02-28T09:30:00</dcterms:modified>
     <dcterms:identifier>RegionIndE1Ar</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Regionala matchningsindikatorer</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Efterfrågan</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/369" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/370" />
@@ -1441,6 +1684,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-06-29T09:30:00</dcterms:modified>
     <dcterms:identifier>RegionIndE2A</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Regionala matchningsindikatorer</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Efterfrågan</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/374" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/375" />
@@ -1463,6 +1709,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-06-29T09:30:00</dcterms:modified>
     <dcterms:identifier>RegionIndE2B</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Regionala matchningsindikatorer</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Efterfrågan</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/387" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/388" />
@@ -1488,6 +1737,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-11T09:30:00</dcterms:modified>
     <dcterms:identifier>RegionIndE3</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Regionala matchningsindikatorer</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Efterfrågan</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/400" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/401" />
@@ -1515,6 +1767,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-06-29T09:30:00</dcterms:modified>
     <dcterms:identifier>RegionIndE3N</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Regionala matchningsindikatorer</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Efterfrågan</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/415" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/416" />
@@ -1533,6 +1788,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-06-29T09:30:00</dcterms:modified>
     <dcterms:identifier>RegionIndE4N</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Regionala matchningsindikatorer</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Efterfrågan</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/432" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/433" />
@@ -1552,6 +1810,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-06-29T09:30:00</dcterms:modified>
     <dcterms:identifier>RegionIndU1a</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Regionala matchningsindikatorer</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Utbud</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/435" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/436" />
@@ -1571,6 +1832,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-06-29T09:30:00</dcterms:modified>
     <dcterms:identifier>RegionIndU1b</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Regionala matchningsindikatorer</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Utbud</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/454" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/455" />
@@ -1591,6 +1855,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-06-29T09:30:00</dcterms:modified>
     <dcterms:identifier>RegionIndU2</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Regionala matchningsindikatorer</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Utbud</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/461" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/462" />
@@ -1607,6 +1874,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-06-29T09:30:00</dcterms:modified>
     <dcterms:identifier>RegionIndU3</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Regionala matchningsindikatorer</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Utbud</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/472" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/473" />
@@ -1623,6 +1893,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-06-29T09:30:00</dcterms:modified>
     <dcterms:identifier>RegionIndU4</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Regionala matchningsindikatorer</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Utbud</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/491" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/492" />
@@ -1642,6 +1915,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-06-29T09:30:00</dcterms:modified>
     <dcterms:identifier>RegionIndU5aNY</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Regionala matchningsindikatorer</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Utbud</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/498" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/499" />
@@ -1658,6 +1934,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-06-29T09:30:00</dcterms:modified>
     <dcterms:identifier>RegionIndU5b</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Regionala matchningsindikatorer</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Utbud</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/501" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/502" />
@@ -1677,6 +1956,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-02-28T09:30:00</dcterms:modified>
     <dcterms:identifier>RegionIndM1Ar</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Regionala matchningsindikatorer</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Matchning</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/504" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/505" />
@@ -1696,6 +1978,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-08T09:30:00</dcterms:modified>
     <dcterms:identifier>RegionIndM1K</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Regionala matchningsindikatorer</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Matchning</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/511" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/512" />
@@ -1717,6 +2002,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-02-26T09:30:00</dcterms:modified>
     <dcterms:identifier>RegionIndM2</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Regionala matchningsindikatorer</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Matchning</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/516" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/517" />
@@ -1738,6 +2026,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-06-29T09:30:00</dcterms:modified>
     <dcterms:identifier>RegionIndM2N</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Regionala matchningsindikatorer</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Matchning</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/519" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/520" />
@@ -1757,6 +2048,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-06-29T09:30:00</dcterms:modified>
     <dcterms:identifier>RegionIndR1a</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Regionala matchningsindikatorer</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Regionala förutsättningar</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/522" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/523" />
@@ -1776,6 +2070,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-06-29T09:30:00</dcterms:modified>
     <dcterms:identifier>RegionIndR1b</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Regionala matchningsindikatorer</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Regionala förutsättningar</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/525" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/526" />
@@ -1795,6 +2092,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-06-29T09:30:00</dcterms:modified>
     <dcterms:identifier>RegionIndR2</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Regionala matchningsindikatorer</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Regionala förutsättningar</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/528" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/529" />

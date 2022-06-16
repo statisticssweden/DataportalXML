@@ -19,11 +19,16 @@ namespace Data
         public Organization publisher;
     }
 
+    public struct Keyword {
+        public string lang;
+        public string text;
+    }
     public struct Dataset
     {
         public string title;
         public string description;
         public string[] languages;
+        public Keyword[] keywords;
         public string category;
         public ContactPerson[] contactPersons;
         public Organization publisher;

@@ -102,11 +102,16 @@ namespace Px.Rdf
             {
                 langs = new string[] { meta.Language };
             }
-            for (int i = 0; i < langs.Length; i++)
-            {
-                langs[i] = checkLang(langs[i]);
-            }
             return langs;
+        }
+
+        private static string[] convertLanguages(string[] languages) {
+            string[] lang = new string[languages.Count()];
+            for (int i = 0; i < lang.Length; i++)
+            {
+                lang[i] = checkLang(languages[i]);
+            }
+            return lang;
         }
 
         private static ContactPerson[] getContacts(PXMeta meta)
@@ -171,6 +176,18 @@ namespace Px.Rdf
         private static Organization getProducer(PXMeta meta) {
             return new Organization {name = meta.Source, reference = "https://www.scb.se/producer/" + nextString()};
         }
+
+        private static Keyword[] getKeywords(List<PxMenuItem> path, string lang) {
+            List<Keyword> keywords = new List<Keyword>();
+            foreach (PxMenuItem menu in path) {
+                string text = menu.Text;
+                if (text != "") { 
+                    keywords.Add(new Keyword {text = text, lang = lang});
+                }
+            }
+            return keywords.ToArray();
+        }
+        
         private static void addRecursive(Item item, List<PxMenuItem> path, List<Dataset> d, int max)
         {
 
@@ -210,13 +227,18 @@ namespace Px.Rdf
                     dataset.identifier = builder.Model.Meta.MainTable;
                     dataset.modified = getLastModified(builder.Model.Meta);
                     dataset.updateFrequency = getUpdateFrequency(builder.Model.Meta);
-                    dataset.languages = getLanguages(builder.Model.Meta);
+
+                    string[] langs = getLanguages(builder.Model.Meta);
+                    dataset.languages = convertLanguages(langs);
+
                     dataset.contactPersons = getContacts(builder.Model.Meta);
                     dataset.category = getCategory(path);
                     dataset.producer = getProducer(builder.Model.Meta);
-                   
+
+
+                    dataset.keywords = getKeywords(path, "sv");
+
                     d.Add(dataset);
-                    //dataset.contact = builder.Model.Meta.ContentInfo;
                 }
                 catch (Exception e)
                 {
