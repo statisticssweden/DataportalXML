@@ -1,4 +1,4 @@
-﻿using System;
+﻿  using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -67,6 +67,16 @@ namespace XMLWriter
             foreach (ContactPerson cp in uniqueContacts) {
                 XmlElement cElem = generateContact(doc, cp, nsm);
                 rdf.AppendChild(cElem);
+            }
+
+            List<Organization> uniqueProducer = new List<Organization>();
+            foreach(Dataset d in c.datasets){
+                uniqueProducer.Add(d.producer);
+            }
+
+            foreach (Organization o in uniqueProducer.Distinct()) {
+                XmlElement oElem = generateOrg(doc, o, nsm);
+                rdf.AppendChild(oElem);
             }
 
             doc.WriteTo(w);
@@ -154,6 +164,15 @@ namespace XMLWriter
 
             pubElem.SetAttributeNode(pubAbout);
             dElem.AppendChild(pubElem);
+
+            // Producer reference
+            XmlElement prodElem = doc.CreateElement("dcterms", "creator", nsm.LookupNamespace("dcterms"));
+
+            XmlAttribute prodAbout = doc.CreateAttribute("rdf", "resource", nsm.LookupNamespace("rdf"));
+            prodAbout.InnerText = d.producer.reference;
+
+            prodElem.SetAttributeNode(prodAbout);
+            dElem.AppendChild(prodElem);
 
             // Category/Theme
             XmlElement themeElem = doc.CreateElement("dcat", "theme", nsm.LookupNamespace("dcat"));

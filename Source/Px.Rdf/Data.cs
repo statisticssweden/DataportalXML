@@ -30,6 +30,7 @@ namespace Data
         public string identifier;
         public string modified;
         public string updateFrequency;
+        public Organization producer;
         public string url()
         {
             return url(true);
@@ -45,6 +46,19 @@ namespace Data
     {
         public string name;
         public string reference;
+
+        public override bool Equals(object obj)
+        {
+            if (obj is null || obj.GetType() != this.GetType())
+                return false;
+            Organization o = (Organization) obj;
+            return this.name == o.name;
+        }
+
+        public override int GetHashCode()
+        {
+            return name.GetHashCode();
+        }
     }
 
     public struct ContactPerson
