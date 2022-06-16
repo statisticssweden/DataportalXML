@@ -347,7 +347,7 @@ namespace XMLWriter
             //about
             XmlAttribute about = doc.CreateAttribute("rdf", "about", nsm.LookupNamespace("rdf"));
             about.InnerText = dst.accessUrl;
-            distr.AppendChild(about);
+            distr.SetAttributeNode(about);
 
             // title
             XmlElement titleElem = doc.CreateElement("dcterms", "title", nsm.LookupNamespace("dcterms"));
@@ -360,10 +360,10 @@ namespace XMLWriter
             distr.AppendChild(formatElem);
 
             //accessURL
-            XmlElement accessElem = doc.CreateElement("dcat", "acessURL", nsm.LookupNamespace("dcat"));
+            XmlElement accessElem = doc.CreateElement("dcat", "accessURL", nsm.LookupNamespace("dcat"));
             XmlAttribute accessAbout = doc.CreateAttribute("rdf", "resource", nsm.LookupNamespace("rdf"));
             accessAbout.InnerText = dst.accessUrl;
-            distr.SetAttributeNode(accessAbout);
+            accessElem.SetAttributeNode(accessAbout);
             distr.AppendChild(accessElem);
 
             //language
