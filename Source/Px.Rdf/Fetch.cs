@@ -167,6 +167,10 @@ namespace Px.Rdf
             }
             return "http://publications.europa.eu/resource/authority/data-theme/" + themeMapping[path[1].Text];
         }
+
+        private static Organization getProducer(PXMeta meta) {
+            return new Organization {name = meta.Source, reference = "https://www.scb.se/producer/" + nextString()};
+        }
         private static void addRecursive(Item item, List<PxMenuItem> path, List<Dataset> d, int max)
         {
 
@@ -209,6 +213,7 @@ namespace Px.Rdf
                     dataset.languages = getLanguages(builder.Model.Meta);
                     dataset.contactPersons = getContacts(builder.Model.Meta);
                     dataset.category = getCategory(path);
+                    dataset.producer = getProducer(builder.Model.Meta);
                    
                     d.Add(dataset);
                     //dataset.contact = builder.Model.Meta.ContentInfo;
