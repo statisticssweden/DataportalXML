@@ -93,7 +93,6 @@ namespace XMLWriter
             pubElem.SetAttributeNode(pubAbout);
             catElem.AppendChild(pubElem);
 
-
             // Licence
             XmlElement licenseElem = doc.CreateElement("dcterms", "license", nsm.LookupNamespace("dcterms"));
 
@@ -155,6 +154,14 @@ namespace XMLWriter
 
             pubElem.SetAttributeNode(pubAbout);
             dElem.AppendChild(pubElem);
+
+            // Category/Theme
+            XmlElement themeElem = doc.CreateElement("dcat", "theme", nsm.LookupNamespace("dcat"));
+            XmlAttribute themeAbout = doc.CreateAttribute("rdf", "resource", nsm.LookupNamespace("rdf"));
+
+            themeAbout.InnerText = d.category;
+            themeElem.SetAttributeNode(themeAbout);
+            dElem.AppendChild(themeElem);
 
             // Modified
             string dateTimeDataType = "http://www.w3.org/2001/XMLSchema#dateTime";

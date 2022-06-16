@@ -28,6 +28,33 @@ namespace Px.Rdf
             { TimeScaleType.Weekly, "ANNUAL"},
         };
 
+        private static Dictionary<string, string> themeMapping
+            = new Dictionary<string, string>
+        {
+            { "Arbetsmarknad", "SOCI"},
+            { "Befolkning", "SOCI"},
+            { "Boende, byggande och bebyggelse", "SOCI"},
+            { "Demokrati", "JUST"},
+            { "Energi", "ENER"},
+            { "Finansmarknad", "ECON"},
+            { "Handel med varor och tjänster", "ECON"},
+            { "Hushållens ekonomi", "ECON"},
+            { "Hälso- och sjukvård", "HEAL"},
+            { "Jord- och skogsbruk, fiske", "AGRI"},
+            { "Kultur och fritid", "EDUC"},
+            { "Levnadsförhållanden", "SOCI"},
+            { "Miljö", "ENVI"},
+            { "Nationalräkenskaper", "ECON"},
+            { "Näringsverksamhet", "ECON"},
+            { "Offentlig ekonomi", "GOVE"},
+            { "Priser och konsumtion", "ECON"},
+            { "Socialtjänst", "SOCI"},
+            { "Transporter och kommunikationer", "TRAN"},
+            { "Utbildning och forskning", "EDUC"},
+            { "Ämnesövergripande statistik", "SOCI"},
+            {"",""}
+        };
+
         private static Dictionary<string, string> languageToDcatLang
             = new Dictionary<string, string>
         {
@@ -134,7 +161,13 @@ namespace Px.Rdf
             return reformatString(modified);
         }
 
-        private static void addRecursive(Item item, List<Dataset> d, int max)
+        private static string getCategory(List<PxMenuItem> path) {//"http://publications.europa.eu/resource/authority/data-theme/"+theme
+            if (path.Count < 2) {
+                return "";
+            }
+            return "http://publications.europa.eu/resource/authority/data-theme/" + themeMapping[path[1].Text];
+        }
+        private static void addRecursive(Item item, List<PxMenuItem> path, List<Dataset> d, int max)
         {
 
             if (item is PxMenuItem)
@@ -144,7 +177,9 @@ namespace Px.Rdf
                 {
                     foreach (var subItem in menu.SubItems)
                     {
-                        addRecursive(subItem, d, max);
+                        List<PxMenuItem> newPath = new List<PxMenuItem>(path);
+                        newPath.Add(menu);
+                        addRecursive(subItem, newPath, d, max);
                     }
                 }
             }
@@ -164,7 +199,6 @@ namespace Px.Rdf
                     builder.ReadAllLanguages = true;
                     builder.SetPreferredLanguage("sv");
                     builder.BuildForSelection();
-
                     
                     dataset.title = builder.Model.Meta.Title;
                     dataset.description = getDescription(builder.Model.Meta.Notes);
@@ -174,6 +208,7 @@ namespace Px.Rdf
                     dataset.updateFrequency = getUpdateFrequency(builder.Model.Meta);
                     dataset.languages = getLanguages(builder.Model.Meta);
                     dataset.contactPersons = getContacts(builder.Model.Meta);
+                    dataset.category = getCategory(path);
                    
                     d.Add(dataset);
                     //dataset.contact = builder.Model.Meta.ContentInfo;
@@ -231,7 +266,8 @@ namespace Px.Rdf
             });
 
             var datasets = new List<Dataset>();
-            addRecursive(menu.CurrentItem, datasets, n);
+            var path = new List<PxMenuItem>();
+            addRecursive(menu.CurrentItem, path, datasets, n);
             return datasets;
         }
 
