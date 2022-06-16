@@ -197,6 +197,16 @@ namespace XMLWriter
             identifier.InnerText = d.identifier;
             dElem.AppendChild(identifier);
 
+            // Keyword
+            foreach(Keyword keywords in d.keywords){
+                XmlElement keyElem = doc.CreateElement("dcat", "keyword", nsm.LookupNamespace("dcat"));
+                XmlAttribute keyLang = doc.CreateAttribute("xml", "lang", nsm.LookupNamespace("xml"));
+                keyElem.InnerText = keywords.text;
+                keyLang.InnerText = keywords.lang;
+                keyElem.SetAttributeNode(keyLang);
+                dElem.AppendChild(keyElem);
+            }
+
             // languages
             
             foreach(string language in d.languages)
@@ -220,7 +230,7 @@ namespace XMLWriter
                 dElem.AppendChild(contactPoint);
             }
 
-            
+
             // Landing page
             //sv
             XmlElement landingSV = doc.CreateElement("dcat", "landingPage", nsm.LookupNamespace("dcat"));
