@@ -79,6 +79,15 @@ namespace XMLWriter
                 rdf.AppendChild(oElem);
             }
 
+            foreach (Dataset ds in c.datasets)
+            {
+                foreach (Distribution distr in ds.distributions)
+                {
+                    XmlElement distrElem = generateDistribution(doc, distr, nsm);
+                    rdf.AppendChild(distrElem);
+                }
+            }
+
             doc.WriteTo(w);
             w.Close();
         }
@@ -173,6 +182,18 @@ namespace XMLWriter
 
             prodElem.SetAttributeNode(prodAbout);
             dElem.AppendChild(prodElem);
+
+            // Distribution
+            foreach (Distribution distribution in d.distributions)
+            {
+                XmlElement distElem = doc.CreateElement("dcat", "distribution", nsm.LookupNamespace("dcat"));
+                XmlAttribute distAbout = doc.CreateAttribute("rdf", "resource", nsm.LookupNamespace("rdf"));
+
+                distAbout.InnerText = distribution.accessUrl;
+
+                distElem.SetAttributeNode(distAbout);
+                dElem.AppendChild(distElem);
+            }
 
             // Category/Theme
             XmlElement themeElem = doc.CreateElement("dcat", "theme", nsm.LookupNamespace("dcat"));
@@ -317,6 +338,49 @@ namespace XMLWriter
             individual.AppendChild(phoneElem);
             
             return individual;
+        }
+
+        public static XmlElement generateDistribution(XmlDocument doc, Distribution dst, XmlNamespaceManager nsm)
+        {
+            XmlElement distr = doc.CreateElement("dcat", "Distribution", nsm.LookupNamespace("dcat"));
+
+            //about
+            XmlAttribute about = doc.CreateAttribute("rdf", "about", nsm.LookupNamespace("rdf"));
+            about.InnerText = dst.accessUrl;
+            distr.SetAttributeNode(about);
+
+            // title
+            XmlElement titleElem = doc.CreateElement("dcterms", "title", nsm.LookupNamespace("dcterms"));
+            titleElem.InnerText = dst.title;
+            distr.AppendChild(titleElem);
+
+            // format
+            XmlElement formatElem = doc.CreateElement("dcterms", "title", nsm.LookupNamespace("dcterms"));
+            formatElem.InnerText = dst.format;
+            distr.AppendChild(formatElem);
+
+            //accessURL
+            XmlElement accessElem = doc.CreateElement("dcat", "accessURL", nsm.LookupNamespace("dcat"));
+            XmlAttribute accessAbout = doc.CreateAttribute("rdf", "resource", nsm.LookupNamespace("rdf"));
+            accessAbout.InnerText = dst.accessUrl;
+            accessElem.SetAttributeNode(accessAbout);
+            distr.AppendChild(accessElem);
+
+            //language
+            XmlElement langElem = doc.CreateElement("dcterms", "language", nsm.LookupNamespace("dcterms"));
+            XmlAttribute langRes = doc.CreateAttribute("rdf", "resource", nsm.LookupNamespace("rdf"));
+            langRes.InnerText = dst.language;
+            langElem.SetAttributeNode(langRes);
+            distr.AppendChild(langElem);
+
+            //license
+            XmlElement licenseElem = doc.CreateElement("dcterms", "license", nsm.LookupNamespace("dcterms"));
+            XmlAttribute licenseRes = doc.CreateAttribute("rdf", "resource", nsm.LookupNamespace("rdf"));
+            licenseRes.InnerText = dst.license;
+            licenseElem.SetAttributeNode(licenseRes);
+            distr.AppendChild(licenseElem);
+
+            return distr;
         }
     }
 }

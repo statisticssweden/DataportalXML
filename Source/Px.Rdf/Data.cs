@@ -23,19 +23,29 @@ namespace Data
         public string lang;
         public string text;
     }
+
+    public struct Distribution
+    {
+        public string title;
+        public string accessUrl;
+        public string license;
+        public string language;
+        public string format;
+    }
     public struct Dataset
     {
         public string title;
         public string description;
         public string[] languages;
-        public Keyword[] keywords;
         public string category;
         public ContactPerson[] contactPersons;
         public Organization publisher;
+        public Keyword[] keywords;
         public string identifier;
         public string modified;
         public string updateFrequency;
         public Organization producer;
+        public Distribution[] distributions;
         public string url()
         {
             return url(true);
@@ -43,7 +53,7 @@ namespace Data
         public string url(bool swe)
         {
             string lang = swe ? "sv" : "en";
-            return "http://www.statistikdatabasen.scb.se/goto/"+ lang + "/ssd/" + identifier;
+            return "http://www.statistikdatabasen.scb.se/goto/" + lang + "/ssd/" + identifier;
         }
     }
 
