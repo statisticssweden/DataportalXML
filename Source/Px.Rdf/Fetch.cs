@@ -11,8 +11,11 @@ using System.Linq;
 using Data;
 namespace Px.Rdf
 {
-    public class Fetch
+    public static class Fetch
     {
+        private const string PCAXIS_DATE_FORMAT = "yyyyMMdd HH:mm";
+        private const string DCAT_DATE_FORMAT = "yyyy-MM-ddTHH:mm:ss";
+
         private static int hashNum;
         private static Dictionary<TimeScaleType, string> timeScaleToUpdateFreq
             = new Dictionary<TimeScaleType, string>
@@ -38,12 +41,6 @@ namespace Px.Rdf
 
         private static string nextString() {
             return (++hashNum).ToString();
-        }
-        private static string reformatString(string s)
-        {
-            DateTime date = DateTime.ParseExact(s, "yyyyMMdd HH:mm", null);
-            string formatted = date.ToString("yyyy-MM-ddTHH:mm:ss");
-            return formatted;
         }
 
         private static string getDescription(Notes notes)
@@ -104,6 +101,38 @@ namespace Px.Rdf
             }
             return contactPersons.ToArray();
         }
+        private static string reformatString(string s)
+        {
+            DateTime date = DateTime.ParseExact(s, PCAXIS_DATE_FORMAT, null);
+            string formatted = date.ToString(DCAT_DATE_FORMAT);
+            return formatted;
+        }
+
+        private static string getLatestDate(string[] dates) // format yyyyMMdd HH:mm
+        {
+            List<DateTime> dateTimes = new List<DateTime>(dates.Length);
+            for (int i = 0; i < dates.Length; i++) {
+                dateTimes.Add(DateTime.ParseExact(dates[i], PCAXIS_DATE_FORMAT, null));
+            }
+            int maxIndex = dateTimes.IndexOf(dateTimes.Max());
+            return dates[maxIndex];
+        }
+
+        private static string getLastModified(PXMeta meta)
+        {
+            string modified = meta.ContentInfo.LastUpdated;
+            if (modified is null)
+            {
+                Values values = meta.ContentVariable.Values;
+                string[] modifiedDates = new string[values.Count];
+                for (int i = 0; i < modifiedDates.Length; i++)
+                {
+                    modifiedDates[i] = values[i].ContentInfo.LastUpdated;
+                }
+                modified = getLatestDate(modifiedDates);
+            }
+            return reformatString(modified);
+        }
 
         private static void addRecursive(Item item, List<Dataset> d, int max)
         {
@@ -141,7 +170,7 @@ namespace Px.Rdf
                     dataset.description = getDescription(builder.Model.Meta.Notes);
                     dataset.publisher = Constants.SCB;
                     dataset.identifier = builder.Model.Meta.MainTable;
-                    dataset.modified = reformatString(builder.Model.Meta.CreationDate);
+                    dataset.modified = getLastModified(builder.Model.Meta);
                     dataset.updateFrequency = getUpdateFrequency(builder.Model.Meta);
                     dataset.languages = getLanguages(builder.Model.Meta);
                     dataset.contactPersons = getContacts(builder.Model.Meta);
