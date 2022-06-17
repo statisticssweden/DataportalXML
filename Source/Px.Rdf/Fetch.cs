@@ -208,7 +208,7 @@ namespace Px.Rdf
             sweDistr.license = "http://creativecommons.org/publicdomain/zero/1.0/";
 
             Distribution engDistr = new Distribution();
-            engDistr.title = "Datatjänst med information på svenska";
+            engDistr.title = "Datatjänst med information på engelska";
             engDistr.format = "application/json";
             engDistr.accessUrl = getDistributionUrl(path, title, "en");
             engDistr.language = convertLanguage("sv");
