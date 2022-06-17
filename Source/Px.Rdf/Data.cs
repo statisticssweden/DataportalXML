@@ -37,6 +37,7 @@ namespace Data
     {
         public string title;
         public string description;
+        public string[] languageURIs;
         public string[] languages;
         public string category;
         public ContactPerson[] contactPersons;
@@ -48,13 +49,10 @@ namespace Data
         public Organization producer;
         public Distribution[] distributions;
         public string resource;
-        public string url()
+
+        public string[] urls;
+        public string url(string lang)
         {
-            return url(true);
-        }
-        public string url(bool swe)
-        {
-            string lang = swe ? "sv" : "en";
             return "http://www.statistikdatabasen.scb.se/goto/" + lang + "/ssd/" + identifier;
         }
     }

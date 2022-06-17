@@ -221,7 +221,7 @@ namespace XMLWriter
 
             // languages
             
-            foreach(string language in d.languages)
+            foreach(string language in d.languageURIs)
             {
                 XmlElement langElem = doc.CreateElement("dcterms", "language", nsm.LookupNamespace("dcterms"));
 
@@ -244,20 +244,13 @@ namespace XMLWriter
 
 
             // Landing page
-            //sv
-            XmlElement landingSV = doc.CreateElement("dcat", "landingPage", nsm.LookupNamespace("dcat"));
-            XmlAttribute landSVRes = doc.CreateAttribute("rdf", "resource", nsm.LookupNamespace("rdf"));
-            landSVRes.InnerText = d.url(true);
-            landingSV.SetAttributeNode(landSVRes);
-            dElem.AppendChild(landingSV);
-
-
-            //en
-            XmlElement landingEN = doc.CreateElement("dcat", "landingPage", nsm.LookupNamespace("dcat"));
-            XmlAttribute landENRes = doc.CreateAttribute("rdf", "resource", nsm.LookupNamespace("rdf"));
-            landENRes.InnerText = d.url(false);
-            landingEN.SetAttributeNode(landENRes);
-            dElem.AppendChild(landingEN);
+            foreach (string lang in d.languages) {
+                XmlElement landing = doc.CreateElement("dcat", "landingPage", nsm.LookupNamespace("dcat"));
+                XmlAttribute landRes = doc.CreateAttribute("rdf", "resource", nsm.LookupNamespace("rdf"));
+                landRes.InnerText = d.url(lang);
+                landing.SetAttributeNode(landRes);
+                dElem.AppendChild(landing);
+            }
 
             // updatefreq
             XmlElement updateElem = doc.CreateElement("dcterms", "accrualPeriodicity", nsm.LookupNamespace("dcterms"));

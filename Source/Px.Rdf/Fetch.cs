@@ -268,7 +268,7 @@ namespace Px.Rdf
                     IPXModelBuilder builder = new PXSQLBuilder();
                     builder.SetPath(table.ID.Selection);
                     builder.ReadAllLanguages = true;
-                    builder.SetPreferredLanguage("sv");
+                    builder.SetPreferredLanguage("en");
                     builder.BuildForSelection();
                     
                     dataset.title = builder.Model.Meta.Title;
@@ -279,7 +279,8 @@ namespace Px.Rdf
                     dataset.updateFrequency = getUpdateFrequency(builder.Model.Meta);
 
                     string[] langs = getLanguages(builder.Model.Meta);
-                    dataset.languages = convertLanguages(langs);
+                    dataset.languages = langs;
+                    dataset.languageURIs = convertLanguages(langs);
 
                     dataset.contactPersons = getContacts(builder.Model.Meta);
                     dataset.category = getCategory(path);
