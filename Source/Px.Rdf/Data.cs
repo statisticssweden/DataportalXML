@@ -35,8 +35,8 @@ namespace Data
     }
     public struct Dataset
     {
-        public string title;
-        public string description;
+        public string[] titles;
+        public string[] descriptions;
         public string[] languageURIs;
         public string[] languages;
         public string category;

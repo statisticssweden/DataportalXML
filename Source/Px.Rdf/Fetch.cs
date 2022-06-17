@@ -261,15 +261,34 @@ namespace Px.Rdf
             return (++hashNum).ToString();
         }
 
-        private static string getDescription(Notes notes)
-        {
-            string desc = "-";
-            if (notes.Count > 0 && notes[0].Mandantory)
-            {
-                desc = notes[0].Text;
-            }
-            return desc;
+        private static string[] getDescriptions(PXMeta meta, string[] langs)
+        {   
+            int n = langs.Count();
+            string[] descriptions = new string[n];
 
+            for(int i=0; i<n; i++){
+                string lang = langs[i];
+                string desc = "-";
+                meta.SetLanguage(lang);
+                Notes notes = meta.Notes;
+                if (notes.Count > 0 && notes[0].Mandantory)
+                {
+                    desc = notes[0].Text;
+                }
+                descriptions[i]=desc;
+            }
+            return descriptions;
+        }
+
+        private static string[] getTitles(PXMeta meta, string[] langs) {
+            int n = langs.Count();
+            string[] titles = new string[n];
+            for(int i=0; i<n; i++){
+                string lang = langs[i];
+                meta.SetLanguage(lang);
+                titles[i] = meta.Title;
+            }
+            return titles;
         }
 
         private static string getUpdateFrequency(PXMeta meta)
@@ -450,11 +469,9 @@ namespace Px.Rdf
                     IPXModelBuilder builder = new PXSQLBuilder();
                     builder.SetPath(table.ID.Selection);
                     builder.ReadAllLanguages = true;
-                    builder.SetPreferredLanguage("en");
+                    builder.SetPreferredLanguage("sv");
                     builder.BuildForSelection();
                     
-                    dataset.title = builder.Model.Meta.Title;
-                    dataset.description = getDescription(builder.Model.Meta.Notes);
                     dataset.publisher = Constants.SCB;
                     dataset.identifier = builder.Model.Meta.MainTable;
                     dataset.modified = getLastModified(builder.Model.Meta);
@@ -463,6 +480,9 @@ namespace Px.Rdf
                     string[] langs = getLanguages(builder.Model.Meta);
                     dataset.languages = langs;
                     dataset.languageURIs = convertLanguages(langs);
+
+                    dataset.descriptions =  getDescriptions(builder.Model.Meta, langs);
+                    dataset.titles = getTitles(builder.Model.Meta, langs);
 
                     dataset.contactPersons = getContacts(builder.Model.Meta);
                     dataset.category = getCategory(path);

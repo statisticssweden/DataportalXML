@@ -146,15 +146,36 @@ namespace XMLWriter
             about.InnerText = d.resource;
             dElem.SetAttributeNode(about);
 
+            int numLangs = d.languages.Count();
             // Title
-            XmlElement titleElem = doc.CreateElement("dcterms", "title", nsm.LookupNamespace("dcterms"));
-            titleElem.InnerText = d.title;
-            dElem.AppendChild(titleElem);
+            for(int i = 0; i < numLangs; i++){
+                string title = d.titles[i];
+                string lang = d.languages[i];
+
+                XmlElement titleElem = doc.CreateElement("dcterms", "title", nsm.LookupNamespace("dcterms"));
+                XmlAttribute titleLang = doc.CreateAttribute("xml", "lang", nsm.LookupNamespace("xml"));
+
+                titleLang.InnerText = lang;
+                titleElem.InnerText = title;
+
+                titleElem.SetAttributeNode(titleLang);
+                dElem.AppendChild(titleElem);
+            }
             
             // Description
-            XmlElement descElem = doc.CreateElement("dcterms", "description", nsm.LookupNamespace("dcterms"));
-            descElem.InnerText = d.description;
-            dElem.AppendChild(descElem);
+            for(int i = 0; i < numLangs; i++){
+                string desc = d.descriptions[i];
+                string lang = d.languages[i]; 
+
+                XmlElement descElem = doc.CreateElement("dcterms", "description", nsm.LookupNamespace("dcterms"));
+                XmlAttribute descLang = doc.CreateAttribute("xml", "lang", nsm.LookupNamespace("xml"));
+
+                descLang.InnerText = lang;
+                descElem.InnerText = desc;
+
+                descElem.SetAttributeNode(descLang);
+                dElem.AppendChild(descElem);
+            }
 
             // Publisher reference
             XmlElement pubElem = doc.CreateElement("dcterms", "publisher", nsm.LookupNamespace("dcterms"));
