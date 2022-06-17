@@ -137,7 +137,7 @@ namespace Px.Rdf
                             name = c.Forname + " " + c.Surname + ", " + c.OrganizationName, 
                             email = c.Email,
                             telephone = c.PhonePrefix + c.PhoneNo,
-                            url = "https://www.scb.se/contactperson/" + nextString()
+                            resource = "https://www.scb.se/contactperson/" + nextString()
                         };
                         contacts.Add(c.Email, cp);
                     }
@@ -191,7 +191,7 @@ namespace Px.Rdf
         private static Organization getProducer(PXMeta meta) {
             string name = meta.Source;
             if (organizations.ContainsKey(name)) return organizations[name];
-            Organization org = new Organization {name = meta.Source, reference = "https://www.scb.se/producer/" + nextString()};
+            Organization org = new Organization {name = meta.Source, resource = "https://www.scb.se/producer/" + nextString()};
             organizations.Add(name, org);
             return org;
         }
@@ -225,6 +225,7 @@ namespace Px.Rdf
             sweDistr.accessUrl = getDistributionUrl(path, title, "sv");
             sweDistr.language = convertLanguage("sv");
             sweDistr.license = "http://creativecommons.org/publicdomain/zero/1.0/";
+            sweDistr.resource = "https://www.scb.se/distribution/" + nextString();
 
             Distribution engDistr = new Distribution();
             engDistr.title = "Datatjänst med information på engelska";
@@ -232,6 +233,7 @@ namespace Px.Rdf
             engDistr.accessUrl = getDistributionUrl(path, title, "en");
             engDistr.language = convertLanguage("sv");
             engDistr.license = "http://creativecommons.org/publicdomain/zero/1.0/";
+            engDistr.resource = "https://www.scb.se/distribution/" + nextString();
 
             return new Distribution[] { sweDistr, engDistr };
         }
@@ -285,6 +287,8 @@ namespace Px.Rdf
 
                     dataset.keywords = getKeywords(path, "sv");
                     dataset.distributions = getDistributions(path, dataset.identifier);
+
+                    dataset.resource = "https://www.scb.se/dataset/" + nextString();
 
                     d.Add(dataset);
                 }
