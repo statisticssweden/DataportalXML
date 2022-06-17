@@ -11,7 +11,7 @@ namespace XMLWriter
 {
     class XML
     {
-        public static void writeToFile(Catalog c, string fileName)
+        public static void writeToFile(Catalog c, Organization[] orgs, ContactPerson[] contacts ,string fileName)
         {
             XmlDocument doc = new XmlDocument();
             XmlWriterSettings settings = new XmlWriterSettings()
@@ -59,22 +59,13 @@ namespace XMLWriter
                 rdf.AppendChild(dElem);
             }
 
-            List<ContactPerson> uniqueContacts = new List<ContactPerson>();
-            foreach(Dataset d in c.datasets){
-                uniqueContacts = uniqueContacts.Union(d.contactPersons).ToList();
-            }
-
-            foreach (ContactPerson cp in uniqueContacts) {
+            foreach (ContactPerson cp in contacts) {
                 XmlElement cElem = generateContact(doc, cp, nsm);
                 rdf.AppendChild(cElem);
             }
 
-            List<Organization> uniqueProducer = new List<Organization>();
-            foreach(Dataset d in c.datasets){
-                uniqueProducer.Add(d.producer);
-            }
 
-            foreach (Organization o in uniqueProducer.Distinct()) {
+            foreach (Organization o in orgs) {
                 XmlElement oElem = generateOrg(doc, o, nsm);
                 rdf.AppendChild(oElem);
             }

@@ -15,8 +15,17 @@ namespace Px.Rdf
     {
         private const string PCAXIS_DATE_FORMAT = "yyyyMMdd HH:mm";
         private const string DCAT_DATE_FORMAT = "yyyy-MM-ddTHH:mm:ss";
-
         private static int hashNum;
+
+        private static Dictionary<string, Organization> organizations = new Dictionary<string, Organization>(); // name to organization
+        private static Dictionary<string, ContactPerson> contacts = new Dictionary<string, ContactPerson>(); // email to contactPerson
+
+        public static Organization[] UniqueOrgs() {
+            return organizations.Values.ToArray();
+        }
+        public static ContactPerson[] UniqueContacts() {
+            return contacts.Values.ToArray();
+        }
         private static Dictionary<TimeScaleType, string> timeScaleToUpdateFreq
             = new Dictionary<TimeScaleType, string>
         {
@@ -120,19 +129,25 @@ namespace Px.Rdf
             foreach (Value v in meta.ContentVariable.Values) {
                 List<ContactPerson> cps = new List<ContactPerson>();
                 foreach (Contact c in v.ContentInfo.ContactInfo) {
-                    ContactPerson cp = new ContactPerson 
-                    {
-                        name = c.Forname + " " + c.Surname + ", " + c.OrganizationName, 
-                        email = c.Email,
-                        telephone = c.PhonePrefix + c.PhoneNo,
-                        url = "https://www.scb.se/contactperson/" + nextString()
-                    };
+                    ContactPerson cp;
+                    if (contacts.ContainsKey(c.Email)) cp = contacts[c.Email];
+                    else {
+                        cp = new ContactPerson 
+                        {
+                            name = c.Forname + " " + c.Surname + ", " + c.OrganizationName, 
+                            email = c.Email,
+                            telephone = c.PhonePrefix + c.PhoneNo,
+                            url = "https://www.scb.se/contactperson/" + nextString()
+                        };
+                        contacts.Add(c.Email, cp);
+                    }
                     cps.Add(cp);
                 }
                 contactPersons = contactPersons.Union(cps).ToList();
             }
             return contactPersons.ToArray();
         }
+        
         private static string reformatString(string s)
         {
             DateTime date = DateTime.ParseExact(s, PCAXIS_DATE_FORMAT, null);
@@ -174,7 +189,11 @@ namespace Px.Rdf
         }
 
         private static Organization getProducer(PXMeta meta) {
-            return new Organization {name = meta.Source, reference = "https://www.scb.se/producer/" + nextString()};
+            string name = meta.Source;
+            if (organizations.ContainsKey(name)) return organizations[name];
+            Organization org = new Organization {name = meta.Source, reference = "https://www.scb.se/producer/" + nextString()};
+            organizations.Add(name, org);
+            return org;
         }
 
         private static Keyword[] getKeywords(List<PxMenuItem> path, string lang) {
