@@ -6,7 +6,7 @@ namespace Data
 {
     public static class Constants
     {
-        public static Organization SCB = new Organization() { name = "SCB - Statistiska Centralbyrån", reference = "https://www.scb.se"};
+        public static Organization SCB = new Organization() { name = "SCB - Statistiska Centralbyrån", resource = "https://www.scb.se"};
     }
 
     public struct Catalog
@@ -28,14 +28,16 @@ namespace Data
     {
         public string title;
         public string accessUrl;
+        public string resource;
         public string license;
         public string language;
         public string format;
     }
     public struct Dataset
     {
-        public string title;
-        public string description;
+        public string[] titles;
+        public string[] descriptions;
+        public string[] languageURIs;
         public string[] languages;
         public string category;
         public ContactPerson[] contactPersons;
@@ -46,13 +48,11 @@ namespace Data
         public string updateFrequency;
         public Organization producer;
         public Distribution[] distributions;
-        public string url()
+        public string resource;
+
+        public string[] urls;
+        public string url(string lang)
         {
-            return url(true);
-        }
-        public string url(bool swe)
-        {
-            string lang = swe ? "sv" : "en";
             return "http://www.statistikdatabasen.scb.se/goto/" + lang + "/ssd/" + identifier;
         }
     }
@@ -60,7 +60,7 @@ namespace Data
     public struct Organization
     {
         public string name;
-        public string reference;
+        public string resource;
 
         public override bool Equals(object obj)
         {
@@ -78,7 +78,7 @@ namespace Data
 
     public struct ContactPerson
     { 
-        public string url;
+        public string resource;
         public string name;
         public string email;
         public string telephone;

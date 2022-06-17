@@ -14,9 +14,11 @@ namespace TestApp
     {
         public static void Main(string[] args)
         {
-            int numberOfTables = 100;
+            int numberOfTables = 500;
             Catalog c = Fetch.GetCatalog(numberOfTables);
-            XML.writeToFile(c, "../../../test.xml");
+            Organization[] orgs = Fetch.UniqueOrgs();
+            ContactPerson[] contacts = Fetch.UniqueContacts();
+            XML.writeToFile(c, orgs, contacts, "../../../test.xml");
         }
     }
 }
