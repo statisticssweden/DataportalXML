@@ -14,7 +14,7 @@ namespace TestApp
     {
         public static void Main(string[] args)
         {
-            int numberOfTables = 500;
+            int numberOfTables = 100;
             Catalog c = Fetch.GetCatalog(numberOfTables);
             Organization[] orgs = Fetch.UniqueOrgs();
             ContactPerson[] contacts = Fetch.UniqueContacts();
