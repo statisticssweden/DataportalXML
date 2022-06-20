@@ -1003,6 +1003,24 @@ För att klassificeras som förvärvsarbetande krävs att personen har en lönei
     <dcterms:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC" />
   </dcat:Dataset>
   <dcat:Dataset rdf:about="https://www.scb.se/dataset/51">
+    <dcterms:title xml:lang="sv">Statistik med inriktning mot demografi för utrikes födda PxcMetaTitleBy region, kön, variabel, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
+    <dcterms:description xml:lang="sv">Populationen avser folkbokförda utrikes födda personer i samtliga åldrar.</dcterms:description>
+    <dcterms:publisher rdf:resource="https://www.scb.se" />
+    <dcterms:creator rdf:resource="https://www.scb.se/producer/2" />
+    <dcat:distribution rdf:resource="https://www.scb.se/distribution/50" />
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-12-19T09:30:00</dcterms:modified>
+    <dcterms:identifier>IntGr3LanKONU</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot demografi</dcat:keyword>
+    <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
+    <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/1" />
+    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr3LanKONU" />
+    <dcterms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL" />
+    <dcterms:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="https://www.scb.se/dataset/53">
     <dcterms:title xml:lang="sv">Antal kommunmottagna flyktingar, 20-64 år PxcMetaTitleBy år efter mottagning, kön, tabellinnehåll PxcMetaTitleAnd mottagningsår</dcterms:title>
     <dcterms:description xml:lang="sv">I populationen kommunmottagna flyktingar ingår folkbokförda personer, 20-64 år vid år efter mottagningsår, som någon gång har varit kommunmottagna och som då antingen:
 
@@ -1015,7 +1033,7 @@ Den anhörige ska söka uppehållstillstånd inom viss tid från det att anknytn
 Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis kommer en person som var 18 år vid kommunmottagningen först med i tabellen två år efter mottagningsåret då personen är 20 år. En person som är 64 år vid mottagningsåret är bara med i tabellen på rader för 0 år efter mottagningsår, åren efter är personen över 64 år och därmed utanför populationen.</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
     <dcterms:creator rdf:resource="https://www.scb.se/producer/2" />
-    <dcat:distribution rdf:resource="https://www.scb.se/distribution/50" />
+    <dcat:distribution rdf:resource="https://www.scb.se/distribution/52" />
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-25T10:59:00</dcterms:modified>
     <dcterms:identifier>KomMotAntal</dcterms:identifier>
@@ -1025,24 +1043,6 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/1" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/KomMotAntal" />
-    <dcterms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL" />
-    <dcterms:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC" />
-  </dcat:Dataset>
-  <dcat:Dataset rdf:about="https://www.scb.se/dataset/53">
-    <dcterms:title xml:lang="sv">Statistik med inriktning mot demografi för utrikes födda PxcMetaTitleBy region, kön, variabel, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
-    <dcterms:description xml:lang="sv">Populationen avser folkbokförda utrikes födda personer i samtliga åldrar.</dcterms:description>
-    <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:creator rdf:resource="https://www.scb.se/producer/2" />
-    <dcat:distribution rdf:resource="https://www.scb.se/distribution/52" />
-    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-12-19T09:30:00</dcterms:modified>
-    <dcterms:identifier>IntGr3LanKONU</dcterms:identifier>
-    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
-    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
-    <dcat:keyword xml:lang="sv">Statistik med inriktning mot demografi</dcat:keyword>
-    <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
-    <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/1" />
-    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/IntGr3LanKONU" />
     <dcterms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL" />
     <dcterms:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC" />
   </dcat:Dataset>
@@ -1657,6 +1657,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
     <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
     <dcat:keyword xml:lang="sv">Statistik med inriktning mot utbildning</dcat:keyword>
+    <dcat:keyword xml:lang="en">General statistics</dcat:keyword>
+    <dcat:keyword xml:lang="en">Integration statistics based on administrative sources</dcat:keyword>
+    <dcat:keyword xml:lang="en">Education statistics</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/1" />
@@ -1698,6 +1701,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
     <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
     <dcat:keyword xml:lang="sv">Statistik med inriktning mot utbildning</dcat:keyword>
+    <dcat:keyword xml:lang="en">General statistics</dcat:keyword>
+    <dcat:keyword xml:lang="en">Integration statistics based on administrative sources</dcat:keyword>
+    <dcat:keyword xml:lang="en">Education statistics</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/1" />
@@ -1721,6 +1727,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
     <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
     <dcat:keyword xml:lang="sv">Statistik med inriktning mot utbildning</dcat:keyword>
+    <dcat:keyword xml:lang="en">General statistics</dcat:keyword>
+    <dcat:keyword xml:lang="en">Integration statistics based on administrative sources</dcat:keyword>
+    <dcat:keyword xml:lang="en">Education statistics</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/1" />
@@ -1744,6 +1753,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
     <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
     <dcat:keyword xml:lang="sv">Statistik med inriktning mot utbildning</dcat:keyword>
+    <dcat:keyword xml:lang="en">General statistics</dcat:keyword>
+    <dcat:keyword xml:lang="en">Integration statistics based on administrative sources</dcat:keyword>
+    <dcat:keyword xml:lang="en">Education statistics</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/1" />
@@ -1767,6 +1779,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
     <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
     <dcat:keyword xml:lang="sv">Statistik med inriktning mot utbildning</dcat:keyword>
+    <dcat:keyword xml:lang="en">General statistics</dcat:keyword>
+    <dcat:keyword xml:lang="en">Integration statistics based on administrative sources</dcat:keyword>
+    <dcat:keyword xml:lang="en">Education statistics</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/1" />
@@ -2604,6 +2619,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskostnadsindex för arbetare och tjänstemän inom privat sektor (AKI)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskostnadsindex</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour cost index for wage-earners and salaried employees in the private sector (AKI)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour cost index for wage-earners and salaried employees in the private sector (AKI)</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/221" />
@@ -2628,6 +2646,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskostnadsindex för arbetare och tjänstemän inom privat sektor (AKI)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskostnadsindex</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour cost index for wage-earners and salaried employees in the private sector (AKI)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour cost index for wage-earners and salaried employees in the private sector (AKI)</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/221" />
@@ -2652,6 +2673,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskostnadsindex för arbetare och tjänstemän inom privat sektor (AKI)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Löneindex</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour cost index for wage-earners and salaried employees in the private sector (AKI)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Index for direct wages and salaries</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/221" />
@@ -2676,6 +2700,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskostnadsindex för arbetare och tjänstemän inom privat sektor (AKI)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Löneindex</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour cost index for wage-earners and salaried employees in the private sector (AKI)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Index for direct wages and salaries</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/221" />
@@ -2700,6 +2727,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskostnadsindex för arbetare och tjänstemän inom privat sektor (AKI)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Äldre indexserier som ej längre uppdateras</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour cost index for wage-earners and salaried employees in the private sector (AKI)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Old tables, not updated</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/221" />
@@ -2724,6 +2754,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskostnadsindex för arbetare och tjänstemän inom privat sektor (AKI)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Äldre indexserier som ej längre uppdateras</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour cost index for wage-earners and salaried employees in the private sector (AKI)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Old tables, not updated</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/221" />
@@ -2748,6 +2781,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskostnadsindex för arbetare och tjänstemän inom privat sektor (AKI)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Äldre indexserier som ej längre uppdateras</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour cost index for wage-earners and salaried employees in the private sector (AKI)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Old tables, not updated</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/221" />
@@ -2772,6 +2808,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskostnadsindex för arbetare och tjänstemän inom privat sektor (AKI)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Äldre indexserier som ej längre uppdateras</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour cost index for wage-earners and salaried employees in the private sector (AKI)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Old tables, not updated</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/221" />
@@ -2796,6 +2835,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskostnadsindex för arbetare och tjänstemän inom privat sektor (AKI)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Äldre indexserier som ej längre uppdateras</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour cost index for wage-earners and salaried employees in the private sector (AKI)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Old tables, not updated</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/221" />
@@ -2820,6 +2862,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskostnadsindex för arbetare och tjänstemän inom privat sektor (AKI)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Äldre indexserier som ej längre uppdateras</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour cost index for wage-earners and salaried employees in the private sector (AKI)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Old tables, not updated</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/221" />
@@ -2901,6 +2946,9 @@ Populationen ändras varje år på grund av åldersavgränsningen. Exempelvis ko
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskostnadsindex för arbetare och tjänstemän inom privat sektor (AKI)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Ekonomiska indikatorer</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour cost index for wage-earners and salaried employees in the private sector (AKI)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Economic indicators</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/221" />
@@ -2929,6 +2977,9 @@ For the period 1970M01-2005M03 the time series contains “linked data”. No ma
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Befolkningen efter arbetskraftstillhörighet från och med 1970</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Population by labour status from 1970</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -2957,6 +3008,9 @@ For the period 1970Q1-2005Q1 the time series contains “linked data”. No marg
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Befolkningen efter arbetskraftstillhörighet från och med 1970</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Population by labour status from 1970</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -2985,6 +3039,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Befolkningen efter arbetskraftstillhörighet från och med 1970</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Population by labour status from 1970</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -3009,6 +3066,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Befolkningen efter arbetskraftstillhörighet från och med 1970</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Population by labour status from 1970</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/171" />
@@ -3036,6 +3096,9 @@ For the period 1970M01-2005M03 the time series contains “linked data”. No ma
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Sysselsatta från och med 1970</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Employed persons from 1970</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -3064,6 +3127,9 @@ For the period 1970Q1-2005Q1 the time series contains “linked data”. No marg
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Sysselsatta från och med 1970</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Employed persons from 1970</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -3092,6 +3158,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Sysselsatta från och med 1970</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Employed persons from 1970</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -3120,6 +3189,9 @@ For the period 1970M01-2005M03 the time series contains “linked data”. No ma
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Sysselsatta från och med 1970</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Employed persons from 1970</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -3148,6 +3220,9 @@ For the period 1970Q1-2005Q1 the time series contains “linked data”. No marg
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Sysselsatta från och med 1970</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Employed persons from 1970</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -3176,6 +3251,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Sysselsatta från och med 1970</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Employed persons from 1970</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -3200,6 +3278,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Sysselsatta från och med 1970</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Employed persons from 1970</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -3224,6 +3305,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Sysselsatta från och med 1970</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Employed persons from 1970</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -3248,6 +3332,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Sysselsatta från och med 1970</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Employed persons from 1970</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -3272,6 +3359,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Sysselsatta från och med 1970</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Employed persons from 1970</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -3296,6 +3386,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Sysselsatta från och med 1970</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Employed persons from 1970</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -3320,6 +3413,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Sysselsatta från och med 1970</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Employed persons from 1970</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -3344,6 +3440,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Sysselsatta från och med 1970</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Employed persons from 1970</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -3368,6 +3467,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Sysselsatta från och med 1970</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Employed persons from 1970</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -3392,6 +3494,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Sysselsatta från och med 1970</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Employed persons from 1970</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -3416,6 +3521,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Sysselsatta från och med 1970</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Employed persons from 1970</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -3440,6 +3548,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Sysselsatta från och med 1970</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Employed persons from 1970</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -3464,6 +3575,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Sysselsatta från och med 1970</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Employed persons from 1970</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -3488,6 +3602,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Sysselsatta från och med 1970</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Employed persons from 1970</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -3512,6 +3629,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Sysselsatta från och med 1970</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Employed persons from 1970</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -3536,6 +3656,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Sysselsatta från och med 1970</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Employed persons from 1970</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -3560,6 +3683,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Sysselsatta från och med 1970</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Employed persons from 1970</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -3584,6 +3710,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Sysselsatta från och med 1970</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Employed persons from 1970</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -3608,6 +3737,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Sysselsatta från och med 1970</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Employed persons from 1970</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -3632,6 +3764,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Anställda från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Employees from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -3656,6 +3791,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Anställda från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Employees from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -3680,6 +3818,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Anställda från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Employees from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -3704,6 +3845,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Anställda från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Employees from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -3728,6 +3872,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Anställda från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Employees from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -3752,6 +3899,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Anställda från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Employees from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -3776,6 +3926,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Anställda från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Employees from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -3800,6 +3953,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Anställda från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Employees from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -3824,6 +3980,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Anställda från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Employees from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -3848,6 +4007,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetstid från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Hours worked from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -3872,6 +4034,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetstid från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Hours worked from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -3896,6 +4061,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetstid från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Hours worked from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -3920,6 +4088,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetstid från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Hours worked from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -3944,6 +4115,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetstid från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Hours worked from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -3968,6 +4142,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetstid från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Hours worked from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -3992,6 +4169,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetstid från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Hours worked from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -4016,6 +4196,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetstid från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Hours worked from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -4040,6 +4223,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetstid från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Hours worked from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -4064,6 +4250,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetstid från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Hours worked from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -4088,6 +4277,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetstid från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Hours worked from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -4112,6 +4304,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetstid från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Hours worked from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -4136,6 +4331,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetstid efter näringsgren (SNI2007) från och med 2009</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Hours worked by industrial classification (NACE Rev. 2) from 2009</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -4160,6 +4358,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetstid efter näringsgren (SNI2007) från och med 2009</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Hours worked by industrial classification (NACE Rev. 2) from 2009</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -4184,6 +4385,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetstid efter näringsgren (SNI2007) från och med 2009</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Hours worked by industrial classification (NACE Rev. 2) from 2009</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -4208,6 +4412,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetstid efter näringsgren (SNI2007) från och med 2009</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Hours worked by industrial classification (NACE Rev. 2) from 2009</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -4232,6 +4439,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetstid efter näringsgren (SNI2007) från och med 2009</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Hours worked by industrial classification (NACE Rev. 2) from 2009</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -4256,6 +4466,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetstid efter näringsgren (SNI2007) från och med 2009</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Hours worked by industrial classification (NACE Rev. 2) from 2009</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -4280,6 +4493,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetstid efter näringsgren (SNI2007) från och med 2009</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Hours worked by industrial classification (NACE Rev. 2) from 2009</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -4304,6 +4520,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetstid efter näringsgren (SNI2007) från och med 2009</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Hours worked by industrial classification (NACE Rev. 2) from 2009</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -4328,6 +4547,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetstid efter näringsgren (SNI2007) från och med 2009</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Hours worked by industrial classification (NACE Rev. 2) from 2009</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -4352,6 +4574,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetstid efter näringsgren (SNI2002) 2005-2008</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Hours worked by industrial classification (NACE Rev. 1.1) 2005-2008</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -4376,6 +4601,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetstid efter näringsgren (SNI2002) 2005-2008</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Hours worked by industrial classification (NACE Rev. 1.1) 2005-2008</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -4400,6 +4628,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetstid efter näringsgren (SNI2002) 2005-2008</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Hours worked by industrial classification (NACE Rev. 1.1) 2005-2008</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -4424,6 +4655,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetstid efter näringsgren (SNI2002) 2005-2008</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Hours worked by industrial classification (NACE Rev. 1.1) 2005-2008</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -4448,6 +4682,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetstid efter näringsgren (SNI2002) 2005-2008</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Hours worked by industrial classification (NACE Rev. 1.1) 2005-2008</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -4472,6 +4709,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetstid efter näringsgren (SNI2002) 2005-2008</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Hours worked by industrial classification (NACE Rev. 1.1) 2005-2008</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -4496,6 +4736,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetstid efter näringsgren (SNI2002) 2005-2008</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Hours worked by industrial classification (NACE Rev. 1.1) 2005-2008</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -4520,6 +4763,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetstid efter näringsgren (SNI2002) 2005-2008</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Hours worked by industrial classification (NACE Rev. 1.1) 2005-2008</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -4544,6 +4790,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetstid efter näringsgren (SNI2002) 2005-2008</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Hours worked by industrial classification (NACE Rev. 1.1) 2005-2008</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -4568,6 +4817,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Frånvarande från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Persons absent from work from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -4592,6 +4844,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Frånvarande från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Persons absent from work from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -4616,6 +4871,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Frånvarande från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Persons absent from work from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -4640,6 +4898,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Frånvarande från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Persons absent from work from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -4664,6 +4925,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Frånvarande från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Persons absent from work from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -4688,6 +4952,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Frånvarande från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Persons absent from work from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -4712,6 +4979,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Frånvarande från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Persons absent from work from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -4736,6 +5006,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Frånvarande från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Persons absent from work from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -4760,6 +5033,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Frånvarande från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Persons absent from work from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -4784,6 +5060,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetslösa från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Unemployed persons from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -4808,6 +5087,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetslösa från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Unemployed persons from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -4832,6 +5114,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetslösa från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Unemployed persons from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -4856,6 +5141,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetslösa från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Unemployed persons from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -4880,6 +5168,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetslösa från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Unemployed persons from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -4904,6 +5195,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetslösa från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Unemployed persons from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -4928,6 +5222,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetslösa från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Unemployed persons from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -4952,6 +5249,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetslösa från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Unemployed persons from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -4976,6 +5276,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetslösa från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Unemployed persons from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -5000,6 +5303,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Personer ej i arbetskraften från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Persons not in the labour force from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -5024,6 +5330,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Personer ej i arbetskraften från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Persons not in the labour force from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -5048,6 +5357,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Personer ej i arbetskraften från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Persons not in the labour force from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -5072,6 +5384,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Personer ej i arbetskraften från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Persons not in the labour force from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -5096,6 +5411,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Personer ej i arbetskraften från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Persons not in the labour force from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -5120,6 +5438,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Personer ej i arbetskraften från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Persons not in the labour force from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -5144,6 +5465,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Outnyttjat arbetskraftsutbud från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour supply not utilized as from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -5168,6 +5492,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Outnyttjat arbetskraftsutbud från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour supply not utilized as from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -5192,6 +5519,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Outnyttjat arbetskraftsutbud från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour supply not utilized as from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -5216,6 +5546,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Regionala tabeller från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Regional data from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -5240,6 +5573,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Regionala tabeller från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Regional data from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -5264,6 +5600,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Regionala tabeller från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Regional data from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -5288,6 +5627,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Regionala tabeller från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Regional data from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -5312,6 +5654,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Regionala tabeller från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Regional data from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -5336,6 +5681,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Regionala tabeller från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Regional data from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -5360,6 +5708,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Utbildningens nivå och inriktning från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Level and field of Education as from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -5384,6 +5735,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Utbildningens nivå och inriktning från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Level and field of Education as from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -5408,6 +5762,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Utbildningens nivå och inriktning från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Level and field of Education as from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -5432,6 +5789,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Utbildningens nivå och inriktning från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Level and field of Education as from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -5456,6 +5816,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Utbildningens nivå och inriktning från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Level and field of Education as from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -5480,6 +5843,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Utbildningens nivå och inriktning från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Level and field of Education as from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -5504,6 +5870,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Civilstånd och barn från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Civil status and children as from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -5528,6 +5897,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Civilstånd och barn från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Civil status and children as from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -5552,6 +5924,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Civilstånd och barn från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Civil status and children as from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -5576,6 +5951,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Civilstånd och barn från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Civil status and children as from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -5600,6 +5978,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Civilstånd och barn från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Civil status and children as from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -5624,6 +6005,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Civilstånd och barn från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Civil status and children as from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -5648,6 +6032,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Civilstånd och barn från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Civil status and children as from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -5672,6 +6059,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Civilstånd och barn från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Civil status and children as from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -5696,6 +6086,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Civilstånd och barn från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Civil status and children as from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -5720,6 +6113,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Civilstånd och barn från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Civil status and children as from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -5744,6 +6140,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Civilstånd och barn från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Civil status and children as from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -5768,6 +6167,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Civilstånd och barn från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Civil status and children as from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -5792,6 +6194,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Inrikes och utrikes födda från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Born in Sweden and Foreign-born persons as from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -5816,6 +6221,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Inrikes och utrikes födda från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Born in Sweden and Foreign-born persons as from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -5840,6 +6248,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Inrikes och utrikes födda från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Born in Sweden and Foreign-born persons as from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -5864,6 +6275,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Inrikes och utrikes födda från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Born in Sweden and Foreign-born persons as from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -5888,6 +6302,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Inrikes och utrikes födda från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Born in Sweden and Foreign-born persons as from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -5912,6 +6329,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Inrikes och utrikes födda från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Born in Sweden and Foreign-born persons as from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -5936,6 +6356,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Inrikes och utrikes födda från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Born in Sweden and Foreign-born persons as from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -5960,6 +6383,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Inrikes och utrikes födda från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Born in Sweden and Foreign-born persons as from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -5984,6 +6410,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Inrikes och utrikes födda från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Born in Sweden and Foreign-born persons as from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -6008,6 +6437,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Inrikes och utrikes födda från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Born in Sweden and Foreign-born persons as from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -6032,6 +6464,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Inrikes och utrikes födda från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Born in Sweden and Foreign-born persons as from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -6056,6 +6491,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Inrikes och utrikes födda från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Born in Sweden and Foreign-born persons as from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -6080,6 +6518,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Inrikes och utrikes födda från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Born in Sweden and Foreign-born persons as from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -6104,6 +6545,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Inrikes och utrikes födda från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Born in Sweden and Foreign-born persons as from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -6128,6 +6572,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Inrikes och utrikes födda från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Born in Sweden and Foreign-born persons as from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -6152,6 +6599,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Inrikes och utrikes födda från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Born in Sweden and Foreign-born persons as from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -6176,6 +6626,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Inrikes och utrikes födda från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Born in Sweden and Foreign-born persons as from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -6200,6 +6653,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Inrikes och utrikes födda från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Born in Sweden and Foreign-born persons as from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -6224,6 +6680,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Inrikes och utrikes födda från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Born in Sweden and Foreign-born persons as from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -6248,6 +6707,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Inrikes och utrikes födda från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Born in Sweden and Foreign-born persons as from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -6272,6 +6734,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Inrikes och utrikes födda från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Born in Sweden and Foreign-born persons as from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -6296,6 +6761,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Inrikes och utrikes födda från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Born in Sweden and Foreign-born persons as from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -6320,6 +6788,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Inrikes och utrikes födda från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Born in Sweden and Foreign-born persons as from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -6344,6 +6815,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Inrikes och utrikes födda från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Born in Sweden and Foreign-born persons as from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -6368,6 +6842,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Inrikes och utrikes födda från och med 2005</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Born in Sweden and Foreign-born persons as from 2005</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -6392,6 +6869,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Unga som varken arbetar eller studerar (NEET) från och med 2007</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Young people not in employment and not in any education and training (NEET) from 2007</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -6416,6 +6896,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Unga som varken arbetar eller studerar (NEET) från och med 2007</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Young people not in employment and not in any education and training (NEET) from 2007</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -6440,6 +6923,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Unga som varken arbetar eller studerar (NEET) från och med 2007</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Young people not in employment and not in any education and training (NEET) from 2007</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -6464,6 +6950,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Unga som varken arbetar eller studerar (NEET) från och med 2007</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Young people not in employment and not in any education and training (NEET) from 2007</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -6488,6 +6977,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Unga som varken arbetar eller studerar (NEET) från och med 2007</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Young people not in employment and not in any education and training (NEET) from 2007</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -6512,6 +7004,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Unga som varken arbetar eller studerar (NEET) från och med 2007</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Young people not in employment and not in any education and training (NEET) from 2007</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -6536,6 +7031,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Unga som varken arbetar eller studerar (NEET) från och med 2007</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Young people not in employment and not in any education and training (NEET) from 2007</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -6560,6 +7058,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Unga som varken arbetar eller studerar (NEET) från och med 2007</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Young people not in employment and not in any education and training (NEET) from 2007</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
@@ -6584,6 +7085,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Ekonomiska indikatorer</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Economic indicators</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/171" />
@@ -6607,6 +7111,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Ekonomiska indikatorer</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Economic indicators</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/171" />
@@ -6630,6 +7137,9 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningarna (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Ekonomiska indikatorer</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour market</dcat:keyword>
+    <dcat:keyword xml:lang="en">Labour Force Surveys (LFS)</dcat:keyword>
+    <dcat:keyword xml:lang="en">Economic indicators</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/171" />
@@ -8225,29 +8735,11 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcterms:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC" />
   </dcat:Dataset>
   <dcat:Dataset rdf:about="https://www.scb.se/dataset/898">
-    <dcterms:title xml:lang="sv">Arbetade timmar per vecka (AKU 16-74 år), 10 000-tal PxcMetaTitleBy näringsgren SNI69, yrkesställning, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
-    <dcterms:description xml:lang="sv">-</dcterms:description>
-    <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:creator rdf:resource="https://www.scb.se/producer/2" />
-    <dcat:distribution rdf:resource="https://www.scb.se/distribution/897" />
-    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2000-01-18T14:08:00</dcterms:modified>
-    <dcterms:identifier>AKUVATimveckaYrk</dcterms:identifier>
-    <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
-    <dcat:keyword xml:lang="sv">Arbetskraftsundersökningar, äldre serier (AKU)</dcat:keyword>
-    <dcat:keyword xml:lang="sv">Sysselsatta</dcat:keyword>
-    <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
-    <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/726" />
-    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/AKUVATimveckaYrk" />
-    <dcterms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL" />
-    <dcterms:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC" />
-  </dcat:Dataset>
-  <dcat:Dataset rdf:about="https://www.scb.se/dataset/900">
     <dcterms:title xml:lang="sv">Sysselsatta (AKU), 100-tal PxcMetaTitleBy kön, näringsgren SNI 2002, yrkesställning, tabellinnehåll PxcMetaTitleAnd månad</dcterms:title>
     <dcterms:description xml:lang="sv">Tidseriebrott. Fr.o.m. år 2001 tillämpar AKU standarden för institutionell sektorindelning 1999. Största förändringen är att försäkringskassorna redovisas som statliga (tidigare kommunala) och affärsverken som privata (tidigare statliga). Fr.o. m. år 2001 redovisas kyrkan som privat (tidigare kommunal). År 2000 borde kyrkan varit redovisad som privat.</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
     <dcterms:creator rdf:resource="https://www.scb.se/producer/2" />
-    <dcat:distribution rdf:resource="https://www.scb.se/distribution/899" />
+    <dcat:distribution rdf:resource="https://www.scb.se/distribution/897" />
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2005-04-27T13:01:00</dcterms:modified>
     <dcterms:identifier>AKUMSysselYrk</dcterms:identifier>
@@ -8259,6 +8751,24 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/171" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/AKUMSysselYrk" />
     <dcterms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/MONTHLY" />
+    <dcterms:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="https://www.scb.se/dataset/900">
+    <dcterms:title xml:lang="sv">Arbetade timmar per vecka (AKU 16-74 år), 10 000-tal PxcMetaTitleBy näringsgren SNI69, yrkesställning, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
+    <dcterms:description xml:lang="sv">-</dcterms:description>
+    <dcterms:publisher rdf:resource="https://www.scb.se" />
+    <dcterms:creator rdf:resource="https://www.scb.se/producer/2" />
+    <dcat:distribution rdf:resource="https://www.scb.se/distribution/899" />
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2000-01-18T14:08:00</dcterms:modified>
+    <dcterms:identifier>AKUVATimveckaYrk</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Arbetskraftsundersökningar, äldre serier (AKU)</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Sysselsatta</dcat:keyword>
+    <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
+    <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/726" />
+    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/AKUVATimveckaYrk" />
+    <dcterms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL" />
     <dcterms:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC" />
   </dcat:Dataset>
   <dcat:Dataset rdf:about="https://www.scb.se/dataset/902">
@@ -8299,29 +8809,11 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcterms:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC" />
   </dcat:Dataset>
   <dcat:Dataset rdf:about="https://www.scb.se/dataset/906">
-    <dcterms:title xml:lang="sv">Arbetade timmar per vecka (AKU), 10 000-tal PxcMetaTitleBy näringsgren SNI69, yrkesställning, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
-    <dcterms:description xml:lang="sv">-</dcterms:description>
-    <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:creator rdf:resource="https://www.scb.se/producer/2" />
-    <dcat:distribution rdf:resource="https://www.scb.se/distribution/905" />
-    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1999-12-16T14:38:00</dcterms:modified>
-    <dcterms:identifier>AKUUATimveckaYrk</dcterms:identifier>
-    <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
-    <dcat:keyword xml:lang="sv">Arbetskraftsundersökningar, äldre serier (AKU)</dcat:keyword>
-    <dcat:keyword xml:lang="sv">Sysselsatta</dcat:keyword>
-    <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
-    <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/726" />
-    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/AKUUATimveckaYrk" />
-    <dcterms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL" />
-    <dcterms:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC" />
-  </dcat:Dataset>
-  <dcat:Dataset rdf:about="https://www.scb.se/dataset/908">
     <dcterms:title xml:lang="sv">Sysselsatta (AKU), 100-tal PxcMetaTitleBy kön, näringsgren SNI 2002, yrkesställning, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
     <dcterms:description xml:lang="sv">Tidseriebrott. Fr.o.m. år 2001 tillämpar AKU standarden för institutionell sektorindelning 1999. Största förändringen är att försäkringskassorna redovisas som statliga (tidigare kommunala) och affärsverken som privata (tidigare statliga). Fr.o. m. år 2001 redovisas kyrkan som privat (tidigare kommunal). År 2000 borde kyrkan varit redovisad som privat.</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
     <dcterms:creator rdf:resource="https://www.scb.se/producer/2" />
-    <dcat:distribution rdf:resource="https://www.scb.se/distribution/907" />
+    <dcat:distribution rdf:resource="https://www.scb.se/distribution/905" />
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2005-01-26T13:04:00</dcterms:modified>
     <dcterms:identifier>AKUASysselYrk</dcterms:identifier>
@@ -8335,12 +8827,48 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcterms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL" />
     <dcterms:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC" />
   </dcat:Dataset>
+  <dcat:Dataset rdf:about="https://www.scb.se/dataset/908">
+    <dcterms:title xml:lang="sv">Arbetade timmar per vecka (AKU), 10 000-tal PxcMetaTitleBy näringsgren SNI69, yrkesställning, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
+    <dcterms:description xml:lang="sv">-</dcterms:description>
+    <dcterms:publisher rdf:resource="https://www.scb.se" />
+    <dcterms:creator rdf:resource="https://www.scb.se/producer/2" />
+    <dcat:distribution rdf:resource="https://www.scb.se/distribution/907" />
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1999-12-16T14:38:00</dcterms:modified>
+    <dcterms:identifier>AKUUATimveckaYrk</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Arbetskraftsundersökningar, äldre serier (AKU)</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Sysselsatta</dcat:keyword>
+    <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
+    <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/726" />
+    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/AKUUATimveckaYrk" />
+    <dcterms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL" />
+    <dcterms:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
   <dcat:Dataset rdf:about="https://www.scb.se/dataset/910">
+    <dcterms:title xml:lang="sv">I arbete (AKU 16-74), 100-tal PxcMetaTitleBy kön, ålder, veckoarbetstid (faktisk), tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
+    <dcterms:description xml:lang="sv">-</dcterms:description>
+    <dcterms:publisher rdf:resource="https://www.scb.se" />
+    <dcterms:creator rdf:resource="https://www.scb.se/producer/2" />
+    <dcat:distribution rdf:resource="https://www.scb.se/distribution/909" />
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2000-01-18T14:07:00</dcterms:modified>
+    <dcterms:identifier>AKUVAIarb</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Arbetskraftsundersökningar, äldre serier (AKU)</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Sysselsatta</dcat:keyword>
+    <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
+    <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/726" />
+    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/AKUVAIarb" />
+    <dcterms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL" />
+    <dcterms:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="https://www.scb.se/dataset/912">
     <dcterms:title xml:lang="sv">Sysselsatta (AKU), 100-tal PxcMetaTitleBy näringsgren SNI2002 i huvudsysslan, näringsgren SNI2002 i bisysslan, tabellinnehåll PxcMetaTitleAnd månad</dcterms:title>
     <dcterms:description xml:lang="sv">Vid klassificering av näringsgren används för perioden 1987-2002 standarden SNI 92, där 1987-1994 är omkörda enligt SNI 92-standarden. Ny reviderad standard, SNI 2002, används i AKU from april 2003. Förskolan hänförs i SNI 2002 till grupp M i stället för till grupp N.</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
     <dcterms:creator rdf:resource="https://www.scb.se/producer/2" />
-    <dcat:distribution rdf:resource="https://www.scb.se/distribution/909" />
+    <dcat:distribution rdf:resource="https://www.scb.se/distribution/911" />
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2005-04-27T13:01:00</dcterms:modified>
     <dcterms:identifier>AKUMSysselSNI</dcterms:identifier>
@@ -8354,30 +8882,30 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcterms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/MONTHLY" />
     <dcterms:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC" />
   </dcat:Dataset>
-  <dcat:Dataset rdf:about="https://www.scb.se/dataset/912">
-    <dcterms:title xml:lang="sv">I arbete (AKU 16-74), 100-tal PxcMetaTitleBy kön, ålder, veckoarbetstid (faktisk), tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
+  <dcat:Dataset rdf:about="https://www.scb.se/dataset/914">
+    <dcterms:title xml:lang="sv">Arbetskraften (AKU 16-74 år), 100-tal PxcMetaTitleBy arbetskraftstillhörighet, kön, näringsgren SNI69, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
     <dcterms:description xml:lang="sv">-</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
     <dcterms:creator rdf:resource="https://www.scb.se/producer/2" />
-    <dcat:distribution rdf:resource="https://www.scb.se/distribution/911" />
+    <dcat:distribution rdf:resource="https://www.scb.se/distribution/913" />
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2000-01-18T14:07:00</dcterms:modified>
-    <dcterms:identifier>AKUVAIarb</dcterms:identifier>
+    <dcterms:identifier>AKUVAArbetskraft</dcterms:identifier>
     <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
     <dcat:keyword xml:lang="sv">Arbetskraftsundersökningar, äldre serier (AKU)</dcat:keyword>
     <dcat:keyword xml:lang="sv">Sysselsatta</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/726" />
-    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/AKUVAIarb" />
+    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/AKUVAArbetskraft" />
     <dcterms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL" />
     <dcterms:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC" />
   </dcat:Dataset>
-  <dcat:Dataset rdf:about="https://www.scb.se/dataset/914">
+  <dcat:Dataset rdf:about="https://www.scb.se/dataset/916">
     <dcterms:title xml:lang="sv">Sysselsatta (AKU), 100-tal PxcMetaTitleBy näringsgren SNI2002 i huvudsysslan, näringsgren SNI2002 i bisysslan, tabellinnehåll PxcMetaTitleAnd kvartal</dcterms:title>
     <dcterms:description xml:lang="sv">Vid klassificering av näringsgren används för perioden 1987-2002 standarden SNI 92, där 1987-1994 är omkörda enligt SNI 92-standarden. Ny reviderad standard, SNI 2002, används i AKU from april 2003. Förskolan hänförs i SNI 2002 till grupp M i stället för till grupp N.</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
     <dcterms:creator rdf:resource="https://www.scb.se/producer/2" />
-    <dcat:distribution rdf:resource="https://www.scb.se/distribution/913" />
+    <dcat:distribution rdf:resource="https://www.scb.se/distribution/915" />
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2005-04-27T13:02:00</dcterms:modified>
     <dcterms:identifier>AKUKSysselSNI</dcterms:identifier>
@@ -8389,24 +8917,6 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/171" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/AKUKSysselSNI" />
     <dcterms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/QUARTERLY" />
-    <dcterms:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC" />
-  </dcat:Dataset>
-  <dcat:Dataset rdf:about="https://www.scb.se/dataset/916">
-    <dcterms:title xml:lang="sv">Arbetskraften (AKU 16-74 år), 100-tal PxcMetaTitleBy arbetskraftstillhörighet, kön, näringsgren SNI69, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
-    <dcterms:description xml:lang="sv">-</dcterms:description>
-    <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:creator rdf:resource="https://www.scb.se/producer/2" />
-    <dcat:distribution rdf:resource="https://www.scb.se/distribution/915" />
-    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2000-01-18T14:07:00</dcterms:modified>
-    <dcterms:identifier>AKUVAArbetskraft</dcterms:identifier>
-    <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
-    <dcat:keyword xml:lang="sv">Arbetskraftsundersökningar, äldre serier (AKU)</dcat:keyword>
-    <dcat:keyword xml:lang="sv">Sysselsatta</dcat:keyword>
-    <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
-    <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/726" />
-    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/AKUVAArbetskraft" />
-    <dcterms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL" />
     <dcterms:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC" />
   </dcat:Dataset>
   <dcat:Dataset rdf:about="https://www.scb.se/dataset/918">
@@ -10659,30 +11169,11 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcterms:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC" />
   </dcat:Dataset>
   <dcat:Dataset rdf:about="https://www.scb.se/dataset/1156">
-    <dcterms:title xml:lang="sv">Sysselsatta (AKU)  PxcMetaTitleBy yrkesställning, inrikes/utrikes född, kön, ålder, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
-    <dcterms:description xml:lang="sv">-</dcterms:description>
-    <dcterms:publisher rdf:resource="https://www.scb.se" />
-    <dcterms:creator rdf:resource="https://www.scb.se/producer/2" />
-    <dcat:distribution rdf:resource="https://www.scb.se/distribution/1155" />
-    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-01-31T09:33:00</dcterms:modified>
-    <dcterms:identifier>AKUSyssYrkstallJmfAr</dcterms:identifier>
-    <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
-    <dcat:keyword xml:lang="sv">Arbetskraftsundersökningar, äldre serier (AKU)</dcat:keyword>
-    <dcat:keyword xml:lang="sv">Övriga</dcat:keyword>
-    <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
-    <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
-    <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/171" />
-    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/AKUSyssYrkstallJmfAr" />
-    <dcterms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL" />
-    <dcterms:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC" />
-  </dcat:Dataset>
-  <dcat:Dataset rdf:about="https://www.scb.se/dataset/1158">
     <dcterms:title xml:lang="sv">Befolkningen 16-64 år (AKU) PxcMetaTitleBy arbetskraftstillhörighet, utbildningsinriktning SUN 2000, kön, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
     <dcterms:description xml:lang="sv">-</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.scb.se" />
     <dcterms:creator rdf:resource="https://www.scb.se/producer/2" />
-    <dcat:distribution rdf:resource="https://www.scb.se/distribution/1157" />
+    <dcat:distribution rdf:resource="https://www.scb.se/distribution/1155" />
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-01-31T09:30:00</dcterms:modified>
     <dcterms:identifier>AKUBefUtbInriktnAr</dcterms:identifier>
@@ -10693,6 +11184,25 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
     <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/171" />
     <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/AKUBefUtbInriktnAr" />
+    <dcterms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL" />
+    <dcterms:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="https://www.scb.se/dataset/1158">
+    <dcterms:title xml:lang="sv">Sysselsatta (AKU)  PxcMetaTitleBy yrkesställning, inrikes/utrikes född, kön, ålder, tabellinnehåll PxcMetaTitleAnd år</dcterms:title>
+    <dcterms:description xml:lang="sv">-</dcterms:description>
+    <dcterms:publisher rdf:resource="https://www.scb.se" />
+    <dcterms:creator rdf:resource="https://www.scb.se/producer/2" />
+    <dcat:distribution rdf:resource="https://www.scb.se/distribution/1157" />
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-01-31T09:33:00</dcterms:modified>
+    <dcterms:identifier>AKUSyssYrkstallJmfAr</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Arbetsmarknad</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Arbetskraftsundersökningar, äldre serier (AKU)</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Övriga</dcat:keyword>
+    <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
+    <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/263" />
+    <dcat:contactPoint rdf:resource="https://www.scb.se/contactperson/171" />
+    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/AKUSyssYrkstallJmfAr" />
     <dcterms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL" />
     <dcterms:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC" />
   </dcat:Dataset>
@@ -11215,14 +11725,14 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
   <dcat:Distribution rdf:about="https://www.scb.se/distribution/50">
     <dcterms:title>Data (sv)</dcterms:title>
     <dcterms:format>application/json</dcterms:format>
-    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/sv/ssd/AA/AA0003/AA0003E/KomMotAntal" />
+    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/sv/ssd/AA/AA0003/AA0003E/IntGr3LanKONU" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
   </dcat:Distribution>
   <dcat:Distribution rdf:about="https://www.scb.se/distribution/52">
     <dcterms:title>Data (sv)</dcterms:title>
     <dcterms:format>application/json</dcterms:format>
-    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/sv/ssd/AA/AA0003/AA0003E/IntGr3LanKONU" />
+    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/sv/ssd/AA/AA0003/AA0003E/KomMotAntal" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
   </dcat:Distribution>
@@ -14736,14 +15246,14 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
   <dcat:Distribution rdf:about="https://www.scb.se/distribution/897">
     <dcterms:title>Data (sv)</dcterms:title>
     <dcterms:format>application/json</dcterms:format>
-    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/sv/ssd/AM/AM0402/AM0402B/AKUVATimveckaYrk" />
+    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/sv/ssd/AM/AM0402/AM0402B/AKUMSysselYrk" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
   </dcat:Distribution>
   <dcat:Distribution rdf:about="https://www.scb.se/distribution/899">
     <dcterms:title>Data (sv)</dcterms:title>
     <dcterms:format>application/json</dcterms:format>
-    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/sv/ssd/AM/AM0402/AM0402B/AKUMSysselYrk" />
+    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/sv/ssd/AM/AM0402/AM0402B/AKUVATimveckaYrk" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
   </dcat:Distribution>
@@ -14764,42 +15274,42 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
   <dcat:Distribution rdf:about="https://www.scb.se/distribution/905">
     <dcterms:title>Data (sv)</dcterms:title>
     <dcterms:format>application/json</dcterms:format>
-    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/sv/ssd/AM/AM0402/AM0402B/AKUUATimveckaYrk" />
+    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/sv/ssd/AM/AM0402/AM0402B/AKUASysselYrk" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
   </dcat:Distribution>
   <dcat:Distribution rdf:about="https://www.scb.se/distribution/907">
     <dcterms:title>Data (sv)</dcterms:title>
     <dcterms:format>application/json</dcterms:format>
-    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/sv/ssd/AM/AM0402/AM0402B/AKUASysselYrk" />
+    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/sv/ssd/AM/AM0402/AM0402B/AKUUATimveckaYrk" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
   </dcat:Distribution>
   <dcat:Distribution rdf:about="https://www.scb.se/distribution/909">
     <dcterms:title>Data (sv)</dcterms:title>
     <dcterms:format>application/json</dcterms:format>
-    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/sv/ssd/AM/AM0402/AM0402B/AKUMSysselSNI" />
+    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/sv/ssd/AM/AM0402/AM0402B/AKUVAIarb" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
   </dcat:Distribution>
   <dcat:Distribution rdf:about="https://www.scb.se/distribution/911">
     <dcterms:title>Data (sv)</dcterms:title>
     <dcterms:format>application/json</dcterms:format>
-    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/sv/ssd/AM/AM0402/AM0402B/AKUVAIarb" />
+    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/sv/ssd/AM/AM0402/AM0402B/AKUMSysselSNI" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
   </dcat:Distribution>
   <dcat:Distribution rdf:about="https://www.scb.se/distribution/913">
     <dcterms:title>Data (sv)</dcterms:title>
     <dcterms:format>application/json</dcterms:format>
-    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/sv/ssd/AM/AM0402/AM0402B/AKUKSysselSNI" />
+    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/sv/ssd/AM/AM0402/AM0402B/AKUVAArbetskraft" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
   </dcat:Distribution>
   <dcat:Distribution rdf:about="https://www.scb.se/distribution/915">
     <dcterms:title>Data (sv)</dcterms:title>
     <dcterms:format>application/json</dcterms:format>
-    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/sv/ssd/AM/AM0402/AM0402B/AKUVAArbetskraft" />
+    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/sv/ssd/AM/AM0402/AM0402B/AKUKSysselSNI" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
   </dcat:Distribution>
@@ -15639,14 +16149,14 @@ For the period 1970-2004 the time series contains “linked data”. No margins 
   <dcat:Distribution rdf:about="https://www.scb.se/distribution/1155">
     <dcterms:title>Data (sv)</dcterms:title>
     <dcterms:format>application/json</dcterms:format>
-    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/sv/ssd/AM/AM0402/AM0402H/AKUSyssYrkstallJmfAr" />
+    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/sv/ssd/AM/AM0402/AM0402H/AKUBefUtbInriktnAr" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
   </dcat:Distribution>
   <dcat:Distribution rdf:about="https://www.scb.se/distribution/1157">
     <dcterms:title>Data (sv)</dcterms:title>
     <dcterms:format>application/json</dcterms:format>
-    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/sv/ssd/AM/AM0402/AM0402H/AKUBefUtbInriktnAr" />
+    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/sv/ssd/AM/AM0402/AM0402H/AKUSyssYrkstallJmfAr" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
   </dcat:Distribution>

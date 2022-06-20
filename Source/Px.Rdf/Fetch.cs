@@ -20,6 +20,9 @@ namespace Px.Rdf
         private static Dictionary<string, Organization> organizations = new Dictionary<string, Organization>(); // name to organization
         private static Dictionary<string, ContactPerson> contacts = new Dictionary<string, ContactPerson>(); // email to contactPerson
 
+        private static Dictionary<(string, string), Keyword> menuLangKeyword = new Dictionary<(string, string), Keyword>(); // (menuID, language) -> Array of keywords
+        
+
         public static Organization[] UniqueOrgs() {
             return organizations.Values.ToArray();
         }
@@ -399,15 +402,33 @@ namespace Px.Rdf
 
         private static Keyword[] getKeywords(List<PxMenuItem> path, string lang) {
             List<Keyword> keywords = new List<Keyword>();
-            foreach (PxMenuItem menu in path) {
-                string text = menu.Text;
-                if (text != "") { 
-                    keywords.Add(new Keyword {text = text, lang = lang});
+            foreach (PxMenuItem menu in path.Skip(1)) {
+                Keyword keyword;
+
+                if (menuLangKeyword.ContainsKey((menu.ID.Selection, lang))) {
+                    keyword = menuLangKeyword[(menu.ID.Selection, lang)];
                 }
+                else {
+                    PxMenuItem menuInLang = getMenuInLanguage(menu,lang);
+                    string text = menuInLang.Text;
+                    keyword = new Keyword {text = text, lang = lang};
+                }
+
+                keywords.Add(keyword); 
+                // Add keyword to dict
+                menuLangKeyword[(menu.ID.Selection, lang)] = keyword;
             }
             return keywords.ToArray();
         }
 
+        private static Keyword[] getKeywords(List<PxMenuItem> path, string[] langs) {
+            List<Keyword> keywords = new List<Keyword>();
+            foreach (string lang in langs) {
+                Keyword[] keywordsInLang = getKeywords(path,lang);
+                keywords.AddRange(keywordsInLang);
+            }
+            return keywords.ToArray();
+        }
         private static string getDistributionUrl(List<PxMenuItem> path, string title, string lang)
         {
             string url = "http://api.scb.se/OV0104/v1/doris/" + lang + "/ssd/";
@@ -483,12 +504,12 @@ namespace Px.Rdf
 
                     dataset.descriptions =  getDescriptions(builder.Model.Meta, langs);
                     dataset.titles = getTitles(builder.Model.Meta, langs);
-
+                
                     dataset.contactPersons = getContacts(builder.Model.Meta);
                     dataset.category = getCategory(path);
                     dataset.producer = getProducer(builder.Model.Meta);
 
-                    dataset.keywords = getKeywords(path, "sv");
+                    dataset.keywords = getKeywords(path, langs);
                     dataset.distributions = getDistributions(path, dataset.identifier, langs);
 
                     dataset.resource = "https://www.scb.se/dataset/" + nextString();
@@ -551,6 +572,54 @@ namespace Px.Rdf
             var path = new List<PxMenuItem>();
             addRecursive(menu.CurrentItem, path, datasets, n);
             return datasets;
+        }
+
+        private static PxMenuItem getMenuInLanguage(PxMenuItem menuItem, string lang) {
+            Console.WriteLine(menuItem.ID.Menu);
+            Console.WriteLine(menuItem.ID.Selection);
+            string nodeId = menuItem.ID.Selection;
+            string dbid = "ssd";
+            string menuId = menuItem.ID.Menu;
+
+            TableLink tblFix = null;
+            DatamodelMenu menu = ConfigDatamodelMenu.Create(
+            lang,
+            PCAxis.Sql.DbConfig.SqlDbConfigsStatic.DataBases[dbid],
+            m =>
+            {
+                m.NumberOfLevels = 5;
+                m.RootSelection = nodeId == "" ? new ItemSelection() : new ItemSelection(menuId, nodeId);
+                m.AlterItemBeforeStorage = item =>
+                {
+                    if (item is TableLink)
+                    {
+                        TableLink tbl = (TableLink)item;
+
+                        if (string.Compare(tbl.ID.Selection, nodeId, true) == 0)
+                        {
+                            tblFix = tbl;
+                        }
+                        if (tbl.StartTime == tbl.EndTime)
+                        {
+                            tbl.Text = tbl.Text + " " + tbl.StartTime;
+                        }
+                        else
+                        {
+                            tbl.Text = tbl.Text + " " + tbl.StartTime + " - " + tbl.EndTime;
+                        }
+
+                        if (tbl.Published.HasValue)
+                        {
+                            tbl.SetAttribute("modified", tbl.Published.Value.ToShortDateString());
+                        }
+                    }
+                    if (String.IsNullOrEmpty(item.SortCode))
+                    {
+                        item.SortCode = item.Text;
+                    }
+                };
+            });
+            return menu.CurrentItem as PxMenuItem;
         }
 
         public static Catalog GetCatalog(int numberOfTables)
