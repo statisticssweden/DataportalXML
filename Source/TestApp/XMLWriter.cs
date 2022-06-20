@@ -11,17 +11,11 @@ namespace XMLWriter
 {
     class XML
     {
+        private static XmlDocument doc = new XmlDocument();
+        private static XmlNamespaceManager nsm = new XmlNamespaceManager(doc.NameTable);
+
         public static void writeToFile(Catalog c, Organization[] orgs, ContactPerson[] contacts ,string fileName)
         {
-            XmlDocument doc = new XmlDocument();
-            XmlWriterSettings settings = new XmlWriterSettings()
-            {
-                Indent = true,
-                NewLineOnAttributes = false,
-            };
-            XmlWriter w = XmlWriter.Create(fileName, settings);
-
-            XmlNamespaceManager nsm = new XmlNamespaceManager(doc.NameTable);
             nsm.AddNamespace("adms", "http://www.w3.org/ns/adms#");
             nsm.AddNamespace("rdf", "http://www.w3.org/1999/02/22-rdf-syntax-ns#");
             nsm.AddNamespace("odrs", "http://schema.theodi.org/odrs#");
@@ -47,26 +41,26 @@ namespace XMLWriter
 
             doc.AppendChild(rdf);
 
-            XmlElement catalog = generateCatalog(doc, c, nsm);
+            XmlElement catalog = generateCatalog(c);
             rdf.AppendChild(catalog);
 
-            XmlElement org = generateOrg(doc, c.publisher, nsm);
+            XmlElement org = generateOrg(c.publisher);
             rdf.AppendChild(org);
 
             foreach (Dataset d in c.datasets)
             {
-                XmlElement dElem = generateDataset(doc, d, nsm);
+                XmlElement dElem = generateDataset(d);
                 rdf.AppendChild(dElem);
             }
 
             foreach (ContactPerson cp in contacts) {
-                XmlElement cElem = generateContact(doc, cp, nsm);
+                XmlElement cElem = generateContact(cp);
                 rdf.AppendChild(cElem);
             }
 
 
             foreach (Organization o in orgs) {
-                XmlElement oElem = generateOrg(doc, o, nsm);
+                XmlElement oElem = generateOrg(o);
                 rdf.AppendChild(oElem);
             }
 
@@ -74,77 +68,72 @@ namespace XMLWriter
             {
                 foreach (Distribution distr in ds.distributions)
                 {
-                    XmlElement distrElem = generateDistribution(doc, distr, nsm);
+                    XmlElement distrElem = generateDistribution(distr);
                     rdf.AppendChild(distrElem);
                 }
             }
 
-            doc.WriteTo(w);
-            w.Close();
+            doc.Save(fileName);
         }
-        public static XmlElement generateCatalog(XmlDocument doc, Catalog c, XmlNamespaceManager nsm)
+
+        private static XmlElement createElem(string elemNamespace, string elemName, string attrNamespace, string attributeName, string attrValue) {
+            XmlElement elem = doc.CreateElement(elemNamespace, elemName, nsm.LookupNamespace(elemNamespace));
+            XmlAttribute attr = createAttr(attrNamespace, attributeName, attrValue);
+            elem.SetAttributeNode(attr);
+            return elem;
+        }
+        private static XmlElement createElem(string elemNamespace, string elemName, string innerText) {
+            XmlElement elem = doc.CreateElement(elemNamespace, elemName, nsm.LookupNamespace(elemNamespace));
+            elem.InnerText = innerText;
+            return elem;
+        }
+
+        private static XmlElement createElem(string elemNamespace, string elemName) {
+            return createElem(elemNamespace,elemName,"");
+        }
+        private static XmlAttribute createAttr(string ns, string tagName, string value) {
+            XmlAttribute attr = doc.CreateAttribute(ns, tagName, nsm.LookupNamespace(ns));
+            attr.InnerText = value;
+            return attr;
+        }
+
+
+
+        public static XmlElement generateCatalog(Catalog c)
         {
-            XmlElement catElem = doc.CreateElement("dcat", "Catalog", nsm.LookupNamespace("dcat"));
-            XmlElement titleElem = doc.CreateElement("dcterms", "title", nsm.LookupNamespace("dcterms"));
-            titleElem.InnerText = c.title;
+            XmlElement catElem = createElem("dcat", "catalog");
+            XmlElement titleElem = createElem("dcterms", "title", c.title);
             catElem.AppendChild(titleElem);
 
             // description 
-            XmlElement descElem = doc.CreateElement("dcterms", "description", nsm.LookupNamespace("dcterms"));
-            descElem.InnerText = c.description;
+            XmlElement descElem = createElem("dcterms", "description", c.description);
             catElem.AppendChild(descElem);
 
             // Publisher reference
-            XmlElement pubElem = doc.CreateElement("dcterms", "publisher", nsm.LookupNamespace("dcterms"));
-
-            XmlAttribute pubAbout = doc.CreateAttribute("rdf", "resource", nsm.LookupNamespace("rdf"));
-            pubAbout.InnerText = c.publisher.resource;
-
-            pubElem.SetAttributeNode(pubAbout);
+            XmlElement pubElem = createElem("dcterms","publisher","rdf","resource",c.publisher.resource);
             catElem.AppendChild(pubElem);
-
+            
             // Licence
-            XmlElement licenseElem = doc.CreateElement("dcterms", "license", nsm.LookupNamespace("dcterms"));
-
-            XmlAttribute licRes = doc.CreateAttribute("rdf", "resource", nsm.LookupNamespace("rdf"));
-            licRes.InnerText = c.license;
-            licenseElem.SetAttributeNode(licRes);
-
+            XmlElement licenseElem = createElem("dcterms", "license", "rdf","resource",c.license);
             catElem.AppendChild(licenseElem);
 
             // Language
-            XmlElement langElem = doc.CreateElement("dcterms", "language", nsm.LookupNamespace("dcterms"));
-
-            XmlAttribute langAbout = doc.CreateAttribute("rdf", "resource", nsm.LookupNamespace("rdf"));
-            langAbout.InnerText = c.language;
-
-            langElem.SetAttributeNode(langAbout);
+            XmlElement langElem = createElem("dcterms", "language", "rdf", "resource", c.language);
             catElem.AppendChild(langElem);
 
             // Dataset references
-
             foreach (Dataset d in c.datasets)
             {
-                XmlElement dElem = doc.CreateElement("dcat", "Dataset", nsm.LookupNamespace("dcat"));
-
-                XmlAttribute about = doc.CreateAttribute("rdf", "resource", nsm.LookupNamespace("rdf"));
-                about.InnerText = d.resource;
-                dElem.SetAttributeNode(about);
-
+                XmlElement dElem = createElem("dcat","Dataset","rdf","resource",d.resource);
                 catElem.AppendChild(dElem);
             }
             return catElem;
         }
 
-        public static XmlElement generateDataset(XmlDocument doc, Dataset d, XmlNamespaceManager nsm)
+        public static XmlElement generateDataset(Dataset d)
         {
             // Dataset
-            XmlElement dElem = doc.CreateElement("dcat", "Dataset", nsm.LookupNamespace("dcat"));
-
-            // Reference
-            XmlAttribute about = doc.CreateAttribute("rdf", "about", nsm.LookupNamespace("rdf"));
-            about.InnerText = d.resource;
-            dElem.SetAttributeNode(about);
+            XmlElement dElem = createElem("dcat", "Dataset","rdf","about",d.resource);
 
             int numLangs = d.languages.Count();
             // Title
@@ -152,13 +141,8 @@ namespace XMLWriter
                 string title = d.titles[i];
                 string lang = d.languages[i];
 
-                XmlElement titleElem = doc.CreateElement("dcterms", "title", nsm.LookupNamespace("dcterms"));
-                XmlAttribute titleLang = doc.CreateAttribute("xml", "lang", nsm.LookupNamespace("xml"));
-
-                titleLang.InnerText = lang;
+                XmlElement titleElem = createElem("dcterms", "title", "xml", "lang", lang);
                 titleElem.InnerText = title;
-
-                titleElem.SetAttributeNode(titleLang);
                 dElem.AppendChild(titleElem);
             }
             
@@ -167,76 +151,44 @@ namespace XMLWriter
                 string desc = d.descriptions[i];
                 string lang = d.languages[i]; 
 
-                XmlElement descElem = doc.CreateElement("dcterms", "description", nsm.LookupNamespace("dcterms"));
-                XmlAttribute descLang = doc.CreateAttribute("xml", "lang", nsm.LookupNamespace("xml"));
-
-                descLang.InnerText = lang;
+                XmlElement descElem = createElem("dcterms", "description", "xml", "lang", lang);
                 descElem.InnerText = desc;
-
-                descElem.SetAttributeNode(descLang);
                 dElem.AppendChild(descElem);
             }
 
             // Publisher reference
-            XmlElement pubElem = doc.CreateElement("dcterms", "publisher", nsm.LookupNamespace("dcterms"));
-
-            XmlAttribute pubAbout = doc.CreateAttribute("rdf", "resource", nsm.LookupNamespace("rdf"));
-            pubAbout.InnerText = d.publisher.resource;
-
-            pubElem.SetAttributeNode(pubAbout);
+            XmlElement pubElem = createElem("dcterms", "publisher","rdf", "resource", d.publisher.resource);
             dElem.AppendChild(pubElem);
 
             // Producer reference
-            XmlElement prodElem = doc.CreateElement("dcterms", "creator", nsm.LookupNamespace("dcterms"));
-
-            XmlAttribute prodAbout = doc.CreateAttribute("rdf", "resource", nsm.LookupNamespace("rdf"));
-            prodAbout.InnerText = d.producer.resource;
-
-            prodElem.SetAttributeNode(prodAbout);
+            XmlElement prodElem = createElem("dcterms", "creator", "rdf", "resource", d.producer.resource);
             dElem.AppendChild(prodElem);
 
             // Distribution
             foreach (Distribution distribution in d.distributions)
             {
-                XmlElement distElem = doc.CreateElement("dcat", "distribution", nsm.LookupNamespace("dcat"));
-                XmlAttribute distAbout = doc.CreateAttribute("rdf", "resource", nsm.LookupNamespace("rdf"));
-
-                distAbout.InnerText = distribution.resource;
-
-                distElem.SetAttributeNode(distAbout);
+                XmlElement distElem = createElem("dcat", "distribution", "rdf", "resource", distribution.resource);
                 dElem.AppendChild(distElem);
             }
 
             // Category/Theme
-            XmlElement themeElem = doc.CreateElement("dcat", "theme", nsm.LookupNamespace("dcat"));
-            XmlAttribute themeAbout = doc.CreateAttribute("rdf", "resource", nsm.LookupNamespace("rdf"));
-
-            themeAbout.InnerText = d.category;
-            themeElem.SetAttributeNode(themeAbout);
+            XmlElement themeElem = createElem("dcat", "theme", "rdf", "resource", d.category);
             dElem.AppendChild(themeElem);
 
             // Modified
             string dateTimeDataType = "http://www.w3.org/2001/XMLSchema#dateTime";
-            XmlElement mod = doc.CreateElement("dcterms", "modified", nsm.LookupNamespace("dcterms"));
-            XmlAttribute modDataType = doc.CreateAttribute("rdf", "datatype", nsm.LookupNamespace("rdf"));
-            modDataType.InnerText = dateTimeDataType;
-            mod.SetAttributeNode(modDataType);
+            XmlElement mod = createElem("dcterms", "modified", "rdf", "datatype", dateTimeDataType);
             mod.InnerText = d.modified;
             dElem.AppendChild(mod);
 
             // Identifier
-
-            XmlElement identifier = doc.CreateElement("dcterms", "identifier", nsm.LookupNamespace("dcterms"));
-            identifier.InnerText = d.identifier;
+            XmlElement identifier = createElem("dcterms", "identifier", d.identifier);
             dElem.AppendChild(identifier);
 
             // Keyword
-            foreach(Keyword keywords in d.keywords){
-                XmlElement keyElem = doc.CreateElement("dcat", "keyword", nsm.LookupNamespace("dcat"));
-                XmlAttribute keyLang = doc.CreateAttribute("xml", "lang", nsm.LookupNamespace("xml"));
-                keyElem.InnerText = keywords.text;
-                keyLang.InnerText = keywords.lang;
-                keyElem.SetAttributeNode(keyLang);
+            foreach(Keyword keyword in d.keywords){
+                XmlElement keyElem = createElem("dcat", "keyword", "xml", "lang", keyword.lang);
+                keyElem.InnerText = keyword.text;
                 dElem.AppendChild(keyElem);
             }
 
@@ -244,147 +196,96 @@ namespace XMLWriter
             
             foreach(string language in d.languageURIs)
             {
-                XmlElement langElem = doc.CreateElement("dcterms", "language", nsm.LookupNamespace("dcterms"));
-
-                XmlAttribute langAbout = doc.CreateAttribute("rdf", "resource", nsm.LookupNamespace("rdf"));
-                langAbout.InnerText = language;
-
-                langElem.SetAttributeNode(langAbout);
+                XmlElement langElem = createElem("dcterms", "language", "rdf", "resource", language);
                 dElem.AppendChild(langElem);
             }
 
             // Contacts
             foreach(ContactPerson cp in d.contactPersons){
-                XmlElement contactPoint = doc.CreateElement("dcat", "contactPoint", nsm.LookupNamespace("dcat"));
-                XmlAttribute contactData = doc.CreateAttribute("rdf", "resource", nsm.LookupNamespace("rdf"));
-                contactData.InnerText = cp.resource;
-
-                contactPoint.SetAttributeNode(contactData);
+                XmlElement contactPoint = createElem("dcat", "contactPoint", "rdf", "resource", cp.resource);
                 dElem.AppendChild(contactPoint);
             }
 
 
             // Landing page
             foreach (string lang in d.languages) {
-                XmlElement landing = doc.CreateElement("dcat", "landingPage", nsm.LookupNamespace("dcat"));
-                XmlAttribute landRes = doc.CreateAttribute("rdf", "resource", nsm.LookupNamespace("rdf"));
-                landRes.InnerText = d.url(lang);
-                landing.SetAttributeNode(landRes);
+                XmlElement landing = createElem("dcat", "landingPage", "rdf", "resource", d.url(lang));
                 dElem.AppendChild(landing);
             }
 
             // updatefreq
-            XmlElement updateElem = doc.CreateElement("dcterms", "accrualPeriodicity", nsm.LookupNamespace("dcterms"));
-            XmlAttribute updateRes = doc.CreateAttribute("rdf", "resource", nsm.LookupNamespace("rdf"));
-            updateRes.InnerText = d.updateFrequency;
-            updateElem.SetAttributeNode(updateRes);
+            XmlElement updateElem = createElem("dcterms", "accrualPeriodicity", "rdf", "resource", d.updateFrequency);
             dElem.AppendChild(updateElem);
 
             // Access rights
-            XmlElement accessElem = doc.CreateElement("dcterms", "accessRights", nsm.LookupNamespace("dcterms"));
-
-            XmlAttribute accessRes = doc.CreateAttribute("rdf", "resource", nsm.LookupNamespace("rdf"));
-            accessRes.InnerText = "http://publications.europa.eu/resource/authority/access-right/PUBLIC";
-            accessElem.SetAttributeNode(accessRes);
+            string publicAccess = "http://publications.europa.eu/resource/authority/access-right/PUBLIC";
+            XmlElement accessElem = createElem("dcterms", "accessRights", "rdf", "resource", publicAccess);
 
             dElem.AppendChild(accessElem);
 
             return dElem;
         }
 
-        public static XmlElement generateOrg(XmlDocument doc, Organization org, XmlNamespaceManager nsm)
+        public static XmlElement generateOrg(Organization org)
         {
             // Org
-            XmlElement orgElem = doc.CreateElement("foaf", "Organization", nsm.LookupNamespace("foaf"));
-
-            // Reference
-            XmlAttribute about = doc.CreateAttribute("rdf", "about", nsm.LookupNamespace("rdf"));
-            about.InnerText = org.resource;
-            orgElem.SetAttributeNode(about);
+            XmlElement orgElem = createElem("foaf", "Organization", "rdf", "about", org.resource);
 
             // Name
-            XmlElement nameElem = doc.CreateElement("foaf", "name", nsm.LookupNamespace("foaf"));
-            nameElem.InnerText = org.name;
+            XmlElement nameElem = createElem("foaf", "name", org.name);
             orgElem.AppendChild(nameElem);
 
             return orgElem;
         }
         
-        public static XmlElement generateContact(XmlDocument doc, ContactPerson cp, XmlNamespaceManager nsm){
-            XmlElement individual = doc.CreateElement("vcard", "Individual", nsm.LookupNamespace("vcard"));
-
-            XmlAttribute about = doc.CreateAttribute("rdf", "about", nsm.LookupNamespace("rdf"));
-            about.InnerText = cp.resource;
-            individual.SetAttributeNode(about);
-
+        public static XmlElement generateContact(ContactPerson cp){
+        
+            XmlElement individual = createElem("vcard", "Individual", "rdf", "about", cp.resource);
             // Name
-            XmlElement nameElem = doc.CreateElement("vcard", "fn", nsm.LookupNamespace("vcard"));
-            nameElem.InnerText = cp.name;
+            XmlElement nameElem = createElem("vcard", "fn", cp.name);
             individual.AppendChild(nameElem);
-
-            // Email
-            XmlElement emailElem = doc.CreateElement("vcard", "hasEmail", nsm.LookupNamespace("vcard"));
-            XmlAttribute emailAbout = doc.CreateAttribute("rdf", "resource", nsm.LookupNamespace("rdf"));
-
-            emailAbout.InnerText = "mailto:" + cp.email;
-            emailElem.SetAttributeNode(emailAbout);
+             // Email
+            XmlElement emailElem = createElem("vcard", "hasEmail", "rdf", "resource", "mailto:"+cp.email);
             individual.AppendChild(emailElem);
-            
             // Phone
-            XmlElement phoneElem = doc.CreateElement("vcard", "hasTelephone", nsm.LookupNamespace("vcard"));
-            XmlElement descElem = doc.CreateElement("dcterms", "description", nsm.LookupNamespace("dcterms"));
-            XmlElement phoneVal = doc.CreateElement("vcard", "hasValue", nsm.LookupNamespace("vcard"));
-            XmlAttribute phoneAbout = doc.CreateAttribute("rdf", "resource", nsm.LookupNamespace("rdf"));
+            XmlElement phoneElem = createElem("vcard", "hasTelephone");
+            XmlElement descElem = createElem("dcterms", "description");
+            
+            string phone = "tel:"+cp.telephone.Replace(" ", "");
+            XmlElement phoneVal = createElem("vcard", "hasValue", "rdf", "resource", phone);
 
-            phoneAbout.InnerText = "tel:"+cp.telephone.Replace(" ", "");
-            phoneVal.SetAttributeNode(phoneAbout);
             phoneElem.AppendChild(descElem);
             descElem.AppendChild(phoneVal);
             individual.AppendChild(phoneElem);
-            
+
             return individual;
         }
 
-        public static XmlElement generateDistribution(XmlDocument doc, Distribution dst, XmlNamespaceManager nsm)
+        public static XmlElement generateDistribution(Distribution dst)
         {
-            XmlElement distr = doc.CreateElement("dcat", "Distribution", nsm.LookupNamespace("dcat"));
-
             //about
-            XmlAttribute about = doc.CreateAttribute("rdf", "about", nsm.LookupNamespace("rdf"));
-            about.InnerText = dst.resource;
-            distr.SetAttributeNode(about);
+            XmlElement distr = createElem("dcat", "Distribution", "rdf", "about", dst.resource);
 
             // title
-            XmlElement titleElem = doc.CreateElement("dcterms", "title", nsm.LookupNamespace("dcterms"));
-            titleElem.InnerText = dst.title;
+            XmlElement titleElem = createElem("dcterms", "title", dst.title);
             distr.AppendChild(titleElem);
 
             // format
-            XmlElement formatElem = doc.CreateElement("dcterms", "format", nsm.LookupNamespace("dcterms"));
-            formatElem.InnerText = dst.format;
-            distr.AppendChild(formatElem);
+            XmlElement formatElem = createElem("dcterms", "format", dst.format);
+            distr.AppendChild(titleElem);
 
             //accessURL
-            XmlElement accessElem = doc.CreateElement("dcat", "accessURL", nsm.LookupNamespace("dcat"));
-            XmlAttribute accessAbout = doc.CreateAttribute("rdf", "resource", nsm.LookupNamespace("rdf"));
-            accessAbout.InnerText = dst.accessUrl;
-            accessElem.SetAttributeNode(accessAbout);
+            XmlElement accessElem = createElem("dcat", "accessURL", "rdf", "resource", dst.accessUrl);
             distr.AppendChild(accessElem);
 
             //language
-            XmlElement langElem = doc.CreateElement("dcterms", "language", nsm.LookupNamespace("dcterms"));
-            XmlAttribute langRes = doc.CreateAttribute("rdf", "resource", nsm.LookupNamespace("rdf"));
-            langRes.InnerText = dst.language;
-            langElem.SetAttributeNode(langRes);
+            XmlElement langElem = createElem("dcterms", "language", "rdf", "resource", dst.language);
             distr.AppendChild(langElem);
 
             //license
-            XmlElement licenseElem = doc.CreateElement("dcterms", "license", nsm.LookupNamespace("dcterms"));
-            XmlAttribute licenseRes = doc.CreateAttribute("rdf", "resource", nsm.LookupNamespace("rdf"));
-            licenseRes.InnerText = dst.license;
-            licenseElem.SetAttributeNode(licenseRes);
+            XmlElement licenseElem = createElem("dcterms", "license", "rdf", "resource", dst.license);
             distr.AppendChild(licenseElem);
-
+            
             return distr;
         }
     }
