@@ -1,4 +1,4 @@
-﻿using System;
+﻿ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,11 +14,7 @@ namespace TestApp
     {
         public static void Main(string[] args)
         {
-            int numberOfTables = 500;
-            Catalog c = Fetch.GetCatalog(numberOfTables);
-            Organization[] orgs = Fetch.UniqueOrgs();
-            ContactPerson[] contacts = Fetch.UniqueContacts();
-            XML.writeToFile(c, orgs, contacts, "../../../test.xml");
+            XML.writeToFile("../../../test.xml");
         }
     }
 }
