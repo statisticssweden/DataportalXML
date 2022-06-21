@@ -15,7 +15,7 @@ namespace Data
         public string description;
         public string license;
         public string language;
-        public Dataset[] datasets;
+        public List<Dataset> datasets;
         public Organization publisher;
     }
 
