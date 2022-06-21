@@ -35,22 +35,22 @@ namespace Data
     }
     public struct Dataset
     {
-        public string[] titles;
-        public string[] descriptions;
-        public string[] languageURIs;
-        public string[] languages;
+        public List<string> titles;
+        public List<string> descriptions;
+        public List<string> languageURIs;
+        public List<string> languages;
         public string category;
-        public ContactPerson[] contactPersons;
+        public List<ContactPerson> contactPersons;
         public Organization publisher;
-        public Keyword[] keywords;
+        public List<Keyword> keywords;
         public string identifier;
         public string modified;
         public string updateFrequency;
         public Organization producer;
-        public Distribution[] distributions;
+        public List<Distribution> distributions;
         public string resource;
 
-        public string[] urls;
+        public List<string> urls;
         public string url(string lang)
         {
             return "http://www.statistikdatabasen.scb.se/goto/" + lang + "/ssd/" + identifier;

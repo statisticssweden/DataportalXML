@@ -16,8 +16,8 @@ namespace TestApp
         {
             int numberOfTables = 500;
             Catalog c = Fetch.GetCatalog(numberOfTables);
-            Organization[] orgs = Fetch.UniqueOrgs();
-            ContactPerson[] contacts = Fetch.UniqueContacts();
+            List<Organization> orgs = Fetch.UniqueOrgs();
+            List<ContactPerson> contacts = Fetch.UniqueContacts();
             XML.writeToFile(c, orgs, contacts, "../../../test.xml");
         }
     }

@@ -23,11 +23,12 @@ namespace Px.Rdf
         private static Dictionary<(string, string), Keyword> menuLangKeyword = new Dictionary<(string, string), Keyword>(); // (menuID, language) -> Array of keywords
         
 
-        public static Organization[] UniqueOrgs() {
-            return organizations.Values.ToArray();
+        // Get all unique organizations
+        public static List<Organization> UniqueOrgs() {
+            return organizations.Values.ToList();
         }
-        public static ContactPerson[] UniqueContacts() {
-            return contacts.Values.ToArray();
+        public static List<ContactPerson> UniqueContacts() {
+            return contacts.Values.ToList();
         }
         private static Dictionary<TimeScaleType, string> timeScaleToUpdateFreq
             = new Dictionary<TimeScaleType, string>
@@ -42,7 +43,7 @@ namespace Px.Rdf
 
         private static Dictionary<string, string> themeMapping
             = new Dictionary<string, string>
-        {
+        { // Dictionary for all themes by mapping them accordingly to DCAT
             { "Arbetsmarknad", "SOCI"},
             { "Befolkning", "SOCI"},
             { "Boende, byggande och bebyggelse", "SOCI"},
@@ -68,8 +69,8 @@ namespace Px.Rdf
         };
 
         private static Dictionary<string, string> languageToDcatLang
-            = new Dictionary<string, string>
-        { // Iso 639-1  ->  Iso 639-3 mappings
+            = new Dictionary<string, string> 
+        { // Dictionary for all languages mapping them from ISO 639-1 to ISO 639-3
             { "aa", "aar"}, 
             { "ab", "abk"}, 
             { "af", "afr"}, 
@@ -264,13 +265,11 @@ namespace Px.Rdf
             return (++hashNum).ToString();
         }
 
-        private static string[] getDescriptions(PXMeta meta, string[] langs)
+        private static List<string> getDescriptions(PXMeta meta, List<string> langs)
         {   
-            int n = langs.Count();
-            string[] descriptions = new string[n];
+            List<string> descriptions = new List<string>(langs.Count());
 
-            for(int i=0; i<n; i++){
-                string lang = langs[i];
+            foreach(string lang in langs) {
                 string desc = "-";
                 meta.SetLanguage(lang);
                 Notes notes = meta.Notes;
@@ -278,18 +277,16 @@ namespace Px.Rdf
                 {
                     desc = notes[0].Text;
                 }
-                descriptions[i]=desc;
+                descriptions.Add(desc);
             }
             return descriptions;
         }
 
-        private static string[] getTitles(PXMeta meta, string[] langs) {
-            int n = langs.Count();
-            string[] titles = new string[n];
-            for(int i=0; i<n; i++){
-                string lang = langs[i];
+        private static List<string> getTitles(PXMeta meta, List<string> langs) {
+            List<string> titles = new List<string>(langs.Count());
+            foreach(string lang in langs) {
                 meta.SetLanguage(lang);
-                titles[i] = meta.Title;
+                titles.Add(meta.Title);
             }
             return titles;
         }
@@ -308,26 +305,26 @@ namespace Px.Rdf
             return "http://publications.europa.eu/resource/authority/language/" + lang.ToUpper();
         }
 
-        private static string[] getLanguages(PXMeta meta)
+        private static List<string> getLanguages(PXMeta meta)
         {
-            string[] langs = meta.GetAllLanguages();
-            if (langs is null)
+            string[] allLangs = meta.GetAllLanguages();
+            if (allLangs is null)
             {
-                langs = new string[] { meta.Language };
+                return new List<string> { meta.Language };
             }
-            return langs;
+            return new List<string>(allLangs);
         }
 
-        private static string[] convertLanguages(string[] languages) {
-            string[] lang = new string[languages.Count()];
-            for (int i = 0; i < lang.Length; i++)
+        private static List<string> convertLanguages(List<string> languages) {
+            List<string> converted = new List<string>(languages.Count());
+            foreach(string lang in languages)
             {
-                lang[i] = convertLanguage(languages[i]);
+                converted.Add(convertLanguage(lang));
             }
-            return lang;
+            return converted;
         }
 
-        private static ContactPerson[] getContacts(PXMeta meta)
+        private static List<ContactPerson> getContacts(PXMeta meta)
         {
             List<ContactPerson> contactPersons = new List<ContactPerson>();
             foreach (Value v in meta.ContentVariable.Values) {
@@ -349,7 +346,7 @@ namespace Px.Rdf
                 }
                 contactPersons = contactPersons.Union(cps).ToList();
             }
-            return contactPersons.ToArray();
+            return contactPersons;
         }
         
         private static string reformatString(string s)
@@ -359,11 +356,11 @@ namespace Px.Rdf
             return formatted;
         }
 
-        private static string getLatestDate(string[] dates) // format yyyyMMdd HH:mm
+        private static string getLatestDate(List<string> dates) // format yyyyMMdd HH:mm
         {
-            List<DateTime> dateTimes = new List<DateTime>(dates.Length);
-            for (int i = 0; i < dates.Length; i++) {
-                dateTimes.Add(DateTime.ParseExact(dates[i], PCAXIS_DATE_FORMAT, null));
+            List<DateTime> dateTimes = new List<DateTime>(dates.Count());
+            foreach (string date in dates) {
+                dateTimes.Add(DateTime.ParseExact(date, PCAXIS_DATE_FORMAT, null));
             }
             int maxIndex = dateTimes.IndexOf(dateTimes.Max());
             return dates[maxIndex];
@@ -375,10 +372,10 @@ namespace Px.Rdf
             if (modified is null)
             {
                 Values values = meta.ContentVariable.Values;
-                string[] modifiedDates = new string[values.Count];
-                for (int i = 0; i < modifiedDates.Length; i++)
+                List<string> modifiedDates = new List<string>(values.Count());
+                foreach (Value value in values)
                 {
-                    modifiedDates[i] = values[i].ContentInfo.LastUpdated;
+                    modifiedDates.Add(value.ContentInfo.LastUpdated);
                 }
                 modified = getLatestDate(modifiedDates);
             }
@@ -400,7 +397,7 @@ namespace Px.Rdf
             return org;
         }
 
-        private static Keyword[] getKeywords(List<PxMenuItem> path, string lang) {
+        private static List<Keyword> getKeywords(List<PxMenuItem> path, string lang) {
             List<Keyword> keywords = new List<Keyword>();
             foreach (PxMenuItem menu in path.Skip(1)) {
                 Keyword keyword;
@@ -418,16 +415,16 @@ namespace Px.Rdf
                 // Add keyword to dict
                 menuLangKeyword[(menu.ID.Selection, lang)] = keyword;
             }
-            return keywords.ToArray();
+            return keywords;
         }
 
-        private static Keyword[] getKeywords(List<PxMenuItem> path, string[] langs) {
+        private static List<Keyword> getKeywords(List<PxMenuItem> path, List<string> langs) {
             List<Keyword> keywords = new List<Keyword>();
             foreach (string lang in langs) {
-                Keyword[] keywordsInLang = getKeywords(path,lang);
+                List<Keyword> keywordsInLang = getKeywords(path,lang);
                 keywords.AddRange(keywordsInLang);
             }
-            return keywords.ToArray();
+            return keywords;
         }
         private static string getDistributionUrl(List<PxMenuItem> path, string title, string lang)
         {
@@ -439,13 +436,10 @@ namespace Px.Rdf
             url += title;
             return url;
         }
-        private static Distribution[] getDistributions(List<PxMenuItem> path, string title, string[] langs)
+        private static List<Distribution> getDistributions(List<PxMenuItem> path, string title, List<string> langs)
         {
-            int n = langs.Count();
-            Distribution[] distrs = new Distribution[n];
-            for (int i = 0; i < n; i++) {
-                string lang = langs[i];
-
+            List<Distribution> distrs = new List<Distribution>(langs.Count());
+            foreach(string lang in langs) {
                 Distribution distr = new Distribution();
                 distr.title = "Data (" + lang + ")";
                 distr.format = "application/json";
@@ -454,7 +448,7 @@ namespace Px.Rdf
                 distr.license = "http://creativecommons.org/publicdomain/zero/1.0/";
                 distr.resource = "https://www.scb.se/distribution/" + nextString();
 
-                distrs[i] = distr;
+                distrs.Add(distr);
             }
 
             return distrs;
@@ -498,7 +492,7 @@ namespace Px.Rdf
                     dataset.modified = getLastModified(builder.Model.Meta);
                     dataset.updateFrequency = getUpdateFrequency(builder.Model.Meta);
 
-                    string[] langs = getLanguages(builder.Model.Meta);
+                    List<string> langs = getLanguages(builder.Model.Meta);
                     dataset.languages = langs;
                     dataset.languageURIs = convertLanguages(langs);
 
