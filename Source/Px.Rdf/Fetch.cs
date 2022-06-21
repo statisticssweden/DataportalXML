@@ -338,7 +338,9 @@ namespace Px.Rdf
             List<ContactPerson> contactPersons = new List<ContactPerson>();
             foreach (Value v in meta.ContentVariable.Values) {
                 List<ContactPerson> cps = new List<ContactPerson>();
-                foreach (Contact c in v.ContentInfo.ContactInfo) {
+                List<Contact> allContacts = v.ContentInfo.ContactInfo;
+                if (allContacts is null) continue;
+                foreach (Contact c in allContacts) {
                     ContactPerson cp;
                     if (contacts.ContainsKey(c.Email)) cp = contacts[c.Email];
                     else {
@@ -568,7 +570,9 @@ namespace Px.Rdf
             }
             else if (item is TableLink)
             {
-                if (d.Count >= max)
+                int count = d.Count;
+                //Console.WriteLine(count);
+                if (max > 0 && count >= max)
                 {
                     return;
                 }

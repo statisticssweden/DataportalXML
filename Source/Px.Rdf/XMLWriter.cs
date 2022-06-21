@@ -1,20 +1,26 @@
-﻿  using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Px.Rdf;
 using System.Xml;
 using Data;
 
 namespace XMLWriter
 {
-    class XML
+    public class XML
     {
         private static XmlDocument doc = new XmlDocument();
         private static XmlNamespaceManager nsm = new XmlNamespaceManager(doc.NameTable);
 
-        public static void writeToFile(Catalog c, List<Organization> orgs, List<ContactPerson> contacts ,string fileName)
+        public static void writeToFile(string fileName)
+        {
+            int numberOfTables = 0;
+            Catalog c = Fetch.GetCatalog(numberOfTables);
+            List<Organization> orgs = Fetch.UniqueOrgs();
+            List<ContactPerson> contacts = Fetch.UniqueContacts();
+            writeToFile(c, orgs, contacts, fileName);
+        }
+
+        public static void writeToFile(Catalog c, List<Organization> orgs, List<ContactPerson> contacts, string fileName)
         {
             nsm.AddNamespace("adms", "http://www.w3.org/ns/adms#");
             nsm.AddNamespace("rdf", "http://www.w3.org/1999/02/22-rdf-syntax-ns#");
@@ -53,13 +59,15 @@ namespace XMLWriter
                 rdf.AppendChild(dElem);
             }
 
-            foreach (ContactPerson cp in contacts) {
+            foreach (ContactPerson cp in contacts)
+            {
                 XmlElement cElem = generateContact(cp);
                 rdf.AppendChild(cElem);
             }
 
 
-            foreach (Organization o in orgs) {
+            foreach (Organization o in orgs)
+            {
                 XmlElement oElem = generateOrg(o);
                 rdf.AppendChild(oElem);
             }
@@ -76,22 +84,26 @@ namespace XMLWriter
             doc.Save(fileName);
         }
 
-        private static XmlElement createElem(string elemNamespace, string elemName, string attrNamespace, string attributeName, string attrValue) {
+        private static XmlElement createElem(string elemNamespace, string elemName, string attrNamespace, string attributeName, string attrValue)
+        {
             XmlElement elem = doc.CreateElement(elemNamespace, elemName, nsm.LookupNamespace(elemNamespace));
             XmlAttribute attr = createAttr(attrNamespace, attributeName, attrValue);
             elem.SetAttributeNode(attr);
             return elem;
         }
-        private static XmlElement createElem(string elemNamespace, string elemName, string innerText) {
+        private static XmlElement createElem(string elemNamespace, string elemName, string innerText)
+        {
             XmlElement elem = doc.CreateElement(elemNamespace, elemName, nsm.LookupNamespace(elemNamespace));
             elem.InnerText = innerText;
             return elem;
         }
 
-        private static XmlElement createElem(string elemNamespace, string elemName) {
-            return createElem(elemNamespace,elemName,"");
+        private static XmlElement createElem(string elemNamespace, string elemName)
+        {
+            return createElem(elemNamespace, elemName, "");
         }
-        private static XmlAttribute createAttr(string ns, string tagName, string value) {
+        private static XmlAttribute createAttr(string ns, string tagName, string value)
+        {
             XmlAttribute attr = doc.CreateAttribute(ns, tagName, nsm.LookupNamespace(ns));
             attr.InnerText = value;
             return attr;
@@ -110,11 +122,11 @@ namespace XMLWriter
             catElem.AppendChild(descElem);
 
             // Publisher reference
-            XmlElement pubElem = createElem("dcterms","publisher","rdf","resource",c.publisher.resource);
+            XmlElement pubElem = createElem("dcterms", "publisher", "rdf", "resource", c.publisher.resource);
             catElem.AppendChild(pubElem);
-            
+
             // Licence
-            XmlElement licenseElem = createElem("dcterms", "license", "rdf","resource",c.license);
+            XmlElement licenseElem = createElem("dcterms", "license", "rdf", "resource", c.license);
             catElem.AppendChild(licenseElem);
 
             // Language
@@ -124,7 +136,7 @@ namespace XMLWriter
             // Dataset references
             foreach (Dataset d in c.datasets)
             {
-                XmlElement dElem = createElem("dcat","Dataset","rdf","resource",d.resource);
+                XmlElement dElem = createElem("dcat", "Dataset", "rdf", "resource", d.resource);
                 catElem.AppendChild(dElem);
             }
             return catElem;
@@ -133,11 +145,12 @@ namespace XMLWriter
         public static XmlElement generateDataset(Dataset d)
         {
             // Dataset
-            XmlElement dElem = createElem("dcat", "Dataset","rdf","about",d.resource);
+            XmlElement dElem = createElem("dcat", "Dataset", "rdf", "about", d.resource);
 
             int numLangs = d.languages.Count();
             // Title
-            for(int i = 0; i < numLangs; i++){
+            for (int i = 0; i < numLangs; i++)
+            {
                 string title = d.titles[i];
                 string lang = d.languages[i];
 
@@ -145,11 +158,12 @@ namespace XMLWriter
                 titleElem.InnerText = title;
                 dElem.AppendChild(titleElem);
             }
-            
+
             // Description
-            for(int i = 0; i < numLangs; i++){
+            for (int i = 0; i < numLangs; i++)
+            {
                 string desc = d.descriptions[i];
-                string lang = d.languages[i]; 
+                string lang = d.languages[i];
 
                 XmlElement descElem = createElem("dcterms", "description", "xml", "lang", lang);
                 descElem.InnerText = desc;
@@ -157,7 +171,7 @@ namespace XMLWriter
             }
 
             // Publisher reference
-            XmlElement pubElem = createElem("dcterms", "publisher","rdf", "resource", d.publisher.resource);
+            XmlElement pubElem = createElem("dcterms", "publisher", "rdf", "resource", d.publisher.resource);
             dElem.AppendChild(pubElem);
 
             // Producer reference
@@ -186,29 +200,32 @@ namespace XMLWriter
             dElem.AppendChild(identifier);
 
             // Keyword
-            foreach(Keyword keyword in d.keywords){
+            foreach (Keyword keyword in d.keywords)
+            {
                 XmlElement keyElem = createElem("dcat", "keyword", "xml", "lang", keyword.lang);
                 keyElem.InnerText = keyword.text;
                 dElem.AppendChild(keyElem);
             }
 
             // languages
-            
-            foreach(string language in d.languageURIs)
+
+            foreach (string language in d.languageURIs)
             {
                 XmlElement langElem = createElem("dcterms", "language", "rdf", "resource", language);
                 dElem.AppendChild(langElem);
             }
 
             // Contacts
-            foreach(ContactPerson cp in d.contactPersons){
+            foreach (ContactPerson cp in d.contactPersons)
+            {
                 XmlElement contactPoint = createElem("dcat", "contactPoint", "rdf", "resource", cp.resource);
                 dElem.AppendChild(contactPoint);
             }
 
 
             // Landing page
-            foreach (string lang in d.languages) {
+            foreach (string lang in d.languages)
+            {
                 XmlElement landing = createElem("dcat", "landingPage", "rdf", "resource", d.url(lang));
                 dElem.AppendChild(landing);
             }
@@ -237,21 +254,22 @@ namespace XMLWriter
 
             return orgElem;
         }
-        
-        public static XmlElement generateContact(ContactPerson cp){
-        
+
+        public static XmlElement generateContact(ContactPerson cp)
+        {
+
             XmlElement individual = createElem("vcard", "Individual", "rdf", "about", cp.resource);
             // Name
             XmlElement nameElem = createElem("vcard", "fn", cp.name);
             individual.AppendChild(nameElem);
-             // Email
-            XmlElement emailElem = createElem("vcard", "hasEmail", "rdf", "resource", "mailto:"+cp.email);
+            // Email
+            XmlElement emailElem = createElem("vcard", "hasEmail", "rdf", "resource", "mailto:" + cp.email);
             individual.AppendChild(emailElem);
             // Phone
             XmlElement phoneElem = createElem("vcard", "hasTelephone");
             XmlElement descElem = createElem("dcterms", "description");
-            
-            string phone = "tel:"+cp.telephone.Replace(" ", "");
+
+            string phone = "tel:" + cp.telephone.Replace(" ", "");
             XmlElement phoneVal = createElem("vcard", "hasValue", "rdf", "resource", phone);
 
             phoneElem.AppendChild(descElem);
@@ -285,8 +303,9 @@ namespace XMLWriter
             //license
             XmlElement licenseElem = createElem("dcterms", "license", "rdf", "resource", dst.license);
             distr.AppendChild(licenseElem);
-            
+
             return distr;
         }
+
     }
 }
