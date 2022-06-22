@@ -1,12 +1,4 @@
-﻿ using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using XMLWriter;
-using Px.Rdf;
-using Data;
+﻿using Px.Rdf;
 
 namespace TestApp
 {
@@ -14,7 +6,9 @@ namespace TestApp
     {
         public static void Main(string[] args)
         {
-            XML.writeToFile("../../../test.xml");
+            RdfSettings settings = new RdfSettings {BaseUri = "https://www.baseURI.se/", BaseApiUrl = "http://api.scb.se/OV0104/v1/doris/", 
+            PreferredLanguage = "en", CatalogTitle = "SCB Tabeller", CatalogDescription = "-", PublisherName = "SCB", CatalogLanguage = "sv"};
+            XML.writeToFile("../../../test.xml", settings);
         }
     }
 }

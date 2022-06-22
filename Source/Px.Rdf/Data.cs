@@ -1,14 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
-namespace Data
+namespace Px.Rdf
 {
-    public static class Constants
-    {
-        public static Organization SCB = new Organization() { name = "SCB - Statistiska Centralbyrån", resource = "https://www.scb.se"};
-    }
-
     public struct Catalog
     {
         public string title;

@@ -1,26 +1,25 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using Px.Rdf;
 using System.Xml;
-using Data;
 
-namespace XMLWriter
+namespace Px.Rdf
 {
     public class XML
     {
         private static XmlDocument doc = new XmlDocument();
         private static XmlNamespaceManager nsm = new XmlNamespaceManager(doc.NameTable);
 
-        public static void writeToFile(string fileName)
+        public static void writeToFile(string fileName, RdfSettings settings)
         {
-            int numberOfTables = 0;
+            Fetch.LoadSettings(settings);
+            int numberOfTables = 0; // No cap
             Catalog c = Fetch.GetCatalog(numberOfTables);
             List<Organization> orgs = Fetch.UniqueOrgs();
             List<ContactPerson> contacts = Fetch.UniqueContacts();
             writeToFile(c, orgs, contacts, fileName);
         }
 
-        public static void writeToFile(Catalog c, List<Organization> orgs, List<ContactPerson> contacts, string fileName)
+        private static void writeToFile(Catalog c, List<Organization> orgs, List<ContactPerson> contacts, string fileName)
         {
             nsm.AddNamespace("adms", "http://www.w3.org/ns/adms#");
             nsm.AddNamespace("rdf", "http://www.w3.org/1999/02/22-rdf-syntax-ns#");

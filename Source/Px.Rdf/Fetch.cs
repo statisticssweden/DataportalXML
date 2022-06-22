@@ -7,7 +7,6 @@ using PCAxis.PlugIn.Sql;
 using System.Collections.Generic;
 using System.Linq;
 
-using Data;
 namespace Px.Rdf
 {
     public static class Fetch
@@ -21,7 +20,11 @@ namespace Px.Rdf
 
         private static Dictionary<(string, string), Keyword> menuLangKeyword = new Dictionary<(string, string), Keyword>(); // (menuID, language) -> Array of keywords
         
+        private static RdfSettings settings;
 
+        public static void LoadSettings(RdfSettings rdfSettings) {
+            settings = rdfSettings;
+        }
         // Get all unique Organizations
         public static List<Organization> UniqueOrgs() {
             return organizations.Values.ToList();
@@ -349,7 +352,7 @@ namespace Px.Rdf
                             name = c.Forname + " " + c.Surname + ", " + c.OrganizationName, 
                             email = c.Email,
                             telephone = c.PhonePrefix + c.PhoneNo,
-                            resource = "https://www.scb.se/contactperson/" + nextString()
+                            resource = settings.BaseUri + "contactperson/" + nextString()
                         };
                         contacts.Add(c.Email, cp);
                     }
@@ -398,7 +401,7 @@ namespace Px.Rdf
         }
 
         // Get category from a path of menu items
-        private static string getCategory(List<PxMenuItem> path) {//"http://publications.europa.eu/resource/authority/data-theme/"+theme
+        private static string getCategory(List<PxMenuItem> path) { 
             if (path.Count < 2) {
                 return "";
             }
@@ -410,8 +413,21 @@ namespace Px.Rdf
         private static Organization getProducer(PXMeta meta) {
             string name = meta.Source;
             if (organizations.ContainsKey(name)) return organizations[name];
-            Organization org = new Organization {name = meta.Source, resource = "https://www.scb.se/producer/" + nextString()};
+            Organization org = new Organization {name = meta.Source, resource = settings.BaseUri + "organization/" + nextString()};
             organizations.Add(name, org);
+            return org;
+        }
+
+        private static Organization getPublisher() {
+            Organization org;
+            string publisherName = settings.PublisherName;
+            if (organizations.ContainsKey(publisherName)) {
+                org = organizations[publisherName];
+            }
+            else {
+                org = new Organization {name = settings.PublisherName, resource = settings.BaseUri + "organization/" + nextString()};
+                organizations.Add(publisherName, org);
+            }
             return org;
         }
 
@@ -450,7 +466,7 @@ namespace Px.Rdf
         // Gets the distrubution url from a path, title and language 
         private static string getDistributionUrl(List<PxMenuItem> path, string tableID, string lang)
         {
-            string url = "http://api.scb.se/OV0104/v1/doris/" + lang + "/ssd/";
+            string url = settings.BaseApiUrl + lang + "/ssd/";
             foreach (PxMenuItem menu in path.Skip(1))
             {
                 url += menu.ID.Selection + "/";
@@ -470,7 +486,7 @@ namespace Px.Rdf
                 distr.accessUrl = getDistributionUrl(path, tableID, lang);
                 distr.language = convertLanguage(lang);
                 distr.license = "http://creativecommons.org/publicdomain/zero/1.0/";
-                distr.resource = "https://www.scb.se/distribution/" + nextString();
+                distr.resource = settings.BaseUri + "distribution/" + nextString();
 
                 distrs.Add(distr);
             }
@@ -480,7 +496,8 @@ namespace Px.Rdf
         // Gets data for each dataset
         private static Dataset getDataset(PXMeta meta, List<PxMenuItem> path) {
             Dataset dataset = new Dataset();
-            dataset.publisher = Constants.SCB;
+
+            dataset.publisher = getPublisher();
             dataset.identifier = meta.MainTable;
             dataset.modified = getLastModified(meta);
             dataset.updateFrequency = getUpdateFrequency(meta);
@@ -499,7 +516,7 @@ namespace Px.Rdf
             dataset.keywords = getKeywords(path, langs);
             dataset.distributions = getDistributions(path, dataset.identifier, langs);
 
-            dataset.resource = "https://www.scb.se/dataset/" + nextString();
+            dataset.resource = settings.BaseUri + "dataset/" + nextString();
 
             return dataset;
         }
@@ -583,7 +600,7 @@ namespace Px.Rdf
                     IPXModelBuilder builder = new PXSQLBuilder();
                     builder.SetPath(table.ID.Selection);
                     builder.ReadAllLanguages = true;
-                    builder.SetPreferredLanguage("sv");
+                    builder.SetPreferredLanguage(settings.PreferredLanguage);
                     builder.BuildForSelection();
                 
                     Dataset dataset = getDataset(builder.Model.Meta, path);
@@ -653,12 +670,12 @@ namespace Px.Rdf
         public static Catalog GetCatalog(int numberOfTables)
         {
             Catalog c = new Catalog();
-            c.title = "Statistikdatabasen SCB";
-            c.description = "Databas för SCB:s offentliga statistik";
-            c.publisher = Constants.SCB;
+            c.title = settings.CatalogTitle;
+            c.description = settings.CatalogDescription;
+            c.publisher = getPublisher();
             c.license = "http://creativecommons.org/publicdomain/zero/1.0/";
             c.datasets = GetDatasets(numberOfTables);
-            c.language = "http://publications.europa.eu/resource/authority/language/SWE";
+            c.language = convertLanguage(settings.CatalogLanguage);
             return c;
         }
     }
