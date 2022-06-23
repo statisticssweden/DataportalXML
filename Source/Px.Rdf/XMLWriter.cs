@@ -83,7 +83,9 @@ namespace Px.Rdf
 
             doc.Save(fileName);
         }
-
+        /// <summary>
+        /// Creating XMLElements and attributes with function overloading since the elements are similar but require more or less parameters
+        /// </summary>
         private static XmlElement createElem(string elemNamespace, string elemName, string attrNamespace, string attributeName, string attrValue)
         {
             XmlElement elem = doc.CreateElement(elemNamespace, elemName, nsm.LookupNamespace(elemNamespace));
@@ -102,6 +104,7 @@ namespace Px.Rdf
         {
             return createElem(elemNamespace, elemName, "");
         }
+
         private static XmlAttribute createAttr(string ns, string tagName, string value)
         {
             XmlAttribute attr = doc.CreateAttribute(ns, tagName, nsm.LookupNamespace(ns));
@@ -210,7 +213,6 @@ namespace Px.Rdf
             }
 
             // languages
-
             foreach (string language in d.languageURIs)
             {
                 XmlElement langElem = createElem("dcterms", "language", "rdf", "resource", language);
@@ -259,14 +261,16 @@ namespace Px.Rdf
 
         public static XmlElement generateContact(ContactPerson cp)
         {
-
             XmlElement individual = createElem("vcard", "Individual", "rdf", "about", cp.resource);
+
             // Name
             XmlElement nameElem = createElem("vcard", "fn", cp.name);
             individual.AppendChild(nameElem);
+
             // Email
             XmlElement emailElem = createElem("vcard", "hasEmail", "rdf", "resource", "mailto:" + cp.email);
             individual.AppendChild(emailElem);
+
             // Phone
             XmlElement phoneElem = createElem("vcard", "hasTelephone");
             XmlElement descElem = createElem("dcterms", "description");
