@@ -15,34 +15,30 @@ using PCAxis.PlugIn.Sql;
 
 namespace Px.Rdf
 {
-    public static class Fetch
+    public class Fetcher
     {
         private const string PCAXIS_DATE_FORMAT = "yyyyMMdd HH:mm";
         private const string DCAT_DATE_FORMAT = "yyyy-MM-ddTHH:mm:ss";
-        private static int hashNum;
-
-        private static Dictionary<string, Organization> organizations = new Dictionary<string, Organization>(); // name to organization
-        private static Dictionary<string, ContactPerson> contacts = new Dictionary<string, ContactPerson>(); // email to contactPerson
-
-        private static Dictionary<(string, string), Keyword> menuLangKeyword = new Dictionary<(string, string), Keyword>(); // (menuID, language) -> Array of keywords
-        
-        private static RdfSettings settings;
-
-        public static void LoadSettings(RdfSettings rdfSettings) {
+        private int hashNum;
+        private Dictionary<string, Organization> organizations = new Dictionary<string, Organization>(); // name to organization
+        private Dictionary<(string, string), Keyword> menuLangKeyword = new Dictionary<(string, string), Keyword>(); // (menuID, language) -> Array of keywords
+        protected Dictionary<string, ContactPerson> contacts = new Dictionary<string, ContactPerson>(); // email to contactPerson
+        protected RdfSettings settings;
+        public void LoadSettings(RdfSettings rdfSettings) {
             settings = rdfSettings;
         }
         // Get all unique Organizations
-        public static List<Organization> UniqueOrgs() {
+        public List<Organization> UniqueOrgs() {
             return organizations.Values.ToList();
         }
 
         // Get all unique Contacts
-        public static List<ContactPerson> UniqueContacts() {
+        public List<ContactPerson> UniqueContacts() {
             return contacts.Values.ToList();
         }
 
         // Mapping from PcAxis TimeScaleType to DCAT standard https://docs.dataportal.se/dcat/sv/#dcat_Dataset-dcterms_accrualPeriodicity
-        private static Dictionary<TimeScaleType, string> timeScaleToUpdateFreq
+        private Dictionary<TimeScaleType, string> timeScaleToUpdateFreq
             = new Dictionary<TimeScaleType, string>
         {
             { TimeScaleType.NotSet, "OTHER"},
@@ -54,7 +50,7 @@ namespace Px.Rdf
         };
 
         // Mapping from PcAxis categories to DCAT standard themes https://docs.dataportal.se/dcat/sv/#dcat_Dataset-dcat_theme
-        private static Dictionary<string, string> themeMapping
+        private Dictionary<string, string> themeMapping
             = new Dictionary<string, string>
         { // Dictionary for all themes by mapping them accordingly to DCAT
             { "Arbetsmarknad", "SOCI"},
@@ -78,12 +74,10 @@ namespace Px.Rdf
             { "Transporter och kommunikationer", "TRAN"},
             { "Utbildning och forskning", "EDUC"},
             { "Ämnesövergripande statistik", "SOCI"},
-            {"",""},
-            {null, ""}
         };
 
         // Mapping from ISO 639-1 to ISO 639-3 (2 letters to 3) used for DCAT languages https://docs.dataportal.se/dcat/sv/#dcat_Dataset-dcterms_language
-        private static Dictionary<string, string> languageToDcatLang
+        private Dictionary<string, string> languageToDcatLang
             = new Dictionary<string, string>  {
             { "aa", "aar"}, 
             { "ab", "abk"}, 
@@ -271,15 +265,15 @@ namespace Px.Rdf
             { "zu", "zul"}
         };
 
-        private static int nextNum() {
+        protected int nextNum() {
             return ++hashNum;
         }
-        private static string nextString() {
+        protected string nextString() {
             return (++hashNum).ToString();
         }
 
         // Gets description for each language. First note, if mandatory
-        private static List<string> getDescriptions(PXMeta meta, List<string> langs)
+        private List<string> getDescriptions(PXMeta meta, List<string> langs)
         {   
             List<string> descriptions = new List<string>(langs.Count());
 
@@ -297,7 +291,7 @@ namespace Px.Rdf
         }
 
         // Gets the title for each language
-        private static List<string> getTitles(PXMeta meta, List<string> langs) {
+        private List<string> getTitles(PXMeta meta, List<string> langs) {
             List<string> titles = new List<string>(langs.Count());
             foreach(string lang in langs) {
                 meta.SetLanguage(lang);
@@ -307,7 +301,7 @@ namespace Px.Rdf
         }
 
         // Gets update frequency
-        private static string getUpdateFrequency(PXMeta meta)
+        private string getUpdateFrequency(PXMeta meta)
         {
             Predicate<Variable> isTime = (Variable v) => v.IsTime;
             TimeScaleType timeScale = meta.Variables.Find(isTime).TimeScale;
@@ -316,14 +310,14 @@ namespace Px.Rdf
         }
 
         // Returns the language URL for each description
-        private static string convertLanguage(string str)
+        private string convertLanguage(string str)
         {
             string lang = languageToDcatLang[str];
             return "http://publications.europa.eu/resource/authority/language/" + lang.ToUpper();
         }
 
         // Function returning a list of strings where it's either one or more languages
-        private static List<string> getLanguages(PXMeta meta)
+        private List<string> getLanguages(PXMeta meta)
         {
             string[] allLangs = meta.GetAllLanguages();
             if (allLangs is null)
@@ -333,7 +327,7 @@ namespace Px.Rdf
             return new List<string>(allLangs);
         }
         // Converts and returns each url for every language available
-        private static List<string> convertLanguages(List<string> languages) {
+        private List<string> convertLanguages(List<string> languages) {
             List<string> converted = new List<string>(languages.Count());
             foreach(string lang in languages)
             {
@@ -341,9 +335,80 @@ namespace Px.Rdf
             }
             return converted;
         }
+        
+        
+        // Convert from pcAxis date format to xsd:dateTime format
+        private string reformatDate(string s)
+        {
+            DateTime date = DateTime.ParseExact(s, PCAXIS_DATE_FORMAT, null);
+            string formatted = date.ToString(DCAT_DATE_FORMAT);
+            return formatted;
+        }
 
-        // Get all contacts for a dataset, check all ContentVariable.values.contentInfo.ContactInfo and get unique
-        private static List<ContactPerson> getContacts(PXMeta meta)
+        //  Returns the latest date from a list of dates (in PcAxis format)
+        private string getLatestDate(List<string> dates) // format yyyyMMdd HH:mm
+        {
+            List<DateTime> dateTimes = new List<DateTime>(dates.Count());
+            foreach (string date in dates) {
+                dateTimes.Add(DateTime.ParseExact(date, PCAXIS_DATE_FORMAT, null));
+            }
+            int maxIndex = dateTimes.IndexOf(dateTimes.Max());
+            return dates[maxIndex];
+        }
+        public List<ContactPerson> getContacts(PXMeta meta)
+        {
+            List<ContactPerson> contactPersons = new List<ContactPerson>();
+            List<Contact> contactList = meta.ContentInfo.ContactInfo;
+
+            if (contactList is null) {
+                Variable variable = meta.ContentVariable;
+                if (variable is null) return contactPersons;
+                Values values = variable.Values;
+                if (values is null) return contactPersons;
+                foreach (Value v in values) {
+                    List<ContactPerson> cps = new List<ContactPerson>();
+                    List<Contact> allContacts = v.ContentInfo.ContactInfo;
+                    if (allContacts is null) continue;
+                    foreach (Contact c in allContacts) {
+                        ContactPerson cp;
+                        if (contacts.ContainsKey(c.Email)) cp = contacts[c.Email];
+                        else {
+                            cp = new ContactPerson 
+                            {
+                                name = c.Forname + " " + c.Surname + ", " + c.OrganizationName, 
+                                email = c.Email,
+                                telephone = c.PhonePrefix + c.PhoneNo,
+                                resource = settings.BaseUri + "contactperson/" + nextString()
+                            };
+                            contacts.Add(c.Email, cp);
+                        }
+                        cps.Add(cp);
+                    }
+                    contactPersons = contactPersons.Union(cps).ToList();
+                }
+            }
+
+            else {
+                foreach (Contact c in contactList) {
+                    ContactPerson cp;
+                    if (contacts.ContainsKey(c.Email)) cp = contacts[c.Email];
+                    else {
+                        cp = new ContactPerson 
+                        {
+                            name = c.Forname + " " + c.Surname + ", " + c.OrganizationName, 
+                            email = c.Email,
+                            telephone = c.PhonePrefix + c.PhoneNo,
+                            resource = settings.BaseUri + "contactperson/" + nextString()
+                        };
+                        contacts.Add(c.Email, cp);
+                    }
+                    contactPersons.Add(cp);
+                }
+            }
+            return contactPersons;
+        }
+        /*
+        public List<ContactPerson> getContacts(PXMeta meta)
         {
             List<ContactPerson> contactPersons = new List<ContactPerson>();
             foreach (Value v in meta.ContentVariable.Values) {
@@ -368,30 +433,10 @@ namespace Px.Rdf
                 contactPersons = contactPersons.Union(cps).ToList();
             }
             return contactPersons;
-        }
-        
-        
-        // Convert from pcAxis date format to xsd:dateTime format
-        private static string reformatDate(string s)
-        {
-            DateTime date = DateTime.ParseExact(s, PCAXIS_DATE_FORMAT, null);
-            string formatted = date.ToString(DCAT_DATE_FORMAT);
-            return formatted;
-        }
-
-        //  Returns the latest date from a list of dates (in PcAxis format)
-        private static string getLatestDate(List<string> dates) // format yyyyMMdd HH:mm
-        {
-            List<DateTime> dateTimes = new List<DateTime>(dates.Count());
-            foreach (string date in dates) {
-                dateTimes.Add(DateTime.ParseExact(date, PCAXIS_DATE_FORMAT, null));
-            }
-            int maxIndex = dateTimes.IndexOf(dateTimes.Max());
-            return dates[maxIndex];
-        }
+        }*/
 
         // Return the latest modiefied date of a dataset, check all ContentVariables modification dates and return latest
-        private static string getLastModified(PXMeta meta)
+        private string getLastModified(PXMeta meta)
         {
             string modified = meta.ContentInfo.LastUpdated;
             if (modified is null)
@@ -408,16 +453,21 @@ namespace Px.Rdf
         }
 
         // Get category from a path of menu items
-        private static string getCategory(List<PxMenuItem> path) { 
+        private string getCategory(List<PxMenuItem> path) { 
             if (path.Count < 2) {
-                return "";
+                return null;
             }
-            return "http://publications.europa.eu/resource/authority/data-theme/" + themeMapping[path[1].Text];
+            string category = path[1].Text;
+            if (category is null) return null;
+            if (!themeMapping.ContainsKey(category)) {
+                return null;
+            }
+            return "http://publications.europa.eu/resource/authority/data-theme/" + themeMapping[category];
         }
 
 
         // Producer of dataset, Meta.Source
-        private static Organization getProducer(PXMeta meta) {
+        private Organization getProducer(PXMeta meta) {
             string name = meta.Source;
             if (organizations.ContainsKey(name)) return organizations[name];
             Organization org = new Organization {name = meta.Source, resource = settings.BaseUri + "organization/" + nextString()};
@@ -425,7 +475,7 @@ namespace Px.Rdf
             return org;
         }
 
-        private static Organization getPublisher() {
+        private Organization getPublisher() {
             Organization org;
             string publisherName = settings.PublisherName;
             if (organizations.ContainsKey(publisherName)) {
@@ -439,7 +489,7 @@ namespace Px.Rdf
         }
 
         // Get keywords for a specific language. Keywords are the menu titles
-        private static List<Keyword> getKeywords(List<PxMenuItem> path, string lang) {
+        private List<Keyword> getKeywords(List<PxMenuItem> path, string lang) {
             List<Keyword> keywords = new List<Keyword>();
             foreach (PxMenuItem menu in path.Skip(1)) {
                 Keyword keyword;
@@ -449,19 +499,19 @@ namespace Px.Rdf
                 }
                 else {
                     PxMenuItem menuInLang = getMenuInLanguage(menu,lang);
+                    if (menuInLang is null) continue;
                     string text = menuInLang.Text;
                     keyword = new Keyword {text = text, lang = lang};
+                    // Add keyword to dict
+                    menuLangKeyword[(menu.ID.Selection, lang)] = keyword; 
                 }
-
                 keywords.Add(keyword); 
-                // Add keyword to dict
-                menuLangKeyword[(menu.ID.Selection, lang)] = keyword;
             }
             return keywords;
         }
 
         // Gets each keyword from a specific 
-        private static List<Keyword> getKeywords(List<PxMenuItem> path, List<string> langs) {
+        private List<Keyword> getKeywords(List<PxMenuItem> path, List<string> langs) {
             List<Keyword> keywords = new List<Keyword>();
             foreach (string lang in langs) {
                 List<Keyword> keywordsInLang = getKeywords(path,lang);
@@ -469,9 +519,20 @@ namespace Px.Rdf
             }
             return keywords;
         }
+        private string getDatasetUrl(string tableID, string lang)
+        {
+            return settings.LandingPageUrl + lang + "/ssd/" + tableID;
+        }
 
+        private List<string> getDatasetUrls(string tableID, List<string> langs) {
+            List<string> urls = new List<string>();
+            foreach(string lang in langs) {
+                urls.Add(getDatasetUrl(tableID,lang));
+            }
+            return urls;
+        }
         // Gets the distrubution url from a path, title and language 
-        private static string getDistributionUrl(List<PxMenuItem> path, string tableID, string lang)
+        private string getDistributionUrl(List<PxMenuItem> path, string tableID, string lang)
         {
             string url = settings.BaseApiUrl + lang + "/ssd/";
             foreach (PxMenuItem menu in path.Skip(1))
@@ -483,7 +544,7 @@ namespace Px.Rdf
         }
 
         // Get distributions, one for each language
-        private static List<Distribution> getDistributions(List<PxMenuItem> path, string tableID, List<string> langs)
+        private List<Distribution> getDistributions(List<PxMenuItem> path, string tableID, List<string> langs)
         {
             List<Distribution> distrs = new List<Distribution>(langs.Count());
             foreach(string lang in langs) {
@@ -501,7 +562,7 @@ namespace Px.Rdf
             return distrs;
         }
         // Gets data for each dataset
-        private static Dataset getDataset(PXMeta meta, List<PxMenuItem> path) {
+        private Dataset getDataset(PXMeta meta, List<PxMenuItem> path) {
             Dataset dataset = new Dataset();
 
             dataset.publisher = getPublisher();
@@ -524,19 +585,25 @@ namespace Px.Rdf
             dataset.distributions = getDistributions(path, dataset.identifier, langs);
 
             dataset.resource = settings.BaseUri + "dataset/" + nextString();
+            dataset.urls = getDatasetUrls(dataset.identifier, langs);
 
             return dataset;
         }
 
         // Get a menu in a specific language
-        private static PxMenuItem getMenuInLanguage(PxMenuItem menuItem, string lang) {
+        private PxMenuItem getMenuInLanguage(PxMenuItem menuItem, string lang) {
             string nodeID = menuItem.ID.Selection;
             string menuID = menuItem.ID.Menu;
-            return getBaseItem(nodeID, menuID) as PxMenuItem;
+            try {
+                return settings.Fetcher.GetBaseItem(nodeID, menuID, lang, settings.DBid) as PxMenuItem;
+            }
+            catch (PCAxis.Menu.Exceptions.InvalidMenuFromXMLException e) {
+                return null;
+            }
         }
 
         // Recursively go thorugh all items and add the leaf nodes (datasets) to the list d, max is the maximum amount of datasets collected
-        private static void addRecursive(Item item, List<PxMenuItem> path, List<Dataset> d, int max)
+        private void addRecursive(Item item, List<PxMenuItem> path, List<Dataset> d, int max)
         {
 
             if (item is PxMenuItem)
@@ -562,22 +629,9 @@ namespace Px.Rdf
                 }
 
                 var table = item as TableLink;
-                var selection = "";
                 try
                 {
-                    IPXModelBuilder builder;
-                    if (settings.DBtype == DBType.SQL)
-                    {
-                        builder = new PXSQLBuilder();
-                        selection = table.ID.Selection;
-                    }
-                    else 
-                    { 
-                        builder = new PXFileBuilder();
-                        selection = Path.Combine(@"C:\Temp\PxGit\PxWeb\PXWeb\Resources\PX\Databases\", table.ID.Selection);
-                    }
-                    
-                    builder.SetPath(selection);
+                    IPXModelBuilder builder = settings.Fetcher.GetBuilder(table.ID.Selection);
                     builder.ReadAllLanguages = true;
                     builder.SetPreferredLanguage(settings.PreferredLanguage);
                     builder.BuildForSelection();
@@ -592,101 +646,19 @@ namespace Px.Rdf
             }
         }
 
-        public static Item getBaseItem() {
-            return getBaseItem("","");
-        }
-
-        public static Item getBaseItem(string nodeID, string menuID) {
-            if (settings.DBtype == DBType.SQL) {
-                return getBaseItemSQL(nodeID, menuID);
-            }
-            else if (settings.DBtype == DBType.PcAxisFile) {
-                return getBaseItemPcAxis(nodeID, menuID);
-            }
-            else {
-                throw new Exception("Invalid database type selected");
-            }
-        }
-        public static Item getBaseItemSQL(string nodeID, string menuID) {
-            string dbLang = settings.DBLang;
-            string dbid = settings.DBid;
-            TableLink tblFix = null;
-
-            DatamodelMenu menu = ConfigDatamodelMenu.Create(
-            dbLang,
-            PCAxis.Sql.DbConfig.SqlDbConfigsStatic.DataBases[dbid],
-            m =>
-            {
-                m.NumberOfLevels = 5;
-                m.RootSelection = nodeID == "" ? new ItemSelection() : new ItemSelection(menuID, nodeID);
-                m.AlterItemBeforeStorage = item =>
-                {
-                    if (item is TableLink)
-                    {
-                        TableLink tbl = (TableLink)item;
-
-                        if (string.Compare(tbl.ID.Selection, nodeID, true) == 0)
-                        {
-                            tblFix = tbl;
-                        }
-                        if (tbl.StartTime == tbl.EndTime)
-                        {
-                            tbl.Text = tbl.Text + " " + tbl.StartTime;
-                        }
-                        else
-                        {
-                            tbl.Text = tbl.Text + " " + tbl.StartTime + " - " + tbl.EndTime;
-                        }
-
-                        if (tbl.Published.HasValue)
-                        {
-                            tbl.SetAttribute("modified", tbl.Published.Value.ToShortDateString());
-                        }
-                    }
-                    if (String.IsNullOrEmpty(item.SortCode))
-                    {
-                        item.SortCode = item.Text;
-                    }
-                };
-            });
-            return menu.CurrentItem;
-        }
-        private static Item getBaseItemPcAxis(string nodeID, string menuID) { 
-            
-
-                XmlMenu menu = new XmlMenu(XDocument.Load(settings.DBid), settings.DBLang,
-                    m =>
-                    {
-                        m.Restriction = item =>
-                        {
-                            return true;
-                        };
-                    });
-
-                //ItemSelection cid = PathHandlerFactory.Create(PCAxis.Web.Core.Enums.DatabaseType.PX).GetSelection(nodeID);
-                ItemSelection cid = new ItemSelection(menuID, nodeID);
-                menu.SetCurrentItemBySelection(cid.Menu, cid.Selection);
-                return menu.CurrentItem;
-            
-   
-            
-        }
-
         // Gets datasets, n is maximum amount
-        public static List<Dataset> GetDatasets(int n)
+        public List<Dataset> GetDatasets(int n)
         {
-            
-
             var datasets = new List<Dataset>();
             var path = new List<PxMenuItem>();
-            Item baseItem = getBaseItem();
+            Item baseItem = settings.Fetcher.GetBaseItem("","",settings.DBLang,settings.DBid);
 
             addRecursive(baseItem, path, datasets, n);
             return datasets;
         }
 
         // Generates a catalog, numberOfTables is maximum amount of datasets fetched
-        public static Catalog GetCatalog(int numberOfTables)
+        public Catalog GetCatalog(int numberOfTables)
         {
             Catalog c = new Catalog();
             c.title = settings.CatalogTitle;

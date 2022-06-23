@@ -44,10 +44,6 @@ namespace Px.Rdf
         public string resource;
 
         public List<string> urls;
-        public string url(string lang)
-        {
-            return "http://www.statistikdatabasen.scb.se/goto/" + lang + "/ssd/" + identifier;
-        }
     }
 
     public struct Organization

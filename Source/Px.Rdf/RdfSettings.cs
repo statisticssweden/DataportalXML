@@ -22,7 +22,8 @@ namespace Px.Rdf
 
         public string DBLang;
         public string DBid;
-        public DBType DBtype;
+        public IFetcher Fetcher;
+        public string LandingPageUrl;
 
     }
 }

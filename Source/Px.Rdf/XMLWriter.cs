@@ -11,11 +11,12 @@ namespace Px.Rdf
 
         public static void writeToFile(string fileName, RdfSettings settings)
         {
-            Fetch.LoadSettings(settings);
+            Fetcher fetcher = new Fetcher();
+            fetcher.LoadSettings(settings);
             int numberOfTables = 100; // No cap
-            Catalog c = Fetch.GetCatalog(numberOfTables);
-            List<Organization> orgs = Fetch.UniqueOrgs();
-            List<ContactPerson> contacts = Fetch.UniqueContacts();
+            Catalog c = fetcher.GetCatalog(numberOfTables);
+            List<Organization> orgs = fetcher.UniqueOrgs();
+            List<ContactPerson> contacts = fetcher.UniqueContacts();
             writeToFile(c, orgs, contacts, fileName);
         }
 
@@ -185,8 +186,10 @@ namespace Px.Rdf
             }
 
             // Category/Theme
-            XmlElement themeElem = createElem("dcat", "theme", "rdf", "resource", d.category);
-            dElem.AppendChild(themeElem);
+            if (!(d.category is null)){
+                XmlElement themeElem = createElem("dcat", "theme", "rdf", "resource", d.category);
+                dElem.AppendChild(themeElem);
+            }
 
             // Modified
             string dateTimeDataType = "http://www.w3.org/2001/XMLSchema#dateTime";
@@ -223,9 +226,9 @@ namespace Px.Rdf
 
 
             // Landing page
-            foreach (string lang in d.languages)
+            foreach (string url in d.urls)
             {
-                XmlElement landing = createElem("dcat", "landingPage", "rdf", "resource", d.url(lang));
+                XmlElement landing = createElem("dcat", "landingPage", "rdf", "resource", url);
                 dElem.AppendChild(landing);
             }
 
