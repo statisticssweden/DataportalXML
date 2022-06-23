@@ -1,11 +1,17 @@
 ﻿using System;
+using System.Data;
+using System.IO;
+using System.Web;
+using System.Text;
+using System.Xml.Linq;
+using System.Collections.Generic;
+using System.Linq;
+
 using PCAxis.Menu;
 using PCAxis.Menu.Implementations;
 using PCAxis.Paxiom;
 using PCAxis.PlugIn.Sql;
 
-using System.Collections.Generic;
-using System.Linq;
 
 namespace Px.Rdf
 {
@@ -72,7 +78,8 @@ namespace Px.Rdf
             { "Transporter och kommunikationer", "TRAN"},
             { "Utbildning och forskning", "EDUC"},
             { "Ämnesövergripande statistik", "SOCI"},
-            {"",""}
+            {"",""},
+            {null, ""}
         };
 
         // Mapping from ISO 639-1 to ISO 639-3 (2 letters to 3) used for DCAT languages https://docs.dataportal.se/dcat/sv/#dcat_Dataset-dcterms_language
@@ -523,49 +530,9 @@ namespace Px.Rdf
 
         // Get a menu in a specific language
         private static PxMenuItem getMenuInLanguage(PxMenuItem menuItem, string lang) {
-            string nodeId = menuItem.ID.Selection;
-            string dbid = "ssd";
-            string menuId = menuItem.ID.Menu;
-
-            TableLink tblFix = null;
-            DatamodelMenu menu = ConfigDatamodelMenu.Create(
-            lang,
-            PCAxis.Sql.DbConfig.SqlDbConfigsStatic.DataBases[dbid],
-            m =>
-            {
-                m.NumberOfLevels = 5;
-                m.RootSelection = nodeId == "" ? new ItemSelection() : new ItemSelection(menuId, nodeId);
-                m.AlterItemBeforeStorage = item =>
-                {
-                    if (item is TableLink)
-                    {
-                        TableLink tbl = (TableLink)item;
-
-                        if (string.Compare(tbl.ID.Selection, nodeId, true) == 0)
-                        {
-                            tblFix = tbl;
-                        }
-                        if (tbl.StartTime == tbl.EndTime)
-                        {
-                            tbl.Text = tbl.Text + " " + tbl.StartTime;
-                        }
-                        else
-                        {
-                            tbl.Text = tbl.Text + " " + tbl.StartTime + " - " + tbl.EndTime;
-                        }
-
-                        if (tbl.Published.HasValue)
-                        {
-                            tbl.SetAttribute("modified", tbl.Published.Value.ToShortDateString());
-                        }
-                    }
-                    if (String.IsNullOrEmpty(item.SortCode))
-                    {
-                        item.SortCode = item.Text;
-                    }
-                };
-            });
-            return menu.CurrentItem as PxMenuItem;
+            string nodeID = menuItem.ID.Selection;
+            string menuID = menuItem.ID.Menu;
+            return getBaseItem(nodeID, menuID) as PxMenuItem;
         }
 
         // Recursively go thorugh all items and add the leaf nodes (datasets) to the list d, max is the maximum amount of datasets collected
@@ -595,10 +562,22 @@ namespace Px.Rdf
                 }
 
                 var table = item as TableLink;
+                var selection = "";
                 try
                 {
-                    IPXModelBuilder builder = new PXSQLBuilder();
-                    builder.SetPath(table.ID.Selection);
+                    IPXModelBuilder builder;
+                    if (settings.DBtype == DBType.SQL)
+                    {
+                        builder = new PXSQLBuilder();
+                        selection = table.ID.Selection;
+                    }
+                    else 
+                    { 
+                        builder = new PXFileBuilder();
+                        selection = Path.Combine(@"C:\Temp\PxGit\PxWeb\PXWeb\Resources\PX\Databases\", table.ID.Selection);
+                    }
+                    
+                    builder.SetPath(selection);
                     builder.ReadAllLanguages = true;
                     builder.SetPreferredLanguage(settings.PreferredLanguage);
                     builder.BuildForSelection();
@@ -613,13 +592,24 @@ namespace Px.Rdf
             }
         }
 
-        // Gets datasets, n is maximum amount
-        public static List<Dataset> GetDatasets(int n)
-        {
-            string dbLang = "sv";
-            string nodeId = "";
-            string dbid = "ssd";
-            string menuid = "";
+        public static Item getBaseItem() {
+            return getBaseItem("","");
+        }
+
+        public static Item getBaseItem(string nodeID, string menuID) {
+            if (settings.DBtype == DBType.SQL) {
+                return getBaseItemSQL(nodeID, menuID);
+            }
+            else if (settings.DBtype == DBType.PcAxisFile) {
+                return getBaseItemPcAxis(nodeID, menuID);
+            }
+            else {
+                throw new Exception("Invalid database type selected");
+            }
+        }
+        public static Item getBaseItemSQL(string nodeID, string menuID) {
+            string dbLang = settings.DBLang;
+            string dbid = settings.DBid;
             TableLink tblFix = null;
 
             DatamodelMenu menu = ConfigDatamodelMenu.Create(
@@ -628,14 +618,14 @@ namespace Px.Rdf
             m =>
             {
                 m.NumberOfLevels = 5;
-                m.RootSelection = nodeId == "" ? new ItemSelection() : new ItemSelection(menuid, nodeId);
+                m.RootSelection = nodeID == "" ? new ItemSelection() : new ItemSelection(menuID, nodeID);
                 m.AlterItemBeforeStorage = item =>
                 {
                     if (item is TableLink)
                     {
                         TableLink tbl = (TableLink)item;
 
-                        if (string.Compare(tbl.ID.Selection, nodeId, true) == 0)
+                        if (string.Compare(tbl.ID.Selection, nodeID, true) == 0)
                         {
                             tblFix = tbl;
                         }
@@ -659,10 +649,39 @@ namespace Px.Rdf
                     }
                 };
             });
+            return menu.CurrentItem;
+        }
+        private static Item getBaseItemPcAxis(string nodeID, string menuID) { 
+            
+
+                XmlMenu menu = new XmlMenu(XDocument.Load(settings.DBid), settings.DBLang,
+                    m =>
+                    {
+                        m.Restriction = item =>
+                        {
+                            return true;
+                        };
+                    });
+
+                //ItemSelection cid = PathHandlerFactory.Create(PCAxis.Web.Core.Enums.DatabaseType.PX).GetSelection(nodeID);
+                ItemSelection cid = new ItemSelection(menuID, nodeID);
+                menu.SetCurrentItemBySelection(cid.Menu, cid.Selection);
+                return menu.CurrentItem;
+            
+   
+            
+        }
+
+        // Gets datasets, n is maximum amount
+        public static List<Dataset> GetDatasets(int n)
+        {
+            
 
             var datasets = new List<Dataset>();
             var path = new List<PxMenuItem>();
-            addRecursive(menu.CurrentItem, path, datasets, n);
+            Item baseItem = getBaseItem();
+
+            addRecursive(baseItem, path, datasets, n);
             return datasets;
         }
 

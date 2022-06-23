@@ -12,7 +12,7 @@ namespace Px.Rdf
         public static void writeToFile(string fileName, RdfSettings settings)
         {
             Fetch.LoadSettings(settings);
-            int numberOfTables = 0; // No cap
+            int numberOfTables = 100; // No cap
             Catalog c = Fetch.GetCatalog(numberOfTables);
             List<Organization> orgs = Fetch.UniqueOrgs();
             List<ContactPerson> contacts = Fetch.UniqueContacts();

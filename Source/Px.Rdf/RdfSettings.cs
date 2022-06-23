@@ -1,9 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
+﻿
 namespace Px.Rdf
 {
+    public enum DBType {
+        SQL,
+        PcAxisFile
+    }
     
     public struct RdfSettings
     {
@@ -18,6 +19,10 @@ namespace Px.Rdf
         public string CatalogLanguage; // 2 letters
 
         public string PublisherName;
+
+        public string DBLang;
+        public string DBid;
+        public DBType DBtype;
 
     }
 }
