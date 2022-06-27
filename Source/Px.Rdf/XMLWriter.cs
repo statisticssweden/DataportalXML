@@ -198,7 +198,8 @@ namespace Px.Rdf
             string dateTimeDataType = "http://www.w3.org/2001/XMLSchema#dateTime";
             XmlElement mod = createElem("dcterms", "modified", "rdf", "datatype", dateTimeDataType);
             mod.InnerText = d.modified;
-            dElem.AppendChild(mod);
+            dElem.AppendChild(mod); 
+            
 
             // Identifier
             XmlElement identifier = createElem("dcterms", "identifier", d.identifier);
@@ -235,8 +236,10 @@ namespace Px.Rdf
             }
 
             // updatefreq
-            XmlElement updateElem = createElem("dcterms", "accrualPeriodicity", "rdf", "resource", d.updateFrequency);
-            dElem.AppendChild(updateElem);
+            if (d.updateFrequency != null){
+                XmlElement updateElem = createElem("dcterms", "accrualPeriodicity", "rdf", "resource", d.updateFrequency);
+                dElem.AppendChild(updateElem);
+            }
 
             // Access rights
             string publicAccess = "http://publications.europa.eu/resource/authority/access-right/PUBLIC";

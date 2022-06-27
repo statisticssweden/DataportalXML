@@ -304,7 +304,11 @@ namespace Px.Rdf
         private string getUpdateFrequency(PXMeta meta)
         {
             Predicate<Variable> isTime = (Variable v) => v.IsTime;
-            TimeScaleType timeScale = meta.Variables.Find(isTime).TimeScale;
+            Variable timeVar = meta.Variables.Find(isTime);
+            if (timeVar is null) {
+                return null;
+            }
+            TimeScaleType timeScale = timeVar.TimeScale;
             string baseURI = "http://publications.europa.eu/resource/authority/frequency/";
             return baseURI + timeScaleToUpdateFreq[timeScale];
         }
@@ -542,6 +546,9 @@ namespace Px.Rdf
             url += tableID;
             return url;
         }
+        private string getIdentifier(PXMeta meta) {
+            return meta.MainTable.Replace(" ","");
+        }
 
         // Get distributions, one for each language
         private List<Distribution> getDistributions(List<PxMenuItem> path, string tableID, List<string> langs)
@@ -566,7 +573,7 @@ namespace Px.Rdf
             Dataset dataset = new Dataset();
 
             dataset.publisher = getPublisher();
-            dataset.identifier = meta.MainTable;
+            dataset.identifier = getIdentifier(meta);
             dataset.modified = getLastModified(meta);
             dataset.updateFrequency = getUpdateFrequency(meta);
 
@@ -597,7 +604,7 @@ namespace Px.Rdf
             try {
                 return settings.Fetcher.GetBaseItem(nodeID, menuID, lang, settings.DBid) as PxMenuItem;
             }
-            catch (PCAxis.Menu.Exceptions.InvalidMenuFromXMLException e) {
+            catch (PCAxis.Menu.Exceptions.InvalidMenuFromXMLException) {
                 return null;
             }
         }
