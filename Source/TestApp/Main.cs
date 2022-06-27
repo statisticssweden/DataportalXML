@@ -19,7 +19,8 @@ namespace TestApp
                 PublisherName = "SCB", 
                 DBid = @"C:\Temp\StatFin2018\StatFin\Menu.xml",//@"C:\Temp\Databases\Example\Menu.xml", 
                 Fetcher = new PcAxisFetcher(@"C:\Temp\StatFin2018\"),
-                LandingPageUrl = "http://www.statistikdatabasen.scb.se/goto/"
+                LandingPageUrl = "http://www.statistikdatabasen.scb.se/goto/",
+                License = "http://creativecommons.org/publicdomain/zero/1.0/"
             };
             XML.writeToFile("../../../test.xml", settings);
             Console.ReadKey();

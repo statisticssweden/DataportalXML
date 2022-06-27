@@ -2,11 +2,6 @@
 
 namespace Px.Rdf
 {
-    public enum DBType {
-        SQL,
-        PcAxisFile
-    }
-    
     public struct RdfSettings
     {
         public string BaseUri; // Base uri, can be anything
@@ -23,6 +18,8 @@ namespace Px.Rdf
         public string DBid;
         public IFetcher Fetcher;
         public string LandingPageUrl;
+
+        public string License;
 
     }
 }

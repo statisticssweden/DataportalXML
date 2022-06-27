@@ -671,7 +671,7 @@ namespace Px.Rdf
             c.title = settings.CatalogTitle;
             c.description = settings.CatalogDescription;
             c.publisher = getPublisher();
-            c.license = "http://creativecommons.org/publicdomain/zero/1.0/";
+            c.license = settings.License;
             c.datasets = GetDatasets(numberOfTables);
             c.language = convertLanguage(settings.PreferredLanguage);
             return c;
