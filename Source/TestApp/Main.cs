@@ -11,13 +11,13 @@ namespace TestApp
             {
                 BaseUri = "https://www.baseURI.se/", 
                 BaseApiUrl = "http://api.scb.se/OV0104/v1/doris/", 
-                PreferredLanguage = "en", // For this example have English as preferredLang
+                PreferredLanguage = "fi", // For this example have English as preferredLang
                 CatalogTitle = "SCB Tabeller", 
                 CatalogDescription = "-", 
                 PublisherName = "SCB", 
-                CatalogLanguage = "en", 
-                DBid = @"C:\Temp\Databases\Example\Menu.xml", 
-                DBLang = "en", 
+                CatalogLanguage = "fi", 
+                DBid = @"C:\Temp\StatFin2018\StatFin\Menu.xml",//@"C:\Temp\Databases\Example\Menu.xml", 
+                DBLang = "fi", 
                 Fetcher = new PcAxisFetcher(),
                 LandingPageUrl = "http://www.statistikdatabasen.scb.se/goto/"
             };

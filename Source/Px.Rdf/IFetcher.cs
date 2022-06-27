@@ -38,7 +38,7 @@ namespace Px.Rdf
         //@"C:\Temp\Databases\"
         public IPXModelBuilder GetBuilder(string selection) {
             IPXModelBuilder builder = new PXFileBuilder();
-            string selectionPath = Path.Combine(@"C:\Temp\Databases\", selection);
+            string selectionPath = Path.Combine(@"C:\Temp\StatFin2018\", selection);
             builder.SetPath(selectionPath);
             return builder;
         }
