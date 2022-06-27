@@ -11,11 +11,12 @@ namespace Px.Rdf
 
         public static void writeToFile(string fileName, RdfSettings settings)
         {
-            Fetch.LoadSettings(settings);
-            int numberOfTables = 0; // No cap
-            Catalog c = Fetch.GetCatalog(numberOfTables);
-            List<Organization> orgs = Fetch.UniqueOrgs();
-            List<ContactPerson> contacts = Fetch.UniqueContacts();
+            Fetcher fetcher = new Fetcher();
+            fetcher.LoadSettings(settings);
+            int numberOfTables = 100; // No cap
+            Catalog c = fetcher.GetCatalog(numberOfTables);
+            List<Organization> orgs = fetcher.UniqueOrgs();
+            List<ContactPerson> contacts = fetcher.UniqueContacts();
             writeToFile(c, orgs, contacts, fileName);
         }
 
@@ -82,7 +83,9 @@ namespace Px.Rdf
 
             doc.Save(fileName);
         }
-
+        /// <summary>
+        /// Creating XMLElements and attributes with function overloading since the elements are similar but require more or less parameters
+        /// </summary>
         private static XmlElement createElem(string elemNamespace, string elemName, string attrNamespace, string attributeName, string attrValue)
         {
             XmlElement elem = doc.CreateElement(elemNamespace, elemName, nsm.LookupNamespace(elemNamespace));
@@ -101,6 +104,7 @@ namespace Px.Rdf
         {
             return createElem(elemNamespace, elemName, "");
         }
+
         private static XmlAttribute createAttr(string ns, string tagName, string value)
         {
             XmlAttribute attr = doc.CreateAttribute(ns, tagName, nsm.LookupNamespace(ns));
@@ -185,14 +189,17 @@ namespace Px.Rdf
             }
 
             // Category/Theme
-            XmlElement themeElem = createElem("dcat", "theme", "rdf", "resource", d.category);
-            dElem.AppendChild(themeElem);
+            if (!(d.category is null)){
+                XmlElement themeElem = createElem("dcat", "theme", "rdf", "resource", d.category);
+                dElem.AppendChild(themeElem);
+            }
 
             // Modified
             string dateTimeDataType = "http://www.w3.org/2001/XMLSchema#dateTime";
             XmlElement mod = createElem("dcterms", "modified", "rdf", "datatype", dateTimeDataType);
             mod.InnerText = d.modified;
-            dElem.AppendChild(mod);
+            dElem.AppendChild(mod); 
+            
 
             // Identifier
             XmlElement identifier = createElem("dcterms", "identifier", d.identifier);
@@ -207,7 +214,6 @@ namespace Px.Rdf
             }
 
             // languages
-
             foreach (string language in d.languageURIs)
             {
                 XmlElement langElem = createElem("dcterms", "language", "rdf", "resource", language);
@@ -223,15 +229,17 @@ namespace Px.Rdf
 
 
             // Landing page
-            foreach (string lang in d.languages)
+            foreach (string url in d.urls)
             {
-                XmlElement landing = createElem("dcat", "landingPage", "rdf", "resource", d.url(lang));
+                XmlElement landing = createElem("dcat", "landingPage", "rdf", "resource", url);
                 dElem.AppendChild(landing);
             }
 
             // updatefreq
-            XmlElement updateElem = createElem("dcterms", "accrualPeriodicity", "rdf", "resource", d.updateFrequency);
-            dElem.AppendChild(updateElem);
+            if (d.updateFrequency != null){
+                XmlElement updateElem = createElem("dcterms", "accrualPeriodicity", "rdf", "resource", d.updateFrequency);
+                dElem.AppendChild(updateElem);
+            }
 
             // Access rights
             string publicAccess = "http://publications.europa.eu/resource/authority/access-right/PUBLIC";
@@ -256,14 +264,16 @@ namespace Px.Rdf
 
         public static XmlElement generateContact(ContactPerson cp)
         {
-
             XmlElement individual = createElem("vcard", "Individual", "rdf", "about", cp.resource);
+
             // Name
             XmlElement nameElem = createElem("vcard", "fn", cp.name);
             individual.AppendChild(nameElem);
+
             // Email
             XmlElement emailElem = createElem("vcard", "hasEmail", "rdf", "resource", "mailto:" + cp.email);
             individual.AppendChild(emailElem);
+
             // Phone
             XmlElement phoneElem = createElem("vcard", "hasTelephone");
             XmlElement descElem = createElem("dcterms", "description");
