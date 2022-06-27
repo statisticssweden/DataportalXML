@@ -5,7 +5,7 @@
     <dcterms:description>-</dcterms:description>
     <dcterms:publisher rdf:resource="https://www.baseURI.se/organization/1" />
     <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
-    <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
+    <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcat:Dataset rdf:resource="https://www.baseURI.se/dataset/5" />
     <dcat:Dataset rdf:resource="https://www.baseURI.se/dataset/9" />
     <dcat:Dataset rdf:resource="https://www.baseURI.se/dataset/13" />
@@ -37,15 +37,15 @@
     <dcat:distribution rdf:resource="https://www.baseURI.se/distribution/3" />
     <dcat:distribution rdf:resource="https://www.baseURI.se/distribution/4" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2004-02-12T16:28:00</dcterms:modified>
-    <dcterms:identifier>H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\AttributesCellnotes\BE0101F1langensvfiolikacelln.px</dcterms:identifier>
+    <dcterms:identifier>C:\Temp\Databases\Example\AttributesCellnotes\BE0101F1langensvfiolikacelln.px</dcterms:identifier>
     <dcat:keyword xml:lang="en">AttributesCellnotes</dcat:keyword>
     <dcat:keyword xml:lang="sv">AttributesCellnotes</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/FIN" />
-    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/en/ssd/H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\AttributesCellnotes\BE0101F1langensvfiolikacelln.px" />
-    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\AttributesCellnotes\BE0101F1langensvfiolikacelln.px" />
-    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/fi/ssd/H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\AttributesCellnotes\BE0101F1langensvfiolikacelln.px" />
+    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/en/ssd/C:\Temp\Databases\Example\AttributesCellnotes\BE0101F1langensvfiolikacelln.px" />
+    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/C:\Temp\Databases\Example\AttributesCellnotes\BE0101F1langensvfiolikacelln.px" />
+    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/fi/ssd/C:\Temp\Databases\Example\AttributesCellnotes\BE0101F1langensvfiolikacelln.px" />
     <dcterms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL" />
     <dcterms:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC" />
   </dcat:Dataset>
@@ -60,13 +60,13 @@
     <dcat:distribution rdf:resource="https://www.baseURI.se/distribution/8" />
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2004-02-12T16:28:00</dcterms:modified>
-    <dcterms:identifier>H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\alias\BE0101F1ensvdescdefault.px</dcterms:identifier>
+    <dcterms:identifier>C:\Temp\Databases\Example\alias\BE0101F1ensvdescdefault.px</dcterms:identifier>
     <dcat:keyword xml:lang="en">Population </dcat:keyword>
     <dcat:keyword xml:lang="sv">Befolkning</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
-    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/en/ssd/H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\alias\BE0101F1ensvdescdefault.px" />
-    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\alias\BE0101F1ensvdescdefault.px" />
+    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/en/ssd/C:\Temp\Databases\Example\alias\BE0101F1ensvdescdefault.px" />
+    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/C:\Temp\Databases\Example\alias\BE0101F1ensvdescdefault.px" />
     <dcterms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL" />
     <dcterms:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC" />
   </dcat:Dataset>
@@ -84,15 +84,15 @@
     <dcat:distribution rdf:resource="https://www.baseURI.se/distribution/12" />
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2004-02-12T16:28:00</dcterms:modified>
-    <dcterms:identifier>H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\alias\BE0101F1langensvfiolikacelln.px</dcterms:identifier>
+    <dcterms:identifier>C:\Temp\Databases\Example\alias\BE0101F1langensvfiolikacelln.px</dcterms:identifier>
     <dcat:keyword xml:lang="en">Population </dcat:keyword>
     <dcat:keyword xml:lang="sv">Befolkning</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/FIN" />
-    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/en/ssd/H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\alias\BE0101F1langensvfiolikacelln.px" />
-    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\alias\BE0101F1langensvfiolikacelln.px" />
-    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/fi/ssd/H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\alias\BE0101F1langensvfiolikacelln.px" />
+    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/en/ssd/C:\Temp\Databases\Example\alias\BE0101F1langensvfiolikacelln.px" />
+    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/C:\Temp\Databases\Example\alias\BE0101F1langensvfiolikacelln.px" />
+    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/fi/ssd/C:\Temp\Databases\Example\alias\BE0101F1langensvfiolikacelln.px" />
     <dcterms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL" />
     <dcterms:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC" />
   </dcat:Dataset>
@@ -110,15 +110,15 @@
     <dcat:distribution rdf:resource="https://www.baseURI.se/distribution/16" />
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2004-02-12T16:28:00</dcterms:modified>
-    <dcterms:identifier>H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\alias\BE0101F1langensvfiolikacelln2.px</dcterms:identifier>
+    <dcterms:identifier>C:\Temp\Databases\Example\alias\BE0101F1langensvfiolikacelln2.px</dcterms:identifier>
     <dcat:keyword xml:lang="en">Population </dcat:keyword>
     <dcat:keyword xml:lang="sv">Befolkning</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/FIN" />
-    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/en/ssd/H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\alias\BE0101F1langensvfiolikacelln2.px" />
-    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\alias\BE0101F1langensvfiolikacelln2.px" />
-    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/fi/ssd/H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\alias\BE0101F1langensvfiolikacelln2.px" />
+    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/en/ssd/C:\Temp\Databases\Example\alias\BE0101F1langensvfiolikacelln2.px" />
+    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/C:\Temp\Databases\Example\alias\BE0101F1langensvfiolikacelln2.px" />
+    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/fi/ssd/C:\Temp\Databases\Example\alias\BE0101F1langensvfiolikacelln2.px" />
     <dcterms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL" />
     <dcterms:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC" />
   </dcat:Dataset>
@@ -133,13 +133,13 @@
     <dcat:distribution rdf:resource="https://www.baseURI.se/distribution/19" />
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2004-02-12T16:28:00</dcterms:modified>
-    <dcterms:identifier>H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\alias\BE0101F1langensvolikacelln.px</dcterms:identifier>
+    <dcterms:identifier>C:\Temp\Databases\Example\alias\BE0101F1langensvolikacelln.px</dcterms:identifier>
     <dcat:keyword xml:lang="en">Population </dcat:keyword>
     <dcat:keyword xml:lang="sv">Befolkning</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
-    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/en/ssd/H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\alias\BE0101F1langensvolikacelln.px" />
-    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\alias\BE0101F1langensvolikacelln.px" />
+    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/en/ssd/C:\Temp\Databases\Example\alias\BE0101F1langensvolikacelln.px" />
+    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/C:\Temp\Databases\Example\alias\BE0101F1langensvolikacelln.px" />
     <dcterms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL" />
     <dcterms:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC" />
   </dcat:Dataset>
@@ -153,15 +153,15 @@
     <dcat:distribution rdf:resource="https://www.baseURI.se/distribution/21" />
     <dcat:distribution rdf:resource="https://www.baseURI.se/distribution/22" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2004-02-12T16:28:00</dcterms:modified>
-    <dcterms:identifier>H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\error\multilang\BE0101F1ensvcontvarerror.px</dcterms:identifier>
+    <dcterms:identifier>C:\Temp\Databases\Example\error\multilang\BE0101F1ensvcontvarerror.px</dcterms:identifier>
     <dcat:keyword xml:lang="en">error</dcat:keyword>
     <dcat:keyword xml:lang="en">multilang</dcat:keyword>
     <dcat:keyword xml:lang="sv">error</dcat:keyword>
     <dcat:keyword xml:lang="sv">multilang</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
-    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/en/ssd/H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\error\multilang\BE0101F1ensvcontvarerror.px" />
-    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\error\multilang\BE0101F1ensvcontvarerror.px" />
+    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/en/ssd/C:\Temp\Databases\Example\error\multilang\BE0101F1ensvcontvarerror.px" />
+    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/C:\Temp\Databases\Example\error\multilang\BE0101F1ensvcontvarerror.px" />
     <dcterms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL" />
     <dcterms:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC" />
   </dcat:Dataset>
@@ -175,15 +175,15 @@
     <dcat:distribution rdf:resource="https://www.baseURI.se/distribution/24" />
     <dcat:distribution rdf:resource="https://www.baseURI.se/distribution/25" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2004-02-12T16:28:00</dcterms:modified>
-    <dcterms:identifier>H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\error\multilang\BE0101F1ensvdescdefaulterror.px</dcterms:identifier>
+    <dcterms:identifier>C:\Temp\Databases\Example\error\multilang\BE0101F1ensvdescdefaulterror.px</dcterms:identifier>
     <dcat:keyword xml:lang="en">error</dcat:keyword>
     <dcat:keyword xml:lang="en">multilang</dcat:keyword>
     <dcat:keyword xml:lang="sv">error</dcat:keyword>
     <dcat:keyword xml:lang="sv">multilang</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
-    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/en/ssd/H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\error\multilang\BE0101F1ensvdescdefaulterror.px" />
-    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\error\multilang\BE0101F1ensvdescdefaulterror.px" />
+    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/en/ssd/C:\Temp\Databases\Example\error\multilang\BE0101F1ensvdescdefaulterror.px" />
+    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/C:\Temp\Databases\Example\error\multilang\BE0101F1ensvdescdefaulterror.px" />
     <dcterms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL" />
     <dcterms:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC" />
   </dcat:Dataset>
@@ -200,7 +200,7 @@
     <dcat:distribution rdf:resource="https://www.baseURI.se/distribution/28" />
     <dcat:distribution rdf:resource="https://www.baseURI.se/distribution/29" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2004-02-12T16:28:00</dcterms:modified>
-    <dcterms:identifier>H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\error\multilang\BE0101F1langensvfiolikacelln2error.px</dcterms:identifier>
+    <dcterms:identifier>C:\Temp\Databases\Example\error\multilang\BE0101F1langensvfiolikacelln2error.px</dcterms:identifier>
     <dcat:keyword xml:lang="en">error</dcat:keyword>
     <dcat:keyword xml:lang="en">multilang</dcat:keyword>
     <dcat:keyword xml:lang="sv">error</dcat:keyword>
@@ -208,9 +208,9 @@
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/FIN" />
-    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/en/ssd/H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\error\multilang\BE0101F1langensvfiolikacelln2error.px" />
-    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\error\multilang\BE0101F1langensvfiolikacelln2error.px" />
-    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/fi/ssd/H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\error\multilang\BE0101F1langensvfiolikacelln2error.px" />
+    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/en/ssd/C:\Temp\Databases\Example\error\multilang\BE0101F1langensvfiolikacelln2error.px" />
+    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/C:\Temp\Databases\Example\error\multilang\BE0101F1langensvfiolikacelln2error.px" />
+    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/fi/ssd/C:\Temp\Databases\Example\error\multilang\BE0101F1langensvfiolikacelln2error.px" />
     <dcterms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL" />
     <dcterms:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC" />
   </dcat:Dataset>
@@ -225,13 +225,13 @@ Indextal för huvud- och undergrupper är i en del fall justerade med avseende p
     <dcat:distribution rdf:resource="https://www.baseURI.se/distribution/32" />
     <dcat:distribution rdf:resource="https://www.baseURI.se/distribution/33" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2006-07-07T08:37:00</dcterms:modified>
-    <dcterms:identifier>H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\Hierarchies\PR0101B3hier2lang.px</dcterms:identifier>
+    <dcterms:identifier>C:\Temp\Databases\Example\Hierarchies\PR0101B3hier2lang.px</dcterms:identifier>
     <dcat:keyword xml:lang="en">Hierarchies</dcat:keyword>
     <dcat:keyword xml:lang="sv">Hierarchies</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
-    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/en/ssd/H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\Hierarchies\PR0101B3hier2lang.px" />
-    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\Hierarchies\PR0101B3hier2lang.px" />
+    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/en/ssd/C:\Temp\Databases\Example\Hierarchies\PR0101B3hier2lang.px" />
+    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/C:\Temp\Databases\Example\Hierarchies\PR0101B3hier2lang.px" />
     <dcterms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/MONTHLY" />
     <dcterms:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC" />
   </dcat:Dataset>
@@ -245,15 +245,15 @@ Indextal för huvud- och undergrupper är i en del fall justerade med avseende p
     <dcat:distribution rdf:resource="https://www.baseURI.se/distribution/35" />
     <dcat:distribution rdf:resource="https://www.baseURI.se/distribution/36" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2004-02-12T16:28:00</dcterms:modified>
-    <dcterms:identifier>H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\Misc\OfficialStatistics\officialstatistics.px</dcterms:identifier>
+    <dcterms:identifier>C:\Temp\Databases\Example\Misc\OfficialStatistics\officialstatistics.px</dcterms:identifier>
     <dcat:keyword xml:lang="en">Misc</dcat:keyword>
     <dcat:keyword xml:lang="en">OfficialStatistics</dcat:keyword>
     <dcat:keyword xml:lang="sv">Misc</dcat:keyword>
     <dcat:keyword xml:lang="sv">OfficialStatistics</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
-    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/en/ssd/H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\Misc\OfficialStatistics\officialstatistics.px" />
-    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\Misc\OfficialStatistics\officialstatistics.px" />
+    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/en/ssd/C:\Temp\Databases\Example\Misc\OfficialStatistics\officialstatistics.px" />
+    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/C:\Temp\Databases\Example\Misc\OfficialStatistics\officialstatistics.px" />
     <dcterms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL" />
     <dcterms:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC" />
   </dcat:Dataset>
@@ -267,13 +267,13 @@ Indextal för huvud- och undergrupper är i en del fall justerade med avseende p
     <dcat:distribution rdf:resource="https://www.baseURI.se/distribution/38" />
     <dcat:distribution rdf:resource="https://www.baseURI.se/distribution/39" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2004-02-12T16:28:00</dcterms:modified>
-    <dcterms:identifier>H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\multilanguage\BE0101F1ensvdescdefault.px</dcterms:identifier>
+    <dcterms:identifier>C:\Temp\Databases\Example\multilanguage\BE0101F1ensvdescdefault.px</dcterms:identifier>
     <dcat:keyword xml:lang="en">multilanguage</dcat:keyword>
     <dcat:keyword xml:lang="sv">multilanguage</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
-    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/en/ssd/H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\multilanguage\BE0101F1ensvdescdefault.px" />
-    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\multilanguage\BE0101F1ensvdescdefault.px" />
+    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/en/ssd/C:\Temp\Databases\Example\multilanguage\BE0101F1ensvdescdefault.px" />
+    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/C:\Temp\Databases\Example\multilanguage\BE0101F1ensvdescdefault.px" />
     <dcterms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL" />
     <dcterms:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC" />
   </dcat:Dataset>
@@ -290,15 +290,15 @@ Indextal för huvud- och undergrupper är i en del fall justerade med avseende p
     <dcat:distribution rdf:resource="https://www.baseURI.se/distribution/42" />
     <dcat:distribution rdf:resource="https://www.baseURI.se/distribution/43" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2004-02-12T16:28:00</dcterms:modified>
-    <dcterms:identifier>H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\multilanguage\BE0101F1langensvfiolikacelln.px</dcterms:identifier>
+    <dcterms:identifier>C:\Temp\Databases\Example\multilanguage\BE0101F1langensvfiolikacelln.px</dcterms:identifier>
     <dcat:keyword xml:lang="en">multilanguage</dcat:keyword>
     <dcat:keyword xml:lang="sv">multilanguage</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/FIN" />
-    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/en/ssd/H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\multilanguage\BE0101F1langensvfiolikacelln.px" />
-    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\multilanguage\BE0101F1langensvfiolikacelln.px" />
-    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/fi/ssd/H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\multilanguage\BE0101F1langensvfiolikacelln.px" />
+    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/en/ssd/C:\Temp\Databases\Example\multilanguage\BE0101F1langensvfiolikacelln.px" />
+    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/C:\Temp\Databases\Example\multilanguage\BE0101F1langensvfiolikacelln.px" />
+    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/fi/ssd/C:\Temp\Databases\Example\multilanguage\BE0101F1langensvfiolikacelln.px" />
     <dcterms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL" />
     <dcterms:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC" />
   </dcat:Dataset>
@@ -315,15 +315,15 @@ Indextal för huvud- och undergrupper är i en del fall justerade med avseende p
     <dcat:distribution rdf:resource="https://www.baseURI.se/distribution/46" />
     <dcat:distribution rdf:resource="https://www.baseURI.se/distribution/47" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2004-02-12T16:28:00</dcterms:modified>
-    <dcterms:identifier>H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\multilanguage\BE0101F1langensvfiolikacelln2.px</dcterms:identifier>
+    <dcterms:identifier>C:\Temp\Databases\Example\multilanguage\BE0101F1langensvfiolikacelln2.px</dcterms:identifier>
     <dcat:keyword xml:lang="en">multilanguage</dcat:keyword>
     <dcat:keyword xml:lang="sv">multilanguage</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/FIN" />
-    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/en/ssd/H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\multilanguage\BE0101F1langensvfiolikacelln2.px" />
-    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\multilanguage\BE0101F1langensvfiolikacelln2.px" />
-    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/fi/ssd/H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\multilanguage\BE0101F1langensvfiolikacelln2.px" />
+    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/en/ssd/C:\Temp\Databases\Example\multilanguage\BE0101F1langensvfiolikacelln2.px" />
+    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/C:\Temp\Databases\Example\multilanguage\BE0101F1langensvfiolikacelln2.px" />
+    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/fi/ssd/C:\Temp\Databases\Example\multilanguage\BE0101F1langensvfiolikacelln2.px" />
     <dcterms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL" />
     <dcterms:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC" />
   </dcat:Dataset>
@@ -337,13 +337,13 @@ Indextal för huvud- och undergrupper är i en del fall justerade med avseende p
     <dcat:distribution rdf:resource="https://www.baseURI.se/distribution/49" />
     <dcat:distribution rdf:resource="https://www.baseURI.se/distribution/50" />
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2004-02-12T16:28:00</dcterms:modified>
-    <dcterms:identifier>H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\multilanguage\BE0101F1langensvolikacelln.px</dcterms:identifier>
+    <dcterms:identifier>C:\Temp\Databases\Example\multilanguage\BE0101F1langensvolikacelln.px</dcterms:identifier>
     <dcat:keyword xml:lang="en">multilanguage</dcat:keyword>
     <dcat:keyword xml:lang="sv">multilanguage</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
-    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/en/ssd/H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\multilanguage\BE0101F1langensvolikacelln.px" />
-    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\multilanguage\BE0101F1langensvolikacelln.px" />
+    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/en/ssd/C:\Temp\Databases\Example\multilanguage\BE0101F1langensvolikacelln.px" />
+    <dcat:landingPage rdf:resource="http://www.statistikdatabasen.scb.se/goto/sv/ssd/C:\Temp\Databases\Example\multilanguage\BE0101F1langensvolikacelln.px" />
     <dcterms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL" />
     <dcterms:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC" />
   </dcat:Dataset>
@@ -358,205 +358,205 @@ Indextal för huvud- och undergrupper är i en del fall justerade med avseende p
   </foaf:Organization>
   <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/2">
     <dcterms:title>Data (en)</dcterms:title>
-    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/en/ssd/Example\AttributesCellnotes/H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\AttributesCellnotes\BE0101F1langensvfiolikacelln.px" />
+    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/en/ssd/Example\AttributesCellnotes/C:\Temp\Databases\Example\AttributesCellnotes\BE0101F1langensvfiolikacelln.px" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
   </dcat:Distribution>
   <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/3">
     <dcterms:title>Data (sv)</dcterms:title>
-    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/sv/ssd/Example\AttributesCellnotes/H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\AttributesCellnotes\BE0101F1langensvfiolikacelln.px" />
+    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/sv/ssd/Example\AttributesCellnotes/C:\Temp\Databases\Example\AttributesCellnotes\BE0101F1langensvfiolikacelln.px" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
   </dcat:Distribution>
   <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/4">
     <dcterms:title>Data (fi)</dcterms:title>
-    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/fi/ssd/Example\AttributesCellnotes/H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\AttributesCellnotes\BE0101F1langensvfiolikacelln.px" />
+    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/fi/ssd/Example\AttributesCellnotes/C:\Temp\Databases\Example\AttributesCellnotes\BE0101F1langensvfiolikacelln.px" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/FIN" />
     <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
   </dcat:Distribution>
   <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/7">
     <dcterms:title>Data (en)</dcterms:title>
-    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/en/ssd/Example\alias/H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\alias\BE0101F1ensvdescdefault.px" />
+    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/en/ssd/Example\alias/C:\Temp\Databases\Example\alias\BE0101F1ensvdescdefault.px" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
   </dcat:Distribution>
   <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/8">
     <dcterms:title>Data (sv)</dcterms:title>
-    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/sv/ssd/Example\alias/H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\alias\BE0101F1ensvdescdefault.px" />
+    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/sv/ssd/Example\alias/C:\Temp\Databases\Example\alias\BE0101F1ensvdescdefault.px" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
   </dcat:Distribution>
   <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/10">
     <dcterms:title>Data (en)</dcterms:title>
-    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/en/ssd/Example\alias/H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\alias\BE0101F1langensvfiolikacelln.px" />
+    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/en/ssd/Example\alias/C:\Temp\Databases\Example\alias\BE0101F1langensvfiolikacelln.px" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
   </dcat:Distribution>
   <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/11">
     <dcterms:title>Data (sv)</dcterms:title>
-    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/sv/ssd/Example\alias/H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\alias\BE0101F1langensvfiolikacelln.px" />
+    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/sv/ssd/Example\alias/C:\Temp\Databases\Example\alias\BE0101F1langensvfiolikacelln.px" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
   </dcat:Distribution>
   <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/12">
     <dcterms:title>Data (fi)</dcterms:title>
-    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/fi/ssd/Example\alias/H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\alias\BE0101F1langensvfiolikacelln.px" />
+    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/fi/ssd/Example\alias/C:\Temp\Databases\Example\alias\BE0101F1langensvfiolikacelln.px" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/FIN" />
     <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
   </dcat:Distribution>
   <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/14">
     <dcterms:title>Data (en)</dcterms:title>
-    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/en/ssd/Example\alias/H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\alias\BE0101F1langensvfiolikacelln2.px" />
+    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/en/ssd/Example\alias/C:\Temp\Databases\Example\alias\BE0101F1langensvfiolikacelln2.px" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
   </dcat:Distribution>
   <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/15">
     <dcterms:title>Data (sv)</dcterms:title>
-    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/sv/ssd/Example\alias/H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\alias\BE0101F1langensvfiolikacelln2.px" />
+    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/sv/ssd/Example\alias/C:\Temp\Databases\Example\alias\BE0101F1langensvfiolikacelln2.px" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
   </dcat:Distribution>
   <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/16">
     <dcterms:title>Data (fi)</dcterms:title>
-    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/fi/ssd/Example\alias/H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\alias\BE0101F1langensvfiolikacelln2.px" />
+    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/fi/ssd/Example\alias/C:\Temp\Databases\Example\alias\BE0101F1langensvfiolikacelln2.px" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/FIN" />
     <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
   </dcat:Distribution>
   <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/18">
     <dcterms:title>Data (en)</dcterms:title>
-    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/en/ssd/Example\alias/H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\alias\BE0101F1langensvolikacelln.px" />
+    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/en/ssd/Example\alias/C:\Temp\Databases\Example\alias\BE0101F1langensvolikacelln.px" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
   </dcat:Distribution>
   <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/19">
     <dcterms:title>Data (sv)</dcterms:title>
-    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/sv/ssd/Example\alias/H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\alias\BE0101F1langensvolikacelln.px" />
+    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/sv/ssd/Example\alias/C:\Temp\Databases\Example\alias\BE0101F1langensvolikacelln.px" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
   </dcat:Distribution>
   <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/21">
     <dcterms:title>Data (en)</dcterms:title>
-    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/en/ssd/Example\error/Example\error\multilang/H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\error\multilang\BE0101F1ensvcontvarerror.px" />
+    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/en/ssd/Example\error/Example\error\multilang/C:\Temp\Databases\Example\error\multilang\BE0101F1ensvcontvarerror.px" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
   </dcat:Distribution>
   <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/22">
     <dcterms:title>Data (sv)</dcterms:title>
-    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/sv/ssd/Example\error/Example\error\multilang/H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\error\multilang\BE0101F1ensvcontvarerror.px" />
+    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/sv/ssd/Example\error/Example\error\multilang/C:\Temp\Databases\Example\error\multilang\BE0101F1ensvcontvarerror.px" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
   </dcat:Distribution>
   <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/24">
     <dcterms:title>Data (en)</dcterms:title>
-    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/en/ssd/Example\error/Example\error\multilang/H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\error\multilang\BE0101F1ensvdescdefaulterror.px" />
+    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/en/ssd/Example\error/Example\error\multilang/C:\Temp\Databases\Example\error\multilang\BE0101F1ensvdescdefaulterror.px" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
   </dcat:Distribution>
   <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/25">
     <dcterms:title>Data (sv)</dcterms:title>
-    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/sv/ssd/Example\error/Example\error\multilang/H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\error\multilang\BE0101F1ensvdescdefaulterror.px" />
+    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/sv/ssd/Example\error/Example\error\multilang/C:\Temp\Databases\Example\error\multilang\BE0101F1ensvdescdefaulterror.px" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
   </dcat:Distribution>
   <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/27">
     <dcterms:title>Data (en)</dcterms:title>
-    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/en/ssd/Example\error/Example\error\multilang/H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\error\multilang\BE0101F1langensvfiolikacelln2error.px" />
+    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/en/ssd/Example\error/Example\error\multilang/C:\Temp\Databases\Example\error\multilang\BE0101F1langensvfiolikacelln2error.px" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
   </dcat:Distribution>
   <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/28">
     <dcterms:title>Data (sv)</dcterms:title>
-    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/sv/ssd/Example\error/Example\error\multilang/H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\error\multilang\BE0101F1langensvfiolikacelln2error.px" />
+    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/sv/ssd/Example\error/Example\error\multilang/C:\Temp\Databases\Example\error\multilang\BE0101F1langensvfiolikacelln2error.px" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
   </dcat:Distribution>
   <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/29">
     <dcterms:title>Data (fi)</dcterms:title>
-    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/fi/ssd/Example\error/Example\error\multilang/H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\error\multilang\BE0101F1langensvfiolikacelln2error.px" />
+    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/fi/ssd/Example\error/Example\error\multilang/C:\Temp\Databases\Example\error\multilang\BE0101F1langensvfiolikacelln2error.px" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/FIN" />
     <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
   </dcat:Distribution>
   <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/32">
     <dcterms:title>Data (en)</dcterms:title>
-    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/en/ssd/Example\Hierarchies/H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\Hierarchies\PR0101B3hier2lang.px" />
+    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/en/ssd/Example\Hierarchies/C:\Temp\Databases\Example\Hierarchies\PR0101B3hier2lang.px" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
   </dcat:Distribution>
   <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/33">
     <dcterms:title>Data (sv)</dcterms:title>
-    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/sv/ssd/Example\Hierarchies/H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\Hierarchies\PR0101B3hier2lang.px" />
+    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/sv/ssd/Example\Hierarchies/C:\Temp\Databases\Example\Hierarchies\PR0101B3hier2lang.px" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
   </dcat:Distribution>
   <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/35">
     <dcterms:title>Data (en)</dcterms:title>
-    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/en/ssd/Example\Misc/Example\Misc\OfficialStatistics/H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\Misc\OfficialStatistics\officialstatistics.px" />
+    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/en/ssd/Example\Misc/Example\Misc\OfficialStatistics/C:\Temp\Databases\Example\Misc\OfficialStatistics\officialstatistics.px" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
   </dcat:Distribution>
   <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/36">
     <dcterms:title>Data (sv)</dcterms:title>
-    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/sv/ssd/Example\Misc/Example\Misc\OfficialStatistics/H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\Misc\OfficialStatistics\officialstatistics.px" />
+    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/sv/ssd/Example\Misc/Example\Misc\OfficialStatistics/C:\Temp\Databases\Example\Misc\OfficialStatistics\officialstatistics.px" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
   </dcat:Distribution>
   <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/38">
     <dcterms:title>Data (en)</dcterms:title>
-    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/en/ssd/Example\multilanguage/H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\multilanguage\BE0101F1ensvdescdefault.px" />
+    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/en/ssd/Example\multilanguage/C:\Temp\Databases\Example\multilanguage\BE0101F1ensvdescdefault.px" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
   </dcat:Distribution>
   <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/39">
     <dcterms:title>Data (sv)</dcterms:title>
-    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/sv/ssd/Example\multilanguage/H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\multilanguage\BE0101F1ensvdescdefault.px" />
+    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/sv/ssd/Example\multilanguage/C:\Temp\Databases\Example\multilanguage\BE0101F1ensvdescdefault.px" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
   </dcat:Distribution>
   <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/41">
     <dcterms:title>Data (en)</dcterms:title>
-    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/en/ssd/Example\multilanguage/H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\multilanguage\BE0101F1langensvfiolikacelln.px" />
+    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/en/ssd/Example\multilanguage/C:\Temp\Databases\Example\multilanguage\BE0101F1langensvfiolikacelln.px" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
   </dcat:Distribution>
   <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/42">
     <dcterms:title>Data (sv)</dcterms:title>
-    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/sv/ssd/Example\multilanguage/H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\multilanguage\BE0101F1langensvfiolikacelln.px" />
+    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/sv/ssd/Example\multilanguage/C:\Temp\Databases\Example\multilanguage\BE0101F1langensvfiolikacelln.px" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
   </dcat:Distribution>
   <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/43">
     <dcterms:title>Data (fi)</dcterms:title>
-    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/fi/ssd/Example\multilanguage/H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\multilanguage\BE0101F1langensvfiolikacelln.px" />
+    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/fi/ssd/Example\multilanguage/C:\Temp\Databases\Example\multilanguage\BE0101F1langensvfiolikacelln.px" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/FIN" />
     <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
   </dcat:Distribution>
   <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/45">
     <dcterms:title>Data (en)</dcterms:title>
-    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/en/ssd/Example\multilanguage/H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\multilanguage\BE0101F1langensvfiolikacelln2.px" />
+    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/en/ssd/Example\multilanguage/C:\Temp\Databases\Example\multilanguage\BE0101F1langensvfiolikacelln2.px" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
   </dcat:Distribution>
   <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/46">
     <dcterms:title>Data (sv)</dcterms:title>
-    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/sv/ssd/Example\multilanguage/H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\multilanguage\BE0101F1langensvfiolikacelln2.px" />
+    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/sv/ssd/Example\multilanguage/C:\Temp\Databases\Example\multilanguage\BE0101F1langensvfiolikacelln2.px" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
   </dcat:Distribution>
   <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/47">
     <dcterms:title>Data (fi)</dcterms:title>
-    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/fi/ssd/Example\multilanguage/H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\multilanguage\BE0101F1langensvfiolikacelln2.px" />
+    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/fi/ssd/Example\multilanguage/C:\Temp\Databases\Example\multilanguage\BE0101F1langensvfiolikacelln2.px" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/FIN" />
     <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
   </dcat:Distribution>
   <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/49">
     <dcterms:title>Data (en)</dcterms:title>
-    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/en/ssd/Example\multilanguage/H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\multilanguage\BE0101F1langensvolikacelln.px" />
+    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/en/ssd/Example\multilanguage/C:\Temp\Databases\Example\multilanguage\BE0101F1langensvolikacelln.px" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
   </dcat:Distribution>
   <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/50">
     <dcterms:title>Data (sv)</dcterms:title>
-    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/sv/ssd/Example\multilanguage/H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\multilanguage\BE0101F1langensvolikacelln.px" />
+    <dcat:accessURL rdf:resource="http://api.scb.se/OV0104/v1/doris/sv/ssd/Example\multilanguage/C:\Temp\Databases\Example\multilanguage\BE0101F1langensvolikacelln.px" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
   </dcat:Distribution>

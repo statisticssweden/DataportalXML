@@ -35,10 +35,10 @@ namespace Px.Rdf
                 return menu.CurrentItem;
         }
         //@"C:\Temp\PxGit\PxWeb\PXWeb\Resources\PX\Databases\"
-        //@H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\
+        //@"C:\Temp\Databases\"
         public IPXModelBuilder GetBuilder(string selection) {
             IPXModelBuilder builder = new PXFileBuilder();
-            string selectionPath = Path.Combine(@"H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\", selection);
+            string selectionPath = Path.Combine(@"C:\Temp\Databases\", selection);
             builder.SetPath(selectionPath);
             return builder;
         }

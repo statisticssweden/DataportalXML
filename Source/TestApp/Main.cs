@@ -16,7 +16,7 @@ namespace TestApp
                 CatalogDescription = "-", 
                 PublisherName = "SCB", 
                 CatalogLanguage = "sv", 
-                DBid = @"H:\Mina Dokument\github\summerprojekt\PxWeb\PXWeb\Resources\PX\Databases\Example\Menu.xml", 
+                DBid = @"C:\Temp\Databases\Example\Menu.xml", 
                 DBLang = "sv", 
                 Fetcher = new PcAxisFetcher(),
                 LandingPageUrl = "http://www.statistikdatabasen.scb.se/goto/"
