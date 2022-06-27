@@ -18,7 +18,7 @@ namespace TestApp
                 CatalogLanguage = "fi", 
                 DBid = @"C:\Temp\StatFin2018\StatFin\Menu.xml",//@"C:\Temp\Databases\Example\Menu.xml", 
                 DBLang = "fi", 
-                Fetcher = new PcAxisFetcher(),
+                Fetcher = new PcAxisFetcher(@"C:\Temp\StatFin2018\"),
                 LandingPageUrl = "http://www.statistikdatabasen.scb.se/goto/"
             };
             XML.writeToFile("../../../test.xml", settings);

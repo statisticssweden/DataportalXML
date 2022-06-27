@@ -19,6 +19,11 @@ namespace Px.Rdf
     }
 
     public class PcAxisFetcher : IFetcher{
+        private string basepoint;
+
+        public PcAxisFetcher(string basepoint) {
+            this.basepoint = basepoint;
+        }
         public Item GetBaseItem(string nodeID, string menuID, string lang, string dbid) {
                 XmlMenu menu = new XmlMenu(XDocument.Load(dbid), lang,
                     m =>
@@ -38,7 +43,7 @@ namespace Px.Rdf
         //@"C:\Temp\Databases\"
         public IPXModelBuilder GetBuilder(string selection) {
             IPXModelBuilder builder = new PXFileBuilder();
-            string selectionPath = Path.Combine(@"C:\Temp\StatFin2018\", selection);
+            string selectionPath = Path.Combine(basepoint, selection);
             builder.SetPath(selectionPath);
             return builder;
         }
