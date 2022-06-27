@@ -577,7 +577,7 @@ namespace Px.Rdf
             dataset.modified = getLastModified(meta);
             dataset.updateFrequency = getUpdateFrequency(meta);
 
-            List<string> langs = getLanguages(meta);
+            List<string> langs = getLanguages(meta).Intersect(settings.Languages).ToList();
             dataset.languages = langs;
             dataset.languageURIs = convertLanguages(langs);
 
@@ -658,7 +658,7 @@ namespace Px.Rdf
         {
             var datasets = new List<Dataset>();
             var path = new List<PxMenuItem>();
-            Item baseItem = settings.Fetcher.GetBaseItem("","",settings.DBLang,settings.DBid);
+            Item baseItem = settings.Fetcher.GetBaseItem("","",settings.PreferredLanguage,settings.DBid);
 
             addRecursive(baseItem, path, datasets, n);
             return datasets;
@@ -673,7 +673,7 @@ namespace Px.Rdf
             c.publisher = getPublisher();
             c.license = "http://creativecommons.org/publicdomain/zero/1.0/";
             c.datasets = GetDatasets(numberOfTables);
-            c.language = convertLanguage(settings.CatalogLanguage);
+            c.language = convertLanguage(settings.PreferredLanguage);
             return c;
         }
     }

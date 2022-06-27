@@ -1,5 +1,6 @@
 ﻿using Px.Rdf;
 using System;
+using System.Collections.Generic;
 
 namespace TestApp
 {
@@ -11,13 +12,12 @@ namespace TestApp
             {
                 BaseUri = "https://www.baseURI.se/", 
                 BaseApiUrl = "http://api.scb.se/OV0104/v1/doris/", 
-                PreferredLanguage = "fi", // For this example have English as preferredLang
+                PreferredLanguage = "sv", // For this example have English as preferredLang
+                Languages = new List<string>{"sv", "en"}, 
                 CatalogTitle = "SCB Tabeller", 
                 CatalogDescription = "-", 
                 PublisherName = "SCB", 
-                CatalogLanguage = "fi", 
                 DBid = @"C:\Temp\StatFin2018\StatFin\Menu.xml",//@"C:\Temp\Databases\Example\Menu.xml", 
-                DBLang = "fi", 
                 Fetcher = new PcAxisFetcher(@"C:\Temp\StatFin2018\"),
                 LandingPageUrl = "http://www.statistikdatabasen.scb.se/goto/"
             };
@@ -27,6 +27,7 @@ namespace TestApp
     }
 
 }
+
 
 // @"C:\Temp\PxGit\PxWeb\PXWeb\Resources\PX\Databases\Example\Menu.xml", 
 // @"C:\Temp\Databases\Example\Menu.xml
