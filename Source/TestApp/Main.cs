@@ -17,10 +17,12 @@ namespace TestApp
                 CatalogTitle = "SCB Tabeller", 
                 CatalogDescription = "-", 
                 PublisherName = "SCB", 
-                DBid = @"C:\Temp\StatFin2018\StatFin\Menu.xml",//@"C:\Temp\Databases\Example\Menu.xml", 
+                DBid = @"C:\Temp\StatFin2018\StatFin\Menu.xml",//@"C:\Temp\Databases\Example\Menu.xml", @"C:\Temp\StatFin2018\StatFin\Menu.xml"
                 Fetcher = new PcAxisFetcher(@"C:\Temp\StatFin2018\"),
+                //Fetcher = new SQLFetcher(),
                 LandingPageUrl = "http://www.statistikdatabasen.scb.se/goto/",
-                License = "http://creativecommons.org/publicdomain/zero/1.0/"
+                License = "http://creativecommons.org/publicdomain/zero/1.0/",
+                ThemeMapping = "C:/temp/TMapping.json"
             };
             XML.writeToFile("../../../test.xml", settings);
             Console.ReadKey();

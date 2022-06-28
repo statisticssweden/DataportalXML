@@ -12,7 +12,6 @@ using PCAxis.Menu.Implementations;
 using PCAxis.Paxiom;
 using PCAxis.PlugIn.Sql;
 
-
 namespace Px.Rdf
 {
     public class Fetcher
@@ -24,9 +23,14 @@ namespace Px.Rdf
         private Dictionary<(string, string), Keyword> menuLangKeyword = new Dictionary<(string, string), Keyword>(); // (menuID, language) -> Array of keywords
         protected Dictionary<string, ContactPerson> contacts = new Dictionary<string, ContactPerson>(); // email to contactPerson
         protected RdfSettings settings;
+
+        // Mapping from PcAxis categories to DCAT standard themes https://docs.dataportal.se/dcat/sv/#dcat_Dataset-dcat_theme
+        private Dictionary<string, string> themeMapping;
         public void LoadSettings(RdfSettings rdfSettings) {
             settings = rdfSettings;
+            themeMapping = JsonReader.ReadThemeMapping(settings.ThemeMapping);
         }
+        
         // Get all unique Organizations
         public List<Organization> UniqueOrgs() {
             return organizations.Values.ToList();
@@ -47,33 +51,6 @@ namespace Px.Rdf
             { TimeScaleType.Monthly, "MONTHLY"},
             { TimeScaleType.Quartely, "QUARTERLY"},
             { TimeScaleType.Weekly, "ANNUAL"},
-        };
-
-        // Mapping from PcAxis categories to DCAT standard themes https://docs.dataportal.se/dcat/sv/#dcat_Dataset-dcat_theme
-        private Dictionary<string, string> themeMapping
-            = new Dictionary<string, string>
-        { // Dictionary for all themes by mapping them accordingly to DCAT
-            { "Arbetsmarknad", "SOCI"},
-            { "Befolkning", "SOCI"},
-            { "Boende, byggande och bebyggelse", "SOCI"},
-            { "Demokrati", "JUST"},
-            { "Energi", "ENER"},
-            { "Finansmarknad", "ECON"},
-            { "Handel med varor och tjänster", "ECON"},
-            { "Hushållens ekonomi", "ECON"},
-            { "Hälso- och sjukvård", "HEAL"},
-            { "Jord- och skogsbruk, fiske", "AGRI"},
-            { "Kultur och fritid", "EDUC"},
-            { "Levnadsförhållanden", "SOCI"},
-            { "Miljö", "ENVI"},
-            { "Nationalräkenskaper", "ECON"},
-            { "Näringsverksamhet", "ECON"},
-            { "Offentlig ekonomi", "GOVE"},
-            { "Priser och konsumtion", "ECON"},
-            { "Socialtjänst", "SOCI"},
-            { "Transporter och kommunikationer", "TRAN"},
-            { "Utbildning och forskning", "EDUC"},
-            { "Ämnesövergripande statistik", "SOCI"},
         };
 
         // Mapping from ISO 639-1 to ISO 639-3 (2 letters to 3) used for DCAT languages https://docs.dataportal.se/dcat/sv/#dcat_Dataset-dcterms_language

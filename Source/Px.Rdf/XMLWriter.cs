@@ -13,7 +13,7 @@ namespace Px.Rdf
         {
             Fetcher fetcher = new Fetcher();
             fetcher.LoadSettings(settings);
-            int numberOfTables = 100; // No cap
+            int numberOfTables = 0; // No cap
             Catalog c = fetcher.GetCatalog(numberOfTables);
             List<Organization> orgs = fetcher.UniqueOrgs();
             List<ContactPerson> contacts = fetcher.UniqueContacts();
