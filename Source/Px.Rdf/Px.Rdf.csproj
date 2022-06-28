@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <PackageReference Include="PcAxis.Core" Version="1.0.3" />
     <PackageReference Include="PCAxis.Menu" Version="1.0.1" />
     <PackageReference Include="PCAxis.Menu.ConfigDatamodelMenu" Version="1.0.3" />
