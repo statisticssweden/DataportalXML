@@ -290,7 +290,7 @@ namespace Px.Rdf
             return baseURI + timeScaleToUpdateFreq[timeScale];
         }
 
-        // Returns the language URL for each description
+        // Returns the language URL for a language code (2 letters)
         private string convertLanguage(string str)
         {
             string lang = languageToDcatLang[str];
@@ -336,6 +336,8 @@ namespace Px.Rdf
             int maxIndex = dateTimes.IndexOf(dateTimes.Max());
             return dates[maxIndex];
         }
+
+
         public List<ContactPerson> getContacts(PXMeta meta)
         {
             List<ContactPerson> contactPersons = new List<ContactPerson>();
@@ -388,33 +390,6 @@ namespace Px.Rdf
             }
             return contactPersons;
         }
-        /*
-        public List<ContactPerson> getContacts(PXMeta meta)
-        {
-            List<ContactPerson> contactPersons = new List<ContactPerson>();
-            foreach (Value v in meta.ContentVariable.Values) {
-                List<ContactPerson> cps = new List<ContactPerson>();
-                List<Contact> allContacts = v.ContentInfo.ContactInfo;
-                if (allContacts is null) continue;
-                foreach (Contact c in allContacts) {
-                    ContactPerson cp;
-                    if (contacts.ContainsKey(c.Email)) cp = contacts[c.Email];
-                    else {
-                        cp = new ContactPerson 
-                        {
-                            name = c.Forname + " " + c.Surname + ", " + c.OrganizationName, 
-                            email = c.Email,
-                            telephone = c.PhonePrefix + c.PhoneNo,
-                            resource = settings.BaseUri + "contactperson/" + nextString()
-                        };
-                        contacts.Add(c.Email, cp);
-                    }
-                    cps.Add(cp);
-                }
-                contactPersons = contactPersons.Union(cps).ToList();
-            }
-            return contactPersons;
-        }*/
 
         // Return the latest modiefied date of a dataset, check all ContentVariables modification dates and return latest
         private string getLastModified(PXMeta meta)
