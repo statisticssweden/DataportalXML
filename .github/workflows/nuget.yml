@@ -1,0 +1,34 @@
+name: Nuget
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  release:
+
+    runs-on: windows-2019
+
+    steps:
+
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0    
+
+    - uses: microsoft/setup-msbuild@v1
+
+    - uses: NuGet/setup-nuget@v1
+
+    - name: Restore NuGet packages
+      run: nuget restore
+
+    - name: Build the application
+      run: msbuild /p:Configuration=Release
+
+    - name: Depoly to Nuget
+      run: |
+           $package = Get-ChildItem -Recurse -Filter *.nupkg
+           nuget push $package $env:nuget_api_key -src https://nuget.org
+      env:
+        nuget_api_key: ${{ secrets.NUGET_API_KEY }}
+        
