@@ -29,7 +29,7 @@ jobs:
       run: msbuild /p:Configuration=Release
 
     - name: Depoly to Nuget
-      working-directory: ./Source/
+      working-directory: ./Source/Px.Rdf/
       run: |
            $package = Get-ChildItem -Recurse -Filter *.nupkg
            nuget push $package $env:nuget_api_key -src https://nuget.org
