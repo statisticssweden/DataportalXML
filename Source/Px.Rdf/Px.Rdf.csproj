@@ -11,11 +11,11 @@
 	  <AssemblyOriginatorKeyFile></AssemblyOriginatorKeyFile>
 	  <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 	  <Description>Generate RDF/XML for databases</Description>
-	  <PackageLicenseFile>LICENSE</PackageLicenseFile>
 	  <PackageProjectUrl>https://github.com/statisticssweden/DataportalXML</PackageProjectUrl>
 	  <PackageIcon></PackageIcon>
 	  <PackageIconUrl />
 	  <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+	  <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>
