@@ -490,7 +490,7 @@ namespace Px.Rdf
         // Gets the distrubution url from a path, title and language 
         private string getDistributionUrl(List<PxMenuItem> path, string tableID, string lang)
         {
-            string url = settings.BaseApiUrl + lang + "/ssd/";
+            string url = settings.BaseApiUrl + lang + "/"+ settings.DBid + "/";
             foreach (PxMenuItem menu in path.Skip(1))
             {
                 url += menu.ID.Selection + "/";
@@ -499,7 +499,7 @@ namespace Px.Rdf
             return url;
         }
         private string getIdentifier(PXMeta meta) {
-            return meta.MainTable.Replace(" ","");
+            return Path.GetFileName(meta.MainTable.Replace(" ",""));
         }
 
         // Get distributions, one for each language
