@@ -146,9 +146,7 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-    <None Include="SqlDb.config">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
+    <None Include="SqlDb.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Px.Rdf\Px.Rdf.csproj">
