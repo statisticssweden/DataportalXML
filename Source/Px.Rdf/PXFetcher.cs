@@ -12,11 +12,11 @@ using PCAxis.PlugIn.Sql;
 
 namespace Px.Rdf
 {
-    public class PcAxisFetcher : IFetcher
+    public class PXFetcher : IFetcher
     {
         private string basepoint;
 
-        public PcAxisFetcher(string basepoint)
+        public PXFetcher(string basepoint)
         {
             this.basepoint = basepoint;
         }
