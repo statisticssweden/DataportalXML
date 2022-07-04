@@ -11,6 +11,7 @@ namespace Px.Rdf
 
         public static void writeToFile(string fileName, RdfSettings settings)
         {
+            doc = new XmlDocument();
             Fetcher fetcher = new Fetcher();
             fetcher.LoadSettings(settings);
             int numberOfTables = 0; // No cap
