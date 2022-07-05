@@ -413,7 +413,7 @@ namespace Px.Rdf
             if (path.Count < 2) {
                 return null;
             }
-            string category = path[1].Text;
+            string category = path[1].ID.Selection;
             if (category is null) return null;
             if (!themeMapping.ContainsKey(category)) {
                 return null;
