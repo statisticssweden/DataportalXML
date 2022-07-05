@@ -34,8 +34,6 @@ namespace Px.Rdf
             menu.SetCurrentItemBySelection(cid.Menu, cid.Selection);
             return menu.CurrentItem;
         }
-        //@"C:\Temp\PxGit\PxWeb\PXWeb\Resources\PX\Databases\"
-        //@"C:\Temp\Databases\"
         public IPXModelBuilder GetBuilder(string selection)
         {
             IPXModelBuilder builder = new PXFileBuilder();

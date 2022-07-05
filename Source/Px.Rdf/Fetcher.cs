@@ -26,10 +26,6 @@ namespace Px.Rdf
 
         // Mapping from PcAxis categories to DCAT standard themes https://docs.dataportal.se/dcat/sv/#dcat_Dataset-dcat_theme
         private Dictionary<string, string> themeMapping;
-        public void LoadSettings(RdfSettings rdfSettings) {
-            settings = rdfSettings;
-            themeMapping = JsonReader.ReadThemeMapping(settings.ThemeMapping);
-        }
         
         // Get all unique Organizations
         public List<Organization> UniqueOrgs() {
@@ -242,14 +238,36 @@ namespace Px.Rdf
             { "zu", "zul"}
         };
 
+        /// <summary>
+        /// Load settings
+        /// </summary>
+        /// <param name="rdfSettings">Settings to load</param>
+        public void LoadSettings(RdfSettings rdfSettings) {
+            settings = rdfSettings;
+            themeMapping = JsonReader.ReadThemeMapping(settings.ThemeMapping);
+        }
+
+        /// <summary>
+        /// Get next unique integer
+        /// </summary>
+        /// <returns>Integer</returns>
         protected int nextNum() {
             return ++hashNum;
         }
+        /// <summary>
+        /// Get next unique string
+        /// </summary>
+        /// <returns>String</returns>
         protected string nextString() {
             return (++hashNum).ToString();
         }
 
-        // Gets description for each language. First note, if mandatory
+        /// <summary>
+        /// Gets description for specified languages
+        /// </summary>
+        /// <param name="meta">Metadata of table</param>
+        /// <param name="langs">List of languages</param>
+        /// <returns></returns>
         private List<string> getDescriptions(PXMeta meta, List<string> langs)
         {   
             List<string> descriptions = new List<string>(langs.Count());
@@ -266,8 +284,13 @@ namespace Px.Rdf
             }
             return descriptions;
         }
-
-        // Gets the title for each language
+        
+        /// <summary>
+        /// Gets the title for each language 
+        /// </summary>
+        /// <param name="meta">Metadata of table</param>
+        /// <param name="langs">List of languages</param>
+        /// <returns>Return titles in each language for a table</returns>
         private List<string> getTitles(PXMeta meta, List<string> langs) {
             List<string> titles = new List<string>(langs.Count());
             foreach(string lang in langs) {
@@ -277,7 +300,11 @@ namespace Px.Rdf
             return titles;
         }
 
-        // Gets update frequency
+        /// <summary> 
+        /// Gets update frequency
+        /// </summary>
+        /// <param name="meta">Metadata of table</param>
+        /// <returns></returns>
         private string getUpdateFrequency(PXMeta meta)
         {
             Predicate<Variable> isTime = (Variable v) => v.IsTime;
@@ -290,14 +317,22 @@ namespace Px.Rdf
             return baseURI + timeScaleToUpdateFreq[timeScale];
         }
 
-        // Returns the language URL for a language code (2 letters)
+        /// <summary>
+        /// Convert language from 2 letter code to Dcat-ap standard
+        /// </summary>
+        /// <param name="str">Language to convert</param>
+        /// <returns>The converted language, url</returns>
         private string convertLanguage(string str)
         {
             string lang = languageToDcatLang[str];
             return "http://publications.europa.eu/resource/authority/language/" + lang.ToUpper();
         }
 
-        // Function returning a list of strings where it's either one or more languages
+        /// <summary>
+        /// Gets all existing languages for a table
+        /// </summary>
+        /// <param name="meta">Metadata of table</param>
+        /// <returns>Returns a list of strings where it's either one or more languages</returns>
         private List<string> getLanguages(PXMeta meta)
         {
             string[] allLangs = meta.GetAllLanguages();
@@ -307,7 +342,12 @@ namespace Px.Rdf
             }
             return new List<string>(allLangs);
         }
-        // Converts and returns each url for every language available
+
+        /// <summary>
+        /// Converts given languages from 2 letter code to Dcat-ap standard
+        /// </summary>
+        /// <param name="languages">List of languages to convert</param>
+        /// <returns>Returns each URL for every language available</returns>
         private List<string> convertLanguages(List<string> languages) {
             List<string> converted = new List<string>(languages.Count());
             foreach(string lang in languages)
@@ -317,16 +357,22 @@ namespace Px.Rdf
             return converted;
         }
         
-        
-        // Convert from pcAxis date format to xsd:dateTime format
+        /// <summary>
+        /// Convert from pcAxis date format to xsd:dateTime format
+        /// </summary>
+        /// <param name="s">Date to convert</param>
+        /// <returns>Returns the formatted date</returns>
         private string reformatDate(string s)
         {
             DateTime date = DateTime.ParseExact(s, PCAXIS_DATE_FORMAT, null);
             string formatted = date.ToString(DCAT_DATE_FORMAT);
             return formatted;
         }
-
-        //  Returns the latest date from a list of dates (in PcAxis format)
+        /// <summary>
+        /// Get latest date in a list of dates (PcAxis format)
+        /// </summary>
+        /// <param name="dates">List of dates</param>
+        /// <returns>Latest date </returns>
         private string getLatestDate(List<string> dates) // format yyyyMMdd HH:mm
         {
             List<DateTime> dateTimes = new List<DateTime>(dates.Count());
@@ -337,7 +383,11 @@ namespace Px.Rdf
             return dates[maxIndex];
         }
 
-
+        /// <summary>
+        /// Get contacts of a table
+        /// </summary>
+        /// <param name="meta">Metadata of table</param>
+        /// <returns>List of contacts</returns>
         public List<ContactPerson> getContacts(PXMeta meta)
         {
             List<ContactPerson> contactPersons = new List<ContactPerson>();
@@ -391,7 +441,11 @@ namespace Px.Rdf
             return contactPersons;
         }
 
-        // Return the latest modiefied date of a dataset, check all ContentVariables modification dates and return latest
+        /// <summary>
+        /// Get the latest modified date of a table
+        /// </summary>
+        /// <param name="meta"></param>
+        /// <returns>Returns the latest modified date of a table</returns>
         private string getLastModified(PXMeta meta)
         {
             string modified = meta.ContentInfo.LastUpdated;
@@ -408,7 +462,11 @@ namespace Px.Rdf
             return reformatDate(modified);
         }
 
+        /// <summary> 
         // Get category from a path of menu items
+        /// </summary>
+        /// <param name="path"></param>
+        /// <returns>Returns a standard base URL and the theme code</returns>
         private string getCategory(List<PxMenuItem> path) { 
             if (path.Count < 2) {
                 return null;
@@ -421,8 +479,11 @@ namespace Px.Rdf
             return "http://publications.europa.eu/resource/authority/data-theme/" + themeMapping[category];
         }
 
-
-        // Producer of dataset, Meta.Source
+        /// <summary>
+        /// Get producer of table
+        /// </summary>
+        /// <param name="meta">Metadata of table</param>
+        /// <returns>Organization with the producer info</returns>
         private Organization getProducer(PXMeta meta) {
             string name = meta.Source;
             if (organizations.ContainsKey(name)) return organizations[name];
@@ -431,6 +492,10 @@ namespace Px.Rdf
             return org;
         }
 
+        /// <summary>
+        /// Get publisher from settings
+        /// </summary>
+        /// <returns>Publisher</returns>
         private Organization getPublisher() {
             Organization org;
             string publisherName = settings.PublisherName;
@@ -444,7 +509,12 @@ namespace Px.Rdf
             return org;
         }
 
-        // Get keywords for a specific language. Keywords are the menu titles
+        /// <summary>
+        /// Get keywords in a specific language
+        /// </summary>
+        /// <param name="path">Path of table</param>
+        /// <param name="lang">Language to get keywords in</param>
+        /// <returns>List of keywords</returns>
         private List<Keyword> getKeywords(List<PxMenuItem> path, string lang) {
             List<Keyword> keywords = new List<Keyword>();
             foreach (PxMenuItem menu in path.Skip(1)) {
@@ -465,8 +535,13 @@ namespace Px.Rdf
             }
             return keywords;
         }
-
-        // Gets each keyword from a specific 
+        
+        /// <summary>
+        /// Gets each keyword from a specific table
+        /// </summary>
+        /// <param name="path">Path of table</param>
+        /// <param name="langs">Languages to get keywords in (2 letter code)</param>
+        /// <returns>List of keywords</returns>
         private List<Keyword> getKeywords(List<PxMenuItem> path, List<string> langs) {
             List<Keyword> keywords = new List<Keyword>();
             foreach (string lang in langs) {
@@ -475,11 +550,23 @@ namespace Px.Rdf
             }
             return keywords;
         }
+        /// <summary>
+        /// Get url for a table (Only relevant for cmnn)
+        /// </summary>
+        /// <param name="tableID">ID of table</param>
+        /// <param name="lang">Language (2 letter code)</param>
+        /// <returns></returns>
         private string getDatasetUrl(string tableID, string lang)
         {
-            return settings.LandingPageUrl + lang + "/ssd/" + tableID;
+            return settings.LandingPageUrl + lang + "/" + settings.DBid + "/" + tableID;
         }
 
+        /// <summary>
+        /// Get urls in multiple languages for a table
+        /// </summary>
+        /// <param name="tableID">ID of table</param>
+        /// <param name="langs">Languages to get urls for</param>
+        /// <returns>List of urls</returns>
         private List<string> getDatasetUrls(string tableID, List<string> langs) {
             List<string> urls = new List<string>();
             foreach(string lang in langs) {
@@ -487,7 +574,14 @@ namespace Px.Rdf
             }
             return urls;
         }
-        // Gets the distrubution url from a path, title and language 
+
+        /// <summary>
+        /// Get distribution url for a table
+        /// </summary>
+        /// <param name="path">Path of table</param>
+        /// <param name="tableID">Table ID</param>
+        /// <param name="lang">Language (2 letter code)</param>
+        /// <returns></returns>
         private string getDistributionUrl(List<PxMenuItem> path, string tableID, string lang)
         {
             string url = settings.BaseApiUrl + lang + "/"+ settings.DBid + "/";
@@ -498,11 +592,23 @@ namespace Px.Rdf
             url += tableID;
             return url;
         }
+
+        /// <summary>
+        /// Get identifier for a table
+        /// </summary>
+        /// <param name="meta">Metadata of the table</param>
+        /// <returns>Identifer of the table</returns>
         private string getIdentifier(PXMeta meta) {
             return Path.GetFileName(meta.MainTable.Replace(" ",""));
         }
 
-        // Get distributions, one for each language
+        /// <summary>
+        /// Get distributions, one for each language
+        /// </summary>
+        /// <param name="path">Path of table</param>
+        /// <param name="tableID">Table ID</param>
+        /// <param name="langs">Languages to generate distributions for (2 letter code)</param>
+        /// <returns>List of distributions</returns>
         private List<Distribution> getDistributions(List<PxMenuItem> path, string tableID, List<string> langs)
         {
             List<Distribution> distrs = new List<Distribution>(langs.Count());
@@ -520,7 +626,14 @@ namespace Px.Rdf
 
             return distrs;
         }
-        // Gets data for each dataset
+
+        /// <summary>
+        /// Get all data for a specific table
+        /// </summary>
+        /// <param name="meta">Metadata to fetch from</param>
+        /// <param name="path">Path of the table</param>
+        /// <returns>Dataset generated with the data from the table</returns>
+
         private Dataset getDataset(PXMeta meta, List<PxMenuItem> path) {
             Dataset dataset = new Dataset();
 
@@ -549,7 +662,12 @@ namespace Px.Rdf
             return dataset;
         }
 
-        // Get a menu in a specific language
+        /// <summary>
+        /// Get menu in a specific language
+        /// </summary>
+        /// <param name="menuItem">Menu</param>
+        /// <param name="lang">Language (2 letter code)</param>
+        /// <returns>Menu with information in specified language</returns>
         private PxMenuItem getMenuInLanguage(PxMenuItem menuItem, string lang) {
             string nodeID = menuItem.ID.Selection;
             string menuID = menuItem.ID.Menu;
@@ -560,8 +678,13 @@ namespace Px.Rdf
                 return null;
             }
         }
-
-        // Recursively go thorugh all items and add the leaf nodes (datasets) to the list d, max is the maximum amount of datasets collected
+        /// <summary>
+        /// Recursively go through all items
+        /// </summary>
+        /// <param name="item">Root item to recurse from</param>
+        /// <param name="path">Path of the current item</param>
+        /// <param name="d">List of datasets to add found datasets to</param>
+        /// <param name="max">Maximumu number of datasets fetched</param>
         private void addRecursive(Item item, List<PxMenuItem> path, List<Dataset> d, int max)
         {
 
@@ -605,7 +728,11 @@ namespace Px.Rdf
             }
         }
 
-        // Gets datasets, n is maximum amount
+        /// <summary>
+        /// Get datasets from a database specified in settings
+        /// </summary>
+        /// <param name="n">Maximum number of fetched datasets</param>
+        /// <returns>List of datasets</returns>
         public List<Dataset> GetDatasets(int n)
         {
             var datasets = new List<Dataset>();
@@ -616,7 +743,11 @@ namespace Px.Rdf
             return datasets;
         }
 
-        // Generates a catalog, numberOfTables is maximum amount of datasets fetched
+        /// <summary>
+        /// Generate catalog from loaded settings
+        /// </summary>
+        /// <param name="numberOfTables">Maximum number of datasets to be fetched</param>
+        /// <returns>Generated catalog</returns>
         public Catalog GetCatalog(int numberOfTables)
         {
             Catalog c = new Catalog();

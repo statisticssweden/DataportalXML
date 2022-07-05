@@ -9,7 +9,12 @@ namespace Px.Rdf
         private static XmlDocument doc = new XmlDocument();
         private static XmlNamespaceManager nsm = new XmlNamespaceManager(doc.NameTable);
 
-        public static void writeToFile(string fileName, RdfSettings settings)
+        /// <summary>
+        /// Create xml file based on settings
+        /// </summary>
+        /// <param name="fileName">File to write to</param>
+        /// <param name="settings">Settings to use</param>
+        public static void WriteToFile(string fileName, RdfSettings settings)
         {
             doc = new XmlDocument();
             Fetcher fetcher = new Fetcher();
@@ -18,10 +23,16 @@ namespace Px.Rdf
             Catalog c = fetcher.GetCatalog(numberOfTables);
             List<Organization> orgs = fetcher.UniqueOrgs();
             List<ContactPerson> contacts = fetcher.UniqueContacts();
-            writeToFile(c, orgs, contacts, fileName);
+            WriteToFile(c, orgs, contacts, fileName);
         }
-
-        private static void writeToFile(Catalog c, List<Organization> orgs, List<ContactPerson> contacts, string fileName)
+        /// <summary>
+        /// Writes a catalog along with lists of organizations and contacts to a file according to the dcat-ap standard.
+        /// </summary>
+        /// <param name="c">Catalog to be written</param>
+        /// <param name="orgs">List of organizations to be written</param>
+        /// <param name="contacts">List of contacts to be written</param>
+        /// <param name="fileName">Name of the file</param>
+        private static void WriteToFile(Catalog c, List<Organization> orgs, List<ContactPerson> contacts, string fileName)
         {
             nsm.AddNamespace("adms", "http://www.w3.org/ns/adms#");
             nsm.AddNamespace("rdf", "http://www.w3.org/1999/02/22-rdf-syntax-ns#");
@@ -53,7 +64,7 @@ namespace Px.Rdf
 
             XmlElement org = generateOrg(c.publisher);
             rdf.AppendChild(org);
-
+            
             foreach (Dataset d in c.datasets)
             {
                 XmlElement dElem = generateDataset(d);
@@ -85,7 +96,7 @@ namespace Px.Rdf
             doc.Save(fileName);
         }
         /// <summary>
-        /// Creating XMLElements and attributes with function overloading since the elements are similar but require more or less parameters
+        /// Creates an xml element from a namespace with an attribute from a namespace
         /// </summary>
         private static XmlElement createElem(string elemNamespace, string elemName, string attrNamespace, string attributeName, string attrValue)
         {
@@ -94,6 +105,14 @@ namespace Px.Rdf
             elem.SetAttributeNode(attr);
             return elem;
         }
+
+        /// <summary>
+        /// Creates an xml element from a namespace with a value
+        /// </summary>
+        /// <param name="elemNamespace">Namespace of the tag</param>
+        /// <param name="elemName">name of the tag</param>
+        /// <param name="innerText">The value inside the tag</param>
+        /// <returns>XmlElement</returns>
         private static XmlElement createElem(string elemNamespace, string elemName, string innerText)
         {
             XmlElement elem = doc.CreateElement(elemNamespace, elemName, nsm.LookupNamespace(elemNamespace));
@@ -101,11 +120,24 @@ namespace Px.Rdf
             return elem;
         }
 
+        /// <summary>
+        /// Creates an element with from a namespace
+        /// </summary>
+        /// <param name="elemNamespace"></param>
+        /// <param name="elemName"></param>
+        /// <returns>XmlElement</returns>
         private static XmlElement createElem(string elemNamespace, string elemName)
         {
             return createElem(elemNamespace, elemName, "");
         }
 
+        /// <summary>
+        /// Create an xml attribute from a namespace
+        /// </summary>
+        /// <param name="ns">Namespace of the attribute</param>
+        /// <param name="tagName">Name of the attribute</param>
+        /// <param name="value">Value of the attribute</param>
+        /// <returns>XmlAttribute</returns>
         private static XmlAttribute createAttr(string ns, string tagName, string value)
         {
             XmlAttribute attr = doc.CreateAttribute(ns, tagName, nsm.LookupNamespace(ns));
@@ -114,7 +146,11 @@ namespace Px.Rdf
         }
 
 
-
+        /// <summary>
+        /// Converts a Catalog into an XmlElement
+        /// </summary>
+        /// <param name="c">Catalog to be converted</param>
+        /// <returns>XmlElement</returns>
         public static XmlElement generateCatalog(Catalog c)
         {
             XmlElement catElem = createElem("dcat", "catalog");
@@ -146,6 +182,11 @@ namespace Px.Rdf
             return catElem;
         }
 
+        /// <summary>
+        /// Convert a dataset into an XmlElement
+        /// </summary>
+        /// <param name="d">The dataset to be converted</param>
+        /// <returns>XmlElement</returns>
         public static XmlElement generateDataset(Dataset d)
         {
             // Dataset
@@ -251,6 +292,11 @@ namespace Px.Rdf
             return dElem;
         }
 
+        /// <summary>
+        /// Convert organization into xml element
+        /// </summary>
+        /// <param name="org">Organization to be converted</param>
+        /// <returns>XmlElement</returns>
         public static XmlElement generateOrg(Organization org)
         {
             // Org
@@ -263,6 +309,11 @@ namespace Px.Rdf
             return orgElem;
         }
 
+        /// <summary>
+        /// Convert contact into xml element
+        /// </summary>
+        /// <param name="cp">Contact person to be converted</param>
+        /// <returns>XmlElement</returns>
         public static XmlElement generateContact(ContactPerson cp)
         {
             XmlElement individual = createElem("vcard", "Individual", "rdf", "about", cp.resource);
@@ -288,7 +339,11 @@ namespace Px.Rdf
 
             return individual;
         }
-
+        /// <summary>
+        /// Convert Distribution into xml element
+        /// </summary>
+        /// <param name="dst">Distribution to be converted</param>
+        /// <returns>XmlElement</returns>
         public static XmlElement generateDistribution(Distribution dst)
         {
             //about
