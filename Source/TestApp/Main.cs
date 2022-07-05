@@ -20,7 +20,7 @@ namespace TestApp
                 //DBid = @"C:\Temp\StatFin2018\StatFin\Menu.xml",//@"C:\Temp\Databases\Example\Menu.xml", @"C:\Temp\StatFin2018\StatFin\Menu.xml"
                 DBid = "ssd",
                 //Fetcher = new PcAxisFetcher(@"C:\Temp\StatFin2018\"),
-                Fetcher = new CMNNFetcher(),
+                Fetcher = new CNMMFetcher(),
                 LandingPageUrl = "http://www.statistikdatabasen.scb.se/goto/",
                 License = "http://creativecommons.org/publicdomain/zero/1.0/",
                 ThemeMapping = "C:/temp/TMapping.json"

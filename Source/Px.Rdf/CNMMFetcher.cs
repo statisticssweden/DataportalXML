@@ -7,7 +7,7 @@ using PCAxis.PlugIn.Sql;
 
 namespace Px.Rdf
 {
-    public class CMNNFetcher : IFetcher
+    public class CNMMFetcher : IFetcher
     {
         public Item GetBaseItem(string nodeID, string menuID, string lang, string dbid)
         {
