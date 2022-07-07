@@ -16,7 +16,7 @@ namespace Px.Rdf
 {
     public class Fetcher
     {
-        private const string PCAXIS_DATE_FORMAT = "yyyyMMdd HH:mm";
+        private const string PCAXIS_DATE_FORMAT = PXConstant.PXDATEFORMAT;
         private const string DCAT_DATE_FORMAT = "yyyy-MM-ddTHH:mm:ss";
         private int hashNum;
         private Dictionary<string, Organization> organizations = new Dictionary<string, Organization>(); // name to organization
