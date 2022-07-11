@@ -61,9 +61,6 @@ namespace Px.Rdf
 
             XmlElement catalog = generateCatalog(c);
             rdf.AppendChild(catalog);
-
-            XmlElement org = generateOrg(c.publisher);
-            rdf.AppendChild(org);
             
             foreach (Dataset d in c.datasets)
             {
@@ -95,6 +92,7 @@ namespace Px.Rdf
 
             doc.Save(fileName);
         }
+
         /// <summary>
         /// Creates an xml element from a namespace with an attribute from a namespace
         /// </summary>
