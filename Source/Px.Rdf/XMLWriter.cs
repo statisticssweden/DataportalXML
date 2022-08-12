@@ -321,7 +321,8 @@ namespace Px.Rdf
             individual.AppendChild(nameElem);
 
             // Email
-            XmlElement emailElem = createElem("vcard", "hasEmail", "rdf", "resource", "mailto:" + cp.email);
+            string trimmedEmail = cp.email.Replace(" ", "");
+            XmlElement emailElem = createElem("vcard", "hasEmail", "rdf", "resource", "mailto:" + trimmedEmail);
             individual.AppendChild(emailElem);
 
             // Phone
