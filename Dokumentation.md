@@ -3,7 +3,7 @@
 DataportalXML är ett verktyg för att generera RDF/XML-filer enligt standarden DCAT-AP-SE. Varje fil beskriver metadata för en viss databas. Verktyget kan nås via PxWeb som ett admin-verktyg eller via en API-request till PxWeb. För att konfigurera verktyget används klassen structen RdfSettings som beskrivs nedan.
 
 ## RdfSettings
-**BaseUri:** Baslänki som används inom XML-filen för att länka noder. Behöver ej vara en existerande URL. Ex. "<https://www.baseURI.se/>".
+**BaseUri:** Baslänk som används inom XML-filen för att länka noder. Behöver ej vara en existerande URL. Ex. "<https://www.baseURI.se/>".
 
 **BaseApiUrl:** Baslänk för API-anrop till en viss databas. Den slutliga länken kommer sedan byggas ut dynamiskt till {BaseApiUrl}/{Språk}/{DBid}/{Sökväg}.
 Ex. “<http://api.scb.se/OV0104/v1/doris/>” kommer för tabellen “BefolkningNy” att resultera i länken “<http://api.scb.se/OV0104/v1/doris/sv/ssd/BE/BE0101/BE0101A/BefolkningNy>”. 
