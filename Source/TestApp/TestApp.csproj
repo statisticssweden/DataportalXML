@@ -66,11 +66,8 @@
     <Reference Include="Oracle.ManagedDataAccess, Version=2.0.19.1, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
       <HintPath>..\packages\Oracle.ManagedDataAccess.Core.2.19.110\lib\netstandard2.0\Oracle.ManagedDataAccess.dll</HintPath>
     </Reference>
-    <Reference Include="PCAxis.Common, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\PCAxis.Common.1.0.1\lib\netstandard2.0\PCAxis.Common.dll</HintPath>
-    </Reference>
     <Reference Include="PCAxis.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\PcAxis.Core.1.0.3\lib\netstandard2.0\PCAxis.Core.dll</HintPath>
+      <HintPath>..\packages\PcAxis.Core.1.1.0\lib\netstandard2.0\PCAxis.Core.dll</HintPath>
     </Reference>
     <Reference Include="PCAxis.Encryption, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\PCAxis.Encryption.1.0.0\lib\netstandard2.0\PCAxis.Encryption.dll</HintPath>
@@ -86,9 +83,6 @@
     </Reference>
     <Reference Include="PCAxis.Menu.OracleDatamodelMenu, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\PCAxis.Menu.OracleDatamodelMenu.1.0.1\lib\netstandard2.0\PCAxis.Menu.OracleDatamodelMenu.dll</HintPath>
-    </Reference>
-    <Reference Include="PCAxis.PX.Core, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\PCAxis.PX.Core.1.0.2\lib\netstandard2.0\PCAxis.PX.Core.dll</HintPath>
     </Reference>
     <Reference Include="PCAxis.Sql, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\PcAxis.Sql.1.1.3\lib\netstandard2.0\PCAxis.Sql.dll</HintPath>
@@ -146,8 +140,8 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-      <None Include="SqlDb.config" />
-          <!--
+    <None Include="SqlDb.config" />
+    <!--
     <None Include="SqlDb.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
