@@ -209,7 +209,7 @@
     <None Include="App.config" />
     <None Include="packages.config" />
     <None Include="SqlDb.config">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <!--<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>-->
     </None>
   </ItemGroup>
   <ItemGroup>
