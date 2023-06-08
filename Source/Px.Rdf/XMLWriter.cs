@@ -165,7 +165,7 @@ namespace Px.Rdf
             {
                 string lang = langTitle.Key;
                 string title = langTitle.Value;
-                XmlElement titleElem = createElem("dcterms", "title", "dcterms", "language", lang);
+                XmlElement titleElem = createElem("dcterms", "title", "xml", "lang", lang);
                 titleElem.InnerText = title;
                 catElem.AppendChild(titleElem);
             }
@@ -175,7 +175,7 @@ namespace Px.Rdf
             {
                 string lang = langTitle.Key;
                 string description = langTitle.Value;
-                XmlElement descElem = createElem("dcterms", "description", "dcterms", "language", lang);
+                XmlElement descElem = createElem("dcterms", "description", "xml", "lang", lang);
                 descElem.InnerText = description;
                 catElem.AppendChild(descElem);
             }
