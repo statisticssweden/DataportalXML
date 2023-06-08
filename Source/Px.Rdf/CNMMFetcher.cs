@@ -44,7 +44,7 @@ namespace Px.Rdf
                             tbl.SetAttribute("modified", tbl.Published.Value.ToShortDateString());
                         }
                     }
-                    if (String.IsNullOrEmpty(item.SortCode))
+                    if (string.IsNullOrEmpty(item.SortCode))
                     {
                         item.SortCode = item.Text;
                     }

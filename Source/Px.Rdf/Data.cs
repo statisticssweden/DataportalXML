@@ -4,10 +4,10 @@ namespace Px.Rdf
 {
     public struct Catalog
     {
-        public string title;
-        public string description;
+        public List<KeyValuePair<string, string>> titles;
+        public List<KeyValuePair<string, string>> descriptions;
         public string license;
-        public string language;
+        public List<string> languages;
         public List<Dataset> datasets;
         public Organization publisher;
     }

@@ -8,12 +8,9 @@ namespace Px.Rdf
         
         public string BaseApiUrl; // Base url for api request
 
-        public string PreferredLanguage; // language code 2 letters
-
         public List<string> Languages; // Read from settings
-
-        public string CatalogTitle;
-        public string CatalogDescription;
+        public List<KeyValuePair<string, string>> CatalogTitles;
+        public List<KeyValuePair<string, string>> CatalogDescriptions;
 
         public string PublisherName;
         public string DBid;
@@ -21,6 +18,5 @@ namespace Px.Rdf
         public string LandingPageUrl;
         public string License;
         public string ThemeMapping;
-
     }
 }

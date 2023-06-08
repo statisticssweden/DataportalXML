@@ -715,7 +715,7 @@ namespace Px.Rdf
                 {
                     IPXModelBuilder builder = settings.Fetcher.GetBuilder(table.ID.Selection);
                     builder.ReadAllLanguages = true;
-                    builder.SetPreferredLanguage(settings.PreferredLanguage);
+                    //builder.SetPreferredLanguage(settings.PreferredLanguage);
                     builder.BuildForSelection();
                 
                     Dataset dataset = getDataset(builder.Model.Meta, path);
@@ -737,7 +737,8 @@ namespace Px.Rdf
         {
             var datasets = new List<Dataset>();
             var path = new List<PxMenuItem>();
-            Item baseItem = settings.Fetcher.GetBaseItem("","",settings.PreferredLanguage,settings.DBid);
+            string lang = "en";
+            Item baseItem = settings.Fetcher.GetBaseItem("","",lang,settings.DBid);
 
             addRecursive(baseItem, path, datasets, n);
             return datasets;
@@ -751,12 +752,12 @@ namespace Px.Rdf
         public Catalog GetCatalog(int numberOfTables)
         {
             Catalog c = new Catalog();
-            c.title = settings.CatalogTitle;
-            c.description = settings.CatalogDescription;
+            c.titles = settings.CatalogTitles;
+            c.descriptions = settings.CatalogDescriptions;
             c.publisher = getPublisher();
             c.license = settings.License;
             c.datasets = GetDatasets(numberOfTables);
-            c.language = convertLanguage(settings.PreferredLanguage);
+            c.languages = convertLanguages(settings.Languages);
             return c;
         }
     }

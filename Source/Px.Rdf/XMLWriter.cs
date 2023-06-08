@@ -152,12 +152,33 @@ namespace Px.Rdf
         public static XmlElement generateCatalog(Catalog c)
         {
             XmlElement catElem = createElem("dcat", "catalog");
-            XmlElement titleElem = createElem("dcterms", "title", c.title);
-            catElem.AppendChild(titleElem);
 
-            // description 
-            XmlElement descElem = createElem("dcterms", "description", c.description);
-            catElem.AppendChild(descElem);
+            // languages
+            foreach (string lang in c.languages)
+            {
+                XmlElement langElem = createElem("dcterms", "language", "rdf", "resource", lang);
+                catElem.AppendChild(langElem);
+            }
+
+            // titles
+            foreach (KeyValuePair<string, string> langTitle in c.titles)
+            {
+                string lang = langTitle.Key;
+                string title = langTitle.Value;
+                XmlElement titleElem = createElem("dcterms", "title", "dcterms", "language", lang);
+                titleElem.InnerText = title;
+                catElem.AppendChild(titleElem);
+            }
+
+            // descriptions
+            foreach (KeyValuePair<string, string> langTitle in c.descriptions)
+            {
+                string lang = langTitle.Key;
+                string description = langTitle.Value;
+                XmlElement descElem = createElem("dcterms", "description", "dcterms", "language", lang);
+                descElem.InnerText = description;
+                catElem.AppendChild(descElem);
+            }
 
             // Publisher reference
             XmlElement pubElem = createElem("dcterms", "publisher", "rdf", "resource", c.publisher.resource);
@@ -167,9 +188,6 @@ namespace Px.Rdf
             XmlElement licenseElem = createElem("dcterms", "license", "rdf", "resource", c.license);
             catElem.AppendChild(licenseElem);
 
-            // Language
-            XmlElement langElem = createElem("dcterms", "language", "rdf", "resource", c.language);
-            catElem.AppendChild(langElem);
 
             // Dataset references
             foreach (Dataset d in c.datasets)
