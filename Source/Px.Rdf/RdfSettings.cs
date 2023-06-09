@@ -18,5 +18,7 @@ namespace Px.Rdf
         public string LandingPageUrl;
         public string License;
         public string ThemeMapping;
+
+        public string MainLanguage;
     }
 }

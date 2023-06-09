@@ -715,7 +715,7 @@ namespace Px.Rdf
                 {
                     IPXModelBuilder builder = settings.Fetcher.GetBuilder(table.ID.Selection);
                     builder.ReadAllLanguages = true;
-                    //builder.SetPreferredLanguage(settings.PreferredLanguage);
+                    builder.SetPreferredLanguage(settings.MainLanguage);
                     builder.BuildForSelection();
                 
                     Dataset dataset = getDataset(builder.Model.Meta, path);
@@ -737,8 +737,7 @@ namespace Px.Rdf
         {
             var datasets = new List<Dataset>();
             var path = new List<PxMenuItem>();
-            string lang = "en";
-            Item baseItem = settings.Fetcher.GetBaseItem("","",lang,settings.DBid);
+            Item baseItem = settings.Fetcher.GetBaseItem("","",settings.MainLanguage,settings.DBid);
 
             addRecursive(baseItem, path, datasets, n);
             return datasets;
