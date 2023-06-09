@@ -2,7 +2,7 @@
 
 namespace Px.Rdf
 {
-    public struct Catalog
+    public class Catalog
     {
         public List<KeyValuePair<string, string>> titles;
         public List<KeyValuePair<string, string>> descriptions;
@@ -12,12 +12,12 @@ namespace Px.Rdf
         public Organization publisher;
     }
 
-    public struct Keyword {
+    public class Keyword {
         public string lang;
         public string text;
     }
 
-    public struct Distribution
+    public class Distribution
     {
         public string title;
         public string accessUrl;
@@ -26,7 +26,7 @@ namespace Px.Rdf
         public string language;
         public string format;
     }
-    public struct Dataset
+    public class Dataset
     {
         public List<string> titles;
         public List<string> descriptions;
@@ -42,30 +42,31 @@ namespace Px.Rdf
         public Organization producer;
         public List<Distribution> distributions;
         public string resource;
+        public List<string> sources;
 
         public List<string> urls;
     }
 
-    public struct Organization
+    public class Organization
     {
-        public string name;
+        public HashSet<(string,string)> names; // (language, name)
         public string resource;
 
         public override bool Equals(object obj)
         {
             if (obj is null || obj.GetType() != this.GetType())
                 return false;
-            Organization o = (Organization) obj;
-            return this.name == o.name;
+            Organization other = (Organization)obj;
+            return names.SetEquals(other.names);
         }
 
         public override int GetHashCode()
         {
-            return name.GetHashCode();
+            return names.GetHashCode();
         }
     }
 
-    public struct ContactPerson
+    public class ContactPerson
     { 
         public string resource;
         public string name;

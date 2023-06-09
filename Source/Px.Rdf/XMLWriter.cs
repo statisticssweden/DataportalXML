@@ -319,8 +319,20 @@ namespace Px.Rdf
             XmlElement orgElem = createElem("foaf", "Organization", "rdf", "about", org.resource);
 
             // Name
-            XmlElement nameElem = createElem("foaf", "name", org.name);
-            orgElem.AppendChild(nameElem);
+            foreach ((string lang, string name) in org.names)
+            {
+                if (lang is null)
+                {
+                    XmlElement nameElem = createElem("foaf", "name", name);
+                    orgElem.AppendChild(nameElem);
+                }
+                else
+                {
+                    XmlElement nameElem = createElem("foaf", "name", "xml", "lang", lang);
+                    nameElem.InnerText = name;
+                    orgElem.AppendChild(nameElem);
+                }
+            }
 
             return orgElem;
         }

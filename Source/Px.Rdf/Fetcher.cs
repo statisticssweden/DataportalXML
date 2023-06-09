@@ -18,23 +18,24 @@ namespace Px.Rdf
     {
         private const string PCAXIS_DATE_FORMAT = PXConstant.PXDATEFORMAT;
         private const string DCAT_DATE_FORMAT = "yyyy-MM-ddTHH:mm:ss";
-        private int hashNum;
-        private Dictionary<string, Organization> organizations = new Dictionary<string, Organization>(); // name to organization
-        private Dictionary<(string, string), Keyword> menuLangKeyword = new Dictionary<(string, string), Keyword>(); // (menuID, language) -> Array of keywords
-        protected Dictionary<string, ContactPerson> contacts = new Dictionary<string, ContactPerson>(); // email to contactPerson
-        protected RdfSettings settings;
+        private int _hashNum;
+        private Organization _publisher;
+        private Dictionary<string, Organization> _organizations = new Dictionary<string, Organization>(); // (lang, source) -> organization
+        private Dictionary<(string, string), Keyword> _keywords = new Dictionary<(string, string), Keyword>(); // (menuID, language) -> Array of keywords
+        private Dictionary<string, ContactPerson> _contacts = new Dictionary<string, ContactPerson>(); // email to contactPerson
+        private RdfSettings _settings;
 
-        // Mapping from PcAxis categories to DCAT standard themes https://docs.dataportal.se/dcat/sv/#dcat_Dataset-dcat_theme
-        private Dictionary<string, string> themeMapping;
-        
+        private Dictionary<string, string> _themeMapping; // Mapping from PcAxis categories to DCAT standard themes https://docs.dataportal.se/dcat/sv/#dcat_Dataset-dcat_theme
+        private Dictionary<string, string> _organizationMapping;
+
         // Get all unique Organizations
         public List<Organization> UniqueOrgs() {
-            return organizations.Values.ToList();
+            return _organizations.Values.Distinct().ToList();
         }
 
         // Get all unique Contacts
         public List<ContactPerson> UniqueContacts() {
-            return contacts.Values.ToList();
+            return _contacts.Values.ToList();
         }
 
         // Mapping from PcAxis TimeScaleType to DCAT standard https://docs.dataportal.se/dcat/sv/#dcat_Dataset-dcterms_accrualPeriodicity
@@ -239,12 +240,13 @@ namespace Px.Rdf
         };
 
         /// <summary>
-        /// Load settings
+        /// Load _settings
         /// </summary>
         /// <param name="rdfSettings">Settings to load</param>
         public void LoadSettings(RdfSettings rdfSettings) {
-            settings = rdfSettings;
-            themeMapping = JsonReader.ReadThemeMapping(settings.ThemeMapping);
+            _settings = rdfSettings;
+            _themeMapping = JsonReader.ReadDictionary(_settings.ThemeMapping);
+            _organizationMapping = JsonReader.ReadDictionary(_settings.OrganizationMapping);
         }
 
         /// <summary>
@@ -252,14 +254,15 @@ namespace Px.Rdf
         /// </summary>
         /// <returns>Integer</returns>
         protected int nextNum() {
-            return ++hashNum;
+            return ++_hashNum;
         }
+
         /// <summary>
         /// Get next unique string
         /// </summary>
         /// <returns>String</returns>
         protected string nextString() {
-            return (++hashNum).ToString();
+            return (++_hashNum).ToString();
         }
 
         /// <summary>
@@ -384,10 +387,10 @@ namespace Px.Rdf
         }
 
         /// <summary>
-        /// Get contacts of a table
+        /// Get _contacts of a table
         /// </summary>
         /// <param name="meta">Metadata of table</param>
-        /// <returns>List of contacts</returns>
+        /// <returns>List of _contacts</returns>
         public List<ContactPerson> getContacts(PXMeta meta)
         {
             List<ContactPerson> contactPersons = new List<ContactPerson>();
@@ -404,16 +407,16 @@ namespace Px.Rdf
                     if (allContacts is null) continue;
                     foreach (Contact c in allContacts) {
                         ContactPerson cp;
-                        if (contacts.ContainsKey(c.Email)) cp = contacts[c.Email];
+                        if (_contacts.ContainsKey(c.Email)) cp = _contacts[c.Email];
                         else {
                             cp = new ContactPerson 
                             {
                                 name = c.Forname + " " + c.Surname + ", " + c.OrganizationName, 
                                 email = c.Email,
                                 telephone = c.PhonePrefix + c.PhoneNo,
-                                resource = settings.BaseUri + "contactperson/" + nextString()
+                                resource = _settings.BaseUri + "contactperson/" + nextString()
                             };
-                            contacts.Add(c.Email, cp);
+                            _contacts.Add(c.Email, cp);
                         }
                         cps.Add(cp);
                     }
@@ -424,16 +427,16 @@ namespace Px.Rdf
             else {
                 foreach (Contact c in contactList) {
                     ContactPerson cp;
-                    if (contacts.ContainsKey(c.Email)) cp = contacts[c.Email];
+                    if (_contacts.ContainsKey(c.Email)) cp = _contacts[c.Email];
                     else {
                         cp = new ContactPerson 
                         {
                             name = c.Forname + " " + c.Surname + ", " + c.OrganizationName, 
                             email = c.Email,
                             telephone = c.PhonePrefix + c.PhoneNo,
-                            resource = settings.BaseUri + "contactperson/" + nextString()
+                            resource = _settings.BaseUri + "contactperson/" + nextString()
                         };
-                        contacts.Add(c.Email, cp);
+                        _contacts.Add(c.Email, cp);
                     }
                     contactPersons.Add(cp);
                 }
@@ -473,10 +476,10 @@ namespace Px.Rdf
             }
             string category = path[1].ID.Selection;
             if (category is null) return null;
-            if (!themeMapping.ContainsKey(category)) {
+            if (!_themeMapping.ContainsKey(category)) {
                 return null;
             }
-            return "http://publications.europa.eu/resource/authority/data-theme/" + themeMapping[category];
+            return "http://publications.europa.eu/resource/authority/data-theme/" + _themeMapping[category];
         }
 
         /// <summary>
@@ -484,27 +487,64 @@ namespace Px.Rdf
         /// </summary>
         /// <param name="meta">Metadata of table</param>
         /// <returns>Organization with the producer info</returns>
-        private Organization getProducer(PXMeta meta) {
-            string name = meta.Source;
-            if (organizations.ContainsKey(name)) return organizations[name];
-            Organization org = new Organization {name = meta.Source, resource = settings.BaseUri + "organization/" + nextString()};
-            organizations.Add(name, org);
-            return org;
+        private Organization getProducer(PXMeta meta, List<string> langs) {
+            HashSet<(string,string)> names = new HashSet<(string,string)>();
+            List<Organization> matchingOrgs = new List<Organization>();
+
+            foreach (string lang in langs) {
+                meta.SetLanguage(lang);
+                string name = meta.Source;
+                if (_organizations.ContainsKey(name)) {
+                    matchingOrgs.Add(_organizations[name]);
+                }
+                names.Add((lang, name));
+            }
+
+            Organization newOrg = new Organization();
+            if (matchingOrgs.Count > 0)
+            {
+                foreach (Organization org in matchingOrgs)
+                {
+                    names.UnionWith(org.names);
+                }
+
+                newOrg.names = names;
+                newOrg.resource = _settings.BaseUri + "organization/" + nextString();
+
+                foreach (string name in names.Select(x => x.Item2).Distinct())
+                {
+                    _organizations[name] = newOrg;
+                }
+
+            }
+            else
+            {
+                newOrg.names = names;
+                newOrg.resource = _settings.BaseUri + "organization/" + nextString();
+
+                // Add a reference to the organization for each language
+                foreach (string name in names.Select(x => x.Item2).Distinct())
+                {
+                    _organizations.Add(name, newOrg);
+                }
+            }
+
+            return newOrg;
         }
 
         /// <summary>
-        /// Get publisher from settings
+        /// Get publisher from _settings
         /// </summary>
         /// <returns>Publisher</returns>
         private Organization getPublisher() {
+            string name = _settings.PublisherName;
             Organization org;
-            string publisherName = settings.PublisherName;
-            if (organizations.ContainsKey(publisherName)) {
-                org = organizations[publisherName];
-            }
-            else {
-                org = new Organization {name = settings.PublisherName, resource = settings.BaseUri + "organization/" + nextString()};
-                organizations.Add(publisherName, org);
+            if (!_organizations.TryGetValue(name, out org))
+            {
+                HashSet<(string, string)> names = new HashSet<(string, string)>();
+                names.Add((null, name));
+                org = new Organization { names = names, resource = _settings.BaseUri + "organization/" + nextString() };
+                _organizations.Add(name, org);
             }
             return org;
         }
@@ -520,8 +560,8 @@ namespace Px.Rdf
             foreach (PxMenuItem menu in path.Skip(1)) {
                 Keyword keyword;
 
-                if (menuLangKeyword.ContainsKey((menu.ID.Selection, lang))) {
-                    keyword = menuLangKeyword[(menu.ID.Selection, lang)];
+                if (_keywords.ContainsKey((menu.ID.Selection, lang))) {
+                    keyword = _keywords[(menu.ID.Selection, lang)];
                 }
                 else {
                     PxMenuItem menuInLang = getMenuInLanguage(menu,lang);
@@ -529,7 +569,7 @@ namespace Px.Rdf
                     string text = menuInLang.Text;
                     keyword = new Keyword {text = text, lang = lang};
                     // Add keyword to dict
-                    menuLangKeyword[(menu.ID.Selection, lang)] = keyword; 
+                    _keywords[(menu.ID.Selection, lang)] = keyword; 
                 }
                 keywords.Add(keyword); 
             }
@@ -558,7 +598,7 @@ namespace Px.Rdf
         /// <returns></returns>
         private string getDatasetUrl(string tableID, string lang)
         {
-            return settings.LandingPageUrl + lang + "/" + settings.DBid + "/" + tableID;
+            return _settings.LandingPageUrl + lang + "/" + _settings.DBid + "/" + tableID;
         }
 
         /// <summary>
@@ -584,7 +624,7 @@ namespace Px.Rdf
         /// <returns></returns>
         private string getDistributionUrl(List<PxMenuItem> path, string tableID, string lang)
         {
-            string url = settings.BaseApiUrl + lang + "/"+ settings.DBid + "/";
+            string url = _settings.BaseApiUrl + lang + "/"+ _settings.DBid + "/";
             foreach (PxMenuItem menu in path.Skip(1))
             {
                 url += menu.ID.Selection + "/";
@@ -614,12 +654,12 @@ namespace Px.Rdf
             List<Distribution> distrs = new List<Distribution>(langs.Count());
             foreach(string lang in langs) {
                 Distribution distr = new Distribution();
-                distr.title = "Data (" + lang + ")";
+                distr.title = "Metadata (" + lang + ")";
                 distr.format = "application/json";
                 distr.accessUrl = getDistributionUrl(path, tableID, lang);
                 distr.language = convertLanguage(lang);
                 distr.license = "http://creativecommons.org/publicdomain/zero/1.0/";
-                distr.resource = settings.BaseUri + "distribution/" + nextString();
+                distr.resource = _settings.BaseUri + "distribution/" + nextString();
 
                 distrs.Add(distr);
             }
@@ -636,13 +676,12 @@ namespace Px.Rdf
 
         private Dataset getDataset(PXMeta meta, List<PxMenuItem> path) {
             Dataset dataset = new Dataset();
-
-            dataset.publisher = getPublisher();
+ 
             dataset.identifier = getIdentifier(meta);
             dataset.modified = getLastModified(meta);
             dataset.updateFrequency = getUpdateFrequency(meta);
 
-            List<string> langs = getLanguages(meta).Intersect(settings.Languages).ToList();
+            List<string> langs = getLanguages(meta).Intersect(_settings.Languages).ToList();
             dataset.languages = langs;
             dataset.languageURIs = convertLanguages(langs);
 
@@ -651,15 +690,29 @@ namespace Px.Rdf
         
             dataset.contactPersons = getContacts(meta);
             dataset.category = getCategory(path);
-            dataset.producer = getProducer(meta);
 
             dataset.keywords = getKeywords(path, langs);
             dataset.distributions = getDistributions(path, dataset.identifier, langs);
 
-            dataset.resource = settings.BaseUri + "dataset/" + nextString();
+            dataset.resource = _settings.BaseUri + "dataset/" + nextString();
             dataset.urls = getDatasetUrls(dataset.identifier, langs);
 
+            dataset.sources = getSources(meta, langs);
+
+            getProducer(meta, langs); // Wait until all organizations are created before assigning producer
+
             return dataset;
+        }
+
+        private List<string> getSources(PXMeta meta, List<string> langs)
+        {
+            List<string> sources = new List<string>();
+            foreach (string lang in langs)
+            {
+                meta.SetLanguage(lang);
+                sources.Add(meta.Source);
+            }
+            return sources.Distinct().ToList();
         }
 
         /// <summary>
@@ -672,12 +725,13 @@ namespace Px.Rdf
             string nodeID = menuItem.ID.Selection;
             string menuID = menuItem.ID.Menu;
             try {
-                return settings.Fetcher.GetBaseItem(nodeID, menuID, lang, settings.DBid) as PxMenuItem;
+                return _settings.Fetcher.GetBaseItem(nodeID, menuID, lang, _settings.DBid) as PxMenuItem;
             }
             catch (PCAxis.Menu.Exceptions.InvalidMenuFromXMLException) {
                 return null;
             }
         }
+
         /// <summary>
         /// Recursively go through all items
         /// </summary>
@@ -713,9 +767,9 @@ namespace Px.Rdf
                 var table = item as TableLink;
                 try
                 {
-                    IPXModelBuilder builder = settings.Fetcher.GetBuilder(table.ID.Selection);
+                    IPXModelBuilder builder = _settings.Fetcher.GetBuilder(table.ID.Selection);
                     builder.ReadAllLanguages = true;
-                    builder.SetPreferredLanguage(settings.MainLanguage);
+                    builder.SetPreferredLanguage(_settings.MainLanguage);
                     builder.BuildForSelection();
                 
                     Dataset dataset = getDataset(builder.Model.Meta, path);
@@ -729,7 +783,7 @@ namespace Px.Rdf
         }
 
         /// <summary>
-        /// Get datasets from a database specified in settings
+        /// Get datasets from a database specified in _settings
         /// </summary>
         /// <param name="n">Maximum number of fetched datasets</param>
         /// <returns>List of datasets</returns>
@@ -737,27 +791,55 @@ namespace Px.Rdf
         {
             var datasets = new List<Dataset>();
             var path = new List<PxMenuItem>();
-            Item baseItem = settings.Fetcher.GetBaseItem("","",settings.MainLanguage,settings.DBid);
+            Item baseItem = _settings.Fetcher.GetBaseItem("","",_settings.MainLanguage,_settings.DBid);
 
             addRecursive(baseItem, path, datasets, n);
+
+            _publisher = getPublisher();
+            foreach (Dataset d in datasets)
+            {
+                d.publisher = _publisher;
+            }
             return datasets;
         }
 
         /// <summary>
-        /// Generate catalog from loaded settings
+        /// Generate catalog from loaded _settings
         /// </summary>
         /// <param name="numberOfTables">Maximum number of datasets to be fetched</param>
         /// <returns>Generated catalog</returns>
         public Catalog GetCatalog(int numberOfTables)
         {
             Catalog c = new Catalog();
-            c.titles = settings.CatalogTitles;
-            c.descriptions = settings.CatalogDescriptions;
-            c.publisher = getPublisher();
-            c.license = settings.License;
+            c.titles = _settings.CatalogTitles;
+            c.descriptions = _settings.CatalogDescriptions;
+            c.license = _settings.License;
             c.datasets = GetDatasets(numberOfTables);
-            c.languages = convertLanguages(settings.Languages);
+            c.languages = convertLanguages(_settings.Languages);
+            setProducers(c.datasets);
+            c.publisher = _publisher;
+            setOrganizationResources();
             return c;
+        }
+
+        private void setProducers(List<Dataset> datasets)
+        {
+            foreach (Dataset d in datasets)
+            {
+                string source = d.sources.First();
+                d.producer = _organizations[source];
+            }
+        }
+
+        private void setOrganizationResources()
+        {
+            foreach (string source in _organizations.Keys)
+            {
+                if (_organizationMapping.ContainsKey(source))
+                {
+                    _organizations[source].resource = _organizationMapping[source];
+                }
+            }
         }
     }
 }
