@@ -20,16 +20,14 @@ jobs:
     - uses: NuGet/setup-nuget@v1
     
     - name: Restore NuGet packages
-      working-directory: ./Source/
       run: nuget restore
       
 
     - name: Build the application
-      working-directory: ./Source/
       run: msbuild /p:Configuration=Release
 
-    - name: Depoly to Nuget
-      working-directory: ./Source/Px.Rdf/
+    - name: Deploy to Nuget
+      working-directory: ./Px.Dcat/
       run: |
            $package = Get-ChildItem -Recurse -Filter *.nupkg
            nuget push $package $env:nuget_api_key -src https://nuget.org
