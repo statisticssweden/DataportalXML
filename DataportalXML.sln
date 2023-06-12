@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32526.322
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Px.Dcat", "Px.Dcat\Px.Dcat.csproj", "{D74054AB-6358-4AFC-8E53-EBFF536289D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApp", "TestApp\TestApp.csproj", "{2B620474-1DDF-46EB-95D8-290BD4F76845}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D74054AB-6358-4AFC-8E53-EBFF536289D0} = {D74054AB-6358-4AFC-8E53-EBFF536289D0}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D74054AB-6358-4AFC-8E53-EBFF536289D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D74054AB-6358-4AFC-8E53-EBFF536289D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D74054AB-6358-4AFC-8E53-EBFF536289D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D74054AB-6358-4AFC-8E53-EBFF536289D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B620474-1DDF-46EB-95D8-290BD4F76845}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B620474-1DDF-46EB-95D8-290BD4F76845}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B620474-1DDF-46EB-95D8-290BD4F76845}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B620474-1DDF-46EB-95D8-290BD4F76845}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A66A1D5D-522F-4866-8911-72ED811C0F6E}
+	EndGlobalSection
+EndGlobal
