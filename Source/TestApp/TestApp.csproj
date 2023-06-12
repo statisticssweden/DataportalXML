@@ -76,7 +76,7 @@
       <HintPath>..\packages\Microsoft.IdentityModel.Tokens.6.27.0\lib\net472\Microsoft.IdentityModel.Tokens.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Oracle.ManagedDataAccess, Version=2.0.19.1, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
       <HintPath>..\packages\Oracle.ManagedDataAccess.Core.2.19.110\lib\netstandard2.0\Oracle.ManagedDataAccess.dll</HintPath>
@@ -229,11 +229,14 @@
     <None Include="SqlDb.config">
       <!--<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>-->
     </None>
+    <None Include="../Px.Dcat/Languages.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Px.Rdf\Px.Rdf.csproj">
+    <ProjectReference Include="..\Px.Rdf\Px.Dcat.csproj">
       <Project>{2c3f7401-9dcd-4563-a7ea-eb98cfe868ef}</Project>
-      <Name>Px.Rdf</Name>
+      <Name>Px.Dcat</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
