@@ -1,0 +1,1592 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <dcat:catalog>
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/SWE" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:Title xml:Language="sv">SCB Tabeller</dcterms:Title>
+    <dcterms:Title xml:Language="en">SCB Tables</dcterms:Title>
+    <dcterms:description xml:Language="sv">SCB - Beskrivning</dcterms:description>
+    <dcterms:description xml:Language="en">SCB - Description</dcterms:description>
+    <dcterms:Publisher rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+    <dcat:Dataset rdf:Resource="https://www.baseURI.se/dataset/2" />
+    <dcat:Dataset rdf:Resource="https://www.baseURI.se/dataset/5" />
+    <dcat:Dataset rdf:Resource="https://www.baseURI.se/dataset/9" />
+    <dcat:Dataset rdf:Resource="https://www.baseURI.se/dataset/12" />
+    <dcat:Dataset rdf:Resource="https://www.baseURI.se/dataset/15" />
+    <dcat:Dataset rdf:Resource="https://www.baseURI.se/dataset/18" />
+    <dcat:Dataset rdf:Resource="https://www.baseURI.se/dataset/21" />
+    <dcat:Dataset rdf:Resource="https://www.baseURI.se/dataset/24" />
+    <dcat:Dataset rdf:Resource="https://www.baseURI.se/dataset/27" />
+    <dcat:Dataset rdf:Resource="https://www.baseURI.se/dataset/30" />
+    <dcat:Dataset rdf:Resource="https://www.baseURI.se/dataset/33" />
+    <dcat:Dataset rdf:Resource="https://www.baseURI.se/dataset/36" />
+    <dcat:Dataset rdf:Resource="https://www.baseURI.se/dataset/39" />
+    <dcat:Dataset rdf:Resource="https://www.baseURI.se/dataset/42" />
+    <dcat:Dataset rdf:Resource="https://www.baseURI.se/dataset/45" />
+    <dcat:Dataset rdf:Resource="https://www.baseURI.se/dataset/49" />
+    <dcat:Dataset rdf:Resource="https://www.baseURI.se/dataset/53" />
+    <dcat:Dataset rdf:Resource="https://www.baseURI.se/dataset/57" />
+    <dcat:Dataset rdf:Resource="https://www.baseURI.se/dataset/60" />
+    <dcat:Dataset rdf:Resource="https://www.baseURI.se/dataset/63" />
+    <dcat:Dataset rdf:Resource="https://www.baseURI.se/dataset/66" />
+    <dcat:Dataset rdf:Resource="https://www.baseURI.se/dataset/69" />
+    <dcat:Dataset rdf:Resource="https://www.baseURI.se/dataset/72" />
+    <dcat:Dataset rdf:Resource="https://www.baseURI.se/dataset/75" />
+    <dcat:Dataset rdf:Resource="https://www.baseURI.se/dataset/78" />
+    <dcat:Dataset rdf:Resource="https://www.baseURI.se/dataset/82" />
+    <dcat:Dataset rdf:Resource="https://www.baseURI.se/dataset/85" />
+    <dcat:Dataset rdf:Resource="https://www.baseURI.se/dataset/89" />
+    <dcat:Dataset rdf:Resource="https://www.baseURI.se/dataset/92" />
+    <dcat:Dataset rdf:Resource="https://www.baseURI.se/dataset/95" />
+    <dcat:Dataset rdf:Resource="https://www.baseURI.se/dataset/98" />
+    <dcat:Dataset rdf:Resource="https://www.baseURI.se/dataset/102" />
+    <dcat:Dataset rdf:Resource="https://www.baseURI.se/dataset/106" />
+    <dcat:Dataset rdf:Resource="https://www.baseURI.se/dataset/110" />
+    <dcat:Dataset rdf:Resource="https://www.baseURI.se/dataset/114" />
+    <dcat:Dataset rdf:Resource="https://www.baseURI.se/dataset/117" />
+    <dcat:Dataset rdf:Resource="https://www.baseURI.se/dataset/120" />
+    <dcat:Dataset rdf:Resource="https://www.baseURI.se/dataset/123" />
+    <dcat:Dataset rdf:Resource="https://www.baseURI.se/dataset/126" />
+    <dcat:Dataset rdf:Resource="https://www.baseURI.se/dataset/129" />
+    <dcat:Dataset rdf:Resource="https://www.baseURI.se/dataset/132" />
+    <dcat:Dataset rdf:Resource="https://www.baseURI.se/dataset/135" />
+    <dcat:Dataset rdf:Resource="https://www.baseURI.se/dataset/138" />
+    <dcat:Dataset rdf:Resource="https://www.baseURI.se/dataset/141" />
+    <dcat:Dataset rdf:Resource="https://www.baseURI.se/dataset/144" />
+    <dcat:Dataset rdf:Resource="https://www.baseURI.se/dataset/147" />
+    <dcat:Dataset rdf:Resource="https://www.baseURI.se/dataset/150" />
+    <dcat:Dataset rdf:Resource="https://www.baseURI.se/dataset/153" />
+    <dcat:Dataset rdf:Resource="https://www.baseURI.se/dataset/156" />
+    <dcat:Dataset rdf:Resource="https://www.baseURI.se/dataset/159" />
+    <dcat:Dataset rdf:Resource="https://www.baseURI.se/dataset/162" />
+    <dcat:Dataset rdf:Resource="https://www.baseURI.se/dataset/165" />
+    <dcat:Dataset rdf:Resource="https://www.baseURI.se/dataset/168" />
+    <dcat:Dataset rdf:Resource="https://www.baseURI.se/dataset/171" />
+    <dcat:Dataset rdf:Resource="https://www.baseURI.se/dataset/174" />
+    <dcat:Dataset rdf:Resource="https://www.baseURI.se/dataset/177" />
+    <dcat:Dataset rdf:Resource="https://www.baseURI.se/dataset/180" />
+    <dcat:Dataset rdf:Resource="https://www.baseURI.se/dataset/183" />
+    <dcat:Dataset rdf:Resource="https://www.baseURI.se/dataset/186" />
+    <dcat:Dataset rdf:Resource="https://www.baseURI.se/dataset/189" />
+    <dcat:Dataset rdf:Resource="https://www.baseURI.se/dataset/192" />
+    <dcat:Dataset rdf:Resource="https://www.baseURI.se/dataset/196" />
+    <dcat:Dataset rdf:Resource="https://www.baseURI.se/dataset/200" />
+    <dcat:Dataset rdf:Resource="https://www.baseURI.se/dataset/204" />
+    <dcat:Dataset rdf:Resource="https://www.baseURI.se/dataset/208" />
+    <dcat:Dataset rdf:Resource="https://www.baseURI.se/dataset/211" />
+  </dcat:catalog>
+  <dcat:Dataset rdf:about="https://www.baseURI.se/dataset/2">
+    <dcterms:Title xml:Language="en">Consumer Price Index (CPI) (by COICOP), 1980=100 by Product group andperiod</dcterms:Title>
+    <dcterms:description xml:Language="en">Index numbers for main and subgroups have in some cases been adjusted to take into account certain inadequacies in the basic data on prices or in the methods used for calculating the originally published index numbers. They are consistent with shadow index numbers for total CPI. Product classification follows COICOP (Classification of Individual Consumption by Purpose).</dcterms:description>
+    <dcterms:Publisher rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcterms:creator rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/1" />
+    <dcterms:Modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2006-06-11T14:31:00</dcterms:Modified>
+    <dcterms:Identifier>PR0101B3.px</dcterms:Identifier>
+    <dcat:keyword xml:Language="en">AggregallowedNo</dcat:keyword>
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\PR0101B3.px" />
+    <dcterms:accrualPeriodicity rdf:Resource="http://publications.europa.eu/Resource/authority/frequency/MONTHLY" />
+    <dcterms:accessRights rdf:Resource="http://publications.europa.eu/Resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="https://www.baseURI.se/dataset/5">
+    <dcterms:Title xml:Language="en">Live births by region, maternal age, year and gender</dcterms:Title>
+    <dcterms:description xml:Language="en">-</dcterms:description>
+    <dcterms:Publisher rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcterms:creator rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/4" />
+    <dcterms:Modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2004-02-12T16:33:00</dcterms:Modified>
+    <dcterms:Identifier>BE0101D1.px</dcterms:Identifier>
+    <dcat:keyword xml:Language="en">aggregations</dcat:keyword>
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\BE0101D1.px" />
+    <dcterms:accrualPeriodicity rdf:Resource="http://publications.europa.eu/Resource/authority/frequency/ANNUAL" />
+    <dcterms:accessRights rdf:Resource="http://publications.europa.eu/Resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="https://www.baseURI.se/dataset/9">
+    <dcterms:Title xml:Language="en">Migration by region, age, period, type and sex</dcterms:Title>
+    <dcterms:description xml:Language="en">-</dcterms:description>
+    <dcterms:Title xml:Language="sv">Flyttningar efter region, ålder, tid, typ och kön</dcterms:Title>
+    <dcterms:description xml:Language="sv">-</dcterms:description>
+    <dcterms:Publisher rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcterms:creator rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/7" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/8" />
+    <dcterms:Modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2004-02-12T16:28:00</dcterms:Modified>
+    <dcterms:Identifier>BE0101F1langensvfiolikacelln.px</dcterms:Identifier>
+    <dcat:keyword xml:Language="en">AttributesCellnotes</dcat:keyword>
+    <dcat:keyword xml:Language="sv">AttributesCellnotes</dcat:keyword>
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/SWE" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\BE0101F1langensvfiolikacelln.px" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\BE0101F1langensvfiolikacelln.px" />
+    <dcterms:accrualPeriodicity rdf:Resource="http://publications.europa.eu/Resource/authority/frequency/ANNUAL" />
+    <dcterms:accessRights rdf:Resource="http://publications.europa.eu/Resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="https://www.baseURI.se/dataset/12">
+    <dcterms:Title xml:Language="en">Population by region, period and sex</dcterms:Title>
+    <dcterms:description xml:Language="en">The tables show the conditions on December 31st for each respective year according to administrative subdivisions of January 1st of the following year</dcterms:description>
+    <dcterms:Publisher rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcterms:creator rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/11" />
+    <dcterms:Modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-02-13T07:19:00</dcterms:Modified>
+    <dcterms:Identifier>BE0101N1.px</dcterms:Identifier>
+    <dcat:keyword xml:Language="en">Autopen</dcat:keyword>
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\BE0101N1.px" />
+    <dcterms:accrualPeriodicity rdf:Resource="http://publications.europa.eu/Resource/authority/frequency/ANNUAL" />
+    <dcterms:accessRights rdf:Resource="http://publications.europa.eu/Resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="https://www.baseURI.se/dataset/15">
+    <dcterms:Title xml:Language="en">Population by region, period and sex</dcterms:Title>
+    <dcterms:description xml:Language="en">The tables show the conditions on December 31st for each respective year according to administrative subdivisions of January 1st of the following year</dcterms:description>
+    <dcterms:Publisher rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcterms:creator rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/14" />
+    <dcterms:Modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-02-13T07:19:00</dcterms:Modified>
+    <dcterms:Identifier>BE0101N1autopen.px</dcterms:Identifier>
+    <dcat:keyword xml:Language="en">Autopen</dcat:keyword>
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\BE0101N1autopen.px" />
+    <dcterms:accrualPeriodicity rdf:Resource="http://publications.europa.eu/Resource/authority/frequency/ANNUAL" />
+    <dcterms:accessRights rdf:Resource="http://publications.europa.eu/Resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="https://www.baseURI.se/dataset/18">
+    <dcterms:Title xml:Language="en">Population by region, period and sex</dcterms:Title>
+    <dcterms:description xml:Language="en">The tables show the conditions on December 31st for each respective year according to administrative subdivisions of January 1st of the following year</dcterms:description>
+    <dcterms:Publisher rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcterms:creator rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/17" />
+    <dcterms:Modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-02-13T07:19:00</dcterms:Modified>
+    <dcterms:Identifier>BE0101N1descdefault.px</dcterms:Identifier>
+    <dcat:keyword xml:Language="en">Descriptiondefault</dcat:keyword>
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\BE0101N1descdefault.px" />
+    <dcterms:accrualPeriodicity rdf:Resource="http://publications.europa.eu/Resource/authority/frequency/ANNUAL" />
+    <dcterms:accessRights rdf:Resource="http://publications.europa.eu/Resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="https://www.baseURI.se/dataset/21">
+    <dcterms:Title xml:Language="en">Population by region, period and sex</dcterms:Title>
+    <dcterms:description xml:Language="en">The tables show the conditions on December 31st for each respective year according to administrative subdivisions of January 1st of the following year</dcterms:description>
+    <dcterms:Publisher rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcterms:creator rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/20" />
+    <dcterms:Modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-02-13T07:19:00</dcterms:Modified>
+    <dcterms:Identifier>BE0101N1descnotdefault.px</dcterms:Identifier>
+    <dcat:keyword xml:Language="en">Descriptiondefault</dcat:keyword>
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\BE0101N1descnotdefault.px" />
+    <dcterms:accrualPeriodicity rdf:Resource="http://publications.europa.eu/Resource/authority/frequency/ANNUAL" />
+    <dcterms:accessRights rdf:Resource="http://publications.europa.eu/Resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="https://www.baseURI.se/dataset/24">
+    <dcterms:Title xml:Language="en">Population by region, period and sex</dcterms:Title>
+    <dcterms:description xml:Language="en">The tables show the conditions on December 31st for each respective year according to administrative subdivisions of January 1st of the following year</dcterms:description>
+    <dcterms:Publisher rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcterms:creator rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/23" />
+    <dcterms:Modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-02-13T07:19:00</dcterms:Modified>
+    <dcterms:Identifier>BE0101N1doublecol.px</dcterms:Identifier>
+    <dcat:keyword xml:Language="en">Doublecolumn</dcat:keyword>
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\BE0101N1doublecol.px" />
+    <dcterms:accrualPeriodicity rdf:Resource="http://publications.europa.eu/Resource/authority/frequency/ANNUAL" />
+    <dcterms:accessRights rdf:Resource="http://publications.europa.eu/Resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="https://www.baseURI.se/dataset/27">
+    <dcterms:Title xml:Language="en">Volume of imports of goods, base year 2000=100, index by Commoditygroup SITC and period</dcterms:Title>
+    <dcterms:description xml:Language="en">-</dcterms:description>
+    <dcterms:Publisher rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcterms:creator rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/26" />
+    <dcterms:Modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-06-04T09:58:00</dcterms:Modified>
+    <dcterms:Identifier>HA0201E8doublecol.px</dcterms:Identifier>
+    <dcat:keyword xml:Language="en">Doublecolumn</dcat:keyword>
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\HA0201E8doublecol.px" />
+    <dcterms:accrualPeriodicity rdf:Resource="http://publications.europa.eu/Resource/authority/frequency/QUARTERLY" />
+    <dcterms:accessRights rdf:Resource="http://publications.europa.eu/Resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="https://www.baseURI.se/dataset/30">
+    <dcterms:Title xml:Language="en">Imports of goods from country of consignement. Not adjusted for nonresponse, SEK thousand by trading partner, Commodity group SITC andperiod</dcterms:Title>
+    <dcterms:description xml:Language="en">-</dcterms:description>
+    <dcterms:Publisher rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcterms:creator rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/29" />
+    <dcterms:Modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-06-23T16:20:00</dcterms:Modified>
+    <dcterms:Identifier>HA0201V6doublecol.px</dcterms:Identifier>
+    <dcat:keyword xml:Language="en">Doublecolumn</dcat:keyword>
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\HA0201V6doublecol.px" />
+    <dcterms:accrualPeriodicity rdf:Resource="http://publications.europa.eu/Resource/authority/frequency/MONTHLY" />
+    <dcterms:accessRights rdf:Resource="http://publications.europa.eu/Resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="https://www.baseURI.se/dataset/33">
+    <dcterms:Title xml:Language="en">Migration by region, age, period, type and sex</dcterms:Title>
+    <dcterms:description xml:Language="en">Mandatory table note</dcterms:description>
+    <dcterms:Publisher rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcterms:creator rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/32" />
+    <dcterms:Modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2004-02-12T16:28:00</dcterms:Modified>
+    <dcterms:Identifier>BE0101F1errorTimeval.px</dcterms:Identifier>
+    <dcat:keyword xml:Language="en">error</dcat:keyword>
+    <dcat:keyword xml:Language="en">continue</dcat:keyword>
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\BE0101F1errorTimeval.px" />
+    <dcterms:accrualPeriodicity rdf:Resource="http://publications.europa.eu/Resource/authority/frequency/ANNUAL" />
+    <dcterms:accessRights rdf:Resource="http://publications.europa.eu/Resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="https://www.baseURI.se/dataset/36">
+    <dcterms:Title xml:Language="en">Migration by region, age, period, type and sex</dcterms:Title>
+    <dcterms:description xml:Language="en">Mandatory table note</dcterms:description>
+    <dcterms:Publisher rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcterms:creator rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/35" />
+    <dcterms:Modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2004-02-12T16:28:00</dcterms:Modified>
+    <dcterms:Identifier>templateavBE0101F1error.px</dcterms:Identifier>
+    <dcat:keyword xml:Language="en">error</dcat:keyword>
+    <dcat:keyword xml:Language="en">continue</dcat:keyword>
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\templateavBE0101F1error.px" />
+    <dcterms:accrualPeriodicity rdf:Resource="http://publications.europa.eu/Resource/authority/frequency/ANNUAL" />
+    <dcterms:accessRights rdf:Resource="http://publications.europa.eu/Resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="https://www.baseURI.se/dataset/39">
+    <dcterms:Title xml:Language="en">Migration by region, age, period, type and sex</dcterms:Title>
+    <dcterms:description xml:Language="en">Mandatory table note</dcterms:description>
+    <dcterms:Publisher rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcterms:creator rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/38" />
+    <dcterms:Modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2004-02-12T16:28:00</dcterms:Modified>
+    <dcterms:Identifier>BE0101F1errormissingValues.px</dcterms:Identifier>
+    <dcat:keyword xml:Language="en">error</dcat:keyword>
+    <dcat:keyword xml:Language="en">fatal</dcat:keyword>
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\BE0101F1errormissingValues.px" />
+    <dcterms:accrualPeriodicity rdf:Resource="http://publications.europa.eu/Resource/authority/frequency/ANNUAL" />
+    <dcterms:accessRights rdf:Resource="http://publications.europa.eu/Resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="https://www.baseURI.se/dataset/42">
+    <dcterms:Title xml:Language="en">Migration PxcMetaTitleBy region, age, period, type PxcMetaTitleAnd sex</dcterms:Title>
+    <dcterms:description xml:Language="en">Mandatory table note</dcterms:description>
+    <dcterms:Publisher rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcterms:creator rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/41" />
+    <dcterms:Modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2004-02-12T16:28:00</dcterms:Modified>
+    <dcterms:Identifier>BE0101F1missingTitle.px</dcterms:Identifier>
+    <dcat:keyword xml:Language="en">error</dcat:keyword>
+    <dcat:keyword xml:Language="en">fatal</dcat:keyword>
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\BE0101F1missingTitle.px" />
+    <dcterms:accrualPeriodicity rdf:Resource="http://publications.europa.eu/Resource/authority/frequency/ANNUAL" />
+    <dcterms:accessRights rdf:Resource="http://publications.europa.eu/Resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="https://www.baseURI.se/dataset/45">
+    <dcterms:Title xml:Language="en">Migration by region, age, period, type and sex</dcterms:Title>
+    <dcterms:description xml:Language="en">Mandatory table note</dcterms:description>
+    <dcterms:Publisher rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcterms:creator rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/44" />
+    <dcterms:Modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2004-02-12T16:28:00</dcterms:Modified>
+    <dcterms:Identifier>templateavBE0101F1error.px</dcterms:Identifier>
+    <dcat:keyword xml:Language="en">error</dcat:keyword>
+    <dcat:keyword xml:Language="en">fatal</dcat:keyword>
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\templateavBE0101F1error.px" />
+    <dcterms:accrualPeriodicity rdf:Resource="http://publications.europa.eu/Resource/authority/frequency/ANNUAL" />
+    <dcterms:accessRights rdf:Resource="http://publications.europa.eu/Resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="https://www.baseURI.se/dataset/49">
+    <dcterms:Title xml:Language="en">Migration by region, age, period, type and sex</dcterms:Title>
+    <dcterms:description xml:Language="en">-</dcterms:description>
+    <dcterms:Title xml:Language="sv">Flyttningar efter region, ålder, tid, typ och kön</dcterms:Title>
+    <dcterms:description xml:Language="sv">-</dcterms:description>
+    <dcterms:Publisher rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcterms:creator rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/47" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/48" />
+    <dcterms:Modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2004-02-12T16:28:00</dcterms:Modified>
+    <dcterms:Identifier>BE0101F1ensvcontvarerror.px</dcterms:Identifier>
+    <dcat:keyword xml:Language="en">error</dcat:keyword>
+    <dcat:keyword xml:Language="en">multilang</dcat:keyword>
+    <dcat:keyword xml:Language="sv">error</dcat:keyword>
+    <dcat:keyword xml:Language="sv">multilang</dcat:keyword>
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/SWE" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\BE0101F1ensvcontvarerror.px" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\BE0101F1ensvcontvarerror.px" />
+    <dcterms:accrualPeriodicity rdf:Resource="http://publications.europa.eu/Resource/authority/frequency/ANNUAL" />
+    <dcterms:accessRights rdf:Resource="http://publications.europa.eu/Resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="https://www.baseURI.se/dataset/53">
+    <dcterms:Title xml:Language="en">Migration by region, age, period, type and sex</dcterms:Title>
+    <dcterms:description xml:Language="en">-</dcterms:description>
+    <dcterms:Title xml:Language="sv">Flyttningar efter region, ålder, tid, typ och kön</dcterms:Title>
+    <dcterms:description xml:Language="sv">-</dcterms:description>
+    <dcterms:Publisher rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcterms:creator rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/51" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/52" />
+    <dcterms:Modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2004-02-12T16:28:00</dcterms:Modified>
+    <dcterms:Identifier>BE0101F1ensvdescdefaulterror.px</dcterms:Identifier>
+    <dcat:keyword xml:Language="en">error</dcat:keyword>
+    <dcat:keyword xml:Language="en">multilang</dcat:keyword>
+    <dcat:keyword xml:Language="sv">error</dcat:keyword>
+    <dcat:keyword xml:Language="sv">multilang</dcat:keyword>
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/SWE" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\BE0101F1ensvdescdefaulterror.px" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\BE0101F1ensvdescdefaulterror.px" />
+    <dcterms:accrualPeriodicity rdf:Resource="http://publications.europa.eu/Resource/authority/frequency/ANNUAL" />
+    <dcterms:accessRights rdf:Resource="http://publications.europa.eu/Resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="https://www.baseURI.se/dataset/57">
+    <dcterms:Title xml:Language="en">Migration by region, age, period, type and sex</dcterms:Title>
+    <dcterms:description xml:Language="en">-</dcterms:description>
+    <dcterms:Title xml:Language="sv">Flyttningar efter region, ålder, tid, typ och kön</dcterms:Title>
+    <dcterms:description xml:Language="sv">-</dcterms:description>
+    <dcterms:Publisher rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcterms:creator rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/55" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/56" />
+    <dcterms:Modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2004-02-12T16:28:00</dcterms:Modified>
+    <dcterms:Identifier>BE0101F1langensvfiolikacelln2error.px</dcterms:Identifier>
+    <dcat:keyword xml:Language="en">error</dcat:keyword>
+    <dcat:keyword xml:Language="en">multilang</dcat:keyword>
+    <dcat:keyword xml:Language="sv">error</dcat:keyword>
+    <dcat:keyword xml:Language="sv">multilang</dcat:keyword>
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/SWE" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\BE0101F1langensvfiolikacelln2error.px" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\BE0101F1langensvfiolikacelln2error.px" />
+    <dcterms:accrualPeriodicity rdf:Resource="http://publications.europa.eu/Resource/authority/frequency/ANNUAL" />
+    <dcterms:accessRights rdf:Resource="http://publications.europa.eu/Resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="https://www.baseURI.se/dataset/60">
+    <dcterms:Title xml:Language="en">Population by age, region, marital status, period and sex</dcterms:Title>
+    <dcterms:description xml:Language="en">The tables show the conditions on December 31st for each respective year according to administrative subdivisions of January 1st of the following year</dcterms:description>
+    <dcterms:Publisher rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcterms:creator rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/59" />
+    <dcterms:Modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2006-02-09T15:20:00</dcterms:Modified>
+    <dcterms:Identifier>BE0101A1det.px</dcterms:Identifier>
+    <dcat:keyword xml:Language="en">Hierarchies</dcat:keyword>
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\BE0101A1det.px" />
+    <dcterms:accrualPeriodicity rdf:Resource="http://publications.europa.eu/Resource/authority/frequency/ANNUAL" />
+    <dcterms:accessRights rdf:Resource="http://publications.europa.eu/Resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="https://www.baseURI.se/dataset/63">
+    <dcterms:Title xml:Language="en">Population by region, marital status, sex and period</dcterms:Title>
+    <dcterms:description xml:Language="en">The tables show the conditions on December 31st for each respective year according to administrative subdivisions of January 1st of the following year</dcterms:description>
+    <dcterms:Publisher rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcterms:creator rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/62" />
+    <dcterms:Modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2005-02-08T17:19:00</dcterms:Modified>
+    <dcterms:Identifier>BE0101A1hier.px</dcterms:Identifier>
+    <dcat:keyword xml:Language="en">Hierarchies</dcat:keyword>
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\BE0101A1hier.px" />
+    <dcterms:accrualPeriodicity rdf:Resource="http://publications.europa.eu/Resource/authority/frequency/ANNUAL" />
+    <dcterms:accessRights rdf:Resource="http://publications.europa.eu/Resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="https://www.baseURI.se/dataset/66">
+    <dcterms:Title xml:Language="en">Population by sex, region, period and marital status</dcterms:Title>
+    <dcterms:description xml:Language="en">The tables show the conditions on December 31st for each respective year according to administrative subdivisions of January 1st of the following year</dcterms:description>
+    <dcterms:Publisher rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcterms:creator rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/65" />
+    <dcterms:Modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2005-02-08T17:19:00</dcterms:Modified>
+    <dcterms:Identifier>BE0101A1hierpiv.px</dcterms:Identifier>
+    <dcat:keyword xml:Language="en">Hierarchies</dcat:keyword>
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\BE0101A1hierpiv.px" />
+    <dcterms:accrualPeriodicity rdf:Resource="http://publications.europa.eu/Resource/authority/frequency/ANNUAL" />
+    <dcterms:accessRights rdf:Resource="http://publications.europa.eu/Resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="https://www.baseURI.se/dataset/69">
+    <dcterms:Title xml:Language="en">Population by age, region, marital status, period and sex</dcterms:Title>
+    <dcterms:description xml:Language="en">The tables show the conditions on December 31st for each respective year according to administrative subdivisions of January 1st of the following year</dcterms:description>
+    <dcterms:Publisher rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcterms:creator rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/68" />
+    <dcterms:Modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2006-02-09T15:20:00</dcterms:Modified>
+    <dcterms:Identifier>BE0101A1hierreg.px</dcterms:Identifier>
+    <dcat:keyword xml:Language="en">Hierarchies</dcat:keyword>
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\BE0101A1hierreg.px" />
+    <dcterms:accrualPeriodicity rdf:Resource="http://publications.europa.eu/Resource/authority/frequency/ANNUAL" />
+    <dcterms:accessRights rdf:Resource="http://publications.europa.eu/Resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="https://www.baseURI.se/dataset/72">
+    <dcterms:Title xml:Language="en">Population by region, marital status, period, sex and age</dcterms:Title>
+    <dcterms:description xml:Language="en">The tables show the conditions on December 31st for each respective year according to administrative subdivisions of January 1st of the following year</dcterms:description>
+    <dcterms:Publisher rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcterms:creator rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/71" />
+    <dcterms:Modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2006-02-09T15:20:00</dcterms:Modified>
+    <dcterms:Identifier>BE0101A1hierreg2.px</dcterms:Identifier>
+    <dcat:keyword xml:Language="en">Hierarchies</dcat:keyword>
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\BE0101A1hierreg2.px" />
+    <dcterms:accrualPeriodicity rdf:Resource="http://publications.europa.eu/Resource/authority/frequency/ANNUAL" />
+    <dcterms:accessRights rdf:Resource="http://publications.europa.eu/Resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="https://www.baseURI.se/dataset/75">
+    <dcterms:Title xml:Language="en">Macroeconomic overview by Indicator, Country and Year</dcterms:Title>
+    <dcterms:description xml:Language="en">-</dcterms:description>
+    <dcterms:Publisher rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcterms:creator rdf:Resource="https://www.baseURI.se/organization/76" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/74" />
+    <dcterms:Modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2006-03-02T02:01:00</dcterms:Modified>
+    <dcterms:Identifier>GeneveEUhierarch.px</dcterms:Identifier>
+    <dcat:keyword xml:Language="en">Hierarchies</dcat:keyword>
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\GeneveEUhierarch.px" />
+    <dcterms:accessRights rdf:Resource="http://publications.europa.eu/Resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="https://www.baseURI.se/dataset/78">
+    <dcterms:Title xml:Language="en">Consumer Price Index (CPI) (by COICOP), 1980=100 by Product group andperiod</dcterms:Title>
+    <dcterms:description xml:Language="en">Index numbers for main and subgroups have in some cases been adjusted to take into account certain inadequacies in the basic data on prices or in the methods used for calculating the originally published index numbers. They are consistent with shadow index numbers for total CPI. Product classification follows COICOP (Classification of Individual Consumption by Purpose).</dcterms:description>
+    <dcterms:Publisher rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcterms:creator rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/77" />
+    <dcterms:Modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2006-07-07T08:37:00</dcterms:Modified>
+    <dcterms:Identifier>PR0101B3hier.px</dcterms:Identifier>
+    <dcat:keyword xml:Language="en">Hierarchies</dcat:keyword>
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\PR0101B3hier.px" />
+    <dcterms:accrualPeriodicity rdf:Resource="http://publications.europa.eu/Resource/authority/frequency/MONTHLY" />
+    <dcterms:accessRights rdf:Resource="http://publications.europa.eu/Resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="https://www.baseURI.se/dataset/82">
+    <dcterms:Title xml:Language="en">Consumer Price Index (CPI) (by COICOP), 1980=100 by Product group andperiod</dcterms:Title>
+    <dcterms:description xml:Language="en">Index numbers for main and subgroups have in some cases been adjusted to take into account certain inadequacies in the basic data on prices or in the methods used for calculating the originally published index numbers. They are consistent with shadow index numbers for total CPI. Product classification follows COICOP (Classification of Individual Consumption by Purpose).</dcterms:description>
+    <dcterms:Title xml:Language="sv">Konsumentprisindex (KPI) (enligt COICOP), 1980=100 eftervaru-/tjänstegrupp och tid.</dcterms:Title>
+    <dcterms:description xml:Language="sv">Indextal för huvud- och undergrupper är i en del fall baserade på index för varor och tjänster som är justerade med avseende på brister i det prisunderlag eller de beräkningsmetoder som låg till grund för beräkning av de ursprungligen redovisade indextalen. De är därmed konsistenta med skuggindextalen för KPI totalt.Produktindelning enligt COICOP (Classification of Individual Consumption by Purpose).
+Indextal för huvud- och undergrupper är i en del fall justerade med avseende på brister i det prisunderlag eller de beräkningsmetoder som legat till grund för de ursprungligen redovisade indextalen. De är därmed konsistenta med skuggindextalen för KPI totalt.Redovisning enligt denna äldre produktindelning upphör efter år 2000.</dcterms:description>
+    <dcterms:Publisher rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcterms:creator rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/80" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/81" />
+    <dcterms:Modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2006-07-07T08:37:00</dcterms:Modified>
+    <dcterms:Identifier>PR0101B3hier2lang.px</dcterms:Identifier>
+    <dcat:keyword xml:Language="en">Hierarchies</dcat:keyword>
+    <dcat:keyword xml:Language="sv">Hierarchies</dcat:keyword>
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/SWE" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\PR0101B3hier2lang.px" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\PR0101B3hier2lang.px" />
+    <dcterms:accrualPeriodicity rdf:Resource="http://publications.europa.eu/Resource/authority/frequency/MONTHLY" />
+    <dcterms:accessRights rdf:Resource="http://publications.europa.eu/Resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="https://www.baseURI.se/dataset/85">
+    <dcterms:Title xml:Language="en">Migration by region, age, period, type and sex</dcterms:Title>
+    <dcterms:description xml:Language="en">Mandatory English note</dcterms:description>
+    <dcterms:Publisher rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcterms:creator rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/84" />
+    <dcterms:Modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2004-02-12T16:28:00</dcterms:Modified>
+    <dcterms:Identifier>BE0101F1symbnotkeys.px</dcterms:Identifier>
+    <dcat:keyword xml:Language="en">keys</dcat:keyword>
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\BE0101F1symbnotkeys.px" />
+    <dcterms:accrualPeriodicity rdf:Resource="http://publications.europa.eu/Resource/authority/frequency/ANNUAL" />
+    <dcterms:accessRights rdf:Resource="http://publications.europa.eu/Resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="https://www.baseURI.se/dataset/89">
+    <dcterms:Title xml:Language="en">Migration by region, age, period, type and sex</dcterms:Title>
+    <dcterms:description xml:Language="en">-</dcterms:description>
+    <dcterms:Title xml:Language="sv">Flyttningar efter region, ålder, tid, typ och kön</dcterms:Title>
+    <dcterms:description xml:Language="sv">-</dcterms:description>
+    <dcterms:Publisher rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcterms:creator rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/87" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/88" />
+    <dcterms:Modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2004-02-12T16:28:00</dcterms:Modified>
+    <dcterms:Identifier>officialstatistics.px</dcterms:Identifier>
+    <dcat:keyword xml:Language="en">Misc</dcat:keyword>
+    <dcat:keyword xml:Language="en">OfficialStatistics</dcat:keyword>
+    <dcat:keyword xml:Language="sv">Misc</dcat:keyword>
+    <dcat:keyword xml:Language="sv">OfficialStatistics</dcat:keyword>
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/SWE" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\officialstatistics.px" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\officialstatistics.px" />
+    <dcterms:accrualPeriodicity rdf:Resource="http://publications.europa.eu/Resource/authority/frequency/ANNUAL" />
+    <dcterms:accessRights rdf:Resource="http://publications.europa.eu/Resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="https://www.baseURI.se/dataset/92">
+    <dcterms:Title xml:Language="en">Imports of goods from country of consignement. Not adjusted for nonresponse, SEK thousand by trading partner, Commodity group SITC andperiod</dcterms:Title>
+    <dcterms:description xml:Language="en">-</dcterms:description>
+    <dcterms:Publisher rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcterms:creator rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/91" />
+    <dcterms:Modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-06-23T16:20:00</dcterms:Modified>
+    <dcterms:Identifier>HA0201V6.px</dcterms:Identifier>
+    <dcat:keyword xml:Language="en">Month</dcat:keyword>
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\HA0201V6.px" />
+    <dcterms:accrualPeriodicity rdf:Resource="http://publications.europa.eu/Resource/authority/frequency/MONTHLY" />
+    <dcterms:accessRights rdf:Resource="http://publications.europa.eu/Resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="https://www.baseURI.se/dataset/95">
+    <dcterms:Title xml:Language="en">Consumer Price Index (CPI) (by COICOP), 1980=100 by Product group andperiod</dcterms:Title>
+    <dcterms:description xml:Language="en">Revised figures January-July 2008 for main group Clothing and footwear and sugruop Footwear. Index numbers for main and subgroups have in some cases been adjusted to take into account certain inadequacies in the basic data on prices or in the methods used for calculating the originally published index numbers. They are consistent with shadow index numbers for total CPI. Product classification follows COICOP (Classification of Individual Consumption by Purpose).</dcterms:description>
+    <dcterms:Publisher rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcterms:creator rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/94" />
+    <dcterms:Modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-07-08T12:44:00</dcterms:Modified>
+    <dcterms:Identifier>PR0101B3.px</dcterms:Identifier>
+    <dcat:keyword xml:Language="en">Month</dcat:keyword>
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\PR0101B3.px" />
+    <dcterms:accrualPeriodicity rdf:Resource="http://publications.europa.eu/Resource/authority/frequency/MONTHLY" />
+    <dcterms:accessRights rdf:Resource="http://publications.europa.eu/Resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="https://www.baseURI.se/dataset/98">
+    <dcterms:Title xml:Language="en">Harmonized Index of Consumer Prices, 2005=100, Index by period</dcterms:Title>
+    <dcterms:description xml:Language="en">Annual changes revised for March 2006. The HICP for Sweden is published with two decimals from January 2006. HICP for January 2006 and on will be published with a new reference year 2005=100. The previously published HICP numbers will then be rescaled to the same reference year 2005=100. The HICP is an index for international comparisons of inflation that has been developed within the EU. The HICP exists for all countries within the EU and also for Iceland and Norway.The coverage of HICP differs from CPI to some extent. In the HICP costs for owner-occupied housing are mainly excluded. The HICP, but not the CPI, includes care for the elderly and patient fees at hospitals (since January 2001) and funds and securities management (since January 2002). Revised figures January-July 2008. Revised Monthly change for Mars, April and July 2008. Revised annual change for Mars an May-July 2008.</dcterms:description>
+    <dcterms:Publisher rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcterms:creator rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/97" />
+    <dcterms:Modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-07-08T12:44:00</dcterms:Modified>
+    <dcterms:Identifier>PR0101D8.px</dcterms:Identifier>
+    <dcat:keyword xml:Language="en">Month</dcat:keyword>
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\PR0101D8.px" />
+    <dcterms:accrualPeriodicity rdf:Resource="http://publications.europa.eu/Resource/authority/frequency/MONTHLY" />
+    <dcterms:accessRights rdf:Resource="http://publications.europa.eu/Resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="https://www.baseURI.se/dataset/102">
+    <dcterms:Title xml:Language="en">Migration by region, age, period, type and sex</dcterms:Title>
+    <dcterms:description xml:Language="en">-</dcterms:description>
+    <dcterms:Title xml:Language="sv">Flyttningar efter region, ålder, tid, typ och kön</dcterms:Title>
+    <dcterms:description xml:Language="sv">-</dcterms:description>
+    <dcterms:Publisher rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcterms:creator rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/100" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/101" />
+    <dcterms:Modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2004-02-12T16:28:00</dcterms:Modified>
+    <dcterms:Identifier>BE0101F1ensvdescdefault.px</dcterms:Identifier>
+    <dcat:keyword xml:Language="en">multilanguage</dcat:keyword>
+    <dcat:keyword xml:Language="sv">multilanguage</dcat:keyword>
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/SWE" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\BE0101F1ensvdescdefault.px" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\BE0101F1ensvdescdefault.px" />
+    <dcterms:accrualPeriodicity rdf:Resource="http://publications.europa.eu/Resource/authority/frequency/ANNUAL" />
+    <dcterms:accessRights rdf:Resource="http://publications.europa.eu/Resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="https://www.baseURI.se/dataset/106">
+    <dcterms:Title xml:Language="en">Migration by region, age, period, type and sex</dcterms:Title>
+    <dcterms:description xml:Language="en">-</dcterms:description>
+    <dcterms:Title xml:Language="sv">Flyttningar efter region, ålder, tid, typ och kön</dcterms:Title>
+    <dcterms:description xml:Language="sv">-</dcterms:description>
+    <dcterms:Publisher rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcterms:creator rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/104" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/105" />
+    <dcterms:Modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2004-02-12T16:28:00</dcterms:Modified>
+    <dcterms:Identifier>BE0101F1langensvfiolikacelln.px</dcterms:Identifier>
+    <dcat:keyword xml:Language="en">multilanguage</dcat:keyword>
+    <dcat:keyword xml:Language="sv">multilanguage</dcat:keyword>
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/SWE" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\BE0101F1langensvfiolikacelln.px" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\BE0101F1langensvfiolikacelln.px" />
+    <dcterms:accrualPeriodicity rdf:Resource="http://publications.europa.eu/Resource/authority/frequency/ANNUAL" />
+    <dcterms:accessRights rdf:Resource="http://publications.europa.eu/Resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="https://www.baseURI.se/dataset/110">
+    <dcterms:Title xml:Language="en">Migration by region, age, period, type and sex</dcterms:Title>
+    <dcterms:description xml:Language="en">-</dcterms:description>
+    <dcterms:Title xml:Language="sv">Flyttningar efter region, ålder, tid, typ och kön</dcterms:Title>
+    <dcterms:description xml:Language="sv">-</dcterms:description>
+    <dcterms:Publisher rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcterms:creator rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/108" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/109" />
+    <dcterms:Modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2004-02-12T16:28:00</dcterms:Modified>
+    <dcterms:Identifier>BE0101F1langensvfiolikacelln2.px</dcterms:Identifier>
+    <dcat:keyword xml:Language="en">multilanguage</dcat:keyword>
+    <dcat:keyword xml:Language="sv">multilanguage</dcat:keyword>
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/SWE" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\BE0101F1langensvfiolikacelln2.px" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\BE0101F1langensvfiolikacelln2.px" />
+    <dcterms:accrualPeriodicity rdf:Resource="http://publications.europa.eu/Resource/authority/frequency/ANNUAL" />
+    <dcterms:accessRights rdf:Resource="http://publications.europa.eu/Resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="https://www.baseURI.se/dataset/114">
+    <dcterms:Title xml:Language="en">Migration by region, age, period, type and sex</dcterms:Title>
+    <dcterms:description xml:Language="en">-</dcterms:description>
+    <dcterms:Title xml:Language="sv">Flyttningar efter region, ålder, tid, typ och kön</dcterms:Title>
+    <dcterms:description xml:Language="sv">-</dcterms:description>
+    <dcterms:Publisher rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcterms:creator rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/112" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/113" />
+    <dcterms:Modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2004-02-12T16:28:00</dcterms:Modified>
+    <dcterms:Identifier>BE0101F1langensvolikacelln.px</dcterms:Identifier>
+    <dcat:keyword xml:Language="en">multilanguage</dcat:keyword>
+    <dcat:keyword xml:Language="sv">multilanguage</dcat:keyword>
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/SWE" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\BE0101F1langensvolikacelln.px" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\BE0101F1langensvolikacelln.px" />
+    <dcterms:accrualPeriodicity rdf:Resource="http://publications.europa.eu/Resource/authority/frequency/ANNUAL" />
+    <dcterms:accessRights rdf:Resource="http://publications.europa.eu/Resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="https://www.baseURI.se/dataset/117">
+    <dcterms:Title xml:Language="en">Contentstext by var1stub, var2stub, var3head, var4head and var5head</dcterms:Title>
+    <dcterms:description xml:Language="en">Mandatory table note</dcterms:description>
+    <dcterms:Publisher rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcterms:creator rdf:Resource="https://www.baseURI.se/organization/121" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/116" />
+    <dcterms:Modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2004-02-12T16:28:00</dcterms:Modified>
+    <dcterms:Identifier>BE0101F1allKeywords.px</dcterms:Identifier>
+    <dcat:keyword xml:Language="en">NPM</dcat:keyword>
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\BE0101F1allKeywords.px" />
+    <dcterms:accrualPeriodicity rdf:Resource="http://publications.europa.eu/Resource/authority/frequency/ANNUAL" />
+    <dcterms:accessRights rdf:Resource="http://publications.europa.eu/Resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="https://www.baseURI.se/dataset/120">
+    <dcterms:Title xml:Language="en">My own title for the table</dcterms:Title>
+    <dcterms:description xml:Language="en">Mandatory table note</dcterms:description>
+    <dcterms:Publisher rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcterms:creator rdf:Resource="https://www.baseURI.se/organization/121" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/119" />
+    <dcterms:Modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2004-02-12T16:28:00</dcterms:Modified>
+    <dcterms:Identifier>BE0101F1allKeywordsNoContentsvar.px</dcterms:Identifier>
+    <dcat:keyword xml:Language="en">NPM</dcat:keyword>
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\BE0101F1allKeywordsNoContentsvar.px" />
+    <dcterms:accrualPeriodicity rdf:Resource="http://publications.europa.eu/Resource/authority/frequency/ANNUAL" />
+    <dcterms:accessRights rdf:Resource="http://publications.europa.eu/Resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="https://www.baseURI.se/dataset/123">
+    <dcterms:Title xml:Language="en">Inmigrated by region, age, period and sex</dcterms:Title>
+    <dcterms:description xml:Language="en">Mandatory English note</dcterms:description>
+    <dcterms:Publisher rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcterms:creator rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/122" />
+    <dcterms:Modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2004-02-12T16:28:00</dcterms:Modified>
+    <dcterms:Identifier>BE0101F1datasymbols.px</dcterms:Identifier>
+    <dcat:keyword xml:Language="en">NPM</dcat:keyword>
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\BE0101F1datasymbols.px" />
+    <dcterms:accrualPeriodicity rdf:Resource="http://publications.europa.eu/Resource/authority/frequency/ANNUAL" />
+    <dcterms:accessRights rdf:Resource="http://publications.europa.eu/Resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="https://www.baseURI.se/dataset/126">
+    <dcterms:Title xml:Language="en">Migration by region, age, period, type and sex</dcterms:Title>
+    <dcterms:description xml:Language="en">Mandatory English note</dcterms:description>
+    <dcterms:Publisher rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcterms:creator rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/125" />
+    <dcterms:Modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2004-02-12T16:28:00</dcterms:Modified>
+    <dcterms:Identifier>BE0101F1nildotnosymbol.px</dcterms:Identifier>
+    <dcat:keyword xml:Language="en">NPM</dcat:keyword>
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\BE0101F1nildotnosymbol.px" />
+    <dcterms:accrualPeriodicity rdf:Resource="http://publications.europa.eu/Resource/authority/frequency/ANNUAL" />
+    <dcterms:accessRights rdf:Resource="http://publications.europa.eu/Resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="https://www.baseURI.se/dataset/129">
+    <dcterms:Title xml:Language="en">Migration by region, age, period, type and sex</dcterms:Title>
+    <dcterms:description xml:Language="en">Mandatory English note</dcterms:description>
+    <dcterms:Publisher rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcterms:creator rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/128" />
+    <dcterms:Modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2004-02-12T16:28:00</dcterms:Modified>
+    <dcterms:Identifier>BE0101F1nildotsymbols.px</dcterms:Identifier>
+    <dcat:keyword xml:Language="en">NPM</dcat:keyword>
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\BE0101F1nildotsymbols.px" />
+    <dcterms:accrualPeriodicity rdf:Resource="http://publications.europa.eu/Resource/authority/frequency/ANNUAL" />
+    <dcterms:accessRights rdf:Resource="http://publications.europa.eu/Resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="https://www.baseURI.se/dataset/132">
+    <dcterms:Title xml:Language="en">Migration by region, age, period, type and sex</dcterms:Title>
+    <dcterms:description xml:Language="en">Mandatory English note</dcterms:description>
+    <dcterms:Publisher rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcterms:creator rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/131" />
+    <dcterms:Modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2004-02-12T16:28:00</dcterms:Modified>
+    <dcterms:Identifier>BE0101F1nilnopres.px</dcterms:Identifier>
+    <dcat:keyword xml:Language="en">NPM</dcat:keyword>
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\BE0101F1nilnopres.px" />
+    <dcterms:accrualPeriodicity rdf:Resource="http://publications.europa.eu/Resource/authority/frequency/ANNUAL" />
+    <dcterms:accessRights rdf:Resource="http://publications.europa.eu/Resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="https://www.baseURI.se/dataset/135">
+    <dcterms:Title xml:Language="en">Migration by region, age, period, type and sex</dcterms:Title>
+    <dcterms:description xml:Language="en">Mandatory English note</dcterms:description>
+    <dcterms:Publisher rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcterms:creator rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/134" />
+    <dcterms:Modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2004-02-12T16:28:00</dcterms:Modified>
+    <dcterms:Identifier>BE0101F1nilSymbol.px</dcterms:Identifier>
+    <dcat:keyword xml:Language="en">NPM</dcat:keyword>
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\BE0101F1nilSymbol.px" />
+    <dcterms:accrualPeriodicity rdf:Resource="http://publications.europa.eu/Resource/authority/frequency/ANNUAL" />
+    <dcterms:accessRights rdf:Resource="http://publications.europa.eu/Resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="https://www.baseURI.se/dataset/138">
+    <dcterms:Title xml:Language="en">Migration by region, age, period, type and sex</dcterms:Title>
+    <dcterms:description xml:Language="en">Mandatory English note</dcterms:description>
+    <dcterms:Publisher rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcterms:creator rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/137" />
+    <dcterms:Modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2004-02-12T16:28:00</dcterms:Modified>
+    <dcterms:Identifier>BE0101F1symbnot.px</dcterms:Identifier>
+    <dcat:keyword xml:Language="en">NPM</dcat:keyword>
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\BE0101F1symbnot.px" />
+    <dcterms:accrualPeriodicity rdf:Resource="http://publications.europa.eu/Resource/authority/frequency/ANNUAL" />
+    <dcterms:accessRights rdf:Resource="http://publications.europa.eu/Resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="https://www.baseURI.se/dataset/141">
+    <dcterms:Title xml:Language="en">Migration by region, age, period, type and sex</dcterms:Title>
+    <dcterms:description xml:Language="en">Mandatory English note</dcterms:description>
+    <dcterms:Publisher rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcterms:creator rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/140" />
+    <dcterms:Modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2004-02-12T16:28:00</dcterms:Modified>
+    <dcterms:Identifier>BE0101F1symbnot2.px</dcterms:Identifier>
+    <dcat:keyword xml:Language="en">NPM</dcat:keyword>
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\BE0101F1symbnot2.px" />
+    <dcterms:accrualPeriodicity rdf:Resource="http://publications.europa.eu/Resource/authority/frequency/ANNUAL" />
+    <dcterms:accessRights rdf:Resource="http://publications.europa.eu/Resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="https://www.baseURI.se/dataset/144">
+    <dcterms:Title xml:Language="en">Migration by region, age, period, type and sex</dcterms:Title>
+    <dcterms:description xml:Language="en">Mandatory table note</dcterms:description>
+    <dcterms:Publisher rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcterms:creator rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/143" />
+    <dcterms:Modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2004-02-12T16:28:00</dcterms:Modified>
+    <dcterms:Identifier>EXEMPEL1.PX</dcterms:Identifier>
+    <dcat:keyword xml:Language="en">NPM</dcat:keyword>
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\EXEMPEL1.PX" />
+    <dcterms:accrualPeriodicity rdf:Resource="http://publications.europa.eu/Resource/authority/frequency/ANNUAL" />
+    <dcterms:accessRights rdf:Resource="http://publications.europa.eu/Resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="https://www.baseURI.se/dataset/147">
+    <dcterms:Title xml:Language="en">Migration by region, age, period, type and sex</dcterms:Title>
+    <dcterms:description xml:Language="en">Mandatory table note</dcterms:description>
+    <dcterms:Publisher rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcterms:creator rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/146" />
+    <dcterms:Modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2004-02-12T16:28:00</dcterms:Modified>
+    <dcterms:Identifier>EXEMPEL2.PX</dcterms:Identifier>
+    <dcat:keyword xml:Language="en">NPM</dcat:keyword>
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\EXEMPEL2.PX" />
+    <dcterms:accrualPeriodicity rdf:Resource="http://publications.europa.eu/Resource/authority/frequency/ANNUAL" />
+    <dcterms:accessRights rdf:Resource="http://publications.europa.eu/Resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="https://www.baseURI.se/dataset/150">
+    <dcterms:Title xml:Language="en">Population by region, marital status, period and sex.Distribution by number and Per cent.</dcterms:Title>
+    <dcterms:description xml:Language="en">The tables show the conditions on December 31st for each respective year according to administrative subdivisions of January 1st of the following year</dcterms:description>
+    <dcterms:Publisher rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcterms:creator rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/149" />
+    <dcterms:Modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2006-02-09T15:20:00</dcterms:Modified>
+    <dcterms:Identifier>BE0101A1proc.px</dcterms:Identifier>
+    <dcat:keyword xml:Language="en">percent</dcat:keyword>
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\BE0101A1proc.px" />
+    <dcterms:accrualPeriodicity rdf:Resource="http://publications.europa.eu/Resource/authority/frequency/ANNUAL" />
+    <dcterms:accessRights rdf:Resource="http://publications.europa.eu/Resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="https://www.baseURI.se/dataset/153">
+    <dcterms:Title xml:Language="en">Population by region, marital status, period and sex.Distribution by number and Per cent.</dcterms:Title>
+    <dcterms:description xml:Language="en">The tables show the conditions on December 31st for each respective year according to administrative subdivisions of January 1st of the following year</dcterms:description>
+    <dcterms:Publisher rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcterms:creator rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/152" />
+    <dcterms:Modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2006-02-09T15:20:00</dcterms:Modified>
+    <dcterms:Identifier>BE0101A1proc2.px</dcterms:Identifier>
+    <dcat:keyword xml:Language="en">percent</dcat:keyword>
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\BE0101A1proc2.px" />
+    <dcterms:accrualPeriodicity rdf:Resource="http://publications.europa.eu/Resource/authority/frequency/ANNUAL" />
+    <dcterms:accessRights rdf:Resource="http://publications.europa.eu/Resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="https://www.baseURI.se/dataset/156">
+    <dcterms:Title xml:Language="en">Population by region, marital status, period and sex.Distribution by number and Per cent.</dcterms:Title>
+    <dcterms:description xml:Language="en">The tables show the conditions on December 31st for each respective year according to administrative subdivisions of January 1st of the following year</dcterms:description>
+    <dcterms:Publisher rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcterms:creator rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/155" />
+    <dcterms:Modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2006-02-09T15:20:00</dcterms:Modified>
+    <dcterms:Identifier>BE0101A1procnorounding.px</dcterms:Identifier>
+    <dcat:keyword xml:Language="en">percent</dcat:keyword>
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\BE0101A1procnorounding.px" />
+    <dcterms:accrualPeriodicity rdf:Resource="http://publications.europa.eu/Resource/authority/frequency/ANNUAL" />
+    <dcterms:accessRights rdf:Resource="http://publications.europa.eu/Resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="https://www.baseURI.se/dataset/159">
+    <dcterms:Title xml:Language="en">Population by region, marital status, period and sex.Distribution by number and Per cent.</dcterms:Title>
+    <dcterms:description xml:Language="en">The tables show the conditions on December 31st for each respective year according to administrative subdivisions of January 1st of the following year</dcterms:description>
+    <dcterms:Publisher rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcterms:creator rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/158" />
+    <dcterms:Modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2006-02-09T15:20:00</dcterms:Modified>
+    <dcterms:Identifier>BE0101A1procrounding0.px</dcterms:Identifier>
+    <dcat:keyword xml:Language="en">percent</dcat:keyword>
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\BE0101A1procrounding0.px" />
+    <dcterms:accrualPeriodicity rdf:Resource="http://publications.europa.eu/Resource/authority/frequency/ANNUAL" />
+    <dcterms:accessRights rdf:Resource="http://publications.europa.eu/Resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="https://www.baseURI.se/dataset/162">
+    <dcterms:Title xml:Language="en">Population by region, marital status, period and sex.Distribution by number and Per cent.</dcterms:Title>
+    <dcterms:description xml:Language="en">The tables show the conditions on December 31st for each respective year according to administrative subdivisions of January 1st of the following year</dcterms:description>
+    <dcterms:Publisher rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcterms:creator rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/161" />
+    <dcterms:Modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2006-02-09T15:20:00</dcterms:Modified>
+    <dcterms:Identifier>BE0101A1procrounding1.px</dcterms:Identifier>
+    <dcat:keyword xml:Language="en">percent</dcat:keyword>
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\BE0101A1procrounding1.px" />
+    <dcterms:accrualPeriodicity rdf:Resource="http://publications.europa.eu/Resource/authority/frequency/ANNUAL" />
+    <dcterms:accessRights rdf:Resource="http://publications.europa.eu/Resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="https://www.baseURI.se/dataset/165">
+    <dcterms:Title xml:Language="en">Population by region, marital status, period and sex.Distribution by number and Per cent.</dcterms:Title>
+    <dcterms:description xml:Language="en">The tables show the conditions on December 31st for each respective year according to administrative subdivisions of January 1st of the following year</dcterms:description>
+    <dcterms:Publisher rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcterms:creator rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/164" />
+    <dcterms:Modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2006-02-09T15:20:00</dcterms:Modified>
+    <dcterms:Identifier>BE0101A1procspar.px</dcterms:Identifier>
+    <dcat:keyword xml:Language="en">percent</dcat:keyword>
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\BE0101A1procspar.px" />
+    <dcterms:accrualPeriodicity rdf:Resource="http://publications.europa.eu/Resource/authority/frequency/ANNUAL" />
+    <dcterms:accessRights rdf:Resource="http://publications.europa.eu/Resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="https://www.baseURI.se/dataset/168">
+    <dcterms:Title xml:Language="en">Population by region, marital status, age, sex and period</dcterms:Title>
+    <dcterms:description xml:Language="en">The tables show the conditions on December 31st for each respective year according to administrative subdivisions of January 1st of the following year</dcterms:description>
+    <dcterms:Publisher rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcterms:creator rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/167" />
+    <dcterms:Modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2006-02-09T15:20:00</dcterms:Modified>
+    <dcterms:Identifier>BE0101A1.px</dcterms:Identifier>
+    <dcat:keyword xml:Language="en">Population</dcat:keyword>
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\BE0101A1.px" />
+    <dcterms:accrualPeriodicity rdf:Resource="http://publications.europa.eu/Resource/authority/frequency/ANNUAL" />
+    <dcterms:accessRights rdf:Resource="http://publications.europa.eu/Resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="https://www.baseURI.se/dataset/171">
+    <dcterms:Title xml:Language="en">Population by marital status, sex and period</dcterms:Title>
+    <dcterms:description xml:Language="en">The tables show the conditions on December 31st for each respective year according to administrative subdivisions of January 1st of the following year</dcterms:description>
+    <dcterms:Publisher rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcterms:creator rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/170" />
+    <dcterms:Modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2007-02-15T09:51:00</dcterms:Modified>
+    <dcterms:Identifier>BE0101A1elimtot.px</dcterms:Identifier>
+    <dcat:keyword xml:Language="en">Population</dcat:keyword>
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\BE0101A1elimtot.px" />
+    <dcterms:accrualPeriodicity rdf:Resource="http://publications.europa.eu/Resource/authority/frequency/ANNUAL" />
+    <dcterms:accessRights rdf:Resource="http://publications.europa.eu/Resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="https://www.baseURI.se/dataset/174">
+    <dcterms:Title xml:Language="en">Population by region, sortvariable, marital status, sex and period</dcterms:Title>
+    <dcterms:description xml:Language="en">The tables show the conditions on December 31st for each respective year according to administrative subdivisions of January 1st of the following year</dcterms:description>
+    <dcterms:Publisher rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcterms:creator rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/173" />
+    <dcterms:Modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2006-02-09T15:20:00</dcterms:Modified>
+    <dcterms:Identifier>BE0101A1proc.px</dcterms:Identifier>
+    <dcat:keyword xml:Language="en">Population</dcat:keyword>
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\BE0101A1proc.px" />
+    <dcterms:accrualPeriodicity rdf:Resource="http://publications.europa.eu/Resource/authority/frequency/ANNUAL" />
+    <dcterms:accessRights rdf:Resource="http://publications.europa.eu/Resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="https://www.baseURI.se/dataset/177">
+    <dcterms:Title xml:Language="en">Population by region, marital status, sex, period and sortvariable</dcterms:Title>
+    <dcterms:description xml:Language="en">The tables show the conditions on December 31st for each respective year according to administrative subdivisions of January 1st of the following year</dcterms:description>
+    <dcterms:Publisher rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcterms:creator rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/176" />
+    <dcterms:Modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2006-02-09T15:20:00</dcterms:Modified>
+    <dcterms:Identifier>BE0101A1procproc.px</dcterms:Identifier>
+    <dcat:keyword xml:Language="en">Population</dcat:keyword>
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\BE0101A1procproc.px" />
+    <dcterms:accrualPeriodicity rdf:Resource="http://publications.europa.eu/Resource/authority/frequency/ANNUAL" />
+    <dcterms:accessRights rdf:Resource="http://publications.europa.eu/Resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="https://www.baseURI.se/dataset/180">
+    <dcterms:Title xml:Language="en">Migration by region, age, period, type and sex</dcterms:Title>
+    <dcterms:description xml:Language="en">Mandatory table note</dcterms:description>
+    <dcterms:Publisher rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcterms:creator rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/179" />
+    <dcterms:Modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2004-02-12T16:28:00</dcterms:Modified>
+    <dcterms:Identifier>BE0101F1allakw.px</dcterms:Identifier>
+    <dcat:keyword xml:Language="en">Population</dcat:keyword>
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\BE0101F1allakw.px" />
+    <dcterms:accrualPeriodicity rdf:Resource="http://publications.europa.eu/Resource/authority/frequency/ANNUAL" />
+    <dcterms:accessRights rdf:Resource="http://publications.europa.eu/Resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="https://www.baseURI.se/dataset/183">
+    <dcterms:Title xml:Language="en">Inmigrated by region, age, period and sex</dcterms:Title>
+    <dcterms:description xml:Language="en">Mandatory English note</dcterms:description>
+    <dcterms:Publisher rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcterms:creator rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/182" />
+    <dcterms:Modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2004-02-12T16:28:00</dcterms:Modified>
+    <dcterms:Identifier>BE0101F1pnosymbol.px</dcterms:Identifier>
+    <dcat:keyword xml:Language="en">Population</dcat:keyword>
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\BE0101F1pnosymbol.px" />
+    <dcterms:accrualPeriodicity rdf:Resource="http://publications.europa.eu/Resource/authority/frequency/ANNUAL" />
+    <dcterms:accessRights rdf:Resource="http://publications.europa.eu/Resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="https://www.baseURI.se/dataset/186">
+    <dcterms:Title xml:Language="en">Migration by region, age, period, type and sex</dcterms:Title>
+    <dcterms:description xml:Language="en">Mandatory English note</dcterms:description>
+    <dcterms:Publisher rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcterms:creator rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/185" />
+    <dcterms:Modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2004-02-12T16:28:00</dcterms:Modified>
+    <dcterms:Identifier>BE0101F1symbnot.px</dcterms:Identifier>
+    <dcat:keyword xml:Language="en">Population</dcat:keyword>
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\BE0101F1symbnot.px" />
+    <dcterms:accrualPeriodicity rdf:Resource="http://publications.europa.eu/Resource/authority/frequency/ANNUAL" />
+    <dcterms:accessRights rdf:Resource="http://publications.europa.eu/Resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="https://www.baseURI.se/dataset/189">
+    <dcterms:Title xml:Language="en">Migration by region, age, sex, period and type</dcterms:Title>
+    <dcterms:description xml:Language="en">-</dcterms:description>
+    <dcterms:Publisher rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcterms:creator rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/188" />
+    <dcterms:Modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2006-02-09T11:31:00</dcterms:Modified>
+    <dcterms:Identifier>Fotnoter.px</dcterms:Identifier>
+    <dcat:keyword xml:Language="en">Population</dcat:keyword>
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Fotnoter.px" />
+    <dcterms:accrualPeriodicity rdf:Resource="http://publications.europa.eu/Resource/authority/frequency/ANNUAL" />
+    <dcterms:accessRights rdf:Resource="http://publications.europa.eu/Resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="https://www.baseURI.se/dataset/192">
+    <dcterms:Title xml:Language="en">Migration by region, age, period, type and sex</dcterms:Title>
+    <dcterms:description xml:Language="en">Mandatory English note</dcterms:description>
+    <dcterms:Publisher rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcterms:creator rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/191" />
+    <dcterms:Modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2004-02-12T16:28:00</dcterms:Modified>
+    <dcterms:Identifier>NyaFotnoter.px</dcterms:Identifier>
+    <dcat:keyword xml:Language="en">Population</dcat:keyword>
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\NyaFotnoter.px" />
+    <dcterms:accrualPeriodicity rdf:Resource="http://publications.europa.eu/Resource/authority/frequency/ANNUAL" />
+    <dcterms:accessRights rdf:Resource="http://publications.europa.eu/Resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="https://www.baseURI.se/dataset/196">
+    <dcterms:Title xml:Language="en">Migration by region, age, period, type and sex</dcterms:Title>
+    <dcterms:description xml:Language="en">-</dcterms:description>
+    <dcterms:Title xml:Language="sv">Flyttningar efter region, ålder, tid, typ och kön</dcterms:Title>
+    <dcterms:description xml:Language="sv">-</dcterms:description>
+    <dcterms:Publisher rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcterms:creator rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/194" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/195" />
+    <dcterms:Modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2004-02-12T16:28:00</dcterms:Modified>
+    <dcterms:Identifier>BE0101F1ensvdescdefault.px</dcterms:Identifier>
+    <dcat:keyword xml:Language="en">Population </dcat:keyword>
+    <dcat:keyword xml:Language="sv">Befolkning</dcat:keyword>
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/SWE" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\BE0101F1ensvdescdefault.px" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\BE0101F1ensvdescdefault.px" />
+    <dcterms:accrualPeriodicity rdf:Resource="http://publications.europa.eu/Resource/authority/frequency/ANNUAL" />
+    <dcterms:accessRights rdf:Resource="http://publications.europa.eu/Resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="https://www.baseURI.se/dataset/200">
+    <dcterms:Title xml:Language="en">Migration by region, age, period, type and sex</dcterms:Title>
+    <dcterms:description xml:Language="en">-</dcterms:description>
+    <dcterms:Title xml:Language="sv">Flyttningar efter region, ålder, tid, typ och kön</dcterms:Title>
+    <dcterms:description xml:Language="sv">-</dcterms:description>
+    <dcterms:Publisher rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcterms:creator rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/198" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/199" />
+    <dcterms:Modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2004-02-12T16:28:00</dcterms:Modified>
+    <dcterms:Identifier>BE0101F1langensvfiolikacelln.px</dcterms:Identifier>
+    <dcat:keyword xml:Language="en">Population </dcat:keyword>
+    <dcat:keyword xml:Language="sv">Befolkning</dcat:keyword>
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/SWE" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\BE0101F1langensvfiolikacelln.px" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\BE0101F1langensvfiolikacelln.px" />
+    <dcterms:accrualPeriodicity rdf:Resource="http://publications.europa.eu/Resource/authority/frequency/ANNUAL" />
+    <dcterms:accessRights rdf:Resource="http://publications.europa.eu/Resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="https://www.baseURI.se/dataset/204">
+    <dcterms:Title xml:Language="en">Migration by region, age, period, type and sex</dcterms:Title>
+    <dcterms:description xml:Language="en">-</dcterms:description>
+    <dcterms:Title xml:Language="sv">Flyttningar efter region, ålder, tid, typ och kön</dcterms:Title>
+    <dcterms:description xml:Language="sv">-</dcterms:description>
+    <dcterms:Publisher rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcterms:creator rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/202" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/203" />
+    <dcterms:Modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2004-02-12T16:28:00</dcterms:Modified>
+    <dcterms:Identifier>BE0101F1langensvfiolikacelln2.px</dcterms:Identifier>
+    <dcat:keyword xml:Language="en">Population </dcat:keyword>
+    <dcat:keyword xml:Language="sv">Befolkning</dcat:keyword>
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/SWE" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\BE0101F1langensvfiolikacelln2.px" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\BE0101F1langensvfiolikacelln2.px" />
+    <dcterms:accrualPeriodicity rdf:Resource="http://publications.europa.eu/Resource/authority/frequency/ANNUAL" />
+    <dcterms:accessRights rdf:Resource="http://publications.europa.eu/Resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="https://www.baseURI.se/dataset/208">
+    <dcterms:Title xml:Language="en">Migration by region, age, period, type and sex</dcterms:Title>
+    <dcterms:description xml:Language="en">-</dcterms:description>
+    <dcterms:Title xml:Language="sv">Flyttningar efter region, ålder, tid, typ och kön</dcterms:Title>
+    <dcterms:description xml:Language="sv">-</dcterms:description>
+    <dcterms:Publisher rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcterms:creator rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/206" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/207" />
+    <dcterms:Modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2004-02-12T16:28:00</dcterms:Modified>
+    <dcterms:Identifier>BE0101F1langensvolikacelln.px</dcterms:Identifier>
+    <dcat:keyword xml:Language="en">Population </dcat:keyword>
+    <dcat:keyword xml:Language="sv">Befolkning</dcat:keyword>
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/SWE" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\BE0101F1langensvolikacelln.px" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\BE0101F1langensvolikacelln.px" />
+    <dcterms:accrualPeriodicity rdf:Resource="http://publications.europa.eu/Resource/authority/frequency/ANNUAL" />
+    <dcterms:accessRights rdf:Resource="http://publications.europa.eu/Resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <dcat:Dataset rdf:about="https://www.baseURI.se/dataset/211">
+    <dcterms:Title xml:Language="en">Volume of imports of goods, base year 2000=100, index by Commoditygroup SITC and period</dcterms:Title>
+    <dcterms:description xml:Language="en">-</dcterms:description>
+    <dcterms:Publisher rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcterms:creator rdf:Resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcat:distribution rdf:Resource="https://www.baseURI.se/distribution/210" />
+    <dcterms:Modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-06-04T09:58:00</dcterms:Modified>
+    <dcterms:Identifier>HA0201E8.px</dcterms:Identifier>
+    <dcat:keyword xml:Language="en">Quarter</dcat:keyword>
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcat:landingPage rdf:Resource="C:\Temp\Databases\Example\Menu.xml\HA0201E8.px" />
+    <dcterms:accrualPeriodicity rdf:Resource="http://publications.europa.eu/Resource/authority/frequency/QUARTERLY" />
+    <dcterms:accessRights rdf:Resource="http://publications.europa.eu/Resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <foaf:Organization rdf:about="http://id.kb.se/organisations/SE2021000837">
+    <foaf:Name xml:Language="en">Statistics Sweden</foaf:Name>
+    <foaf:Name xml:Language="sv">Statistiska centralbyrån (SCB)</foaf:Name>
+    <foaf:Name xml:Language="sv">Statistiska centralbyrån</foaf:Name>
+    <foaf:Name xml:Language="en">Statistiska centralbyrån (SCB)</foaf:Name>
+  </foaf:Organization>
+  <foaf:Organization rdf:about="https://www.baseURI.se/organization/76">
+    <foaf:Name xml:Language="en">UNECE Statistical Division Database</foaf:Name>
+  </foaf:Organization>
+  <foaf:Organization rdf:about="https://www.baseURI.se/organization/121">
+    <foaf:Name xml:Language="en">Source name</foaf:Name>
+  </foaf:Organization>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/1">
+    <dcterms:Title>Metadata (en)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\AggregallowedNo\PR0101B3.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/4">
+    <dcterms:Title>Metadata (en)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\aggregations\BE0101D1.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/7">
+    <dcterms:Title>Metadata (en)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\AttributesCellnotes\BE0101F1langensvfiolikacelln.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/8">
+    <dcterms:Title>Metadata (sv)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\AttributesCellnotes\BE0101F1langensvfiolikacelln.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/SWE" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/11">
+    <dcterms:Title>Metadata (en)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\Autopen\BE0101N1.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/14">
+    <dcterms:Title>Metadata (en)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\Autopen\BE0101N1autopen.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/17">
+    <dcterms:Title>Metadata (en)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\Descriptiondefault\BE0101N1descdefault.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/20">
+    <dcterms:Title>Metadata (en)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\Descriptiondefault\BE0101N1descnotdefault.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/23">
+    <dcterms:Title>Metadata (en)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\Doublecolumn\BE0101N1doublecol.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/26">
+    <dcterms:Title>Metadata (en)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\Doublecolumn\HA0201E8doublecol.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/29">
+    <dcterms:Title>Metadata (en)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\Doublecolumn\HA0201V6doublecol.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/32">
+    <dcterms:Title>Metadata (en)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\error\Example\error\continue\BE0101F1errorTimeval.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/35">
+    <dcterms:Title>Metadata (en)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\error\Example\error\continue\templateavBE0101F1error.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/38">
+    <dcterms:Title>Metadata (en)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\error\Example\error\fatal\BE0101F1errormissingValues.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/41">
+    <dcterms:Title>Metadata (en)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\error\Example\error\fatal\BE0101F1missingTitle.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/44">
+    <dcterms:Title>Metadata (en)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\error\Example\error\fatal\templateavBE0101F1error.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/47">
+    <dcterms:Title>Metadata (en)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\error\Example\error\multilang\BE0101F1ensvcontvarerror.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/48">
+    <dcterms:Title>Metadata (sv)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\error\Example\error\multilang\BE0101F1ensvcontvarerror.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/SWE" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/51">
+    <dcterms:Title>Metadata (en)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\error\Example\error\multilang\BE0101F1ensvdescdefaulterror.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/52">
+    <dcterms:Title>Metadata (sv)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\error\Example\error\multilang\BE0101F1ensvdescdefaulterror.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/SWE" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/55">
+    <dcterms:Title>Metadata (en)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\error\Example\error\multilang\BE0101F1langensvfiolikacelln2error.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/56">
+    <dcterms:Title>Metadata (sv)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\error\Example\error\multilang\BE0101F1langensvfiolikacelln2error.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/SWE" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/59">
+    <dcterms:Title>Metadata (en)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\Hierarchies\BE0101A1det.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/62">
+    <dcterms:Title>Metadata (en)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\Hierarchies\BE0101A1hier.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/65">
+    <dcterms:Title>Metadata (en)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\Hierarchies\BE0101A1hierpiv.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/68">
+    <dcterms:Title>Metadata (en)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\Hierarchies\BE0101A1hierreg.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/71">
+    <dcterms:Title>Metadata (en)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\Hierarchies\BE0101A1hierreg2.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/74">
+    <dcterms:Title>Metadata (en)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\Hierarchies\GeneveEUhierarch.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/77">
+    <dcterms:Title>Metadata (en)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\Hierarchies\PR0101B3hier.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/80">
+    <dcterms:Title>Metadata (en)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\Hierarchies\PR0101B3hier2lang.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/81">
+    <dcterms:Title>Metadata (sv)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\Hierarchies\PR0101B3hier2lang.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/SWE" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/84">
+    <dcterms:Title>Metadata (en)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\keys\BE0101F1symbnotkeys.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/87">
+    <dcterms:Title>Metadata (en)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\Misc\Example\Misc\OfficialStatistics\officialstatistics.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/88">
+    <dcterms:Title>Metadata (sv)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\Misc\Example\Misc\OfficialStatistics\officialstatistics.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/SWE" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/91">
+    <dcterms:Title>Metadata (en)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\Month\HA0201V6.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/94">
+    <dcterms:Title>Metadata (en)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\Month\PR0101B3.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/97">
+    <dcterms:Title>Metadata (en)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\Month\PR0101D8.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/100">
+    <dcterms:Title>Metadata (en)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\multilanguage\BE0101F1ensvdescdefault.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/101">
+    <dcterms:Title>Metadata (sv)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\multilanguage\BE0101F1ensvdescdefault.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/SWE" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/104">
+    <dcterms:Title>Metadata (en)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\multilanguage\BE0101F1langensvfiolikacelln.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/105">
+    <dcterms:Title>Metadata (sv)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\multilanguage\BE0101F1langensvfiolikacelln.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/SWE" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/108">
+    <dcterms:Title>Metadata (en)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\multilanguage\BE0101F1langensvfiolikacelln2.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/109">
+    <dcterms:Title>Metadata (sv)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\multilanguage\BE0101F1langensvfiolikacelln2.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/SWE" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/112">
+    <dcterms:Title>Metadata (en)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\multilanguage\BE0101F1langensvolikacelln.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/113">
+    <dcterms:Title>Metadata (sv)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\multilanguage\BE0101F1langensvolikacelln.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/SWE" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/116">
+    <dcterms:Title>Metadata (en)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\NPM\BE0101F1allKeywords.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/119">
+    <dcterms:Title>Metadata (en)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\NPM\BE0101F1allKeywordsNoContentsvar.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/122">
+    <dcterms:Title>Metadata (en)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\NPM\BE0101F1datasymbols.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/125">
+    <dcterms:Title>Metadata (en)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\NPM\BE0101F1nildotnosymbol.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/128">
+    <dcterms:Title>Metadata (en)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\NPM\BE0101F1nildotsymbols.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/131">
+    <dcterms:Title>Metadata (en)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\NPM\BE0101F1nilnopres.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/134">
+    <dcterms:Title>Metadata (en)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\NPM\BE0101F1nilSymbol.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/137">
+    <dcterms:Title>Metadata (en)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\NPM\BE0101F1symbnot.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/140">
+    <dcterms:Title>Metadata (en)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\NPM\BE0101F1symbnot2.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/143">
+    <dcterms:Title>Metadata (en)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\NPM\EXEMPEL1.PX" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/146">
+    <dcterms:Title>Metadata (en)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\NPM\EXEMPEL2.PX" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/149">
+    <dcterms:Title>Metadata (en)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\percent\BE0101A1proc.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/152">
+    <dcterms:Title>Metadata (en)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\percent\BE0101A1proc2.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/155">
+    <dcterms:Title>Metadata (en)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\percent\BE0101A1procnorounding.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/158">
+    <dcterms:Title>Metadata (en)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\percent\BE0101A1procrounding0.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/161">
+    <dcterms:Title>Metadata (en)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\percent\BE0101A1procrounding1.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/164">
+    <dcterms:Title>Metadata (en)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\percent\BE0101A1procspar.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/167">
+    <dcterms:Title>Metadata (en)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\Population\BE0101A1.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/170">
+    <dcterms:Title>Metadata (en)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\Population\BE0101A1elimtot.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/173">
+    <dcterms:Title>Metadata (en)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\Population\BE0101A1proc.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/176">
+    <dcterms:Title>Metadata (en)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\Population\BE0101A1procproc.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/179">
+    <dcterms:Title>Metadata (en)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\Population\BE0101F1allakw.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/182">
+    <dcterms:Title>Metadata (en)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\Population\BE0101F1pnosymbol.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/185">
+    <dcterms:Title>Metadata (en)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\Population\BE0101F1symbnot.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/188">
+    <dcterms:Title>Metadata (en)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\Population\Fotnoter.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/191">
+    <dcterms:Title>Metadata (en)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\Population\NyaFotnoter.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/194">
+    <dcterms:Title>Metadata (en)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\alias\BE0101F1ensvdescdefault.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/195">
+    <dcterms:Title>Metadata (sv)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\alias\BE0101F1ensvdescdefault.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/SWE" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/198">
+    <dcterms:Title>Metadata (en)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\alias\BE0101F1langensvfiolikacelln.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/199">
+    <dcterms:Title>Metadata (sv)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\alias\BE0101F1langensvfiolikacelln.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/SWE" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/202">
+    <dcterms:Title>Metadata (en)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\alias\BE0101F1langensvfiolikacelln2.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/203">
+    <dcterms:Title>Metadata (sv)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\alias\BE0101F1langensvfiolikacelln2.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/SWE" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/206">
+    <dcterms:Title>Metadata (en)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\alias\BE0101F1langensvolikacelln.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/207">
+    <dcterms:Title>Metadata (sv)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\alias\BE0101F1langensvolikacelln.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/SWE" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://www.baseURI.se/distribution/210">
+    <dcterms:Title>Metadata (en)</dcterms:Title>
+    <dcat:accessURL rdf:Resource="C:\Temp\Databases\Example\Menu.xml\Example\Quarter\HA0201E8.px" />
+    <dcterms:Language rdf:Resource="http://publications.europa.eu/Resource/authority/Language/ENG" />
+    <dcterms:License rdf:Resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+</rdf:RDF>

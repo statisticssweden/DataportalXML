@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	  <PackageId>Px.Dcat</PackageId>
+	  <MinVerTagPrefix>v</MinVerTagPrefix>
+	  <MinVerDefaultPreReleasePhase>beta</MinVerDefaultPreReleasePhase>
+	  <MinVerSkip Condition="'$(Configuration)' == 'Debug'">true</MinVerSkip>
+	  <SignAssembly>false</SignAssembly>
+	  <AssemblyOriginatorKeyFile></AssemblyOriginatorKeyFile>
+	  <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+	  <Description>Generate XML-document following Dcat-ap-se standard for CNMM and PX databases</Description>
+	  <PackageProjectUrl>https://github.com/statisticssweden/DataportalXML</PackageProjectUrl>
+	  <PackageIcon></PackageIcon>
+	  <PackageIconUrl />
+	  <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+	  <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MinVer" Version="4.3.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="PcAxis.Core" Version="1.2.2" />
+    <PackageReference Include="PCAxis.Menu" Version="1.0.1" />
+    <PackageReference Include="PCAxis.Menu.ConfigDatamodelMenu" Version="1.0.6" />
+    <PackageReference Include="PcAxis.Sql" Version="1.2.0" />
+  </ItemGroup>
+
+</Project>
