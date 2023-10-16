@@ -630,15 +630,22 @@ namespace Px.Dcat
             return keywords;
         }
         /// <summary>
-        /// Get url for a table (Only relevant for cmnn)
+        /// Get url for a table
         /// </summary>
         /// <param name="tableID">ID of table</param>
         /// <param name="lang">Language (2 letter code)</param>
         /// <returns></returns>
         private string getDatasetUrl(string tableID, string lang)
         {
-            return Path.Combine(_settings.LandingPageUrl, lang, _settings.DatabaseId, tableID);
-            //return _settings.LandingPageUrl + lang + "/" + _settings.DatabaseId + "/" + tableID;
+            string url;
+            if (_settings.DatabaseType == DatabaseType.CNMM) {
+                url = Path.Combine(_settings.LandingPageUrl, lang, _settings.DatabaseId, tableID);
+            }
+            else {
+                url = Path.Combine(_settings.LandingPageUrl, lang, getDatabaseName(), tableID);
+            }
+            url = url.Replace("\\", "/");
+            return url;
         }
 
         /// <summary>
@@ -666,15 +673,17 @@ namespace Px.Dcat
         /// <returns></returns>
         private string getDistributionUrl(List<PxMenuItem> path, string tableID, string lang)
         {
-            //string url = _settings.BaseApiUrl + lang + "/" + _settings.DatabaseId + "/";
-            string url = Path.Combine(_settings.BaseApiUrl, lang, _settings.DatabaseId);
+            string url = Path.Combine(_settings.BaseApiUrl, lang, getDatabaseName());
             foreach (PxMenuItem menu in path.Skip(1))
             {
-                url = Path.Combine(url, menu.ID.Selection);
-                //url += menu.ID.Selection + "/";
+                string selection = menu.ID.Selection;
+                //selection = selection.Replace("/", "__");
+                //selection = selection.Replace("\\", "__");
+                string leaf = selection.Split(new char[] { '/', '\\' }).Last();
+                url = Path.Combine(url, leaf);
             }
             url = Path.Combine(url, tableID);
-            //url += tableID;
+            url = url.Replace("\\", "/");
             return url;
         }
 
@@ -685,7 +694,8 @@ namespace Px.Dcat
         /// <returns>Identifer of the table</returns>
         private string getIdentifier(PXMeta meta)
         {
-            return Path.GetFileName(meta.MainTable.Replace(" ", ""));
+            if (_settings.DatabaseType == DatabaseType.PX) return meta.Matrix + ".px";
+            else return meta.TableID;
         }
 
         /// <summary>
@@ -742,7 +752,7 @@ namespace Px.Dcat
             dataset.Keywords = getKeywords(path, langs);
             dataset.Distributions = getDistributions(path, dataset.Identifier, langs);
 
-            dataset.Resource = _settings.BaseUri + "dataset/" + nextString();
+            dataset.Resource = _settings.BaseUri + "dataset/" + dataset.Identifier;
             dataset.Urls = getDatasetUrls(dataset.Identifier, langs);
 
             dataset.Sources = getSources(meta, langs);
@@ -846,6 +856,14 @@ namespace Px.Dcat
             return datasets;
         }
 
+        private string getDatabaseName()
+        {
+            if (_settings.DatabaseType == DatabaseType.CNMM) return _settings.DatabaseId;
+
+            var directories = _settings.DatabaseId.Split(Path.DirectorySeparatorChar);
+            string databaseName = directories[directories.Length - 2];
+            return databaseName;
+        }
         /// <summary>
         /// Generate catalog from loaded _settings
         /// </summary>
