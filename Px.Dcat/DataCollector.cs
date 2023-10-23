@@ -635,14 +635,14 @@ namespace Px.Dcat
         /// <param name="tableID">ID of table</param>
         /// <param name="lang">Language (2 letter code)</param>
         /// <returns></returns>
-        private string getDatasetUrl(string tableID, string lang)
+        private string getDatasetUrl(PXMeta meta, string lang)
         {
             string url;
             if (_settings.DatabaseType == DatabaseType.CNMM) {
-                url = Path.Combine(_settings.LandingPageUrl, lang, _settings.DatabaseId, tableID);
+                url = Path.Combine(_settings.LandingPageUrl, lang, _settings.DatabaseId, meta.MainTable.Replace(" ", ""));
             }
             else {
-                url = Path.Combine(_settings.LandingPageUrl, lang, getDatabaseName(), tableID);
+                url = Path.Combine(_settings.LandingPageUrl, lang, getDatabaseName(), meta.Matrix + ".px");
             }
             url = url.Replace("\\", "/");
             return url;
@@ -654,12 +654,12 @@ namespace Px.Dcat
         /// <param name="tableID">ID of table</param>
         /// <param name="langs">Languages to get urls for</param>
         /// <returns>List of urls</returns>
-        private List<string> getDatasetUrls(string tableID, List<string> langs)
+        private List<string> getDatasetUrls(PXMeta meta, List<string> langs)
         {
             List<string> urls = new List<string>();
             foreach (string lang in langs)
             {
-                urls.Add(getDatasetUrl(tableID, lang));
+                urls.Add(getDatasetUrl(meta, lang));
             }
             return urls;
         }
@@ -671,18 +671,23 @@ namespace Px.Dcat
         /// <param name="tableID">Table ID</param>
         /// <param name="lang">Language (2 letter code)</param>
         /// <returns></returns>
-        private string getDistributionUrl(List<PxMenuItem> path, string tableID, string lang)
+        private string getDistributionUrl(List<PxMenuItem> path, PXMeta meta, string lang)
         {
             string url = Path.Combine(_settings.BaseApiUrl, lang, getDatabaseName());
             foreach (PxMenuItem menu in path.Skip(1))
             {
                 string selection = menu.ID.Selection;
-                //selection = selection.Replace("/", "__");
-                //selection = selection.Replace("\\", "__");
                 string leaf = selection.Split(new char[] { '/', '\\' }).Last();
                 url = Path.Combine(url, leaf);
             }
-            url = Path.Combine(url, tableID);
+            if (_settings.DatabaseType == DatabaseType.PX)
+            {
+                url = Path.Combine(url, meta.Matrix + ".px");
+            }
+            else
+            {
+                url = Path.Combine(url, meta.MainTable.Replace(" ", ""));
+            }
             url = url.Replace("\\", "/");
             return url;
         }
@@ -705,7 +710,7 @@ namespace Px.Dcat
         /// <param name="tableID">Table ID</param>
         /// <param name="langs">Languages to generate distributions for (2 letter code)</param>
         /// <returns>List of distributions</returns>
-        private List<Distribution> getDistributions(List<PxMenuItem> path, string tableID, List<string> langs)
+        private List<Distribution> getDistributions(List<PxMenuItem> path, PXMeta meta, List<string> langs)
         {
             List<Distribution> distrs = new List<Distribution>(langs.Count());
             foreach (string lang in langs)
@@ -713,7 +718,7 @@ namespace Px.Dcat
                 Distribution distr = new Distribution();
                 distr.Title = "Metadata (" + lang + ")";
                 distr.Format = "application/json";
-                distr.AccessUrl = getDistributionUrl(path, tableID, lang);
+                distr.AccessUrl = getDistributionUrl(path, meta, lang);
                 distr.Language = convertLanguage(lang);
                 distr.License = "http://creativecommons.org/publicdomain/zero/1.0/";
                 distr.Resource = _settings.BaseUri + "distribution/" + nextString();
@@ -750,10 +755,10 @@ namespace Px.Dcat
             dataset.Category = getCategory(path);
 
             dataset.Keywords = getKeywords(path, langs);
-            dataset.Distributions = getDistributions(path, dataset.Identifier, langs);
+            dataset.Distributions = getDistributions(path, meta, langs);
 
             dataset.Resource = _settings.BaseUri + "dataset/" + dataset.Identifier;
-            dataset.Urls = getDatasetUrls(dataset.Identifier, langs);
+            dataset.Urls = getDatasetUrls(meta, langs);
 
             dataset.Sources = getSources(meta, langs);
 
