@@ -635,14 +635,15 @@ namespace Px.Dcat
         /// <param name="tableID">ID of table</param>
         /// <param name="lang">Language (2 letter code)</param>
         /// <returns></returns>
-        private string getDatasetUrl(PXMeta meta, string lang)
+        private string getDatasetUrl(string tableSelection, PXMeta meta, string lang)
         {
             string url;
             if (_settings.DatabaseType == DatabaseType.CNMM) {
                 url = Path.Combine(_settings.LandingPageUrl, lang, _settings.DatabaseId, meta.MainTable.Replace(" ", ""));
             }
             else {
-                url = Path.Combine(_settings.LandingPageUrl, lang, getDatabaseName(), meta.Matrix + ".px");
+                string fileName = Path.GetFileName(tableSelection);
+                url = Path.Combine(_settings.LandingPageUrl, lang, getDatabaseName(), fileName);
             }
             url = url.Replace("\\", "/");
             return url;
@@ -654,12 +655,12 @@ namespace Px.Dcat
         /// <param name="tableID">ID of table</param>
         /// <param name="langs">Languages to get urls for</param>
         /// <returns>List of urls</returns>
-        private List<string> getDatasetUrls(PXMeta meta, List<string> langs)
+        private List<string> getDatasetUrls(string selection, PXMeta meta, List<string> langs)
         {
             List<string> urls = new List<string>();
             foreach (string lang in langs)
             {
-                urls.Add(getDatasetUrl(meta, lang));
+                urls.Add(getDatasetUrl(selection, meta, lang));
             }
             return urls;
         }
@@ -671,7 +672,7 @@ namespace Px.Dcat
         /// <param name="tableID">Table ID</param>
         /// <param name="lang">Language (2 letter code)</param>
         /// <returns></returns>
-        private string getDistributionUrl(List<PxMenuItem> path, PXMeta meta, string lang)
+        private string getDistributionUrl(string tableSelection, List<PxMenuItem> path, PXMeta meta, string lang)
         {
             string url = Path.Combine(_settings.BaseApiUrl, lang, getDatabaseName());
             foreach (PxMenuItem menu in path.Skip(1))
@@ -682,7 +683,8 @@ namespace Px.Dcat
             }
             if (_settings.DatabaseType == DatabaseType.PX)
             {
-                url = Path.Combine(url, meta.Matrix + ".px");
+                string fileName = Path.GetFileName(tableSelection);
+                url = Path.Combine(url, fileName);
             }
             else
             {
@@ -697,9 +699,9 @@ namespace Px.Dcat
         /// </summary>
         /// <param name="meta">Metadata of the table</param>
         /// <returns>Identifer of the table</returns>
-        private string getIdentifier(PXMeta meta)
+        private string getIdentifier(string selection, PXMeta meta)
         {
-            if (_settings.DatabaseType == DatabaseType.PX) return meta.Matrix + ".px";
+            if (_settings.DatabaseType == DatabaseType.PX) return Path.GetFileName(selection);
             else return meta.TableID;
         }
 
@@ -710,7 +712,7 @@ namespace Px.Dcat
         /// <param name="tableID">Table ID</param>
         /// <param name="langs">Languages to generate distributions for (2 letter code)</param>
         /// <returns>List of distributions</returns>
-        private List<Distribution> getDistributions(List<PxMenuItem> path, PXMeta meta, List<string> langs)
+        private List<Distribution> getDistributions(string selection, List<PxMenuItem> path, PXMeta meta, List<string> langs)
         {
             List<Distribution> distrs = new List<Distribution>(langs.Count());
             foreach (string lang in langs)
@@ -718,7 +720,7 @@ namespace Px.Dcat
                 Distribution distr = new Distribution();
                 distr.Title = "Metadata (" + lang + ")";
                 distr.Format = "application/json";
-                distr.AccessUrl = getDistributionUrl(path, meta, lang);
+                distr.AccessUrl = getDistributionUrl(selection, path, meta, lang);
                 distr.Language = convertLanguage(lang);
                 distr.License = "http://creativecommons.org/publicdomain/zero/1.0/";
                 distr.Resource = _settings.BaseUri + "distribution/" + nextString();
@@ -736,11 +738,11 @@ namespace Px.Dcat
         /// <param name="path">Path of the table</param>
         /// <returns>Dataset generated with the data from the table</returns>
 
-        private Dataset getDataset(PXMeta meta, List<PxMenuItem> path)
+        private Dataset getDataset(string selection, PXMeta meta, List<PxMenuItem> path)
         {
             Dataset dataset = new Dataset();
 
-            dataset.Identifier = getIdentifier(meta);
+            dataset.Identifier = getIdentifier(selection, meta);
             dataset.Modified = getLastModified(meta);
             dataset.UpdateFrequency = getUpdateFrequency(meta);
 
@@ -755,10 +757,10 @@ namespace Px.Dcat
             dataset.Category = getCategory(path);
 
             dataset.Keywords = getKeywords(path, langs);
-            dataset.Distributions = getDistributions(path, meta, langs);
+            dataset.Distributions = getDistributions(selection, path, meta, langs);
 
             dataset.Resource = _settings.BaseUri + "dataset/" + dataset.Identifier;
-            dataset.Urls = getDatasetUrls(meta, langs);
+            dataset.Urls = getDatasetUrls(selection, meta, langs);
 
             dataset.Sources = getSources(meta, langs);
 
@@ -825,12 +827,13 @@ namespace Px.Dcat
                 var table = item as TableLink;
                 try
                 {
-                    IPXModelBuilder builder = _fetcher.GetBuilder(table.ID.Selection);
+                    string selection = table.ID.Selection;
+                    IPXModelBuilder builder = _fetcher.GetBuilder(selection);
                     builder.ReadAllLanguages = true;
                     builder.SetPreferredLanguage(_settings.MainLanguage);
                     builder.BuildForSelection();
 
-                    Dataset dataset = getDataset(builder.Model.Meta, path);
+                    Dataset dataset = getDataset(selection, builder.Model.Meta, path);
                     d.Add(dataset);
                 }
                 catch (Exception e)
