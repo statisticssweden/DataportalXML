@@ -868,9 +868,8 @@ namespace Px.Dcat
         {
             if (_settings.DatabaseType == DatabaseType.CNMM) return _settings.DatabaseId;
 
-            var directories = _settings.DatabaseId.Split(Path.DirectorySeparatorChar);
-            string databaseName = directories[directories.Length - 2];
-            return databaseName;
+            string name = new DirectoryInfo(_settings.DatabaseId).Parent.Name;
+            return name;
         }
         /// <summary>
         /// Generate catalog from loaded _settings
