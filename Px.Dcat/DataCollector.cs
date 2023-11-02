@@ -883,9 +883,9 @@ namespace Px.Dcat
             c.License = _settings.License;
             c.Datasets = getDatasets();
             c.Languages = convertLanguages(_settings.Languages);
-            setProducers(c.Datasets);
             c.Publisher = _publisher;
             setOrganizationResources();
+            setProducers(c.Datasets);
             return c;
         }
 
@@ -906,6 +906,37 @@ namespace Px.Dcat
                 {
                     _organizations[source].Resource = _organizationMapping[source];
                 }
+            }
+
+            Dictionary<string, Organization> newOrgs = new Dictionary<string, Organization>();
+
+            // Merge organizations with same resource
+            foreach (string source in _organizations.Keys)
+            {
+                Organization org1 = _organizations[source];
+                string res1 = org1.Resource;
+                foreach (string source2 in _organizations.Keys)
+                {
+                    if (source == source2) continue;
+
+                    Organization org2 = _organizations[source2];
+                    string res2 = org2.Resource;
+
+                    if (res1 == res2)
+                    {
+                        Organization newOrg = new Organization();
+                        newOrg.Resource = res1;
+                        newOrg.Names = new HashSet<(string, string)>(org1.Names.Union(org2.Names));
+                        newOrgs[source] = newOrg;
+                        newOrgs[source2] = newOrg;
+                    }
+                    
+                }
+            }
+
+            foreach (string source in newOrgs.Keys)
+            {
+                _organizations[source] = newOrgs[source];
             }
         }
 
