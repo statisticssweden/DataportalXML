@@ -13,8 +13,8 @@ namespace Px.Dcat
         public List<string> Languages; // Read from settings
         public List<KeyValuePair<string, string>> CatalogTitles;
         public List<KeyValuePair<string, string>> CatalogDescriptions;
+        public List<KeyValuePair<string, string>> PublisherNames;
 
-        public string PublisherName;
         public string DatabaseId;
         public DatabaseType DatabaseType;
         public string LandingPageUrl;

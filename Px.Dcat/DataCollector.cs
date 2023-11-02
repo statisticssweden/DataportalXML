@@ -511,75 +511,68 @@ namespace Px.Dcat
             return "http://publications.europa.eu/Resource/authority/data-theme/" + _themeMapping[category];
         }
 
+        private void addOrganization(HashSet<(string, string)> names)
+        {
+            List<Organization> matchingOrgs = new List<Organization>();
+            HashSet<(string, string)> newNames = new HashSet<(string, string)>(names);
+
+            foreach ((string lang, string name) in names)
+            {
+                if (_organizations.ContainsKey(name))
+                {
+                    matchingOrgs.Add(_organizations[name]);
+                }
+            }
+
+            Organization newOrg = new Organization();
+            newOrg.Resource = Path.Combine(_settings.BaseUri, "organization", nextString()).Replace("\\", "/");
+            if (matchingOrgs.Count > 0)
+            {
+                foreach (Organization o in matchingOrgs)
+                {
+                    newNames.UnionWith(o.Names);
+                }
+
+            }
+            newOrg.Names = newNames;
+
+            foreach (string name in newNames.Select(x => x.Item2).Distinct())
+            {
+                _organizations[name] = newOrg;
+            }
+        }
+
         /// <summary>
         /// Get producer of table
         /// </summary>
         /// <param name="meta">Metadata of table</param>
         /// <returns>Organization with the producer info</returns>
-        private Organization getProducer(PXMeta meta, List<string> langs)
+        private void setProducer(PXMeta meta, List<string> langs)
         {
             HashSet<(string, string)> names = new HashSet<(string, string)>();
-            List<Organization> matchingOrgs = new List<Organization>();
 
             foreach (string lang in langs)
             {
                 meta.SetLanguage(lang);
                 string name = meta.Source;
-                if (_organizations.ContainsKey(name))
-                {
-                    matchingOrgs.Add(_organizations[name]);
-                }
                 names.Add((lang, name));
             }
 
-            Organization newOrg = new Organization();
-            if (matchingOrgs.Count > 0)
-            {
-                foreach (Organization org in matchingOrgs)
-                {
-                    names.UnionWith(org.Names);
-                }
-
-                newOrg.Names = names;
-                newOrg.Resource = Path.Combine(_settings.BaseUri,"organization",nextString()).Replace("\\", "/");
-
-                foreach (string name in names.Select(x => x.Item2).Distinct())
-                {
-                    _organizations[name] = newOrg;
-                }
-
-            }
-            else
-            {
-                newOrg.Names = names;
-                newOrg.Resource = Path.Combine(_settings.BaseUri, "organization", nextString()).Replace("\\", "/");
-
-                // Add a reference to the organization for each language
-                foreach (string name in names.Select(x => x.Item2).Distinct())
-                {
-                    _organizations.Add(name, newOrg);
-                }
-            }
-
-            return newOrg;
+            addOrganization(names);
         }
 
         /// <summary>
         /// Get publisher from _settings
         /// </summary>
         /// <returns>Publisher</returns>
-        private Organization getPublisher()
+        private void setPublisher()
         {
-            string name = _settings.PublisherName;
-            Organization org;
-            if (!_organizations.TryGetValue(name, out org))
+            HashSet<(string, string)> names = new HashSet<(string, string)>();
+            foreach (KeyValuePair<string, string> pair in _settings.PublisherNames)
             {
-                HashSet<(string, string)> names = new HashSet<(string, string)>();
-                names.Add((null, name));
-                org = new Organization { Names = names, Resource = Path.Combine(_settings.BaseUri, "organization", nextString()).Replace("\\", "/") };
-                _organizations.Add(name, org);
+                names.Add((pair.Key, pair.Value));
             }
-            return org;
+            addOrganization(names);
         }
 
         /// <summary>
@@ -764,7 +757,7 @@ namespace Px.Dcat
 
             dataset.Sources = getSources(meta, langs);
 
-            getProducer(meta, langs); // Wait until all organizations are created before assigning producer
+            setProducer(meta, langs); // Wait until all organizations are created before assigning producer
 
             return dataset;
         }
@@ -855,12 +848,6 @@ namespace Px.Dcat
             Item baseItem = _fetcher.GetBaseItem("", "", _settings.MainLanguage, _settings.DatabaseId);
 
             addRecursive(baseItem, path, datasets);
-
-            _publisher = getPublisher();
-            foreach (Dataset d in datasets)
-            {
-                d.Publisher = _publisher;
-            }
             return datasets;
         }
 
@@ -883,9 +870,16 @@ namespace Px.Dcat
             c.License = _settings.License;
             c.Datasets = getDatasets();
             c.Languages = convertLanguages(_settings.Languages);
-            c.Publisher = _publisher;
+            setPublisher();
             setOrganizationResources();
             setProducers(c.Datasets);
+
+            Organization publisher = _organizations[_settings.PublisherNames.First().Value];
+            c.Publisher = publisher;
+            foreach (Dataset d in c.Datasets)
+            {
+                d.Publisher = publisher;
+            }
             return c;
         }
 
@@ -900,44 +894,47 @@ namespace Px.Dcat
 
         private void setOrganizationResources()
         {
-            foreach (string source in _organizations.Keys)
+            Dictionary<string, List<string>> reverseResourceMapping = new Dictionary<string, List<string>>();
+
+            foreach (string key in _organizationMapping.Keys)
             {
-                if (_organizationMapping.ContainsKey(source))
+                string res = _organizationMapping[key];
+                if (!reverseResourceMapping.ContainsKey(res))
                 {
-                    _organizations[source].Resource = _organizationMapping[source];
+                    reverseResourceMapping[res] = new List<string>();
                 }
+                reverseResourceMapping[res].Add(key);
             }
 
-            Dictionary<string, Organization> newOrgs = new Dictionary<string, Organization>();
-
-            // Merge organizations with same resource
-            foreach (string source in _organizations.Keys)
+            // Merge organizations mapped to same resource
+            foreach (string res in reverseResourceMapping.Keys)
             {
-                Organization org1 = _organizations[source];
-                string res1 = org1.Resource;
-                foreach (string source2 in _organizations.Keys)
+                List<string> sources = reverseResourceMapping[res];
+                if (sources.Count > 1)
                 {
-                    if (source == source2) continue;
-
-                    Organization org2 = _organizations[source2];
-                    string res2 = org2.Resource;
-
-                    if (res1 == res2)
+                    HashSet<(string, string)> names = new HashSet<(string, string)>();
+                    foreach (string name in sources)
                     {
-                        Organization newOrg = new Organization();
-                        newOrg.Resource = res1;
-                        newOrg.Names = new HashSet<(string, string)>(org1.Names.Union(org2.Names));
-                        newOrgs[source] = newOrg;
-                        newOrgs[source2] = newOrg;
+                        names.UnionWith(_organizations[name].Names);
                     }
-                    
+                    Organization newOrg = new Organization();
+                    newOrg.Names = names;
+                    newOrg.Resource = res;
+                    foreach ((string lang, string name) in names)
+                    {
+                        _organizations[name] = newOrg;
+                    }
                 }
             }
 
-            foreach (string source in newOrgs.Keys)
+            foreach (string mappedSource in _organizationMapping.Keys)
             {
-                _organizations[source] = newOrgs[source];
+                if (_organizations.ContainsKey(mappedSource))
+                {
+                    _organizations[mappedSource].Resource = _organizationMapping[mappedSource];
+                }
             }
+
         }
 
         /// <summary>
