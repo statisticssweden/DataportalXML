@@ -437,7 +437,7 @@ namespace Px.Dcat
                                 Name = c.Forname + " " + c.Surname + ", " + c.OrganizationName,
                                 Email = c.Email,
                                 Phone = c.PhonePrefix + c.PhoneNo,
-                                Resource = Path.Combine(_settings.BaseUri, "contactperson", nextString().Replace("\\","/"))
+                                Resource = Path.Combine(_settings.BaseUri, "contactperson", nextString()).Replace("\\", "/")
                             };
                             _contacts.Add(c.Email, cp);
                         }
@@ -541,7 +541,7 @@ namespace Px.Dcat
                 }
 
                 newOrg.Names = names;
-                newOrg.Resource = Path.Combine(_settings.BaseUri,"organization",nextString().Replace("\\", "/"));
+                newOrg.Resource = Path.Combine(_settings.BaseUri,"organization",nextString()).Replace("\\", "/");
 
                 foreach (string name in names.Select(x => x.Item2).Distinct())
                 {
@@ -552,7 +552,7 @@ namespace Px.Dcat
             else
             {
                 newOrg.Names = names;
-                newOrg.Resource = Path.Combine(_settings.BaseUri, "organization", nextString().Replace("\\", "/"));
+                newOrg.Resource = Path.Combine(_settings.BaseUri, "organization", nextString()).Replace("\\", "/");
 
                 // Add a reference to the organization for each language
                 foreach (string name in names.Select(x => x.Item2).Distinct())
