@@ -437,7 +437,7 @@ namespace Px.Dcat
                                 Name = c.Forname + " " + c.Surname + ", " + c.OrganizationName,
                                 Email = c.Email,
                                 Phone = c.PhonePrefix + c.PhoneNo,
-                                Resource = _settings.BaseUri + "contactperson/" + nextString()
+                                Resource = Path.Combine(_settings.BaseUri, "contactperson", nextString()).Replace("\\", "/")
                             };
                             _contacts.Add(c.Email, cp);
                         }
@@ -460,7 +460,7 @@ namespace Px.Dcat
                             Name = c.Forname + " " + c.Surname + ", " + c.OrganizationName,
                             Email = c.Email,
                             Phone = c.PhonePrefix + c.PhoneNo,
-                            Resource = _settings.BaseUri + "contactperson/" + nextString()
+                            Resource = Path.Combine(_settings.BaseUri, "contactperson", nextString()).Replace("\\", "/")
                         };
                         _contacts.Add(c.Email, cp);
                     }
@@ -541,7 +541,7 @@ namespace Px.Dcat
                 }
 
                 newOrg.Names = names;
-                newOrg.Resource = _settings.BaseUri + "organization/" + nextString();
+                newOrg.Resource = Path.Combine(_settings.BaseUri,"organization",nextString()).Replace("\\", "/");
 
                 foreach (string name in names.Select(x => x.Item2).Distinct())
                 {
@@ -552,7 +552,7 @@ namespace Px.Dcat
             else
             {
                 newOrg.Names = names;
-                newOrg.Resource = _settings.BaseUri + "organization/" + nextString();
+                newOrg.Resource = Path.Combine(_settings.BaseUri, "organization", nextString()).Replace("\\", "/");
 
                 // Add a reference to the organization for each language
                 foreach (string name in names.Select(x => x.Item2).Distinct())
@@ -576,7 +576,7 @@ namespace Px.Dcat
             {
                 HashSet<(string, string)> names = new HashSet<(string, string)>();
                 names.Add((null, name));
-                org = new Organization { Names = names, Resource = _settings.BaseUri + "organization/" + nextString() };
+                org = new Organization { Names = names, Resource = Path.Combine(_settings.BaseUri, "organization", nextString()).Replace("\\", "/") };
                 _organizations.Add(name, org);
             }
             return org;
@@ -723,7 +723,7 @@ namespace Px.Dcat
                 distr.AccessUrl = getDistributionUrl(selection, path, meta, lang);
                 distr.Language = convertLanguage(lang);
                 distr.License = "http://creativecommons.org/publicdomain/zero/1.0/";
-                distr.Resource = _settings.BaseUri + "distribution/" + nextString();
+                distr.Resource = Path.Combine(_settings.BaseUri, "distribution", nextString()).Replace("\\", "/");
 
                 distrs.Add(distr);
             }
@@ -759,7 +759,7 @@ namespace Px.Dcat
             dataset.Keywords = getKeywords(path, langs);
             dataset.Distributions = getDistributions(selection, path, meta, langs);
 
-            dataset.Resource = _settings.BaseUri + "dataset/" + dataset.Identifier;
+            dataset.Resource = Path.Combine(_settings.BaseUri, "dataset", dataset.Identifier).Replace("\\", "/");
             dataset.Urls = getDatasetUrls(selection, meta, langs);
 
             dataset.Sources = getSources(meta, langs);
@@ -868,9 +868,8 @@ namespace Px.Dcat
         {
             if (_settings.DatabaseType == DatabaseType.CNMM) return _settings.DatabaseId;
 
-            var directories = _settings.DatabaseId.Split(Path.DirectorySeparatorChar);
-            string databaseName = directories[directories.Length - 2];
-            return databaseName;
+            string name = new DirectoryInfo(_settings.DatabaseId).Parent.Name;
+            return name;
         }
         /// <summary>
         /// Generate catalog from loaded _settings
