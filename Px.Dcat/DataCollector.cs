@@ -8,6 +8,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Text;
 
 namespace Px.Dcat
 {
@@ -290,14 +291,15 @@ namespace Px.Dcat
 
             foreach (string lang in langs)
             {
-                string desc = "-";
                 meta.SetLanguage(lang);
-                Notes notes = meta.Notes;
-                if (notes.Count > 0 && notes[0].Mandantory)
+                if (!string.IsNullOrEmpty(meta.Description))
                 {
-                    desc = notes[0].Text;
+                    descriptions.Add(meta.Description);
                 }
-                descriptions.Add(desc);
+                else
+                {
+                    descriptions.Add(meta.Title);
+                }
             }
             return descriptions;
         }
@@ -314,9 +316,111 @@ namespace Px.Dcat
             foreach (string lang in langs)
             {
                 meta.SetLanguage(lang);
-                titles.Add(meta.Title);
+                titles.Add(getTitleWithInterval(meta));
             }
             return titles;
+        }
+
+        /// <summary>
+        /// Adds time interval to the table title
+        /// </summary>
+        /// <param name="meta">Metadata of table</param>
+        /// <returns>Title string with interval</returns>
+        private string getTitleWithInterval(PXMeta meta)
+        {
+            Variable timeVar = meta.Variables.FirstOrDefault(x => x.IsTime);
+            string startTime = "";
+            string endTime = "";
+            StringBuilder sb = new StringBuilder();
+
+            if (timeVar != null)
+            {
+                startTime = GetFirstTimePeriod(timeVar);
+                endTime = GetLastTimePeriod(timeVar);
+            }
+
+            sb.Append(meta.Title);
+
+            if (IsInteger(meta.Title[meta.Title.Length - 1].ToString())) //Title ends with a number, add nothing
+            {
+                return sb.ToString();
+            }
+            if (string.IsNullOrEmpty(startTime) || string.IsNullOrEmpty(endTime)) //No starttime or endtime, add nothing
+            {
+                return sb.ToString();
+            }
+            if (meta.Title.EndsWith("-"))//Title ends with a dash, only endtime should be added
+            {
+                sb.Append(endTime);
+                return sb.ToString();
+            }
+            if (startTime == endTime) //Starttime and Endtime are the same, only starttime should be added
+            {
+                sb.Append(" ");
+                sb.Append(startTime);
+                return sb.ToString();
+            }
+
+            if (startTime.Contains("-"))
+            {
+                sb.Append(" (");
+                sb.Append(startTime);
+                sb.Append(")-(");
+                sb.Append(endTime);
+                sb.Append(")");
+            }
+            else
+            {
+                sb.Append(" ");
+                sb.Append(startTime);
+                sb.Append("-");
+                sb.Append(endTime);
+            }
+
+            return sb.ToString();
+        }
+
+        private string GetFirstTimePeriod(Variable variable)
+        {
+            string first = "";
+
+            if (variable.Values.Count > 0)
+            {
+                first = variable.Values.First().Text;
+                string val2 = variable.Values.Last().Text;
+
+                if (string.CompareOrdinal(first, val2) > 0)
+                {
+                    first = val2;
+                }
+            }
+
+            return first;
+        }
+
+        private string GetLastTimePeriod(Variable variable)
+        {
+            string last = "";
+
+            if (variable.Values.Count > 0)
+            {
+                last = variable.Values.Last().Text;
+                string val2 = variable.Values.First().Text;
+
+                if (string.CompareOrdinal(last, val2) < 0)
+                {
+                    last = val2;
+                }
+            }
+
+            return last;
+        }
+
+        private static bool IsInteger(string value)
+        {
+            int outValue;
+
+            return int.TryParse(value, out outValue);
         }
 
         /// <summary> 
@@ -333,7 +437,7 @@ namespace Px.Dcat
                 return null;
             }
             TimeScaleType timeScale = timeVar.TimeScale;
-            string baseURI = "http://publications.europa.eu/Resource/authority/frequency/";
+            string baseURI = "http://publications.europa.eu/resource/authority/frequency/";
             return baseURI + _timeScaleMapping[timeScale];
         }
 
@@ -345,7 +449,7 @@ namespace Px.Dcat
         private string convertLanguage(string str)
         {
             string lang = _languageMapping[str];
-            return "http://publications.europa.eu/Resource/authority/Language/" + lang.ToUpper();
+            return "http://publications.europa.eu/resource/authority/language/" + lang.ToUpper();
         }
 
         /// <summary>
@@ -508,7 +612,7 @@ namespace Px.Dcat
             {
                 return null;
             }
-            return "http://publications.europa.eu/Resource/authority/data-theme/" + _themeMapping[category];
+            return "http://publications.europa.eu/resource/authority/data-theme/" + _themeMapping[category];
         }
 
         private void addOrganization(HashSet<(string, string)> names)
@@ -715,8 +819,9 @@ namespace Px.Dcat
                 distr.Format = "application/json";
                 distr.AccessUrl = getDistributionUrl(selection, path, meta, lang);
                 distr.Language = convertLanguage(lang);
+                distr.LanguageRaw = lang;
                 distr.License = "http://creativecommons.org/publicdomain/zero/1.0/";
-                distr.Resource = Path.Combine(_settings.BaseUri, "distribution", nextString()).Replace("\\", "/");
+                distr.Resource = Path.Combine(_settings.BaseUri, "distribution", lang, getIdentifier(selection, meta)).Replace("\\", "/");
 
                 distrs.Add(distr);
             }
