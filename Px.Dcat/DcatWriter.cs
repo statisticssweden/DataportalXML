@@ -312,12 +312,12 @@ namespace Px.Dcat
                 if (lang is null)
                 {
                     // unspecified language
-                    XmlElement nameElem = createElem("foaf", "Name", name);
+                    XmlElement nameElem = createElem("foaf", "name", name);
                     orgElem.AppendChild(nameElem);
                 }
                 else
                 {
-                    XmlElement nameElem = createElem("foaf", "Name", "xml", "Language", lang);
+                    XmlElement nameElem = createElem("foaf", "name", "xml", "lang", lang);
                     nameElem.InnerText = name;
                     orgElem.AppendChild(nameElem);
                 }
