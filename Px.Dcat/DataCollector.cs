@@ -1020,14 +1020,20 @@ namespace Px.Dcat
                     HashSet<(string, string)> names = new HashSet<(string, string)>();
                     foreach (string name in sources)
                     {
-                        names.UnionWith(_organizations[name].Names);
+                        if (_organizations.ContainsKey(name))
+                        {
+                            names.UnionWith(_organizations[name].Names);
+                        }
                     }
                     Organization newOrg = new Organization();
                     newOrg.Names = names;
                     newOrg.Resource = res;
                     foreach ((string lang, string name) in names)
                     {
-                        _organizations[name] = newOrg;
+                        if (_organizations.ContainsKey(name))
+                        {
+                            _organizations[name] = newOrg;
+                        }
                     }
                 }
             }
