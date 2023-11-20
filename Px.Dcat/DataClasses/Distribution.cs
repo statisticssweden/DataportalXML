@@ -7,6 +7,7 @@
         public string Resource;
         public string License;
         public string Language;
+        public string LanguageRaw;
         public string Format;
     }
 }

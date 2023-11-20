@@ -148,7 +148,7 @@ namespace Px.Dcat
             // languages
             foreach (string lang in c.Languages)
             {
-                XmlElement langElem = createElem("dcterms", "Language", "rdf", "Resource", lang);
+                XmlElement langElem = createElem("dcterms", "language", "rdf", "resource", lang);
                 catElem.AppendChild(langElem);
             }
 
@@ -157,7 +157,7 @@ namespace Px.Dcat
             {
                 string lang = langTitle.Key;
                 string title = langTitle.Value;
-                XmlElement titleElem = createElem("dcterms", "Title", "xml", "Language", lang);
+                XmlElement titleElem = createElem("dcterms", "title", "xml", "lang", lang);
                 titleElem.InnerText = title;
                 catElem.AppendChild(titleElem);
             }
@@ -167,24 +167,24 @@ namespace Px.Dcat
             {
                 string lang = langTitle.Key;
                 string description = langTitle.Value;
-                XmlElement descElem = createElem("dcterms", "description", "xml", "Language", lang);
+                XmlElement descElem = createElem("dcterms", "description", "xml", "lang", lang);
                 descElem.InnerText = description;
                 catElem.AppendChild(descElem);
             }
 
             // Publisher reference
-            XmlElement pubElem = createElem("dcterms", "Publisher", "rdf", "Resource", c.Publisher.Resource);
+            XmlElement pubElem = createElem("dcterms", "publisher", "rdf", "resource", c.Publisher.Resource);
             catElem.AppendChild(pubElem);
 
             // Licence
-            XmlElement licenseElem = createElem("dcterms", "License", "rdf", "Resource", c.License);
+            XmlElement licenseElem = createElem("dcterms", "license", "rdf", "resource", c.License);
             catElem.AppendChild(licenseElem);
 
 
             // Dataset references
             foreach (Dataset d in c.Datasets)
             {
-                XmlElement dElem = createElem("dcat", "Dataset", "rdf", "Resource", d.Resource);
+                XmlElement dElem = createElem("dcat", "Dataset", "rdf", "resource", d.Resource);
                 catElem.AppendChild(dElem);
             }
             return catElem;
@@ -208,51 +208,53 @@ namespace Px.Dcat
                 string lang = d.Languages[i];
                 string desc = d.Descriptions[i];
 
-                XmlElement titleElem = createElem("dcterms", "Title", "xml", "Language", lang);
+                XmlElement titleElem = createElem("dcterms", "title", "xml", "lang", lang);
                 titleElem.InnerText = title;
                 dElem.AppendChild(titleElem);
 
-                XmlElement descElem = createElem("dcterms", "description", "xml", "Language", lang);
+                XmlElement descElem = createElem("dcterms", "description", "xml", "lang", lang);
                 descElem.InnerText = desc;
                 dElem.AppendChild(descElem);
             }
 
             // Publisher reference
-            XmlElement pubElem = createElem("dcterms", "Publisher", "rdf", "Resource", d.Publisher.Resource);
+            XmlElement pubElem = createElem("dcterms", "publisher", "rdf", "resource", d.Publisher.Resource);
             dElem.AppendChild(pubElem);
 
             // Producer reference
-            XmlElement prodElem = createElem("dcterms", "creator", "rdf", "Resource", d.Producer.Resource);
+            XmlElement prodElem = createElem("dcterms", "creator", "rdf", "resource", d.Producer.Resource);
             dElem.AppendChild(prodElem);
 
             // Distribution
             foreach (Distribution distribution in d.Distributions)
             {
-                XmlElement distElem = createElem("dcat", "distribution", "rdf", "Resource", distribution.Resource);
+                XmlElement distElem = createElem("dcat", "distribution", "rdf", "resource", distribution.Resource);
                 dElem.AppendChild(distElem);
             }
 
             // Category/Theme
             if (!(d.Category is null))
             {
-                XmlElement themeElem = createElem("dcat", "theme", "rdf", "Resource", d.Category);
+                XmlElement themeElem = createElem("dcat", "theme", "rdf", "resource", d.Category);
                 dElem.AppendChild(themeElem);
             }
 
             // Modified
             string dateTimeDataType = "http://www.w3.org/2001/XMLSchema#dateTime";
-            XmlElement mod = createElem("dcterms", "Modified", "rdf", "datatype", dateTimeDataType);
+            XmlElement mod = createElem("dcterms", "modified", "rdf", "datatype", dateTimeDataType);
             mod.InnerText = d.Modified;
             dElem.AppendChild(mod);
 
             // Identifier
-            XmlElement identifier = createElem("dcterms", "Identifier", d.Identifier);
+            string stringDataType = "http://www.w3.org/2001/XMLSchema#string";
+            XmlElement identifier = createElem("dcterms", "identifier", "rdf", "datatype", stringDataType);
+            identifier.InnerText = d.Identifier;
             dElem.AppendChild(identifier);
 
             // Keyword
             foreach (Keyword keyword in d.Keywords)
             {
-                XmlElement keyElem = createElem("dcat", "keyword", "xml", "Language", keyword.Language);
+                XmlElement keyElem = createElem("dcat", "keyword", "xml", "lang", keyword.Language);
                 keyElem.InnerText = keyword.Text;
                 dElem.AppendChild(keyElem);
             }
@@ -260,34 +262,34 @@ namespace Px.Dcat
             // languages
             foreach (string language in d.LanguageURIs)
             {
-                XmlElement langElem = createElem("dcterms", "Language", "rdf", "Resource", language);
+                XmlElement langElem = createElem("dcterms", "language", "rdf", "resource", language);
                 dElem.AppendChild(langElem);
             }
 
             // Contacts
             foreach (ContactPerson cp in d.ContactPersons)
             {
-                XmlElement contactPoint = createElem("dcat", "contactPoint", "rdf", "Resource", cp.Resource);
+                XmlElement contactPoint = createElem("dcat", "contactPoint", "rdf", "resource", cp.Resource);
                 dElem.AppendChild(contactPoint);
             }
 
             // Landing page
             foreach (string url in d.Urls)
             {
-                XmlElement landing = createElem("dcat", "landingPage", "rdf", "Resource", url);
+                XmlElement landing = createElem("dcat", "landingPage", "rdf", "resource", url);
                 dElem.AppendChild(landing);
             }
 
             // Update Frequency
             if (d.UpdateFrequency != null)
             {
-                XmlElement updateElem = createElem("dcterms", "accrualPeriodicity", "rdf", "Resource", d.UpdateFrequency);
+                XmlElement updateElem = createElem("dcterms", "accrualPeriodicity", "rdf", "resource", d.UpdateFrequency);
                 dElem.AppendChild(updateElem);
             }
 
             // Access rights
-            string publicAccess = "http://publications.europa.eu/Resource/authority/access-right/PUBLIC";
-            XmlElement accessElem = createElem("dcterms", "accessRights", "rdf", "Resource", publicAccess);
+            string publicAccess = "http://publications.europa.eu/resource/authority/access-right/PUBLIC";
+            XmlElement accessElem = createElem("dcterms", "accessRights", "rdf", "resource", publicAccess);
 
             dElem.AppendChild(accessElem);
 
@@ -310,12 +312,12 @@ namespace Px.Dcat
                 if (lang is null)
                 {
                     // unspecified language
-                    XmlElement nameElem = createElem("foaf", "Name", name);
+                    XmlElement nameElem = createElem("foaf", "name", name);
                     orgElem.AppendChild(nameElem);
                 }
                 else
                 {
-                    XmlElement nameElem = createElem("foaf", "Name", "xml", "Language", lang);
+                    XmlElement nameElem = createElem("foaf", "name", "xml", "lang", lang);
                     nameElem.InnerText = name;
                     orgElem.AppendChild(nameElem);
                 }
@@ -367,23 +369,28 @@ namespace Px.Dcat
             XmlElement distr = createElem("dcat", "Distribution", "rdf", "about", dst.Resource);
 
             // title
-            XmlElement titleElem = createElem("dcterms", "Title", dst.Title);
+            XmlElement titleElem = createElem("dcterms", "title", "xml", "lang", dst.LanguageRaw);
+            titleElem.InnerText = dst.Title;
             distr.AppendChild(titleElem);
 
             // format
-            XmlElement formatElem = createElem("dcterms", "Format", dst.Format);
-            distr.AppendChild(titleElem);
+            string stringDataType = "http://www.w3.org/2001/XMLSchema#string";
+            XmlElement formatElem = createElem("dcterms", "format", "rdf", "datatype", stringDataType);
+            formatElem.InnerText = dst.Format;
+
+            //XmlElement formatElem = createElem("dcterms", "format", dst.Format);
+            distr.AppendChild(formatElem);
 
             //accessURL
-            XmlElement accessElem = createElem("dcat", "accessURL", "rdf", "Resource", dst.AccessUrl);
+            XmlElement accessElem = createElem("dcat", "accessURL", "rdf", "resource", dst.AccessUrl);
             distr.AppendChild(accessElem);
 
             //language
-            XmlElement langElem = createElem("dcterms", "Language", "rdf", "Resource", dst.Language);
+            XmlElement langElem = createElem("dcterms", "language", "rdf", "resource", dst.Language);
             distr.AppendChild(langElem);
 
             //license
-            XmlElement licenseElem = createElem("dcterms", "License", "rdf", "Resource", dst.License);
+            XmlElement licenseElem = createElem("dcterms", "license", "rdf", "resource", dst.License);
             distr.AppendChild(licenseElem);
 
             return distr;
