@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <dcat:catalog>
+  <dcat:Catalog>
     <dcterms:Language rdf:resource="http://publications.europa.eu/resource/authority/Language/SWE" />
     <dcterms:Language rdf:resource="http://publications.europa.eu/resource/authority/Language/ENG" />
     <dcterms:title xml:Language="sv">Statistikmyndigheten SCB:s Statistikdatabas</dcterms:title>
@@ -14,7 +14,7 @@
     <dcat:Dataset rdf:resource="https://statistikdatabasen.scb.se/dataset/TAB004" />
     <dcat:Dataset rdf:resource="https://statistikdatabasen.scb.se/dataset/TAB002" />
     <dcat:Dataset rdf:resource="https://statistikdatabasen.scb.se/dataset/TAB001" />
-  </dcat:catalog>
+  </dcat:Catalog>
   <dcat:Dataset rdf:about="https://statistikdatabasen.scb.se/dataset/TAB003">
     <dcterms:title xml:Language="sv">Disposal facilities efter behandlingstyp, avfallskategori, tabellinnehåll och year</dcterms:title>
     <dcterms:description xml:Language="sv">-</dcterms:description>
