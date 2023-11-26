@@ -16,10 +16,10 @@
     <dcat:dataset rdf:resource="https://statistikdatabasen.scb.se/dataset/TAB001" />
   </dcat:Catalog>
   <dcat:Dataset rdf:about="https://statistikdatabasen.scb.se/dataset/TAB003">
-    <dcterms:title xml:Language="sv">Disposal facilities efter behandlingstyp, avfallskategori, tabellinnehåll och year</dcterms:title>
-    <dcterms:description xml:Language="sv">-</dcterms:description>
-    <dcterms:title xml:Language="en">Disposal facilities by treatment category, waste category, metrics and year</dcterms:title>
-    <dcterms:description xml:Language="en">-</dcterms:description>
+    <dcterms:title xml:lang="sv">Disposal facilities efter behandlingstyp, avfallskategori, tabellinnehåll och year</dcterms:title>
+    <dcterms:description xml:lang="sv">-</dcterms:description>
+    <dcterms:title xml:lang="en">Disposal facilities by treatment category, waste category, metrics and year</dcterms:title>
+    <dcterms:description xml:lang="en">-</dcterms:description>
     <dcterms:publisher rdf:resource="https://statistikdatabasen.scb.se/organization/16" />
     <dcterms:creator rdf:resource="http://id.kb.se/organisations/SE2021000837" />
     <dcat:distribution rdf:resource="https://statistikdatabasen.scb.se/distribution/1" />
