@@ -137,8 +137,8 @@
     <foaf:Name xml:Language="en">Eurostat</foaf:Name>
   </foaf:Organization>
   <foaf:Organization rdf:about="https://statistikdatabasen.scb.se/organization/16">
-    <foaf:Name xml:Language="sv">SCB</foaf:Name>
-    <foaf:Name xml:Language="en">SCB</foaf:Name>
+    <foaf:Name xml:lang="sv">SCB</foaf:Name>
+    <foaf:Name xml:lang="en">SCB</foaf:Name>
   </foaf:Organization>
   <dcat:Distribution rdf:about="https://statistikdatabasen.scb.se/distribution/1">
     <dcterms:title>Metadata (sv)</dcterms:title>
