@@ -3,17 +3,17 @@
   <dcat:Catalog>
     <dcterms:Language rdf:resource="http://publications.europa.eu/resource/authority/Language/SWE" />
     <dcterms:Language rdf:resource="http://publications.europa.eu/resource/authority/Language/ENG" />
-    <dcterms:title xml:Language="sv">Statistikmyndigheten SCB:s Statistikdatabas</dcterms:title>
-    <dcterms:title xml:Language="en">Statistics Swedens Statistical database</dcterms:title>
-    <dcterms:description xml:Language="sv">Statistikmyndigheten SCB:s Statistikdatabas</dcterms:description>
-    <dcterms:description xml:Language="en">Statistics Swedens Statistical database</dcterms:description>
+    <dcterms:title xml:lang="sv">Statistikmyndigheten SCB:s Statistikdatabas</dcterms:title>
+    <dcterms:title xml:lang="en">Statistics Swedens Statistical database</dcterms:title>
+    <dcterms:description xml:lang="sv">Statistikmyndigheten SCB:s Statistikdatabas</dcterms:description>
+    <dcterms:description xml:lang="en">Statistics Swedens Statistical database</dcterms:description>
     <dcterms:publisher rdf:resource="https://statistikdatabasen.scb.se/organization/16" />
-    <dcterms:License rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
-    <dcat:Dataset rdf:resource="https://statistikdatabasen.scb.se/dataset/TAB003" />
-    <dcat:Dataset rdf:resource="https://statistikdatabasen.scb.se/dataset/TAB005" />
-    <dcat:Dataset rdf:resource="https://statistikdatabasen.scb.se/dataset/TAB004" />
-    <dcat:Dataset rdf:resource="https://statistikdatabasen.scb.se/dataset/TAB002" />
-    <dcat:Dataset rdf:resource="https://statistikdatabasen.scb.se/dataset/TAB001" />
+    <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+    <dcat:dataset rdf:resource="https://statistikdatabasen.scb.se/dataset/TAB003" />
+    <dcat:dataset rdf:resource="https://statistikdatabasen.scb.se/dataset/TAB005" />
+    <dcat:dataset rdf:resource="https://statistikdatabasen.scb.se/dataset/TAB004" />
+    <dcat:dataset rdf:resource="https://statistikdatabasen.scb.se/dataset/TAB002" />
+    <dcat:dataset rdf:resource="https://statistikdatabasen.scb.se/dataset/TAB001" />
   </dcat:Catalog>
   <dcat:Dataset rdf:about="https://statistikdatabasen.scb.se/dataset/TAB003">
     <dcterms:title xml:Language="sv">Disposal facilities efter behandlingstyp, avfallskategori, tabellinnehåll och year</dcterms:title>
