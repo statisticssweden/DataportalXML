@@ -31,8 +31,8 @@
     <dcat:keyword xml:Language="sv">Miljö</dcat:keyword>
     <dcat:keyword xml:Language="en">Environment</dcat:keyword>
     <dcat:keyword xml:Language="en">Environment</dcat:keyword>
-    <dcterms:Language rdf:resource="http://publications.europa.eu/resource/authority/Language/SWE" />
-    <dcterms:Language rdf:resource="http://publications.europa.eu/resource/authority/Language/ENG" />
+    <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
+    <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:landingPage rdf:resource="https://statistikdatabasen.scb.se/sv/ssd/MI0305T02N" />
     <dcat:landingPage rdf:resource="https://statistikdatabasen.scb.se/en/ssd/MI0305T02N" />
     <dcterms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL" />
