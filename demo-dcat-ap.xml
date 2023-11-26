@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <dcat:Catalog>
-    <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/Language/SWE" />
-    <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/Language/ENG" />
+    <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
+    <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcterms:title xml:lang="sv">Statistikmyndigheten SCB:s Statistikdatabas</dcterms:title>
     <dcterms:title xml:lang="en">Statistics Swedens Statistical database</dcterms:title>
     <dcterms:description xml:lang="sv">Statistikmyndigheten SCB:s Statistikdatabas</dcterms:description>
