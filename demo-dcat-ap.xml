@@ -3,11 +3,11 @@
   <dcat:Catalog>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
-    <dcterms:title xml:lang="sv">Statistikmyndigheten SCB:s Statistikdatabas</dcterms:title>
-    <dcterms:title xml:lang="en">Statistics Swedens Statistical database</dcterms:title>
-    <dcterms:description xml:lang="sv">Statistikmyndigheten SCB:s Statistikdatabas</dcterms:description>
-    <dcterms:description xml:lang="en">Statistics Swedens Statistical database</dcterms:description>
-    <dcterms:publisher rdf:resource="https://statistikdatabasen.scb.se/organization/16" />
+    <dcterms:title xml:lang="sv">Statistikmyndigheten SCB:s demo-databas</dcterms:title>
+    <dcterms:title xml:lang="en">Statistics Swedens demo database</dcterms:title>
+    <dcterms:description xml:lang="sv">Statistikmyndigheten SCB:s demo-databas</dcterms:description>
+    <dcterms:description xml:lang="en">Statistics Swedens demo database</dcterms:description>
+    <dcterms:publisher rdf:resource="http://id.kb.se/organisations/SE2021000837" />
     <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
     <dcat:dataset rdf:resource="https://statistikdatabasen.scb.se/dataset/TAB003" />
     <dcat:dataset rdf:resource="https://statistikdatabasen.scb.se/dataset/TAB005" />
@@ -20,17 +20,17 @@
     <dcterms:description xml:lang="sv">-</dcterms:description>
     <dcterms:title xml:lang="en">Disposal facilities by treatment category, waste category, metrics and year</dcterms:title>
     <dcterms:description xml:lang="en">-</dcterms:description>
-    <dcterms:publisher rdf:resource="https://statistikdatabasen.scb.se/organization/16" />
+    <dcterms:publisher rdf:resource="http://id.kb.se/organisations/SE2021000837" />
     <dcterms:creator rdf:resource="http://id.kb.se/organisations/SE2021000837" />
     <dcat:distribution rdf:resource="https://statistikdatabasen.scb.se/distribution/1" />
     <dcat:distribution rdf:resource="https://statistikdatabasen.scb.se/distribution/2" />
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/ENER" />
     <dcterms:Modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-11-24T07:30:00</dcterms:Modified>
     <dcterms:Identifier>TAB003</dcterms:Identifier>
-    <dcat:keyword xml:Language="sv">Miljö</dcat:keyword>
-    <dcat:keyword xml:Language="sv">Miljö</dcat:keyword>
-    <dcat:keyword xml:Language="en">Environment</dcat:keyword>
-    <dcat:keyword xml:Language="en">Environment</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Miljö</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Miljö</dcat:keyword>
+    <dcat:keyword xml:lang="en">Environment</dcat:keyword>
+    <dcat:keyword xml:lang="en">Environment</dcat:keyword>
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:landingPage rdf:resource="https://statistikdatabasen.scb.se/sv/ssd/MI0305T02N" />
@@ -39,165 +39,161 @@
     <dcterms:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC" />
   </dcat:Dataset>
   <dcat:Dataset rdf:about="https://statistikdatabasen.scb.se/dataset/TAB005">
-    <dcterms:title xml:Language="sv">Markanvändningen i Sverige, hektar efter region, markanvändning, tabellinnehåll och year</dcterms:title>
-    <dcterms:description xml:Language="sv">-</dcterms:description>
-    <dcterms:title xml:Language="en">Land use in Sweden, hectares by region, land use, metrics and year</dcterms:title>
-    <dcterms:description xml:Language="en">-</dcterms:description>
-    <dcterms:publisher rdf:resource="https://statistikdatabasen.scb.se/organization/16" />
+    <dcterms:title xml:lang="sv">Markanvändningen i Sverige, hektar efter region, markanvändning, tabellinnehåll och year</dcterms:title>
+    <dcterms:description xml:lang="sv">-</dcterms:description>
+    <dcterms:title xml:lang="en">Land use in Sweden, hectares by region, land use, metrics and year</dcterms:title>
+    <dcterms:description xml:lang="en">-</dcterms:description>
+    <dcterms:publisher rdf:resource="http://id.kb.se/organisations/SE2021000837" />
     <dcterms:creator rdf:resource="http://id.kb.se/organisations/SE2021000837" />
     <dcat:distribution rdf:resource="https://statistikdatabasen.scb.se/distribution/4" />
     <dcat:distribution rdf:resource="https://statistikdatabasen.scb.se/distribution/5" />
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/ENER" />
     <dcterms:Modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-11-24T07:30:00</dcterms:Modified>
     <dcterms:Identifier>TAB005</dcterms:Identifier>
-    <dcat:keyword xml:Language="sv">Miljö</dcat:keyword>
-    <dcat:keyword xml:Language="sv">Miljö 2</dcat:keyword>
-    <dcat:keyword xml:Language="en">Environment</dcat:keyword>
-    <dcat:keyword xml:Language="en">Environment 2</dcat:keyword>
-    <dcterms:Language rdf:resource="http://publications.europa.eu/resource/authority/Language/SWE" />
-    <dcterms:Language rdf:resource="http://publications.europa.eu/resource/authority/Language/ENG" />
+    <dcat:keyword xml:lang="sv">Miljö</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Miljö 2</dcat:keyword>
+    <dcat:keyword xml:lang="en">Environment</dcat:keyword>
+    <dcat:keyword xml:lang="en">Environment 2</dcat:keyword>
+    <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
+    <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:landingPage rdf:resource="https://statistikdatabasen.scb.se/sv/ssd/LANDUSE" />
     <dcat:landingPage rdf:resource="https://statistikdatabasen.scb.se/en/ssd/LANDUSE" />
     <dcterms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL" />
     <dcterms:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC" />
   </dcat:Dataset>
   <dcat:Dataset rdf:about="https://statistikdatabasen.scb.se/dataset/TAB004">
-    <dcterms:title xml:Language="sv">Totala utsläpp av växthusgaser efter sektor, växthusgas, tabellinnehåll och year</dcterms:title>
-    <dcterms:description xml:Language="sv">-</dcterms:description>
-    <dcterms:title xml:Language="en">Total air emissions by sector, greenhouse gas, metrics and year</dcterms:title>
-    <dcterms:description xml:Language="en">-</dcterms:description>
-    <dcterms:publisher rdf:resource="https://statistikdatabasen.scb.se/organization/16" />
+    <dcterms:title xml:lang="sv">Totala utsläpp av växthusgaser efter sektor, växthusgas, tabellinnehåll och year</dcterms:title>
+    <dcterms:description xml:lang="sv">-</dcterms:description>
+    <dcterms:title xml:lang="en">Total air emissions by sector, greenhouse gas, metrics and year</dcterms:title>
+    <dcterms:description xml:lang="en">-</dcterms:description>
+    <dcterms:publisher rdf:resource="http://id.kb.se/organisations/SE2021000837" />
     <dcterms:creator rdf:resource="http://id.kb.se/organisations/SE2021000837" />
     <dcat:distribution rdf:resource="https://statistikdatabasen.scb.se/distribution/7" />
     <dcat:distribution rdf:resource="https://statistikdatabasen.scb.se/distribution/8" />
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/ENER" />
     <dcterms:Modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-11-24T07:30:00</dcterms:Modified>
     <dcterms:Identifier>TAB004</dcterms:Identifier>
-    <dcat:keyword xml:Language="sv">Miljö</dcat:keyword>
-    <dcat:keyword xml:Language="sv">Miljö 2</dcat:keyword>
-    <dcat:keyword xml:Language="en">Environment</dcat:keyword>
-    <dcat:keyword xml:Language="en">Environment 2</dcat:keyword>
-    <dcterms:Language rdf:resource="http://publications.europa.eu/resource/authority/Language/SWE" />
-    <dcterms:Language rdf:resource="http://publications.europa.eu/resource/authority/Language/ENG" />
+    <dcat:keyword xml:lang="sv">Miljö</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Miljö 2</dcat:keyword>
+    <dcat:keyword xml:lang="en">Environment</dcat:keyword>
+    <dcat:keyword xml:lang="en">Environment 2</dcat:keyword>
+    <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
+    <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:landingPage rdf:resource="https://statistikdatabasen.scb.se/sv/ssd/TotalEmission" />
     <dcat:landingPage rdf:resource="https://statistikdatabasen.scb.se/en/ssd/TotalEmission" />
     <dcterms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL" />
     <dcterms:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC" />
   </dcat:Dataset>
   <dcat:Dataset rdf:about="https://statistikdatabasen.scb.se/dataset/TAB002">
-    <dcterms:title xml:Language="sv">Befolkning efter region, kön, ålder, medborgarskap, tabellinnehåll och year</dcterms:title>
-    <dcterms:description xml:Language="sv">-</dcterms:description>
-    <dcterms:title xml:Language="en">Population by region, sex, age, citizenship, metrics and year</dcterms:title>
-    <dcterms:description xml:Language="en">-</dcterms:description>
-    <dcterms:publisher rdf:resource="https://statistikdatabasen.scb.se/organization/16" />
+    <dcterms:title xml:lang="sv">Befolkning efter region, kön, ålder, medborgarskap, tabellinnehåll och year</dcterms:title>
+    <dcterms:description xml:lang="sv">-</dcterms:description>
+    <dcterms:title xml:lang="en">Population by region, sex, age, citizenship, metrics and year</dcterms:title>
+    <dcterms:description xml:lang="en">-</dcterms:description>
+    <dcterms:publisher rdf:resource="http://id.kb.se/organisations/SE2021000837" />
     <dcterms:creator rdf:resource="https://statistikdatabasen.scb.se/organization/15" />
     <dcat:distribution rdf:resource="https://statistikdatabasen.scb.se/distribution/10" />
     <dcat:distribution rdf:resource="https://statistikdatabasen.scb.se/distribution/11" />
     <dcterms:Modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-11-24T07:30:00</dcterms:Modified>
     <dcterms:Identifier>TAB002</dcterms:Identifier>
-    <dcat:keyword xml:Language="sv">Befolkning</dcat:keyword>
-    <dcat:keyword xml:Language="sv">Befolkning</dcat:keyword>
-    <dcat:keyword xml:Language="en">Population</dcat:keyword>
-    <dcat:keyword xml:Language="en">Population census</dcat:keyword>
-    <dcterms:Language rdf:resource="http://publications.europa.eu/resource/authority/Language/SWE" />
-    <dcterms:Language rdf:resource="http://publications.europa.eu/resource/authority/Language/ENG" />
+    <dcat:keyword xml:lang="sv">Befolkning</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Befolkning</dcat:keyword>
+    <dcat:keyword xml:lang="en">Population</dcat:keyword>
+    <dcat:keyword xml:lang="en">Population census</dcat:keyword>
+    <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
+    <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:landingPage rdf:resource="https://statistikdatabasen.scb.se/sv/ssd/CENS_HNCTZ" />
     <dcat:landingPage rdf:resource="https://statistikdatabasen.scb.se/en/ssd/CENS_HNCTZ" />
     <dcterms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL" />
     <dcterms:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC" />
   </dcat:Dataset>
   <dcat:Dataset rdf:about="https://statistikdatabasen.scb.se/dataset/TAB001">
-    <dcterms:title xml:Language="sv">Befolkning efter region, kön, ålder, tabellinnehåll och year</dcterms:title>
-    <dcterms:description xml:Language="sv">-</dcterms:description>
-    <dcterms:title xml:Language="en">Population by region, sex, age, metrics and year</dcterms:title>
-    <dcterms:description xml:Language="en">-</dcterms:description>
-    <dcterms:publisher rdf:resource="https://statistikdatabasen.scb.se/organization/16" />
-    <dcterms:creator rdf:resource="https://statistikdatabasen.scb.se/organization/15" />
+    <dcterms:title xml:lang="sv">Befolkning efter region, kön, ålder, tabellinnehåll och year</dcterms:title>
+    <dcterms:description xml:lang="sv">-</dcterms:description>
+    <dcterms:title xml:lang="en">Population by region, sex, age, metrics and year</dcterms:title>
+    <dcterms:description xml:lang="en">-</dcterms:description>
+    <dcterms:publisher rdf:resource="http://id.kb.se/organisations/SE2021000837" />
+    <dcterms:creator rdf:resource="https://statistikdatabasen.scb.se/organizatiolangn/15" />
     <dcat:distribution rdf:resource="https://statistikdatabasen.scb.se/distribution/13" />
     <dcat:distribution rdf:resource="https://statistikdatabasen.scb.se/distribution/14" />
     <dcterms:Modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-11-24T07:30:00</dcterms:Modified>
     <dcterms:Identifier>TAB001</dcterms:Identifier>
-    <dcat:keyword xml:Language="sv">Befolkning</dcat:keyword>
-    <dcat:keyword xml:Language="sv">Befolkning</dcat:keyword>
-    <dcat:keyword xml:Language="en">Population</dcat:keyword>
-    <dcat:keyword xml:Language="en">Population census</dcat:keyword>
-    <dcterms:Language rdf:resource="http://publications.europa.eu/resource/authority/Language/SWE" />
-    <dcterms:Language rdf:resource="http://publications.europa.eu/resource/authority/Language/ENG" />
+    <dcat:keyword xml:lang="sv">Befolkning</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Befolkning</dcat:keyword>
+    <dcat:keyword xml:lang="en">Population</dcat:keyword>
+    <dcat:keyword xml:lang="en">Population census</dcat:keyword>
+    <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
+    <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:landingPage rdf:resource="https://statistikdatabasen.scb.se/sv/ssd/CENS_HNMGA" />
     <dcat:landingPage rdf:resource="https://statistikdatabasen.scb.se/en/ssd/CENS_HNMGA" />
     <dcterms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL" />
     <dcterms:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC" />
   </dcat:Dataset>
   <foaf:Organization rdf:about="http://id.kb.se/organisations/SE2021000837">
-    <foaf:Name xml:Language="sv">Statistikmyndigheten</foaf:Name>
-    <foaf:Name xml:Language="en">Statistics Sweden</foaf:Name>
+    <foaf:Name xml:lang="sv">Statistikmyndigheten</foaf:Name>
+    <foaf:Name xml:lang="en">Statistics Sweden</foaf:Name>
   </foaf:Organization>
   <foaf:Organization rdf:about="https://statistikdatabasen.scb.se/organization/15">
-    <foaf:Name xml:Language="sv">Eurostat</foaf:Name>
-    <foaf:Name xml:Language="en">Eurostat</foaf:Name>
-  </foaf:Organization>
-  <foaf:Organization rdf:about="https://statistikdatabasen.scb.se/organization/16">
-    <foaf:Name xml:lang="sv">SCB</foaf:Name>
-    <foaf:Name xml:lang="en">SCB</foaf:Name>
+    <foaf:Name xml:lang="sv">Eurostat</foaf:Name>
+    <foaf:Name xml:lang="en">Eurostat</foaf:Name>
   </foaf:Organization>
   <dcat:Distribution rdf:about="https://statistikdatabasen.scb.se/distribution/1">
     <dcterms:title>Metadata (sv)</dcterms:title>
     <dcat:accessURL rdf:resource="https://baseAPI.com/sv/ssd/EN/EN01/MI0305T02N" />
-    <dcterms:Language rdf:resource="http://publications.europa.eu/resource/authority/Language/SWE" />
-    <dcterms:License rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+    <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
+    <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
   </dcat:Distribution>
   <dcat:Distribution rdf:about="https://statistikdatabasen.scb.se/distribution/2">
     <dcterms:title>Metadata (en)</dcterms:title>
     <dcat:accessURL rdf:resource="https://baseAPI.com/en/ssd/EN/EN01/MI0305T02N" />
-    <dcterms:Language rdf:resource="http://publications.europa.eu/resource/authority/Language/ENG" />
-    <dcterms:License rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+    <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
+    <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
   </dcat:Distribution>
   <dcat:Distribution rdf:about="https://statistikdatabasen.scb.se/distribution/4">
     <dcterms:title>Metadata (sv)</dcterms:title>
     <dcat:accessURL rdf:resource="https://baseAPI.com/sv/ssd/EN/EN02/LANDUSE" />
-    <dcterms:Language rdf:resource="http://publications.europa.eu/resource/authority/Language/SWE" />
-    <dcterms:License rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+    <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
+    <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
   </dcat:Distribution>
   <dcat:Distribution rdf:about="https://statistikdatabasen.scb.se/distribution/5">
     <dcterms:title>Metadata (en)</dcterms:title>
     <dcat:accessURL rdf:resource="https://baseAPI.com/en/ssd/EN/EN02/LANDUSE" />
-    <dcterms:Language rdf:resource="http://publications.europa.eu/resource/authority/Language/ENG" />
-    <dcterms:License rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+    <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
+    <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
   </dcat:Distribution>
   <dcat:Distribution rdf:about="https://statistikdatabasen.scb.se/distribution/7">
     <dcterms:title>Metadata (sv)</dcterms:title>
     <dcat:accessURL rdf:resource="https://baseAPI.com/sv/ssd/EN/EN02/TotalEmission" />
-    <dcterms:Language rdf:resource="http://publications.europa.eu/resource/authority/Language/SWE" />
-    <dcterms:License rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+    <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
+    <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
   </dcat:Distribution>
   <dcat:Distribution rdf:about="https://statistikdatabasen.scb.se/distribution/8">
     <dcterms:title>Metadata (en)</dcterms:title>
     <dcat:accessURL rdf:resource="https://baseAPI.com/en/ssd/EN/EN02/TotalEmission" />
-    <dcterms:Language rdf:resource="http://publications.europa.eu/resource/authority/Language/ENG" />
-    <dcterms:License rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+    <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
+    <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
   </dcat:Distribution>
   <dcat:Distribution rdf:about="https://statistikdatabasen.scb.se/distribution/10">
     <dcterms:title>Metadata (sv)</dcterms:title>
     <dcat:accessURL rdf:resource="https://baseAPI.com/sv/ssd/PO/PO01/CENS_HNCTZ" />
-    <dcterms:Language rdf:resource="http://publications.europa.eu/resource/authority/Language/SWE" />
-    <dcterms:License rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+    <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
+    <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
   </dcat:Distribution>
   <dcat:Distribution rdf:about="https://statistikdatabasen.scb.se/distribution/11">
     <dcterms:title>Metadata (en)</dcterms:title>
     <dcat:accessURL rdf:resource="https://baseAPI.com/en/ssd/PO/PO01/CENS_HNCTZ" />
-    <dcterms:Language rdf:resource="http://publications.europa.eu/resource/authority/Language/ENG" />
-    <dcterms:License rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+    <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
+    <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
   </dcat:Distribution>
   <dcat:Distribution rdf:about="https://statistikdatabasen.scb.se/distribution/13">
     <dcterms:title>Metadata (sv)</dcterms:title>
     <dcat:accessURL rdf:resource="https://baseAPI.com/sv/ssd/PO/PO01/CENS_HNMGA" />
-    <dcterms:Language rdf:resource="http://publications.europa.eu/resource/authority/Language/SWE" />
-    <dcterms:License rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+    <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
+    <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
   </dcat:Distribution>
   <dcat:Distribution rdf:about="https://statistikdatabasen.scb.se/distribution/14">
     <dcterms:title>Metadata (en)</dcterms:title>
     <dcat:accessURL rdf:resource="https://baseAPI.com/en/ssd/PO/PO01/CENS_HNMGA" />
-    <dcterms:Language rdf:resource="http://publications.europa.eu/resource/authority/Language/ENG" />
-    <dcterms:License rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+    <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
+    <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
   </dcat:Distribution>
 </rdf:RDF>
