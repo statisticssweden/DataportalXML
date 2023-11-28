@@ -10,6 +10,12 @@
     <dcterms:publisher rdf:resource="http://id.kb.se/organisations/SE2021000837" />
     <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
     <dcat:dataset rdf:resource="https://statistikdatabasen.scb.se/dataset/TAB3966" />
+    <dcat:dataset rdf:resource="https://statistikdatabasen.scb.se/dataset/TAB3966" />
+    <dcat:dataset rdf:resource="https://statistikdatabasen.scb.se/dataset/TAB3969" />
+    <dcat:dataset rdf:resource="https://statistikdatabasen.scb.se/dataset/TAB4626" />
+    <dcat:dataset rdf:resource="https://statistikdatabasen.scb.se/dataset/TAB4944" />
+    <dcat:dataset rdf:resource="https://statistikdatabasen.scb.se/dataset/TAB4881" />
+    <dcat:dataset rdf:resource="https://statistikdatabasen.scb.se/dataset/TAB389" />
   </dcat:Catalog>
   <dcat:Dataset rdf:about="https://statistikdatabasen.scb.se/dataset/TAB3966">
     <dcterms:title xml:lang="sv">Andel förvärvsarbetande kommunmottagna flyktingar och anhöriga, procent efter ålder, kön, mottagningsår, tabellinnehåll och sysselsättningsår 1997-2021</dcterms:title>
@@ -29,6 +35,96 @@
     <dcterms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL" />
     <dcterms:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC" />
   </dcat:Dataset>
+  <dcat:Dataset rdf:about="https://statistikdatabasen.scb.se/dataset/TAB3969">
+  <dcterms:title xml:lang="sv">Andel förvärvsarbetande kommunmottagna flyktingar, procent efter utbildning, kön, mottagningsår, tabellinnehåll och sysselsättningsår 1997-2021</dcterms:title>
+  <dcterms:description xml:lang="sv">Andel förvärvsarbetande kommunmottagna flyktingar, procent efter utbildning, kön, mottagningsår, tabellinnehåll och sysselsättningsår</dcterms:description>
+  <dcterms:publisher rdf:resource="http://id.kb.se/organisations/SE2021000837" />
+  <dcterms:creator rdf:resource="http://id.kb.se/organisations/SE2021000837" />
+  <dcat:distribution rdf:resource="https://statistikdatabasen.scb.se/distribution/sv/TAB3969" />
+  <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
+  <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-12-20T08:00:00</dcterms:modified>
+  <dcterms:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAB3969</dcterms:identifier>
+  <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+  <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+  <dcat:keyword xml:lang="sv">Statistik med inriktning mot arbetsmarknaden</dcat:keyword>
+  <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
+  <dcat:contactPoint rdf:resource="https://statistikdatabasen.scb.se/contactperson/1" />
+  <dcat:landingPage rdf:resource="https://statistikdatabasen.scb.se/sv/ssd/MotFlyktUtbKon" />
+  <dcterms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL" />
+  <dcterms:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC" />
+</dcat:Dataset>
+<dcat:Dataset rdf:about="https://statistikdatabasen.scb.se/dataset/TAB4626">
+  <dcterms:title xml:lang="sv">Andel förvärvsarbetande kommunmottagna flyktingar, procent efter region, kön, mottagningsår, tabellinnehåll och sysselsättningsår 1997-2021</dcterms:title>
+  <dcterms:description xml:lang="sv">Andel förvärvsarbetande kommunmottagna flyktingar, procent efter region, kön, mottagningsår, tabellinnehåll och sysselsättningsår</dcterms:description>
+  <dcterms:publisher rdf:resource="http://id.kb.se/organisations/SE2021000837" />
+  <dcterms:creator rdf:resource="http://id.kb.se/organisations/SE2021000837" />
+  <dcat:distribution rdf:resource="https://statistikdatabasen.scb.se/distribution/sv/TAB4626" />
+  <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
+  <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-12-20T08:00:00</dcterms:modified>
+  <dcterms:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAB4626</dcterms:identifier>
+  <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+  <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+  <dcat:keyword xml:lang="sv">Statistik med inriktning mot arbetsmarknaden</dcat:keyword>
+  <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
+  <dcat:contactPoint rdf:resource="https://statistikdatabasen.scb.se/contactperson/4" />
+  <dcat:landingPage rdf:resource="https://statistikdatabasen.scb.se/sv/ssd/MotFlyktLanKon" />
+  <dcterms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL" />
+  <dcterms:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC" />
+</dcat:Dataset>
+<dcat:Dataset rdf:about="https://statistikdatabasen.scb.se/dataset/TAB4944">
+  <dcterms:title xml:lang="sv">Andel (i procent) kommunmottagna flyktingar som fått en första inkomst från arbete eller varit registrerade som egenföretagare efter ålder vid mottagning, år efter mottagning, kön, tabellinnehåll och mottagningsår 1997-2021</dcterms:title>
+  <dcterms:description xml:lang="sv">Andel (i procent) kommunmottagna flyktingar som fått en första inkomst från arbete eller varit registrerade som egenföretagare efter ålder vid mottagning, år efter mottagning, kön, tabellinnehåll och mottagningsår</dcterms:description>
+  <dcterms:publisher rdf:resource="http://id.kb.se/organisations/SE2021000837" />
+  <dcterms:creator rdf:resource="http://id.kb.se/organisations/SE2021000837" />
+  <dcat:distribution rdf:resource="https://statistikdatabasen.scb.se/distribution/sv/TAB4944" />
+  <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
+  <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-12-20T08:00:00</dcterms:modified>
+  <dcterms:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAB4944</dcterms:identifier>
+  <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+  <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+  <dcat:keyword xml:lang="sv">Statistik med inriktning mot arbetsmarknaden</dcat:keyword>
+  <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
+  <dcat:contactPoint rdf:resource="https://statistikdatabasen.scb.se/contactperson/1" />
+  <dcat:landingPage rdf:resource="https://statistikdatabasen.scb.se/sv/ssd/MotFlyktJobbKon" />
+  <dcterms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL" />
+  <dcterms:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC" />
+</dcat:Dataset>
+<dcat:Dataset rdf:about="https://statistikdatabasen.scb.se/dataset/TAB4881">
+  <dcterms:title xml:lang="sv">Statistik med inriktning mot arbetsmarknaden efter region, kön, utbildningsnivå, bakgrundsvariabel, tabellinnehåll och år 1997-2021</dcterms:title>
+  <dcterms:description xml:lang="sv">Statistik med inriktning mot arbetsmarknaden efter region, kön, utbildningsnivå, bakgrundsvariabel, tabellinnehåll och år</dcterms:description>
+  <dcterms:publisher rdf:resource="http://id.kb.se/organisations/SE2021000837" />
+  <dcterms:creator rdf:resource="http://id.kb.se/organisations/SE2021000837" />
+  <dcat:distribution rdf:resource="https://statistikdatabasen.scb.se/distribution/sv/TAB4881" />
+  <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
+  <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-12T08:00:00</dcterms:modified>
+  <dcterms:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAB4881</dcterms:identifier>
+  <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+  <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+  <dcat:keyword xml:lang="sv">Statistik med inriktning mot arbetsmarknaden</dcat:keyword>
+  <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
+  <dcat:contactPoint rdf:resource="https://statistikdatabasen.scb.se/contactperson/1" />
+  <dcat:landingPage rdf:resource="https://statistikdatabasen.scb.se/sv/ssd/IntGr1KomKonUtb" />
+  <dcterms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL" />
+  <dcterms:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC" />
+</dcat:Dataset>
+<dcat:Dataset rdf:about="https://statistikdatabasen.scb.se/dataset/TAB389">
+  <dcterms:title xml:lang="sv">Statistik med inriktning mot arbetsmarknaden efter region, kön, utbildningsnivå, bakgrundsvariabel, tabellinnehåll och år 1997-2021</dcterms:title>
+  <dcterms:description xml:lang="sv">Statistik med inriktning mot arbetsmarknaden efter region, kön, utbildningsnivå, bakgrundsvariabel, tabellinnehåll och år</dcterms:description>
+  <dcterms:publisher rdf:resource="http://id.kb.se/organisations/SE2021000837" />
+  <dcterms:creator rdf:resource="http://id.kb.se/organisations/SE2021000837" />
+  <dcat:distribution rdf:resource="https://statistikdatabasen.scb.se/distribution/sv/TAB389" />
+  <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
+  <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-12T08:00:00</dcterms:modified>
+  <dcterms:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAB389</dcterms:identifier>
+  <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+  <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+  <dcat:keyword xml:lang="sv">Statistik med inriktning mot arbetsmarknaden</dcat:keyword>
+  <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
+  <dcat:contactPoint rdf:resource="https://statistikdatabasen.scb.se/contactperson/1" />
+  <dcat:landingPage rdf:resource="https://statistikdatabasen.scb.se/sv/ssd/IntGr1LanKonUtb" />
+  <dcterms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL" />
+  <dcterms:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC" />
+</dcat:Dataset>  
   <vcard:Individual rdf:about="https://statistikdatabasen.scb.se/contactperson/1">
     <vcard:fn>Malin Forsberg, SCB</vcard:fn>
     <vcard:hasEmail rdf:resource="mailto:malin.forsberg@scb.se" />
@@ -38,6 +134,15 @@
       </dcterms:description>
     </vcard:hasTelephone>
   </vcard:Individual>
+  <vcard:Individual rdf:about="https://statistikdatabasen.scb.se/contactperson/4">
+  <vcard:fn> Statistikservice, SCB</vcard:fn>
+  <vcard:hasEmail rdf:resource="mailto:information@scb.se" />
+  <vcard:hasTelephone>
+    <dcterms:description>
+      <dcterms:hasValue rdf:resource="tel:+46010-4795000" />
+    </dcterms:description>
+  </vcard:hasTelephone>
+</vcard:Individual>
   <foaf:Organization rdf:about="http://id.kb.se/organisations/SE2021000837">
     <foaf:name xml:lang="sv">SCB</foaf:name>
     <foaf:name xml:lang="en">Statistics Sweden</foaf:name>
@@ -53,6 +158,34 @@
     <dcterms:title xml:lang="sv">Metadata (sv)</dcterms:title>
     <dcterms:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">application/json</dcterms:format>
     <dcat:accessURL rdf:resource="https://api.scb.se/OV0104/v1/doris/sv/ssd/AA/AA0003/AA0003B/MotFlyktUtbKon" />
+    <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
+    <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://statistikdatabasen.scb.se/distribution/sv/TAB4626">
+    <dcterms:title xml:lang="sv">Metadata (sv)</dcterms:title>
+    <dcterms:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">application/json</dcterms:format>
+    <dcat:accessURL rdf:resource="https://api.scb.se/OV0104/v1/doris/sv/ssd/AA/AA0003/AA0003B/MotFlyktLanKon" />
+    <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
+    <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://statistikdatabasen.scb.se/distribution/sv/TAB4944">
+    <dcterms:title xml:lang="sv">Metadata (sv)</dcterms:title>
+    <dcterms:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">application/json</dcterms:format>
+    <dcat:accessURL rdf:resource="https://api.scb.se/OV0104/v1/doris/sv/ssd/AA/AA0003/AA0003B/MotFlyktJobbKon" />
+    <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
+    <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://statistikdatabasen.scb.se/distribution/sv/TAB4881">
+    <dcterms:title xml:lang="sv">Metadata (sv)</dcterms:title>
+    <dcterms:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">application/json</dcterms:format>
+    <dcat:accessURL rdf:resource="https://api.scb.se/OV0104/v1/doris/sv/ssd/AA/AA0003/AA0003B/IntGr1KomKonUtb" />
+    <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
+    <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://statistikdatabasen.scb.se/distribution/sv/TAB389">
+    <dcterms:title xml:lang="sv">Metadata (sv)</dcterms:title>
+    <dcterms:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">application/json</dcterms:format>
+    <dcat:accessURL rdf:resource="https://api.scb.se/OV0104/v1/doris/sv/ssd/AA/AA0003/AA0003B/IntGr1LanKonUtb" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
   </dcat:Distribution>
