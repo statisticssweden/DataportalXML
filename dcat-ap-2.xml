@@ -10,7 +10,7 @@
     <dcterms:publisher rdf:resource="http://id.kb.se/organisations/SE2021000837" />
     <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
     <dcat:dataset rdf:resource="https://statistikdatabasen.scb.se/dataset/TAB4161" />
-      </dcat:Catalog>
+  </dcat:Catalog>
   <dcat:Dataset rdf:about="https://statistikdatabasen.scb.se/dataset/TAB4161">
     <dcterms:title xml:lang="sv">Befolkningsförändringar efter tabellinnehåll och år 2023-2120</dcterms:title>
     <dcterms:description xml:lang="sv">Befolkningsförändringar efter tabellinnehåll och år</dcterms:description>
