@@ -9,36 +9,8 @@
     <dcterms:description xml:lang="en">Statistics Swedens Statistical database</dcterms:description>
     <dcterms:publisher rdf:resource="http://id.kb.se/organisations/SE2021000837" />
     <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
-    <dcat:dataset rdf:resource="https://statistikdatabasen.scb.se/dataset/TAB4161" />
     <dcat:dataset rdf:resource="https://statistikdatabasen.scb.se/dataset/TAB5959" />
       </dcat:Catalog>
-  <dcat:Dataset rdf:about="https://statistikdatabasen.scb.se/dataset/TAB4161">
-    <dcterms:title xml:lang="sv">Befolkningsförändringar efter tabellinnehåll och år 2023-2120</dcterms:title>
-    <dcterms:description xml:lang="sv">Befolkningsförändringar efter tabellinnehåll och år</dcterms:description>
-    <dcterms:title xml:lang="en">Population changes by observations and year 2023-2120</dcterms:title>
-    <dcterms:description xml:lang="en">Population changes by observations and year</dcterms:description>
-    <dcterms:publisher rdf:resource="http://id.kb.se/organisations/SE2021000837" />
-    <dcterms:creator rdf:resource="http://id.kb.se/organisations/SE2021000837" />
-    <dcat:distribution rdf:resource="https://statistikdatabasen.scb.se/distribution/sv/TAB4161" />
-    <dcat:distribution rdf:resource="https://statistikdatabasen.scb.se/distribution/en/TAB4161" />
-    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-18T08:00:00</dcterms:modified>
-    <dcterms:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAB4161</dcterms:identifier>
-    <dcat:keyword xml:lang="sv">Befolkning</dcat:keyword>
-    <dcat:keyword xml:lang="sv">Befolkningsframskrivningar</dcat:keyword>
-    <dcat:keyword xml:lang="sv">Aktuella framskrivningar</dcat:keyword>
-    <dcat:keyword xml:lang="en">Population</dcat:keyword>
-    <dcat:keyword xml:lang="en">Population projections</dcat:keyword>
-    <dcat:keyword xml:lang="en">Latest projections</dcat:keyword>
-    <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
-    <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
-    <dcat:contactPoint rdf:resource="https://statistikdatabasen.scb.se/contactperson/1185" />
-    <dcat:contactPoint rdf:resource="https://statistikdatabasen.scb.se/contactperson/1181" />
-    <dcat:landingPage rdf:resource="https://statistikdatabasen.scb.se/sv/ssd/BefPrognosOversiktN" />
-    <dcat:landingPage rdf:resource="https://statistikdatabasen.scb.se/en/ssd/BefPrognosOversiktN" />
-    <dcterms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL" />
-    <dcterms:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC" />
-  </dcat:Dataset>
   <dcat:Dataset rdf:about="https://statistikdatabasen.scb.se/dataset/TAB5959">
     <dcterms:title xml:lang="sv">Födda efter mammans födelseregion, ålder, tabellinnehåll och år 2023-2120</dcterms:title>
     <dcterms:description xml:lang="sv">Födda efter mammans födelseregion, ålder, tabellinnehåll och år</dcterms:description>
@@ -1995,20 +1967,6 @@
   <foaf:Organization rdf:about="http://dataportal.se/organisation/SE2021004185">
     <foaf:name xml:lang="sv">Statens skolverk</foaf:name>
   </foaf:Organization>
-  <dcat:Distribution rdf:about="https://statistikdatabasen.scb.se/distribution/sv/TAB4161">
-    <dcterms:title xml:lang="sv">Metadata (sv)</dcterms:title>
-    <dcterms:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">application/json</dcterms:format>
-    <dcat:accessURL rdf:resource="https://api.scb.se/OV0104/v1/doris/sv/ssd/BE/BE0401/BE0401A/BefPrognosOversiktN" />
-    <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
-    <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
-  </dcat:Distribution>
-  <dcat:Distribution rdf:about="https://statistikdatabasen.scb.se/distribution/en/TAB4161">
-    <dcterms:title xml:lang="en">Metadata (en)</dcterms:title>
-    <dcterms:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">application/json</dcterms:format>
-    <dcat:accessURL rdf:resource="https://api.scb.se/OV0104/v1/doris/en/ssd/BE/BE0401/BE0401A/BefPrognosOversiktN" />
-    <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
-    <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
-  </dcat:Distribution>
   <dcat:Distribution rdf:about="https://statistikdatabasen.scb.se/distribution/sv/TAB5959">
     <dcterms:title xml:lang="sv">Metadata (sv)</dcterms:title>
     <dcterms:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">application/json</dcterms:format>
