@@ -32,21 +32,11 @@
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
     <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
     <dcat:contactPoint rdf:resource="https://statistikdatabasen.scb.se/contactperson/1185" />
-    <dcat:contactPoint rdf:resource="https://statistikdatabasen.scb.se/contactperson/1181" />
     <dcat:landingPage rdf:resource="https://statistikdatabasen.scb.se/sv/ssd/BefPrognosOversiktN" />
     <dcat:landingPage rdf:resource="https://statistikdatabasen.scb.se/en/ssd/BefPrognosOversiktN" />
     <dcterms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL" />
     <dcterms:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC" />
   </dcat:Dataset>
-  <vcard:Individual rdf:about="https://statistikdatabasen.scb.se/contactperson/1181">
-    <vcard:fn>Demografi -, Statistics Sweden</vcard:fn>
-    <vcard:hasEmail rdf:resource="mailto:demografi@scb.se." />
-    <vcard:hasTelephone>
-      <dcterms:description>
-        <dcterms:hasValue rdf:resource="tel:--" />
-      </dcterms:description>
-    </vcard:hasTelephone>
-  </vcard:Individual>
   <vcard:Individual rdf:about="https://statistikdatabasen.scb.se/contactperson/1185">
     <vcard:fn>Lena  Lundkvist, Statistics Sweden</vcard:fn>
     <vcard:hasEmail rdf:resource="mailto:lena.lundkvist@scb.se" />
