@@ -39,7 +39,7 @@
   </dcat:Dataset>
   <vcard:Individual rdf:about="https://statistikdatabasen.scb.se/contactperson/1181">
     <vcard:fn>Demografi -, Statistics Sweden</vcard:fn>
-    <vcard:hasEmail rdf:resource="mailto:demografi@scb.se." />
+    <vcard:hasEmail rdf:resource="mailto:demografi@scb.se" />
     <vcard:hasTelephone>
       <dcterms:description>
         <dcterms:hasValue rdf:resource="tel:--" />
