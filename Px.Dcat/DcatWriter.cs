@@ -38,6 +38,7 @@ namespace Px.Dcat
             _nsm.AddNamespace("rdfs", "http://www.w3.org/2000/01/rdf-schema#");
             _nsm.AddNamespace("dcat", "http://www.w3.org/ns/dcat#");
             _nsm.AddNamespace("foaf", "http://xmlns.com/foaf/0.1/");
+            _nsm.AddNamespace("vcard", "http://www.w3.org/2006/vcard/ns#");
 
             XmlDeclaration declaration = _doc.CreateXmlDeclaration("1.0", "utf-8", null);
             _doc.AppendChild(declaration);
@@ -143,7 +144,7 @@ namespace Px.Dcat
         /// <returns>XmlElement</returns>
         public static XmlElement generateCatalog(Catalog c)
         {
-            XmlElement catElem = createElem("dcat", "catalog");
+            XmlElement catElem = createElem("dcat", "Catalog", "rdf", "about", c.Refrence);
 
             // languages
             foreach (string lang in c.Languages)
@@ -184,7 +185,7 @@ namespace Px.Dcat
             // Dataset references
             foreach (Dataset d in c.Datasets)
             {
-                XmlElement dElem = createElem("dcat", "Dataset", "rdf", "resource", d.Resource);
+                XmlElement dElem = createElem("dcat", "dataset", "rdf", "resource", d.Resource);
                 catElem.AppendChild(dElem);
             }
             return catElem;
@@ -341,19 +342,19 @@ namespace Px.Dcat
 
             // Email
             string trimmedEmail = cp.Email.Replace(" ", "");
-            XmlElement emailElem = createElem("vcard", "hasEmail", "rdf", "Resource", "mailto:" + trimmedEmail);
+            XmlElement emailElem = createElem("vcard", "hasEmail", "rdf", "resource", "mailto:" + trimmedEmail);
             individual.AppendChild(emailElem);
 
             // Phone
-            XmlElement phoneElem = createElem("vcard", "hasTelephone");
-            XmlElement descElem = createElem("dcterms", "description");
+            //XmlElement phoneElem = createElem("vcard", "hasTelephone");
+            //XmlElement descElem = createElem("dcterms", "description");
 
-            string phone = "tel:" + cp.Phone.Replace(" ", "");
-            XmlElement phoneVal = createElem("vcard", "hasValue", "rdf", "Resource", phone);
+            //string phone = "tel:" + cp.Phone.Replace(" ", "");
+            //XmlElement phoneVal = createElem("vcard", "hasValue", "rdf", "Resource", phone);
 
-            phoneElem.AppendChild(descElem);
-            descElem.AppendChild(phoneVal);
-            individual.AppendChild(phoneElem);
+            //phoneElem.AppendChild(descElem);
+            //descElem.AppendChild(phoneVal);
+            //individual.AppendChild(phoneElem);
 
             return individual;
         }
