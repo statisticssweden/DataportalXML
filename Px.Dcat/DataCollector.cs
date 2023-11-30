@@ -975,6 +975,7 @@ namespace Px.Dcat
             c.License = _settings.License;
             c.Datasets = getDatasets();
             c.Languages = convertLanguages(_settings.Languages);
+            c.Refrence = _settings.BaseUri;
             setPublisher();
             setOrganizationResources();
             setProducers(c.Datasets);

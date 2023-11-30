@@ -10,5 +10,6 @@ namespace Px.Dcat.DataClasses
         public List<string> Languages;
         public List<Dataset> Datasets;
         public Organization Publisher;
+        public string Refrence { get; set; }
     }
 }
