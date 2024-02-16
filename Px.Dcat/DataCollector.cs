@@ -322,6 +322,43 @@ namespace Px.Dcat
         }
 
         /// <summary>
+        /// Gets the title for each language 
+        /// </summary>
+        /// <param name="Selection"></param>
+        /// <param name="meta">Metadata of table</param>
+        /// <param name="langs">List of languages</param>
+        /// <param name="path">List of languages</param>
+        /// <returns>Return titles in each language for a table</returns>
+        private List<string> getMetaTitles(string Selection, PXMeta meta, List<string> langs, List<PxMenuItem> path)
+        {
+            List<string> titles = new List<string>(langs.Count());
+            
+            PxMenuItem item = path.LastOrDefault();
+            
+            foreach (string lang in langs)
+            {
+            
+              var titleItem = getMenuInLanguage(item, lang); 
+
+                string titleText;
+                var title = titleItem.SubItems.FirstOrDefault(x => x.ID.Selection == Selection);
+                if (title is null)
+                {
+                    // todo: vad sätta för värde här?
+                    titleText = "Inget värde";
+
+                }
+                else
+                {
+                    titleText = title.Text;
+                }
+                meta.SetLanguage(lang);
+                titles.Add(getMetaTitleWithInterval(meta,titleText));
+            }
+            return titles;
+        }
+
+        /// <summary>
         /// Adds time interval to the table title
         /// </summary>
         /// <param name="meta">Metadata of table</param>
@@ -350,6 +387,67 @@ namespace Px.Dcat
                 return sb.ToString();
             }
             if (meta.Title.EndsWith("-"))//Title ends with a dash, only endtime should be added
+            {
+                sb.Append(endTime);
+                return sb.ToString();
+            }
+            if (startTime == endTime) //Starttime and Endtime are the same, only starttime should be added
+            {
+                sb.Append(" ");
+                sb.Append(startTime);
+                return sb.ToString();
+            }
+
+            if (startTime.Contains("-"))
+            {
+                sb.Append(" (");
+                sb.Append(startTime);
+                sb.Append(")-(");
+                sb.Append(endTime);
+                sb.Append(")");
+            }
+            else
+            {
+                sb.Append(" ");
+                sb.Append(startTime);
+                sb.Append("-");
+                sb.Append(endTime);
+            }
+
+            return sb.ToString();
+        }
+
+
+        /// <summary>
+        /// Adds time interval to the table title
+        /// </summary>
+        /// <param name="meta">Metadata of table</param>
+        /// <param name="title">Title from MenuTitle</param>
+        /// <returns>Title string with interval</returns>
+        private string getMetaTitleWithInterval(PXMeta meta, string title)
+        {
+            Variable timeVar = meta.Variables.FirstOrDefault(x => x.IsTime);
+            string startTime = "";
+            string endTime = "";
+            StringBuilder sb = new StringBuilder();
+
+            if (timeVar != null)
+            {
+                startTime = GetFirstTimePeriod(timeVar);
+                endTime = GetLastTimePeriod(timeVar);
+            }
+
+            sb.Append(title);
+
+            if (IsInteger(title[title.Length - 1].ToString())) //Title ends with a number, add nothing
+            {
+                return sb.ToString();
+            }
+            if (string.IsNullOrEmpty(startTime) || string.IsNullOrEmpty(endTime)) //No starttime or endtime, add nothing
+            {
+                return sb.ToString();
+            }
+            if (title.EndsWith("-"))//Title ends with a dash, only endtime should be added
             {
                 sb.Append(endTime);
                 return sb.ToString();
@@ -474,6 +572,7 @@ namespace Px.Dcat
         /// <returns>Returns a list of strings where it's either one or more languages</returns>
         private List<string> getLanguages(PXMeta meta)
         {
+            //todo: get correct languages for table  
             string[] allLangs = meta.GetAllLanguages();
             if (allLangs is null)
             {
@@ -709,7 +808,8 @@ namespace Px.Dcat
             }
             return keywords;
         }
-
+        
+        
         /// <summary>
         /// Gets each keyword from a specific table
         /// </summary>
@@ -845,12 +945,15 @@ namespace Px.Dcat
             dataset.UpdateFrequency = getUpdateFrequency(meta);
 
             List<string> langs = getLanguages(meta).Intersect(_settings.Languages).ToList();
+            
             dataset.Languages = langs;
             dataset.LanguageURIs = convertLanguages(langs);
 
             dataset.Descriptions = getDescriptions(meta, langs);
-            dataset.Titles = getTitles(meta, langs);
-
+            
+           // dataset.Titles = getTitles(meta, langs);
+            dataset.Titles = getMetaTitles(selection, meta, langs, path);
+        
             dataset.ContactPersons = getContacts(meta);
             dataset.Category = getCategory(path);
 
