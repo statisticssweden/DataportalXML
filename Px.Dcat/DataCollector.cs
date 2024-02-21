@@ -307,53 +307,26 @@ namespace Px.Dcat
         /// <summary>
         /// Gets the title for each language 
         /// </summary>
-        /// <param name="meta">Metadata of table</param>
-        /// <param name="langs">List of languages</param>
-        /// <returns>Return titles in each language for a table</returns>
-        private List<string> getTitles(PXMeta meta, List<string> langs)
-        {
-            List<string> titles = new List<string>(langs.Count());
-            foreach (string lang in langs)
-            {
-                meta.SetLanguage(lang);
-                titles.Add(getTitleWithInterval(meta));
-            }
-            return titles;
-        }
-
-        /// <summary>
-        /// Gets the title for each language 
-        /// </summary>
         /// <param name="Selection"></param>
         /// <param name="meta">Metadata of table</param>
         /// <param name="langs">List of languages</param>
-        /// <param name="path">List of languages</param>
+        /// <param name="path">List of pxmenuitems</param>
         /// <returns>Return titles in each language for a table</returns>
-        private List<string> getMetaTitles(string Selection, PXMeta meta, List<string> langs, List<PxMenuItem> path)
+        private List<string> getTitles(string Selection, PXMeta meta, List<string> langs, List<PxMenuItem> path)
         {
             List<string> titles = new List<string>(langs.Count());
-            
             PxMenuItem item = path.LastOrDefault();
             
             foreach (string lang in langs)
             {
-            
-              var titleItem = getMenuInLanguage(item, lang); 
-
-                string titleText;
-                var title = titleItem.SubItems.FirstOrDefault(x => x.ID.Selection == Selection);
-                if (title is null)
+                PxMenuItem titleItem = getMenuInLanguage(item, lang); 
+                
+                Item title = titleItem.SubItems.FirstOrDefault(x => x.ID.Selection == Selection);
+                if (title != null)
                 {
-                    // todo: vad sätta för värde här?
-                    titleText = "Inget värde";
-
+                    meta.SetLanguage(lang);
+                    titles.Add(getMetaTitleWithInterval(meta, title.Text));
                 }
-                else
-                {
-                    titleText = title.Text;
-                }
-                meta.SetLanguage(lang);
-                titles.Add(getMetaTitleWithInterval(meta,titleText));
             }
             return titles;
         }
@@ -572,7 +545,6 @@ namespace Px.Dcat
         /// <returns>Returns a list of strings where it's either one or more languages</returns>
         private List<string> getLanguages(PXMeta meta)
         {
-            //todo: get correct languages for table  
             string[] allLangs = meta.GetAllLanguages();
             if (allLangs is null)
             {
@@ -951,8 +923,7 @@ namespace Px.Dcat
 
             dataset.Descriptions = getDescriptions(meta, langs);
             
-           // dataset.Titles = getTitles(meta, langs);
-            dataset.Titles = getMetaTitles(selection, meta, langs, path);
+            dataset.Titles = getTitles(selection, meta, langs, path);
         
             dataset.ContactPersons = getContacts(meta);
             dataset.Category = getCategory(path);
