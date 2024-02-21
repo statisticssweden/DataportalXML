@@ -200,18 +200,20 @@ namespace Px.Dcat
         {
             // Dataset
             XmlElement dElem = createElem("dcat", "Dataset", "rdf", "about", d.Resource);
-
-
+            
             // Titles and descriptions
             for (int i = 0; i < d.Languages.Count; i++)
             {
-                string title = d.Titles[i];
                 string lang = d.Languages[i];
+                string title = d.Titles[i];
                 string desc = d.Descriptions[i];
 
-                XmlElement titleElem = createElem("dcterms", "title", "xml", "lang", lang);
-                titleElem.InnerText = title;
-                dElem.AppendChild(titleElem);
+                if (title != "TABLE_HAS_NO_TITLE")
+                {
+                    XmlElement titleElem = createElem("dcterms", "title", "xml", "lang", lang);
+                    titleElem.InnerText = title;
+                    dElem.AppendChild(titleElem);
+                }
 
                 XmlElement descElem = createElem("dcterms", "description", "xml", "lang", lang);
                 descElem.InnerText = desc;

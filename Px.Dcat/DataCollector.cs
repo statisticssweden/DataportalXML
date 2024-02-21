@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using Microsoft.IdentityModel.Tokens;
 
 namespace Px.Dcat
 {
@@ -319,13 +320,19 @@ namespace Px.Dcat
             
             foreach (string lang in langs)
             {
-                PxMenuItem titleItem = getMenuInLanguage(item, lang); 
+            
+              var titleItem = getMenuInLanguage(item, lang); 
                 
-                Item title = titleItem.SubItems.FirstOrDefault(x => x.ID.Selection == Selection);
-                if (title != null)
+                var title = titleItem.SubItems.FirstOrDefault(x => x.ID.Selection == Selection);
+                if (title != null && !title.Text.IsNullOrEmpty() )
                 {
                     meta.SetLanguage(lang);
                     titles.Add(getTitleWithInterval(meta, title.Text));
+               
+                }
+                else
+                {
+                    titles.Add("TABLE_HAS_NO_TITLE");
                 }
             }
             return titles;
@@ -862,7 +869,6 @@ namespace Px.Dcat
             dataset.LanguageURIs = convertLanguages(langs);
 
             dataset.Descriptions = getDescriptions(meta, langs);
-            
             dataset.Titles = getTitles(selection, meta, langs, path);
         
             dataset.ContactPersons = getContacts(meta);
