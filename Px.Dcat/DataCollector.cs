@@ -325,79 +325,19 @@ namespace Px.Dcat
                 if (title != null)
                 {
                     meta.SetLanguage(lang);
-                    titles.Add(getMetaTitleWithInterval(meta, title.Text));
+                    titles.Add(getTitleWithInterval(meta, title.Text));
                 }
             }
             return titles;
         }
-
-        /// <summary>
-        /// Adds time interval to the table title
-        /// </summary>
-        /// <param name="meta">Metadata of table</param>
-        /// <returns>Title string with interval</returns>
-        private string getTitleWithInterval(PXMeta meta)
-        {
-            Variable timeVar = meta.Variables.FirstOrDefault(x => x.IsTime);
-            string startTime = "";
-            string endTime = "";
-            StringBuilder sb = new StringBuilder();
-
-            if (timeVar != null)
-            {
-                startTime = GetFirstTimePeriod(timeVar);
-                endTime = GetLastTimePeriod(timeVar);
-            }
-
-            sb.Append(meta.Title);
-
-            if (IsInteger(meta.Title[meta.Title.Length - 1].ToString())) //Title ends with a number, add nothing
-            {
-                return sb.ToString();
-            }
-            if (string.IsNullOrEmpty(startTime) || string.IsNullOrEmpty(endTime)) //No starttime or endtime, add nothing
-            {
-                return sb.ToString();
-            }
-            if (meta.Title.EndsWith("-"))//Title ends with a dash, only endtime should be added
-            {
-                sb.Append(endTime);
-                return sb.ToString();
-            }
-            if (startTime == endTime) //Starttime and Endtime are the same, only starttime should be added
-            {
-                sb.Append(" ");
-                sb.Append(startTime);
-                return sb.ToString();
-            }
-
-            if (startTime.Contains("-"))
-            {
-                sb.Append(" (");
-                sb.Append(startTime);
-                sb.Append(")-(");
-                sb.Append(endTime);
-                sb.Append(")");
-            }
-            else
-            {
-                sb.Append(" ");
-                sb.Append(startTime);
-                sb.Append("-");
-                sb.Append(endTime);
-            }
-
-            return sb.ToString();
-        }
-
-
+        
         /// <summary>
         /// Adds time interval to the table title
         /// </summary>
         /// <param name="meta">Metadata of table</param>
         /// <param name="title">Title from MenuTitle</param>
         /// <returns>Title string with interval</returns>
-        private string getMetaTitleWithInterval(PXMeta meta, string title)
+        private string getTitleWithInterval(PXMeta meta, string title)
         {
             Variable timeVar = meta.Variables.FirstOrDefault(x => x.IsTime);
             string startTime = "";
