@@ -327,8 +327,7 @@ namespace Px.Dcat
                 if (title != null && !title.Text.IsNullOrEmpty() )
                 {
                     meta.SetLanguage(lang);
-                    titles.Add(getTitleWithInterval(meta, title.Text));
-               
+                    titles.Add(title.Text);
                 }
                 else
                 {
@@ -338,109 +337,6 @@ namespace Px.Dcat
             return titles;
         }
         
-        /// <summary>
-        /// Adds time interval to the table title
-        /// </summary>
-        /// <param name="meta">Metadata of table</param>
-        /// <param name="title">Title from MenuTitle</param>
-        /// <returns>Title string with interval</returns>
-        private string getTitleWithInterval(PXMeta meta, string title)
-        {
-            Variable timeVar = meta.Variables.FirstOrDefault(x => x.IsTime);
-            string startTime = "";
-            string endTime = "";
-            StringBuilder sb = new StringBuilder();
-
-            if (timeVar != null)
-            {
-                startTime = GetFirstTimePeriod(timeVar);
-                endTime = GetLastTimePeriod(timeVar);
-            }
-
-            sb.Append(title);
-
-            if (IsInteger(title[title.Length - 1].ToString())) //Title ends with a number, add nothing
-            {
-                return sb.ToString();
-            }
-            if (string.IsNullOrEmpty(startTime) || string.IsNullOrEmpty(endTime)) //No starttime or endtime, add nothing
-            {
-                return sb.ToString();
-            }
-            if (title.EndsWith("-"))//Title ends with a dash, only endtime should be added
-            {
-                sb.Append(endTime);
-                return sb.ToString();
-            }
-            if (startTime == endTime) //Starttime and Endtime are the same, only starttime should be added
-            {
-                sb.Append(" ");
-                sb.Append(startTime);
-                return sb.ToString();
-            }
-
-            if (startTime.Contains("-"))
-            {
-                sb.Append(" (");
-                sb.Append(startTime);
-                sb.Append(")-(");
-                sb.Append(endTime);
-                sb.Append(")");
-            }
-            else
-            {
-                sb.Append(" ");
-                sb.Append(startTime);
-                sb.Append("-");
-                sb.Append(endTime);
-            }
-
-            return sb.ToString();
-        }
-
-        private string GetFirstTimePeriod(Variable variable)
-        {
-            string first = "";
-
-            if (variable.Values.Count > 0)
-            {
-                first = variable.Values.First().Text;
-                string val2 = variable.Values.Last().Text;
-
-                if (string.CompareOrdinal(first, val2) > 0)
-                {
-                    first = val2;
-                }
-            }
-
-            return first;
-        }
-
-        private string GetLastTimePeriod(Variable variable)
-        {
-            string last = "";
-
-            if (variable.Values.Count > 0)
-            {
-                last = variable.Values.Last().Text;
-                string val2 = variable.Values.First().Text;
-
-                if (string.CompareOrdinal(last, val2) < 0)
-                {
-                    last = val2;
-                }
-            }
-
-            return last;
-        }
-
-        private static bool IsInteger(string value)
-        {
-            int outValue;
-
-            return int.TryParse(value, out outValue);
-        }
-
         /// <summary> 
         /// Gets update frequency
         /// </summary>
