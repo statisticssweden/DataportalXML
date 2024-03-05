@@ -1,4 +1,5 @@
-﻿using PCAxis.Menu;
+﻿using Microsoft.IdentityModel.Tokens;
+using PCAxis.Menu;
 using PCAxis.Menu.Implementations;
 using PCAxis.Paxiom;
 using PCAxis.PlugIn.Sql;
@@ -21,7 +22,6 @@ namespace Px.Dcat.Fetchers
         public Item GetBaseItem(string nodeID, string menuID, string lang, string dbid)
         {
             TableLink tblFix = null;
-
             DatamodelMenu menu = ConfigDatamodelMenu.Create(
                 lang,
                 PCAxis.Sql.DbConfig.SqlDbConfigsStatic.DataBases[dbid],
@@ -40,9 +40,13 @@ namespace Px.Dcat.Fetchers
                                 tblFix = tbl;
                             }
 
-                            if ((!IsInteger(tbl.Text[tbl.Text.Length - 1].ToString()) || !string.IsNullOrEmpty(tbl.StartTime) || !string.IsNullOrEmpty(tbl.EndTime))) //Title ends with a number, no start- or endtime, add nothing
+                            if (!tbl.Text.IsNullOrEmpty() && ((!IsInteger(tbl.Text[tbl.Text.Length - 1].ToString()) ||
+                                                               !string.IsNullOrEmpty(tbl.StartTime) ||
+                                                               !string.IsNullOrEmpty(
+                                                                   tbl
+                                                                       .EndTime)))) //Title ends with a number, no start- or endtime, add nothing
                             {
-                                if (tbl.Text.EndsWith("-"))//Title ends with a dash, only endtime should be added
+                                if (tbl.Text.EndsWith("-")) //Title ends with a dash, only endtime should be added
                                 {
                                     tbl.Text = tbl.Text + " " + tbl.EndTime;
                                 }
@@ -66,9 +70,10 @@ namespace Px.Dcat.Fetchers
                             }
                         }
                         if (string.IsNullOrEmpty(item.SortCode))
-                        {
-                            item.SortCode = item.Text;
-                        }
+                            {
+                                item.SortCode = item.Text;
+                            }
+                        
                     };
                 });
             return menu.CurrentItem;

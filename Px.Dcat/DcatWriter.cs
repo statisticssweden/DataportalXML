@@ -1,5 +1,6 @@
 ﻿using Px.Dcat.DataClasses;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 using System.Xml;
 
 namespace Px.Dcat
@@ -344,9 +345,13 @@ namespace Px.Dcat
 
             // Email
             string trimmedEmail = cp.Email.Replace(" ", "");
-            XmlElement emailElem = createElem("vcard", "hasEmail", "rdf", "resource", "mailto:" + trimmedEmail);
-            individual.AppendChild(emailElem);
+            var isEmail = Regex.IsMatch(trimmedEmail, @"\A(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?)\Z", RegexOptions.IgnoreCase);
 
+            if (isEmail)
+            {
+                XmlElement emailElem = createElem("vcard", "hasEmail", "rdf", "resource", "mailto:" + trimmedEmail);
+                individual.AppendChild(emailElem);
+            }
             // Phone
             //XmlElement phoneElem = createElem("vcard", "hasTelephone");
             //XmlElement descElem = createElem("dcterms", "description");
@@ -358,7 +363,7 @@ namespace Px.Dcat
             //descElem.AppendChild(phoneVal);
             //individual.AppendChild(phoneElem);
 
-            return individual;
+             return individual;
         }
 
         /// <summary>
