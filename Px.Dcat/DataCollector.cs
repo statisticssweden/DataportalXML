@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using Microsoft.IdentityModel.Tokens;
 
 namespace Px.Dcat
 {
@@ -307,122 +308,35 @@ namespace Px.Dcat
         /// <summary>
         /// Gets the title for each language 
         /// </summary>
+        /// <param name="Selection"></param>
         /// <param name="meta">Metadata of table</param>
         /// <param name="langs">List of languages</param>
+        /// <param name="path">List of pxmenuitems</param>
         /// <returns>Return titles in each language for a table</returns>
-        private List<string> getTitles(PXMeta meta, List<string> langs)
+        private List<string> getTitles(string Selection, PXMeta meta, List<string> langs, List<PxMenuItem> path)
         {
             List<string> titles = new List<string>(langs.Count());
+            PxMenuItem item = path.LastOrDefault();
+            
             foreach (string lang in langs)
             {
-                meta.SetLanguage(lang);
-                titles.Add(getTitleWithInterval(meta));
+            
+              var titleItem = getMenuInLanguage(item, lang); 
+                
+                var title = titleItem.SubItems.FirstOrDefault(x => x.ID.Selection == Selection);
+                if (title != null && !title.Text.IsNullOrEmpty() )
+                {
+                    meta.SetLanguage(lang);
+                    titles.Add(title.Text);
+                }
+                else
+                {
+                    titles.Add("TABLE_HAS_NO_TITLE");
+                }
             }
             return titles;
         }
-
-        /// <summary>
-        /// Adds time interval to the table title
-        /// </summary>
-        /// <param name="meta">Metadata of table</param>
-        /// <returns>Title string with interval</returns>
-        private string getTitleWithInterval(PXMeta meta)
-        {
-            Variable timeVar = meta.Variables.FirstOrDefault(x => x.IsTime);
-            string startTime = "";
-            string endTime = "";
-            StringBuilder sb = new StringBuilder();
-
-            if (timeVar != null)
-            {
-                startTime = GetFirstTimePeriod(timeVar);
-                endTime = GetLastTimePeriod(timeVar);
-            }
-
-            sb.Append(meta.Title);
-
-            if (IsInteger(meta.Title[meta.Title.Length - 1].ToString())) //Title ends with a number, add nothing
-            {
-                return sb.ToString();
-            }
-            if (string.IsNullOrEmpty(startTime) || string.IsNullOrEmpty(endTime)) //No starttime or endtime, add nothing
-            {
-                return sb.ToString();
-            }
-            if (meta.Title.EndsWith("-"))//Title ends with a dash, only endtime should be added
-            {
-                sb.Append(endTime);
-                return sb.ToString();
-            }
-            if (startTime == endTime) //Starttime and Endtime are the same, only starttime should be added
-            {
-                sb.Append(" ");
-                sb.Append(startTime);
-                return sb.ToString();
-            }
-
-            if (startTime.Contains("-"))
-            {
-                sb.Append(" (");
-                sb.Append(startTime);
-                sb.Append(")-(");
-                sb.Append(endTime);
-                sb.Append(")");
-            }
-            else
-            {
-                sb.Append(" ");
-                sb.Append(startTime);
-                sb.Append("-");
-                sb.Append(endTime);
-            }
-
-            return sb.ToString();
-        }
-
-        private string GetFirstTimePeriod(Variable variable)
-        {
-            string first = "";
-
-            if (variable.Values.Count > 0)
-            {
-                first = variable.Values.First().Text;
-                string val2 = variable.Values.Last().Text;
-
-                if (string.CompareOrdinal(first, val2) > 0)
-                {
-                    first = val2;
-                }
-            }
-
-            return first;
-        }
-
-        private string GetLastTimePeriod(Variable variable)
-        {
-            string last = "";
-
-            if (variable.Values.Count > 0)
-            {
-                last = variable.Values.Last().Text;
-                string val2 = variable.Values.First().Text;
-
-                if (string.CompareOrdinal(last, val2) < 0)
-                {
-                    last = val2;
-                }
-            }
-
-            return last;
-        }
-
-        private static bool IsInteger(string value)
-        {
-            int outValue;
-
-            return int.TryParse(value, out outValue);
-        }
-
+        
         /// <summary> 
         /// Gets update frequency
         /// </summary>
@@ -709,7 +623,8 @@ namespace Px.Dcat
             }
             return keywords;
         }
-
+        
+        
         /// <summary>
         /// Gets each keyword from a specific table
         /// </summary>
@@ -845,12 +760,13 @@ namespace Px.Dcat
             dataset.UpdateFrequency = getUpdateFrequency(meta);
 
             List<string> langs = getLanguages(meta).Intersect(_settings.Languages).ToList();
+            
             dataset.Languages = langs;
             dataset.LanguageURIs = convertLanguages(langs);
 
             dataset.Descriptions = getDescriptions(meta, langs);
-            dataset.Titles = getTitles(meta, langs);
-
+            dataset.Titles = getTitles(selection, meta, langs, path);
+        
             dataset.ContactPersons = getContacts(meta);
             dataset.Category = getCategory(path);
 

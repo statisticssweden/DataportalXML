@@ -1,5 +1,6 @@
 ﻿using Px.Dcat.DataClasses;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 using System.Xml;
 
 namespace Px.Dcat
@@ -200,18 +201,20 @@ namespace Px.Dcat
         {
             // Dataset
             XmlElement dElem = createElem("dcat", "Dataset", "rdf", "about", d.Resource);
-
-
+            
             // Titles and descriptions
             for (int i = 0; i < d.Languages.Count; i++)
             {
-                string title = d.Titles[i];
                 string lang = d.Languages[i];
+                string title = d.Titles[i];
                 string desc = d.Descriptions[i];
 
-                XmlElement titleElem = createElem("dcterms", "title", "xml", "lang", lang);
-                titleElem.InnerText = title;
-                dElem.AppendChild(titleElem);
+                if (title != "TABLE_HAS_NO_TITLE")
+                {
+                    XmlElement titleElem = createElem("dcterms", "title", "xml", "lang", lang);
+                    titleElem.InnerText = title;
+                    dElem.AppendChild(titleElem);
+                }
 
                 XmlElement descElem = createElem("dcterms", "description", "xml", "lang", lang);
                 descElem.InnerText = desc;
@@ -342,9 +345,13 @@ namespace Px.Dcat
 
             // Email
             string trimmedEmail = cp.Email.Replace(" ", "");
-            XmlElement emailElem = createElem("vcard", "hasEmail", "rdf", "resource", "mailto:" + trimmedEmail);
-            individual.AppendChild(emailElem);
+            var isEmail = Regex.IsMatch(trimmedEmail, @"\A(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?)\Z", RegexOptions.IgnoreCase);
 
+            if (isEmail)
+            {
+                XmlElement emailElem = createElem("vcard", "hasEmail", "rdf", "resource", "mailto:" + trimmedEmail);
+                individual.AppendChild(emailElem);
+            }
             // Phone
             //XmlElement phoneElem = createElem("vcard", "hasTelephone");
             //XmlElement descElem = createElem("dcterms", "description");
@@ -356,7 +363,7 @@ namespace Px.Dcat
             //descElem.AppendChild(phoneVal);
             //individual.AppendChild(phoneElem);
 
-            return individual;
+             return individual;
         }
 
         /// <summary>
