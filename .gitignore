@@ -336,3 +336,4 @@ ASALocalRun/
 *setting.config
 *SqlDb.config
 *Web.config
+/test.xml
