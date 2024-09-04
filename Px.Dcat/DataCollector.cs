@@ -452,7 +452,7 @@ namespace Px.Dcat
                         {
                             cp = new ContactPerson
                             {
-                                Name = c.Forname + " " + c.Surname + ", " + c.OrganizationName,
+                                Name = c.Forname + " " + c.Surname,
                                 Email = c.Email,
                                 Phone = c.PhonePrefix + c.PhoneNo,
                                 Resource = Path.Combine(_settings.BaseUri, "contactperson", nextString()).Replace("\\", "/")
