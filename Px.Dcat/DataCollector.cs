@@ -842,19 +842,42 @@ namespace Px.Dcat
                 try
                 {
                     string selection = table.ID.Selection;
-                    IPXModelBuilder builder = _fetcher.GetBuilder(selection);
-                    builder.ReadAllLanguages = true;
-                    builder.SetPreferredLanguage(_settings.MainLanguage);
-                    builder.BuildForSelection();
-
-                    Dataset dataset = getDataset(selection, builder.Model.Meta, path);
-                    d.Add(dataset);
+                    
+                    var meta = GetTableMetadata(selection, true);
+                    if(meta is null)
+                    {
+                        meta = GetTableMetadata(selection, false);
+                    }
+                    if(meta != null)
+                    {
+                        Dataset dataset = getDataset(selection, meta, path);
+                        d.Add(dataset);
+                    }
                 }
                 catch (Exception e)
                 {
-                    Console.WriteLine("ERROR: " + e.ToString());
+                        Console.WriteLine("ERROR: " + e.ToString());
                 }
             }
+        }
+
+        private PXMeta GetTableMetadata(string selection, bool readAll)
+        {
+            try
+            {
+                var builder = _fetcher.GetBuilder(selection);
+                builder.ReadAllLanguages = readAll;
+                builder.SetPreferredLanguage(_settings.MainLanguage);
+                builder.BuildForSelection();
+                return builder.Model.Meta;
+
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                return null;
+            }
+
         }
 
         /// <summary>
