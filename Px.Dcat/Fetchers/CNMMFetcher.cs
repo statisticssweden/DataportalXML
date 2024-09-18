@@ -22,7 +22,7 @@ namespace Px.Dcat.Fetchers
         public Item GetBaseItem(string nodeID, string menuID, string lang, string dbid)
         {
             TableLink tblFix = null;
-            DatamodelMenu menu = ConfigDatamodelMenu.Create(
+                DatamodelMenu menu = ConfigDatamodelMenu.Create(
                 lang,
                 PCAxis.Sql.DbConfig.SqlDbConfigsStatic.DataBases[dbid],
                 m =>
@@ -40,7 +40,7 @@ namespace Px.Dcat.Fetchers
                                 tblFix = tbl;
                             }
 
-                            if (!tbl.Text.IsNullOrEmpty() && ((!IsInteger(tbl.Text[tbl.Text.Length - 1].ToString()) ||
+                            if (!string.IsNullOrEmpty(tbl.Text) && ((!IsInteger(tbl.Text[tbl.Text.Length - 1].ToString()) ||
                                                                !string.IsNullOrEmpty(tbl.StartTime) ||
                                                                !string.IsNullOrEmpty(
                                                                    tbl
