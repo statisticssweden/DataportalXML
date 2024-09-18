@@ -324,7 +324,7 @@ namespace Px.Dcat
               var titleItem = getMenuInLanguage(item, lang); 
                 
                 var title = titleItem.SubItems.FirstOrDefault(x => x.ID.Selection == Selection);
-                if (title != null && !title.Text.IsNullOrEmpty() )
+                if (title != null && !string.IsNullOrEmpty(title.Text) )
                 {
                     meta.SetLanguage(lang);
                     titles.Add(title.Text);
@@ -930,11 +930,23 @@ namespace Px.Dcat
 
         private void setProducers(List<Dataset> datasets)
         {
+            var felLista = new List<string>();
             foreach (Dataset d in datasets)
             {
-                string source = d.Sources.First();
-                d.Producer = _organizations[source];
+                
+                string source = d.Sources.FirstOrDefault();
+                if (source != null)
+                {
+                    d.Producer = _organizations[source];
+                }
+                else
+                {
+                    felLista.Add(d.Identifier);
+                }
             }
+
+            var t = felLista;
+
         }
 
         private void setOrganizationResources()
