@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:vcard="http://www.w3.org/2006/vcard/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <dcat:Catalog rdf:about="https://statistikdatabasen.scb.se/">
+    <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
+    <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
+    <dcterms:title xml:lang="sv">Statistikmyndigheten SCB:s Statistikdatabas</dcterms:title>
+    <dcterms:title xml:lang="en">Statistics Swedens Statistical database</dcterms:title>
+    <dcterms:description xml:lang="sv">Statistikmyndigheten SCB:s Statistikdatabas</dcterms:description>
+    <dcterms:description xml:lang="en">Statistics Swedens Statistical database</dcterms:description>
+    <dcterms:publisher rdf:resource="http://dataportal.se/organisation/SE2021000837" />
+    <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+    <dcat:dataset rdf:resource="https://statistikdatabasen.scb.se/dataset/TAB3966" />
+  </dcat:Catalog>
+  <dcat:Dataset rdf:about="https://statistikdatabasen.scb.se/dataset/TAB3966">
+    <dcterms:title xml:lang="sv">Andel förvärvsarbetande kommunmottagna flyktningar och anhöriga efter ålder, kön och mottagningsår 1997 - 2022</dcterms:title>
+    <dcterms:description xml:lang="sv">Andel förvärvsarbetande kommunmottagna flyktingar och anhöriga, procent PxcMetaTitleBy ålder, kön, mottagningsår, tabellinnehåll PxcMetaTitleAnd sysselsättningsår</dcterms:description>
+    <dcterms:publisher rdf:resource="http://dataportal.se/organisation/SE2021000837" />
+    <dcterms:creator rdf:resource="http://dataportal.se/organisation/SE2021000837" />
+    <dcat:distribution rdf:resource="https://statistikdatabasen.scb.se/distribution/sv/TAB3966" />
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-12-22T08:00:00</dcterms:modified>
+    <dcterms:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAB3966</dcterms:identifier>
+    <dcat:keyword xml:lang="sv">Ämnesövergripande statistik</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Registerdata för integration</dcat:keyword>
+    <dcat:keyword xml:lang="sv">Statistik med inriktning mot arbetsmarknaden</dcat:keyword>
+    <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
+    <dcat:contactPoint rdf:resource="https://statistikdatabasen.scb.se/contactperson/1" />
+    <dcat:landingPage rdf:resource="https://www.statistikdatabasen.scb.se/goto/sv/ssd/MotFlyktAldKon" />
+    <dcterms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL" />
+    <dcterms:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC" />
+  </dcat:Dataset>
+  <vcard:Individual rdf:about="https://statistikdatabasen.scb.se/contactperson/1">
+    <vcard:fn>Malin Forsberg, SCB</vcard:fn>
+    <vcard:hasEmail rdf:resource="mailto:malin.forsberg@scb.se" />
+  </vcard:Individual>
+  <foaf:Organization rdf:about="http://dataportal.se/organisation/SE2021000837">
+    <foaf:name xml:lang="en">Statistics Sweden</foaf:name>
+    <foaf:name xml:lang="sv">SCB</foaf:name>
+  </foaf:Organization>
+  <dcat:Distribution rdf:about="https://statistikdatabasen.scb.se/distribution/sv/TAB3966">
+    <dcterms:title xml:lang="sv">Metadata (sv)</dcterms:title>
+    <dcterms:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">application/json</dcterms:format>
+    <dcat:accessURL rdf:resource="https://api.scb.se/OV0104/v1/doris/sv/ssd/AA/AA0003/AA0003B/MotFlyktAldKon" />
+    <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
+    <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+  <dcat:Distribution rdf:about="https://statistikdatabasen.scb.se/distribution/sv/TAB3969">
+    <dcterms:title xml:lang="sv">Metadata (sv)</dcterms:title>
+    <dcterms:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">application/json</dcterms:format>
+    <dcat:accessURL rdf:resource="https://api.scb.se/OV0104/v1/doris/sv/ssd/AA/AA0003/AA0003B/MotFlyktUtbKon" />
+    <dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE" />
+    <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+  </dcat:Distribution>
+</rdf:RDF>
