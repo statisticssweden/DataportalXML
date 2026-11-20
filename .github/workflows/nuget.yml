@@ -8,7 +8,7 @@ jobs:
   release:
     permissions:
       id-token: write
-    runs-on: windows-2019
+    runs-on: windows-latest
 
     steps:
 
