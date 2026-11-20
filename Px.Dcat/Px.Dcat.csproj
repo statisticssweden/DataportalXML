@@ -5,7 +5,7 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 	  <PackageId>Px.Dcat</PackageId>
 	  <MinVerTagPrefix>v</MinVerTagPrefix>
-	  <MinVerDefaultPreReleasePhase>beta</MinVerDefaultPreReleasePhase>
+	  <MinVerDefaultPreReleaseIdentifiers>beta</MinVerDefaultPreReleaseIdentifiers>
 	  <MinVerSkip Condition="'$(Configuration)' == 'Debug'">true</MinVerSkip>
 	  <SignAssembly>false</SignAssembly>
 	  <AssemblyOriginatorKeyFile></AssemblyOriginatorKeyFile>
@@ -19,15 +19,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="MinVer" Version="6.0.0">
+    <PackageReference Include="MinVer" Version="8.0.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-    <PackageReference Include="PcAxis.Core" Version="1.2.4" />
-    <PackageReference Include="PCAxis.Menu" Version="1.0.3" />
-    <PackageReference Include="PCAxis.Menu.ConfigDatamodelMenu" Version="1.0.8" />
-    <PackageReference Include="PcAxis.Sql" Version="1.2.4" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
+    <PackageReference Include="PcAxis.Core" Version="1.4.4" />
+    <PackageReference Include="PCAxis.Menu" Version="1.0.6" />
+    <PackageReference Include="PCAxis.Menu.ConfigDatamodelMenu" Version="1.0.11" />
+    <PackageReference Include="PcAxis.Sql" Version="1.8.0" />
   </ItemGroup>
 
 </Project>
